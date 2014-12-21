@@ -23,7 +23,8 @@ _ajUIDs =[
 		"76561197994865910", //SirRender
 		"76561198004909636", //Lenion.at
 		"76561198022550759", //Stalkersrb
-		"76561198023341449" //Morli.at
+		"76561198023341449", //Morli.at
+		"76561197987063905" //Zhorgot Oberst Knopf
 		];
 		
 _norUIDs =[
