@@ -1,0 +1,367 @@
+﻿00:00:34 : RCon admin #1: (Global) 1
+﻿00:07:34 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿00:08:54 : Lost Connection!
+﻿00:08:54 : Closing socket & exiting!
+﻿00:09:14 : Reporter account validated ok!
+﻿00:09:15 : Rcon client logging in
+﻿00:09:15 : RCon admin #1 (103.13.101.239:59930) logged in
+﻿00:10:16 : Player #0 King Zog (121.45.224.166:62443) connected
+﻿00:10:17 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿00:10:17 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿00:10:17 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿00:10:18 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿00:11:50 : Player #0 King Zog disconnected
+﻿00:12:01 : Player #0 King Zog (121.45.224.166:62443) connected
+﻿00:12:02 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿00:12:02 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿00:12:02 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿00:12:04 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿00:12:16 : RCon admin #1: (Global) 1
+﻿00:12:47 : Lost Connection!
+﻿00:12:47 : Closing socket & exiting!
+﻿00:13:13 : Reporter account validated ok!
+﻿00:13:14 : Rcon client logging in
+﻿00:13:14 : RCon admin #1 (103.13.101.239:49212) logged in
+﻿00:14:36 : Player #0 King Zog (121.45.224.166:62443) connected
+﻿00:14:37 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿00:14:37 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿00:14:38 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿00:14:39 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿00:16:15 : RCon admin #1: (Global) 1
+﻿00:16:51 : Lost Connection!
+﻿00:16:51 : Closing socket & exiting!
+﻿00:17:15 : Reporter account validated ok!
+﻿00:17:16 : Rcon client logging in
+﻿00:17:16 : RCon admin #1 (103.13.101.239:65369) logged in
+﻿00:19:13 : Player #0 King Zog disconnected
+﻿00:19:20 : Player #0 King Zog (121.45.224.166:62443) connected
+﻿00:19:22 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿00:19:22 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿00:19:22 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿00:19:23 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿00:20:17 : RCon admin #1: (Global) 1
+﻿00:23:46 : Player #1 dunkinator (121.45.224.166:62447) connected
+﻿00:23:47 : Player #1 dunkinator - GUID: 2c25167d47d035cad86caaa66ca0fc8b (unverified)
+﻿00:23:48 : Verified GUID (2c25167d47d035cad86caaa66ca0fc8b) of player #1 dunkinator
+﻿00:23:49 : Status  -> Ok (2c25167d47d035cad86caaa66ca0fc8b)
+﻿00:26:47 : Player #0 King Zog disconnected
+﻿00:27:17 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿00:27:47 : Player #1 dunkinator disconnected
+﻿00:27:53 : Player #0 dunkinator (121.45.224.166:62447) connected
+﻿00:27:55 : Player #0 dunkinator - GUID: 2c25167d47d035cad86caaa66ca0fc8b (unverified)
+﻿00:27:55 : Verified GUID (2c25167d47d035cad86caaa66ca0fc8b) of player #0 dunkinator
+﻿00:27:56 : Status  -> Ok (2c25167d47d035cad86caaa66ca0fc8b)
+﻿00:28:05 : Player #1 King Zog (121.45.224.166:62443) connected
+﻿00:28:07 : Player #1 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿00:28:07 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿00:28:08 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #1 King Zog
+﻿00:28:09 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿00:30:38 : Player #0 dunkinator (2c25167d47d035cad86caaa66ca0fc8b) has been kicked by BattlEye: Client not responding
+﻿01:57:17 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿02:02:16 : Lost Connection!
+﻿02:02:16 : Closing socket & exiting!
+﻿02:03:05 : Reporter account validated ok!
+﻿02:03:06 : Rcon client logging in
+﻿02:03:06 : RCon admin #1 (103.13.101.239:56733) logged in
+﻿02:03:24 : Player #0 King Zog (121.45.224.166:62443) connected
+﻿02:03:25 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿02:03:25 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿02:03:25 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿02:03:26 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿02:04:23 : Player #0 King Zog disconnected
+﻿02:04:28 : Player #0 King Zog (121.45.224.166:62443) connected
+﻿02:04:30 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿02:04:30 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿02:04:30 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿02:04:31 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿02:05:06 : Lost Connection!
+﻿02:05:06 : Closing socket & exiting!
+﻿03:14:13 : Reporter account validated ok!
+﻿03:14:14 : Rcon client logging in
+﻿03:14:15 : RCon admin #1 (103.13.101.239:63214) logged in
+﻿03:16:37 : Player #0 King Zog (121.45.224.166:62448) connected
+﻿03:16:38 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿03:16:39 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿03:16:39 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿03:16:40 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿03:17:06 : Lost Connection!
+﻿03:17:06 : Closing socket & exiting!
+﻿03:23:00 : Reporter account validated ok!
+﻿03:23:01 : Rcon client logging in
+﻿03:23:01 : RCon admin #1 (103.13.101.239:56483) logged in
+﻿03:23:03 : Player #0 King Zog (121.45.224.166:62449) connected
+﻿03:23:04 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿03:23:04 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿03:23:05 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿03:23:06 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿03:26:02 : RCon admin #1: (Global) 1
+﻿03:26:13 : Player #0 King Zog disconnected
+﻿03:33:02 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿03:49:59 : Lost Connection!
+﻿03:49:59 : Closing socket & exiting!
+﻿03:52:02 : Reporter account validated ok!
+﻿03:52:03 : Rcon client logging in
+﻿03:52:03 : RCon admin #1 (103.13.101.239:56611) logged in
+﻿03:53:26 : Player #0 King Zog (121.45.224.166:62450) connected
+﻿03:53:27 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿03:53:27 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿03:53:27 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿03:53:30 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿03:55:04 : RCon admin #1: (Global) 1
+﻿03:59:03 : Lost Connection!
+﻿03:59:03 : Closing socket & exiting!
+﻿03:59:41 : Reporter account validated ok!
+﻿03:59:42 : Rcon client logging in
+﻿03:59:42 : RCon admin #1 (103.13.101.239:51205) logged in
+﻿04:01:15 : Player #0 King Zog (121.45.224.166:62451) connected
+﻿04:01:16 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿04:01:16 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿04:01:16 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿04:01:17 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿04:02:43 : RCon admin #1: (Global) 1
+﻿04:09:43 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿04:15:24 : Player #0 King Zog disconnected
+﻿05:39:43 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿07:09:43 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿08:39:43 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿10:09:43 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿12:21:32 : Reporter account validated ok!
+﻿12:21:33 : Rcon client logging in
+﻿12:21:33 : RCon admin #1 (103.13.101.239:63610) logged in
+﻿12:24:34 : RCon admin #1: (Global) 1
+﻿12:31:34 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿12:50:52 : Reporter account validated ok!
+﻿12:50:53 : Rcon client logging in
+﻿12:50:54 : RCon admin #1 (103.13.101.239:64219) logged in
+﻿12:53:54 : RCon admin #1: (Global) 1
+﻿12:54:01 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿12:54:02 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿12:54:03 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿12:54:03 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿12:54:04 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿13:00:54 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿13:03:03 : Lost Connection!
+﻿13:03:03 : Closing socket & exiting!
+﻿13:03:34 : Reporter account validated ok!
+﻿13:03:35 : Rcon client logging in
+﻿13:03:36 : RCon admin #1 (103.13.101.239:51738) logged in
+﻿13:03:37 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿13:03:37 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿13:03:37 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿13:06:36 : RCon admin #1: (Global) 1
+﻿13:13:36 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿13:31:50 : Lost Connection!
+﻿13:31:50 : Closing socket & exiting!
+﻿13:33:17 : Reporter account validated ok!
+﻿13:33:18 : Rcon client logging in
+﻿13:33:18 : RCon admin #1 (103.13.101.239:57909) logged in
+﻿13:33:21 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿13:33:22 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿13:33:23 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿13:33:23 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿13:33:24 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿13:36:19 : RCon admin #1: (Global) 1
+﻿13:43:19 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿14:30:00 : RCon admin #1: (Global) This server will restart in 30 minutes
+﻿14:40:22 : Lost Connection!
+﻿14:40:22 : Closing socket & exiting!
+﻿14:40:42 : Reporter account validated ok!
+﻿14:40:43 : Rcon client logging in
+﻿14:40:43 : RCon admin #1 (103.13.101.239:56541) logged in
+﻿14:41:56 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿14:41:57 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿14:41:57 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿14:41:57 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿14:41:58 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿14:44:09 : Reporter account validated ok!
+﻿14:44:10 : Rcon client logging in
+﻿14:44:10 : RCon admin #1 (103.13.101.239:59786) logged in
+﻿14:44:12 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿14:44:12 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿14:44:12 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿14:45:00 : RCon admin #1: (Global) This server will restart in 15 minutes
+﻿14:47:16 : RCon admin #1: (Global) 1
+﻿14:54:11 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿14:54:21 : Lost Connection!
+﻿14:54:21 : Closing socket & exiting!
+﻿14:54:40 : Reporter account validated ok!
+﻿14:54:41 : Rcon client logging in
+﻿14:54:41 : RCon admin #1 (103.13.101.239:55016) logged in
+﻿14:55:00 : RCon admin #1: (Global) This server will restart in 5 minutes.
+﻿14:55:37 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿14:55:38 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿14:55:38 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿14:55:39 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿14:55:40 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿14:57:38 : Player #0 King Zog disconnected
+﻿14:57:42 : RCon admin #1: (Global) 1
+﻿15:00:01 : Lost Connection!
+﻿15:00:01 : Closing socket & exiting!
+﻿15:29:44 : Reporter account validated ok!
+﻿15:29:45 : Rcon client logging in
+﻿15:29:45 : RCon admin #1 (103.13.101.239:58368) logged in
+﻿15:29:46 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿15:29:46 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿15:29:46 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿15:29:52 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿15:32:46 : RCon admin #1: (Global) 1
+﻿15:33:49 : Lost Connection!
+﻿15:33:49 : Closing socket & exiting!
+﻿15:35:31 : Reporter account validated ok!
+﻿15:35:32 : Rcon client logging in
+﻿15:35:33 : RCon admin #1 (103.13.101.239:57898) logged in
+﻿15:35:33 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿15:35:34 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿15:35:35 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿15:35:35 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿15:35:37 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿15:38:33 : RCon admin #1: (Global) 1
+﻿15:40:09 : Reporter account validated ok!
+﻿15:40:12 : No Valid response. Trying to reconnect.!
+﻿15:40:16 : No Valid response. Trying to reconnect.!
+﻿15:40:20 : No Valid response. Trying to reconnect.!
+﻿15:40:24 : Lost Connection!
+﻿15:40:24 : Closing socket & exiting!
+﻿15:45:21 : Reporter account validated ok!
+﻿15:45:24 : No Valid response. Trying to reconnect.!
+﻿15:45:28 : No Valid response. Trying to reconnect.!
+﻿15:45:32 : No Valid response. Trying to reconnect.!
+﻿15:45:36 : Lost Connection!
+﻿15:45:36 : Closing socket & exiting!
+﻿16:01:55 : Reporter account validated ok!
+﻿16:01:55 : No Valid response. Trying to reconnect.!
+﻿16:01:59 : No Valid response. Trying to reconnect.!
+﻿16:02:03 : No Valid response. Trying to reconnect.!
+﻿16:02:07 : Lost Connection!
+﻿16:02:07 : Closing socket & exiting!
+﻿16:16:55 : Reporter account validated ok!
+﻿16:16:58 : No Valid response. Trying to reconnect.!
+﻿16:17:02 : No Valid response. Trying to reconnect.!
+﻿16:17:06 : No Valid response. Trying to reconnect.!
+﻿16:17:10 : Lost Connection!
+﻿16:17:10 : Closing socket & exiting!
+﻿16:25:55 : Reporter account validated ok!
+﻿16:25:56 : Rcon client logging in
+﻿16:25:57 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿16:25:57 : RCon admin #1 (103.13.101.239:63852) logged in
+﻿16:27:11 : Player #0 King Zog disconnected
+﻿16:27:16 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿16:27:17 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿16:27:17 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿16:27:17 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿16:27:18 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿16:28:57 : RCon admin #1: (Global) 1
+﻿16:32:20 : Lost Connection!
+﻿16:32:20 : Closing socket & exiting!
+﻿16:32:54 : Reporter account validated ok!
+﻿16:32:56 : Rcon client logging in
+﻿16:32:56 : RCon admin #1 (103.13.101.239:60381) logged in
+﻿16:35:56 : RCon admin #1: (Global) 1
+﻿16:36:49 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿16:36:50 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿16:36:50 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿16:36:50 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿16:36:51 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿16:38:57 : Player #0 King Zog disconnected
+﻿16:39:02 : Player #0 King Zog (121.45.251.247:62479) connected
+﻿16:39:03 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿16:39:03 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿16:39:03 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿16:39:04 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿16:40:25 : Lost Connection!
+﻿16:40:25 : Closing socket & exiting!
+﻿16:45:52 : Reporter account validated ok!
+﻿16:45:54 : Rcon client logging in
+﻿16:45:54 : RCon admin #1 (103.13.101.239:54964) logged in
+﻿16:47:53 : Player #0 King Zog disconnected
+﻿16:47:58 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿16:48:00 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿16:48:00 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿16:48:00 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿16:48:01 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿16:48:54 : RCon admin #1: (Global) 1
+﻿16:49:08 : Lost Connection!
+﻿16:49:08 : Closing socket & exiting!
+﻿16:50:55 : Reporter account validated ok!
+﻿16:50:56 : Rcon client logging in
+﻿16:50:57 : RCon admin #1 (103.13.101.239:58355) logged in
+﻿16:51:31 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿16:51:32 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿16:51:32 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿16:51:33 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿16:51:34 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿16:53:57 : RCon admin #1: (Global) 1
+﻿17:07:00 : Reporter account validated ok!
+﻿17:07:01 : Rcon client logging in
+﻿17:07:02 : RCon admin #1 (103.13.101.239:50743) logged in
+﻿17:07:22 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:07:23 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:07:23 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:07:23 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:07:24 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿17:10:02 : RCon admin #1: (Global) 1
+﻿17:11:51 : Player #0 King Zog disconnected
+﻿17:11:56 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:11:57 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:11:57 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:11:57 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:11:58 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿17:12:24 : Player #0 King Zog disconnected
+﻿17:12:47 : Lost Connection!
+﻿17:12:47 : Closing socket & exiting!
+﻿17:14:19 : Reporter account validated ok!
+﻿17:14:21 : Rcon client logging in
+﻿17:14:21 : RCon admin #1 (103.13.101.239:59306) logged in
+﻿17:15:18 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:15:19 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:15:19 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:15:19 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:15:20 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿17:16:58 : Player #0 King Zog disconnected
+﻿17:17:03 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:17:05 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:17:05 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:17:05 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:17:06 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿17:17:21 : RCon admin #1: (Global) 1
+﻿17:17:51 : Lost Connection!
+﻿17:17:51 : Closing socket & exiting!
+﻿17:21:22 : Reporter account validated ok!
+﻿17:21:23 : Rcon client logging in
+﻿17:21:23 : RCon admin #1 (103.13.101.239:55453) logged in
+﻿17:21:52 : Lost Connection!
+﻿17:21:52 : Closing socket & exiting!
+﻿17:54:29 : Reporter account validated ok!
+﻿17:54:30 : Rcon client logging in
+﻿17:54:30 : RCon admin #1 (103.13.101.239:64195) logged in
+﻿17:54:35 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:54:37 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:54:37 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:54:37 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:54:38 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿17:55:44 : No Valid response. Trying to reconnect.!
+﻿17:55:44 : Rcon client logging in
+﻿17:55:53 : RCon admin #0 (103.13.101.239:64195) logged in
+﻿17:57:31 : RCon admin #0: (Global) 1
+﻿17:57:52 : Player #0 King Zog disconnected
+﻿17:58:01 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:58:02 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:58:02 : RCon admin #0: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:58:03 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:58:04 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿17:58:30 : Player #0 King Zog disconnected
+﻿17:58:36 : Lost Connection!
+﻿17:58:36 : Closing socket & exiting!
+﻿17:59:01 : Reporter account validated ok!
+﻿17:59:02 : Rcon client logging in
+﻿17:59:02 : RCon admin #1 (103.13.101.239:64772) logged in
+﻿17:59:03 : Player #0 King Zog (121.45.251.247:62504) connected
+﻿17:59:04 : Player #0 King Zog - GUID: ed93afb5a1d7dd12c0848e3817234489 (unverified)
+﻿17:59:04 : RCon admin #1: (Global) BEC : Boss Cocky King Zog Connected
+﻿17:59:04 : Verified GUID (ed93afb5a1d7dd12c0848e3817234489) of player #0 King Zog
+﻿17:59:05 : Status  -> Ok (ed93afb5a1d7dd12c0848e3817234489)
+﻿18:02:03 : RCon admin #1: (Global) 1
+﻿18:09:03 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿19:39:03 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿21:09:03 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time
+﻿22:39:03 : RCon admin #1: (Global) This server restarts at 3pm Sydney Time

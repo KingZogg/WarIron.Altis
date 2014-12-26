@@ -1,0 +1,30 @@
+103.13.101.239:2302 | 5:58:27 PM | RCon admin #0 (103.13.101.239:58323) logged in
+103.13.101.239:2302 | 6:07:43 PM | Player #1 shotsy (122.151.237.44:2304) connected
+103.13.101.239:2302 | 6:07:44 PM | Player #1 shotsy - GUID: 187baa059ed2c60cca11ee8674119671 (unverified)
+103.13.101.239:2302 | 6:07:44 PM | Verified GUID (187baa059ed2c60cca11ee8674119671) of player #1 shotsy
+103.13.101.239:2302 | 6:07:47 PM | Player #2 peers (110.32.86.247:2304) connected
+103.13.101.239:2302 | 6:07:48 PM | Player #2 peers - GUID: 3bc06e0e387e962c72f02eedb49dbca2 (unverified)
+103.13.101.239:2302 | 6:07:48 PM | Verified GUID (3bc06e0e387e962c72f02eedb49dbca2) of player #2 peers
+103.13.101.239:2302 | 6:08:49 PM | Player #2 peers (3bc06e0e387e962c72f02eedb49dbca2) has been kicked by BattlEye: Client not responding
+103.13.101.239:2302 | 6:09:24 PM | Player #1 shotsy disconnected
+103.13.101.239:2302 | 6:11:05 PM | Player #0 DADINATOR disconnected
+103.13.101.239:2302 | 8:26:43 PM | RCon admin #1 (103.13.101.239:51143) logged in
+103.13.101.239:2302 | 8:57:48 PM | Player #0 Forrest (123.211.14.191:51605) connected
+103.13.101.239:2302 | 8:57:49 PM | Player #0 Forrest - GUID: 9134fd7c35f5edfdd61e856cb0c018cb (unverified)
+103.13.101.239:2302 | 8:57:49 PM | Verified GUID (9134fd7c35f5edfdd61e856cb0c018cb) of player #0 Forrest
+103.13.101.239:2302 | 8:57:50 PM | Player #0 Forrest disconnected
+103.13.101.239:2302 | 9:21:04 PM | Player #0 Red (124.169.224.133:2304) connected
+103.13.101.239:2302 | 9:21:05 PM | Player #0 Red - GUID: 47d4ac50be7752d4a021e2ee02fa10c2 (unverified)
+103.13.101.239:2302 | 9:21:06 PM | Verified GUID (47d4ac50be7752d4a021e2ee02fa10c2) of player #0 Red
+103.13.101.239:2302 | 9:21:21 PM | Player #0 Red disconnected
+103.13.101.239:2302 | 5:47:12 AM | Player #0 MR Moon  (92.74.80.207:2304) connected
+103.13.101.239:2302 | 5:47:13 AM | Player #0 MR Moon  - GUID: 49b7833fc4eb23ac10f8b8c87775fd16 (unverified)
+103.13.101.239:2302 | 5:47:14 AM | Verified GUID (49b7833fc4eb23ac10f8b8c87775fd16) of player #0 MR Moon 
+103.13.101.239:2302 | 5:47:14 AM | Player #0 MR Moon  disconnected
+103.13.101.239:2302 | 8:51:00 AM | Player #0 kronox9 (72.200.63.61:2304) connected
+103.13.101.239:2302 | 8:51:01 AM | Player #0 kronox9 - GUID: ce0171224ff75b565be283af59994ce3 (unverified)
+103.13.101.239:2302 | 8:51:02 AM | Verified GUID (ce0171224ff75b565be283af59994ce3) of player #0 kronox9
+103.13.101.239:2302 | 8:51:09 AM | Player #0 kronox9 disconnected
+103.13.101.239:2302 | 12:59:15 PM | --------------------------------------
+103.13.101.239:2302 | 12:59:15 PM | Could not connect to server!
+103.13.101.239:2302 | 12:59:15 PM | --------------------------------------
