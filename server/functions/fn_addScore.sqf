@@ -44,10 +44,6 @@ if (isPlayer _player) then
 		};
 	};
 
-<<<<<<< HEAD
-		// sync Steam scoreboard
-		_player addScore (([_player, "playerKills"] call fn_getScore) - score _player);
-=======
 	// sync Steam scoreboard
 	_player addScore ((([_player, "playerKills"] call fn_getScore) - ([_player, "teamKills"] call fn_getScore)) - score _player);
 
@@ -58,6 +54,5 @@ if (isPlayer _player) then
 		{
 			[format ["insertOrUpdatePlayerStats:%1:%2:%3", getPlayerUID _player, _column, _score]] spawn extDB_Database_async;
 		};
->>>>>>> cfae6a6... Minor changes to score tracking to handle teamkills better
 	};
 };
