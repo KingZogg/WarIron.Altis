@@ -86,7 +86,6 @@ if (alive player && !isNil "_getPublicVar" && !isNil "_isConfigOn") then
 
 				missionNamespace setVariable ["onPauseLoopRunning", nil];
 			};
-
 		}
 		else
 		{

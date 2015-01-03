@@ -1,15 +1,12 @@
 //	@file Name: FAR_findKiller.sqf
 //	@file Author: AgentRev
 
-private ["_target", "_vehicle", "_killer", "_ammo", "_vehicleKiller", "_suspects", "_suspectCount", "_driver", "_suspect", "_mags", "_magAmmo"];
+private ["_unit", "_vehicle", "_killer", "_suspects", "_suspectCount", "_driver", "_ammo", "_suspect", "_mags", "_magAmmo"];
 
-_target = _this;
-_vehicle = _target getVariable ["FAR_killerVehicle", objNull];
+_unit = _this;
+_vehicle = _unit getVariable ["FAR_killerVehicle", objNull];
 
-//systemChat format ["FAR_findKiller %1", [typeOf _target, name _target, typeOf _vehicle]];
-//diag_log format ["FAR_findKiller %1", [typeOf _target, name _target, typeOf _vehicle]];
-
-if (_vehicle == _target) exitWith { objNull }; // Suicide
+if (_vehicle == _unit) exitWith { objNull }; // Suicide
 if (_vehicle isKindOf "CAManBase") exitWith { _vehicle }; // Killed by infantry
 
 _killer = objNull;
@@ -20,22 +17,9 @@ if (isUavConnected _vehicle) then
 	_killer = (uavControl _vehicle) select 0;
 };
 
-_ammo = _target getVariable ["FAR_killerAmmo", ""];
-
-// Chain-reaction tracking
-if (_ammo == "") then
-{
-	_vehicleKiller = _vehicle getVariable ["FAR_killerVehicle", objNull];
-
-	if (!isNull _vehicleKiller) then
-	{
-		_killer = _vehicleKiller;
-	};
-};
-
 if (isNull _killer) then
 {
-	_suspects = _target getVariable ["FAR_killerSuspects", []];
+	_suspects = _unit getVariable ["FAR_killerSuspects", []];
 	_suspectCount = count _suspects;
 
 	if (_suspectCount == 0) exitWith {}; // Crushed by empty vehicle
@@ -44,7 +28,7 @@ if (isNull _killer) then
 
 	if (_suspectCount == 1) exitWith { _killer = _driver }; // Killed by lone driver
 
-	_ammo = _target getVariable ["FAR_killerAmmo", ""];
+	_ammo = _unit getVariable ["FAR_killerAmmo", ""];
 
 	if (_ammo == "") exitWith { _killer = _driver }; // Roadkilled by driver
 
@@ -65,9 +49,6 @@ if (isNull _killer) then
 	} forEach _suspects;
 };
 
-//systemChat format ["%1's killer: %2", [typeOf _target, name _target], typeOf _killer];
-//diag_log format ["%1's killer: %2", [typeOf _target, name _target], typeOf _killer];
-
-if (_killer == _target) exitWith { objNull }; // Indirect suicide
+if (_killer == _unit) exitWith { objNull }; // Indirect suicide
 
 _killer

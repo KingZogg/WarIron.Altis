@@ -5,9 +5,8 @@
 
 _player = _this select 0;
 _presumedKiller = effectiveCommander (_this select 1);
-_killer = _player getVariable "FAR_killerPrimeSuspect";
+_killer = _player getVariable ["FAR_killerPrimeSuspect", objNull];
 
-if (isNil "_killer") then { _killer = _player call FAR_findKiller };
 if (isNull _killer) then { _killer = _presumedKiller };
 if (_killer == _player) then { _killer = objNull };
 
@@ -30,14 +29,14 @@ if (_player == player) then
 	closeDialog 2009; // Close Genstore
 	closeDialog 5285; // Close Vehstore
 	uiNamespace setVariable ["BIS_fnc_guiMessage_status", false]; // close message boxes
-	if(!isServer) then {
-		// Load scoreboard in render scope
-		["A3W_scoreboard", "onEachFrame",
-		{
-			call loadScoreboard;
-			["A3W_scoreboard", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
-		}] call BIS_fnc_addStackedEventHandler;
-	};
+
+	// Load scoreboard in render scope
+	["A3W_scoreboard", "onEachFrame",
+	{
+		call loadScoreboard;
+		["A3W_scoreboard", "onEachFrame"] call BIS_fnc_removeStackedEventHandler;
+	}] call BIS_fnc_addStackedEventHandler;
+
 	playerData_gear = ""; // Reset gear data
 	//combatTimestamp = -1; // Reset abort timer
 };
