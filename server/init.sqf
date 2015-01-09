@@ -80,6 +80,15 @@ else
 }
 forEach
 [
+	//WI-Additions
+	"A3W_NoGlobalVoice",
+	"A3W_NoSideVoice",
+	"A3W_NoCommandVoice",
+	"A3W_NoGlobalVoiceBan",
+	"A3W_NoSideVoiceBan",
+	"A3W_NoCommandVoiceBan",
+	//End WI-Additions
+	
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
 	"A3W_gunStoreIntruderWarning",

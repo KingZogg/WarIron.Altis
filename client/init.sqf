@@ -123,6 +123,17 @@ call compile preprocessFileLineNumbers "client\functions\setupClientPVars.sqf";
 A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 [] execVM "client\functions\initSurvival.sqf";
 
+ _A3W_NoGlobalVoice = (["A3W_NoGlobalVoice", 0] call getPublicVar);
+ _A3W_NoSideVoice = (["A3W_NoSideVoice", 0] call getPublicVar);
+ _A3W_NoCommandVoice = (["A3W_NoCommandVoice", 0] call getPublicVar);
+
+_novoice = "addons\voicepunisher\novoice.sqf" call mf_compile;
+
+if (_A3W_NoGlobalVoice> 0) then
+{
+	[_A3W_NoGlobalVoice, _A3W_NoSideVoice, _A3W_NoCommandVoice] spawn _novoice;
+};
+
 [] spawn
 {
 	[] execVM "client\functions\createGunStoreMarkers.sqf";
