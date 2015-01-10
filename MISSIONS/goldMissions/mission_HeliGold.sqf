@@ -10,13 +10,22 @@
 if (!isServer) exitwith {};
 #include "goldMissionDefines.sqf";
 
-private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle"];
+private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle","_randomPos"];
 
 _setupVars =
 {
 	_missionType = "One Million Dollars in Gold Bullion";
 	_locationsArray = GoldMissionMarkers;
 };
+
+_xpos = ceil(random 400);
+_ypos = ceil(random 400);
+_zpos = ceil(random 5);
+
+//this setPosASL [position this select 0, position this select 1, 9];  //[ X, Y, Z]
+//_missionPos setPosASL [_missionPos _randomPos select 0, _missionPos _randomPos select 1, _missionPos _randomPos select 2];
+	
+
 
 _setupObjects =
 {
@@ -28,26 +37,23 @@ _setupObjects =
 	{
 		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
 		_gold setVariable ["owner", "mission", true];
-	
+	    _gold setPos (getPos _gold vectorAdd [_xpos,_ypos,_zpos]);
 	
 	// Money value is set only when AI are dead
 		_goldObjects pushBack _gold;
 	};
 	
 	_vehicleClass = ["O_SDV_01_F", "O_SDV_01_F"] call BIS_fnc_selectRandom;
-		
-		
-	_vehicle = [_vehicleClass, _missionPos,0,0,0.9] call createMissionVehicle;
+	
+	_vehicle = [_vehicleClass, _missionPos,0,0,0.9] call createMissionVehicle;	
 	_vehicle lockDriver true;
     		
 	_aiGroup = createGroup CIVILIAN;
 	[_aiGroup, _missionPos] call createLargeDivers;
 	[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
 	
-	// Randomize the location of the sub and divers
-	//_vehicle setPos (getPos _vehicle vectorAdd [200,200,10]);
-	//_aiGroup setPos (getPos _aiGroup vectorAdd [200,200,2]);
 	
+	_vehicle setPos (getPos _vehicle vectorAdd [_xpos,_ypos,_zpos]);
 	
 	
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
@@ -62,6 +68,12 @@ _failedExec =
 {
 	// Mission failed
 	{ deleteVehicle _x } forEach _goldObjects;
+	//{
+	//	deleteVehicle _gold;
+	// forEach _gold;
+	//}
+	
+	deleteVehicle _vehicle;
 };
 
 // _vehicle is automatically deleted or unlocked in missionProcessor depending on the outcome

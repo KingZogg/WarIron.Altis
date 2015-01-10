@@ -14,15 +14,15 @@ _pos = _this select 1;
 
 
 
-_yradius = 800;
-_xradius = 800;
+_yradius = 500;
+_xradius = 500;
 
 			
 			// Circle zone
 			_markername = format ["mission_%1_%2", [_text] call fn_filterString, call A3W_fnc_generateKey];
 			_marker = createMarker [_markername, _pos];
 			_markername setMarkerShape "ELLIPSE";
-			_markername setMarkerColor "ColorYellow";
+			_markername setMarkerColor "ColorRed";
 			_markername setMarkerSize [_yradius, _xradius];
 			_markername setMarkerBrush "Grid";
 			_markername setMarkerAlpha 0.5;
@@ -32,9 +32,9 @@ _xradius = 800;
 			_marker2 = createMarker [_markername2, _pos];
 			_markername2 setMarkerShape "ICON";
 			_markername2 setMarkerType "mil_dot";
-			_markername2 setMarkerColor "ColorYellow";
+			_markername2 setMarkerColor "ColorRed";
 			_markername2 setMarkerSize [1,1];
-			_markername2 setMarkerText "Sub Location (Approximate)";
+			_markername2 setMarkerText "MINE FIELD (Sub Mission)";
 
 // Return
 //[_marker, _marker2]			
