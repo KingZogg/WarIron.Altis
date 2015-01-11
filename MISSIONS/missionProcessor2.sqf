@@ -186,6 +186,30 @@ else
 		} forEach _vehicles;
 	};
 
+	
+	//Marker Name
+			
+			// Circle zone
+			_markername4 = "minefield_area";
+			_marker = createMarker [_markername4, _pos];
+			_markername4 setMarkerShape "ELLIPSE";
+			_markername4 setMarkerColor "ColorRed";
+			_markername4 setMarkerSize [_yradius, _xradius];
+			_markername4 setMarkerBrush "Grid";
+			_markername4 setMarkerAlpha 0.5;
+					
+			
+			_markername3 = "minefield";
+			_marker3 = createMarker [_markername3, _missionPos];
+			_markername3 setMarkerShape "ICON";
+			_markername3 setMarkerType "KIA";
+			_markername3 setMarkerColor "ColorRed";
+			_markername3 setMarkerSize [1,1];
+			_markername3 setMarkerText "ACTIVE MINEFIELD.";
+	
+	
+	
+	
 	[
 		"Objective Complete",
 		_missionType,
@@ -200,6 +224,7 @@ else
 
 deleteGroup _aiGroup;
 deleteMarker _marker;
+deleteMarker marker2;
 
 if (!isNil "_locationsArray") then
 {

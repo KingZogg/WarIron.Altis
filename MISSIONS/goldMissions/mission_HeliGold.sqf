@@ -18,43 +18,48 @@ _setupVars =
 	_locationsArray = GoldMissionMarkers;
 };
 
-_xpos = ceil(random 400);
-_ypos = ceil(random 400);
-_zpos = ceil(random 5);
-
-//this setPosASL [position this select 0, position this select 1, 9];  //[ X, Y, Z]
-//_missionPos setPosASL [_missionPos _randomPos select 0, _missionPos _randomPos select 1, _missionPos _randomPos select 2];
-	
+//generate a random number between -400 and +400
+_xpos = ceil(random (800) - 400);
+_ypos = ceil(random (800) - 400);
+_zpos = 1;
 
 
 _setupObjects =
 {
 	_missionPos = markerPos _missionLocation;
 	
-	_goldObjects = [];
-
-	for "_i" from 1 to 10 do
-	{
-		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
-		_gold setVariable ["owner", "mission", true];
-	    _gold setPos (getPos _gold vectorAdd [_xpos,_ypos,_zpos]);
-	
-	// Money value is set only when AI are dead
-		_goldObjects pushBack _gold;
-	};
-	
 	_vehicleClass = ["O_SDV_01_F", "O_SDV_01_F"] call BIS_fnc_selectRandom;
 	
 	_vehicle = [_vehicleClass, _missionPos,0,0,0.9] call createMissionVehicle;	
 	_vehicle lockDriver true;
-    		
+    
+	_aiGroupPos = (getPos _vehicle vectorAdd [_xpos,_ypos,_zpos]);
+	//_aiGroupPos = [ (_missionPos select 0) + (_xpos),(_missionPos select 1) + (_ypos), -1 * (10) ];
+	
 	_aiGroup = createGroup CIVILIAN;
-	[_aiGroup, _missionPos] call createLargeDivers;
+		
+	[_aiGroup, _aiGroupPos] call createLargeDivers;
 	[_vehicle, _aiGroup] spawn checkMissionVehicleLock;
+	
 	
 	
 	_vehicle setPos (getPos _vehicle vectorAdd [_xpos,_ypos,_zpos]);
 	
+
+_depth = 2.5; // you must put a positive number in here
+
+for "_count" from 1 to 100 do {
+    
+	_minePos = [ (_missionPos select 0) + ((random 800) - 400),(_missionPos select 1) + ((random 800) - 400), -1 * (random _depth) ];
+    
+	if (surfaceIsWater _minePos) then { 
+	
+	_mine = createMine [ "UnderwaterMine", _minePos,[], 0 ];  
+	
+								   };
+}; 
+
+
 	
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
 	_missionHintText = format ["A Sub has been damaged by a mine. It has run out of fuel and is carrying<t color='%1'> $1,000,000 in Gold Bullion!</t> Divers are on guard and are waiting for fuel and repairs.<br/>If you want the gold, you will need diving gear and have an underwater weapon.", goldMissionColor];
@@ -67,13 +72,10 @@ _waitUntilCondition = nil;
 _failedExec =
 {
 	// Mission failed
-	{ deleteVehicle _x } forEach _goldObjects;
-	//{
-	//	deleteVehicle _gold;
-	// forEach _gold;
-	//}
-	
 	deleteVehicle _vehicle;
+	
+	
+	//{ deleteVehicle _x } forEach [_mine];
 };
 
 // _vehicle is automatically deleted or unlocked in missionProcessor depending on the outcome
@@ -83,13 +85,15 @@ _successExec =
 	// Mission complete
 	_vehicle lockDriver false;
 
-	// Give the rewards
+	for "_i" from 1 to 10 do
+	
 	{
-		_x setVariable ["cmoney", 100000, true];
-		_x setVariable ["owner", "world", true];
-	} forEach _goldObjects;
+		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
+		_gold setPos (getPos _gold vectorAdd [(_xpos + ceil(random (10) - 5)),(_ypos + ceil(random (10) - 5)),5]);
+	};
 
-	_successHintMessage = "The divers have been killed. Collect the Gold!";
+		
+	_successHintMessage = "The divers have all been killed. Collect the Gold!";
 };
 
 _this call goldMissionProcessor;

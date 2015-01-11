@@ -10,7 +10,7 @@
 
 #include "mutex.sqf"
 #define ANIM "AinvPknlMstpSlayWrflDnon_medic"
-#define DURATION 5
+#define DURATION 2
 #define ERR_TOO_FAR_AWAY "Taking Gold Failed. You moved too far away"
 #define ERR_ALREADY_TAKEN "Taking Gold Failed. Someone else beat you to it."
 #define ERR_IN_VEHICLE "Taking Gold Failed. You can't do this in a vehicle."

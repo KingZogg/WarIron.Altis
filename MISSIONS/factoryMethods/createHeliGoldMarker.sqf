@@ -14,8 +14,8 @@ _pos = _this select 1;
 
 
 
-_yradius = 500;
-_xradius = 500;
+_yradius = 450;
+_xradius = 450;
 
 			
 			// Circle zone
@@ -26,15 +26,18 @@ _xradius = 500;
 			_markername setMarkerSize [_yradius, _xradius];
 			_markername setMarkerBrush "Grid";
 			_markername setMarkerAlpha 0.5;
-			
+	
+	
 			//Marker Name
 			_markername2 = format ["mission_%1", [_text]];
-			_marker2 = createMarker [_markername2, _pos];
+			 marker2 = createMarker [_markername2, _pos];
 			_markername2 setMarkerShape "ICON";
-			_markername2 setMarkerType "mil_dot";
-			_markername2 setMarkerColor "ColorRed";
+			_markername2 setMarkerType "KIA";
+			_markername2 setMarkerColor "ColorYellow";
 			_markername2 setMarkerSize [1,1];
-			_markername2 setMarkerText "MINE FIELD (Sub Mission)";
+			_markername2 setMarkerText "Gold Sub (MINES)";
+			
+		
 
 // Return
 //[_marker, _marker2]			
