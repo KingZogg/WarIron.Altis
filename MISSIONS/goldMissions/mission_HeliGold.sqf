@@ -10,7 +10,7 @@
 if (!isServer) exitwith {};
 #include "goldMissionDefines.sqf";
 
-private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle","_randomPos"];
+private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle", "_randomPos", "_depth", "_xpos", "_ypos", "_zpos", "_minePos", "_mine" ];
 
 _setupVars =
 {
@@ -19,9 +19,9 @@ _setupVars =
 };
 
 //generate a random number between -400 and +400
-_xpos = ceil(random (800) - 400);
-_ypos = ceil(random (800) - 400);
-_zpos = 1;
+_xpos = ceil(random (700) - 350);
+_ypos = ceil(random (700) - 350);
+_zpos = 5;
 
 
 _setupObjects =
@@ -33,9 +33,7 @@ _setupObjects =
 	_vehicle = [_vehicleClass, _missionPos,0,0,0.9] call createMissionVehicle;	
 	_vehicle lockDriver true;
     
-	_aiGroupPos = (getPos _vehicle vectorAdd [_xpos,_ypos,_zpos]);
-	//_aiGroupPos = [ (_missionPos select 0) + (_xpos),(_missionPos select 1) + (_ypos), -1 * (10) ];
-	
+	_aiGroupPos = (getPos _vehicle vectorAdd [_xpos,_ypos,0]);
 	_aiGroup = createGroup CIVILIAN;
 		
 	[_aiGroup, _aiGroupPos] call createLargeDivers;
@@ -43,10 +41,10 @@ _setupObjects =
 	
 	
 	
-	_vehicle setPos (getPos _vehicle vectorAdd [_xpos,_ypos,_zpos]);
+	_vehicle setPosATL (getPosATL _vehicle vectorAdd [_xpos,_ypos,_zpos]);
 	
 
-_depth = 2.5; // you must put a positive number in here
+_depth = 2; // you must put a positive number in here
 
 for "_count" from 1 to 100 do {
     
@@ -62,7 +60,7 @@ for "_count" from 1 to 100 do {
 
 	
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
-	_missionHintText = format ["A Sub has been damaged by a mine. It has run out of fuel and is carrying<t color='%1'> $1,000,000 in Gold Bullion!</t> Divers are on guard and are waiting for fuel and repairs.<br/>If you want the gold, you will need diving gear and have an underwater weapon.", goldMissionColor];
+	_missionHintText = format ["A Sub has run into a minefield. It is damaged and has run out of fuel. It is carrying<t color='%1'> $1,000,000 in Gold Bullion!</t> Divers are on guard and are waiting for fuel and repairs.<br/>Kill the guards and find the sub.", goldMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -74,26 +72,33 @@ _failedExec =
 	// Mission failed
 	deleteVehicle _vehicle;
 	
+	{
+	if (_x isKindOf "TimeBombCore") then {deleteVehicle _x};
+	} forEach nearestObjects [_missionPos,[],500];
 	
-	//{ deleteVehicle _x } forEach [_mine];
+	
 };
 
 // _vehicle is automatically deleted or unlocked in missionProcessor depending on the outcome
 
-_successExec =
-{
-	// Mission complete
-	_vehicle lockDriver false;
 
-	for "_i" from 1 to 10 do
+// Mission complete
+_successExec =
+{	_vehicle lockDriver false;
 	
 	{
+		if (_x isKindOf "TimeBombCore") then {deleteVehicle _x};
+		} forEach nearestObjects [_missionPos,[],600];	
+	
+	
+	for "_i" from 1 to 10 do{
 		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
 		_gold setPos (getPos _gold vectorAdd [(_xpos + ceil(random (10) - 5)),(_ypos + ceil(random (10) - 5)),5]);
-	};
+		};
 
 		
-	_successHintMessage = "The divers have all been killed. Collect the Gold!";
+		
+		_successHintMessage = "The divers have all been killed. Collect the Gold!";
 };
 
 _this call goldMissionProcessor;
