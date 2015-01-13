@@ -22,7 +22,7 @@ _leader addMagazine "20Rnd_556x45_UW_Mag";
 _leader addWeapon "arifle_SDAR_F";
 _leader addMagazine "20Rnd_556x45_UW_Mag";
 _leader addMagazine "20Rnd_556x45_UW_Mag";
-_leader swimInDepth -20;
+//_leader swimInDepth -20;
 
 // Rifleman
 _man2 = _group createUnit ["C_man_polo_2_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
@@ -34,7 +34,7 @@ _man2 addMagazine "20Rnd_556x45_UW_Mag";
 _man2 addWeapon "arifle_SDAR_F";
 _man2 addMagazine "20Rnd_556x45_UW_Mag";
 _man2 addMagazine "20Rnd_556x45_UW_Mag";
-_man2 swimInDepth -20;
+//_man2 swimInDepth -20;
 
 // Rifleman
 _man3 = _group createUnit ["C_man_polo_3_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
@@ -46,7 +46,7 @@ _man3 addMagazine "20Rnd_556x45_UW_Mag";
 _man3 addWeapon "arifle_SDAR_F";
 _man3 addMagazine "20Rnd_556x45_UW_Mag";
 _man3 addMagazine "20Rnd_556x45_UW_Mag";
-_man3 swimInDepth -20;
+//_man3 swimInDepth -20;
 
 // Rifleman
 _man4 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
@@ -58,7 +58,7 @@ _man4 addMagazine "20Rnd_556x45_UW_Mag";
 _man4 addWeapon "arifle_SDAR_F";
 _man4 addMagazine "20Rnd_556x45_UW_Mag";
 _man4 addMagazine "20Rnd_556x45_UW_Mag";
-_man4 swimInDepth -20;
+//_man4 swimInDepth -20;
 
 // Rifleman
 _man5 = _group createUnit ["C_man_polo_5_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
@@ -70,7 +70,7 @@ _man5 addMagazine "20Rnd_556x45_UW_Mag";
 _man5 addWeapon "arifle_SDAR_F";
 _man5 addMagazine "20Rnd_556x45_UW_Mag";
 _man5 addMagazine "20Rnd_556x45_UW_Mag";
-_man5 swimInDepth -20;
+//_man5 swimInDepth -20;
 
 // Rifleman
 _man6 = _group createUnit ["C_man_polo_4_F", [(_pos select 0) + 10, _pos select 1, 0], [], 1, "Form"];
@@ -82,7 +82,7 @@ _man6 addMagazine "20Rnd_556x45_UW_Mag";
 _man6 addWeapon "arifle_SDAR_F";
 _man6 addMagazine "20Rnd_556x45_UW_Mag";
 _man6 addMagazine "20Rnd_556x45_UW_Mag";
-_man6 swimInDepth -20;
+//_man6 swimInDepth -20;
 
 _leader = leader _group;
 
