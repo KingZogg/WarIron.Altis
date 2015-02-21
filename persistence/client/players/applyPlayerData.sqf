@@ -22,36 +22,14 @@ removeHeadgear player;
 	_name = _x select 0;
 	_value = _x select 1;
 
-	// diag_log format ["DEBUG: applyPlayerData name:%1 value:%2", _name, _value];
-
-	if (typeName _value == "STRING") then
-	{
-		// diag_log "STRING TYPE DETECTED";
-		if (_value == "") then
-		{
-			// diag_log "EMPTY VALUE DETECTED";
-			// Null Value
-			switch (_name) do
-			{
-				case "Backpack":
-				{
-					// diag_log "Removed Backpack";
-					removeBackpack player;
-				};
-			};
-			_name = "";
-		};
-	};
-
 	switch (_name) do
 	{
-		case "": {};
 		case "Damage": { player setDamage _value };
 		case "HitPoints": { { player setHitPointDamage _x } forEach _value };
 		case "Hunger": { hungerLevel = _value };
 		case "Thirst": { thirstLevel = _value };
 		case "Money": { player setVariable ["cmoney", _value, true] };
-		case "Position":
+		/*case "Position":
 		{
 			if (count _value == 3) then
 			{
@@ -59,64 +37,70 @@ removeHeadgear player;
 				player setPosATL _value;
 			};
 		};
-		case "Direction": { player setDir _value };
+		case "Direction": { player setDir _value };*/
 		case "Uniform":
 		{
 			// If uniform cannot be worn by player due to different team, try to convert it, else give default instead
-			if (player isUniformAllowed _value) then
+			if (_value != "") then
 			{
-				player addUniform _value;
-			}
-			else
-			{
-				_newUniform = [player, _value] call uniformConverter;
-
-				if (player isUniformAllowed _newUniform) then
+				if (player isUniformAllowed _value) then
 				{
-					player addUniform _newUniform;
+					player addUniform _value;
 				}
 				else
 				{
-					player addUniform ([player, "uniform"] call getDefaultClothing);
-				}
+					_newUniform = [player, _value] call uniformConverter;
+
+					if (player isUniformAllowed _newUniform) then
+					{
+						player addUniform _newUniform;
+					}
+					else
+					{
+						player addUniform ([player, "uniform"] call getDefaultClothing);
+					}
+				};
 			};
 		};
-		case "Vest": {  player addVest _value };
+		case "Vest": { if (_value != "") then { player addVest _value } };
 		case "Backpack":
 		{
-			// diag_log "Removed Backpack";
 			removeBackpack player;
 
-			if (_value isKindOf "Weapon_Bag_Base" && !(_value isKindOf "B_UAV_01_backpack_F")) then
+			if (_value != "") then
 			{
-				// diag_log "Add Default Backpack";
-				player addBackpack "B_AssaultPack_rgr"; // NO SOUP FOR YOU
-			}
-			else
-			{
-				// diag_log "Add Backpack";
-				player addBackpack _value;
+				if (_value isKindOf "Weapon_Bag_Base" && !(_value isKindOf "B_UAV_01_backpack_F")) then
+				{
+					player addBackpack "B_AssaultPack_rgr"; // NO SOUP FOR YOU
+				}
+				else
+				{
+					player addBackpack _value;
+				};
 			};
 		};
-		case "Goggles": { player addGoggles _value };
+		case "Goggles": { if (_value != "") then { player addGoggles _value } };
 		case "Headgear":
 		{
 			// If wearing one of the default headgears, give the one belonging to actual team instead
-			_defHeadgear = [player, "headgear"] call getDefaultClothing;
-			_defHeadgears =
-			[
-				[typeOf player, "headgear", BLUFOR] call getDefaultClothing,
-				[typeOf player, "headgear", OPFOR] call getDefaultClothing,
-				[typeOf player, "headgear", INDEPENDENT] call getDefaultClothing
-			];
+			if (_value != "") then
+			{
+				_defHeadgear = [player, "headgear"] call getDefaultClothing;
+				_defHeadgears =
+				[
+					[typeOf player, "headgear", BLUFOR] call getDefaultClothing,
+					[typeOf player, "headgear", OPFOR] call getDefaultClothing,
+					[typeOf player, "headgear", INDEPENDENT] call getDefaultClothing
+				];
 
-			if (_value != _defHeadgear && {_defHeadgear != ""} && {{_value == _x} count _defHeadgears > 0}) then
-			{
-				player addHeadgear _defHeadgear;
-			}
-			else
-			{
-				player addHeadgear _value;
+				if (_value != _defHeadgear && {_defHeadgear != ""} && {{_value == _x} count _defHeadgears > 0}) then
+				{
+					player addHeadgear _defHeadgear;
+				}
+				else
+				{
+					player addHeadgear _value;
+				};
 			};
 		};
 		case "LoadedMagazines":
@@ -172,6 +156,5 @@ removeHeadgear player;
 		case "BackpackMagazines": { [backpackContainer player, _value] call processMagazineCargo };
 		case "PartialMagazines": { { player addMagazine _x } forEach _value };
 		case "WastelandItems": { { [_x select 0, _x select 1, true] call mf_inventory_add } forEach _value };
-		default {diag_log format ["DEBUG: applyPlayerData Error: Name: %1 Value:%2", _name, _value]}
 	};
 } forEach _data;

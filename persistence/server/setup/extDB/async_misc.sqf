@@ -43,8 +43,8 @@ while{_loop} do
 			if(_pipe != "[3]") then {
 				_queryResult = _queryResult + _pipe;
 			} else {
-				diag_log format ["[extDB] Sleep [5]: %1", diag_tickTime];
-				sleep 0.3;
+				//diag_log format ["[extDB] Sleep [5]: %1", diag_tickTime];
+				sleep 0.1;
 			};
 		};
 	}
@@ -52,9 +52,8 @@ while{_loop} do
 	{
 		if (_queryResult == "[3]") then
 		{
-			diag_log format ["[extDB] Sleep [4]: %1", diag_tickTime];
 			//diag_log format ["[extDB] Sleep [4]: %1", diag_tickTime];
-			sleep 0.3;
+			sleep 0.1;
 		} else {
 			_loop = false;
 		};

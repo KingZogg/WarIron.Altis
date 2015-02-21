@@ -128,7 +128,7 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 
 			_objectID = netId _object;
 			_object setVariable ["A3W_purchasedStoreObject", true];
-			_object setVariable ["ownerUID", getPlayerUID _player];
+			_object setVariable ["ownerUID", getPlayerUID _player, true];
 
 			if (getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") > 0) then
 			{
@@ -228,13 +228,6 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 					{
 						_object setRepairCargo 25;
 					};
-					
-					case ({_object isKindOf _x} count ["Land_Pod_Heli_Transport_04_ammo_F"] > 0):
-					{
-						_object setVariable ["A3W_resupplyTruck", true, true];
-						_object addAction ["<img image='client\icons\repair.paa'/> Resupply", "client\functions\fn_resupplytruck.sqf", [], 51, true, true, "", "vehicle _this != _this && _this distance _target <= 20"];
-					};
-					
 				};
 
 				if (_object getVariable ["A3W_purchasedVehicle", false] && !isNil "fn_manualVehicleSave") then

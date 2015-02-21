@@ -28,6 +28,7 @@ deleteEmptyGroup = "client\functions\deleteEmptyGroup.sqf" call mf_compile;
 findHackedVehicles = "client\systems\adminPanel\findHackedVehicles.sqf" call mf_compile;
 fn_addManagedAction = "client\functions\fn_addManagedAction.sqf" call mf_compile;
 fn_disableCollision = "client\functions\fn_disableCollision.sqf" call mf_compile;
+fn_emergencyEject = "client\functions\fn_emergencyEject.sqf" call mf_compile;
 fn_encodeText = "client\functions\fn_encodeText.sqf" call mf_compile;
 fn_fitsInventory = "client\functions\fn_fitsInventory.sqf" call mf_compile;
 fn_formatTimer = "client\functions\fn_formatTimer.sqf" call mf_compile;
@@ -68,9 +69,6 @@ spawnRandom = "client\functions\spawnRandom.sqf" call mf_compile;
 // refuelVehicle = "client\systems\playerMenu\refuel.sqf" call mf_compile;
 // repairVehicle = "client\systems\playerMenu\repair.sqf" call mf_compile;
 
-//AJ Functions
-fn_cameracheck = "addons\cameracheck\cameracheck.sqf" call mf_compile;
-
 // Sync client with server time
 timeSync = "client\functions\clientTimeSync.sqf" call mf_compile;
 
@@ -88,12 +86,18 @@ loadGeneralStore = "client\systems\generalStore\loadGenStore.sqf" call mf_compil
 loadGunStore = "client\systems\gunStore\loadGunStore.sqf" call mf_compile;
 loadGoldBuyer = "client\systems\goldbuyer\loadGoldBuyer.sqf" call mf_compile;
 loadScoreboard = "client\systems\scoreboard\loadScoreboard.sqf" call mf_compile;
+loadVehicleStore = "client\systems\vehicleStore\loadVehicleStore.sqf" call mf_compile;
 gearProperties = "client\functions\gearProperties.sqf" call mf_compile;
 getCapacity = "client\functions\getCapacity.sqf" call mf_compile;
 getItemInfo = "client\functions\getItemInfo.sqf" call mf_compile;
-getGoldItemInfo = "client\functions\getGoldItemInfo.sqf" call mf_compile;
+getInventory = "client\systems\generalStore\getInventory.sqf" call mf_compile;
 getSellPriceList = "client\systems\selling\getSellPriceList.sqf" call mf_compile;
+populateGeneralStore = "client\systems\generalStore\populateGenStore.sqf" call mf_compile;
+populateGunStore = "client\systems\gunStore\populateGunStore.sqf" call mf_compile;
+populateVehicleStore = "client\systems\vehicleStore\populateVehicleStore.sqf" call mf_compile;
 requestStoreObject = "client\functions\requestStoreObject.sqf" call mf_compile;
+vehicleInfo = "client\systems\vehicleStore\vehicleInfo.sqf" call mf_compile;
+weaponInfo = "client\systems\gunStore\weaponInfo.sqf" call mf_compile;
 
 if (isNil "A3W_fnc_MP") then { A3W_fnc_MP = compile preprocessFileLineNumbers "\A3\functions_f\MP\fn_MP.sqf" };
 if (isNil "A3W_fnc_MPexec") then { A3W_fnc_MPexec = compile preprocessFileLineNumbers "\A3\functions_f\MP\fn_MPexec.sqf" };

@@ -13,18 +13,6 @@ _vehicle = _this select 0;
 _class = typeOf _vehicle;
 
 _vehicle setVariable [call vChecksum, true];
-if (vehicleThermalsOn) then
-{
-	_vehicle disableTIEquipment false;
-}
-else
-{
-	if !(_vehicle isKindOf "UAV_02_base_F") then
-	{
-		_vehicle disableTIEquipment true;
-	};
-};
-
 
 clearMagazineCargoGlobal _vehicle;
 clearWeaponCargoGlobal _vehicle;
@@ -34,10 +22,13 @@ if !(_class isKindOf "AllVehicles") exitWith {}; // if not actual vehicle, finis
 
 clearBackpackCargoGlobal _vehicle;
 
-if !(_vehicle isKindOf "UAV_02_base_F") then
+// Disable thermal on all manned vehicles
+if (getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") < 1) then
 {
 	_vehicle disableTIEquipment true;
 };
+
+_vehicle setUnloadInCombat [true, false]; // Prevent AI gunners from getting out of vehicle while in combat if it's in working condition
 
 {
 	_vehicle setVariable ["A3W_hitPoint_" + getText (_x >> "name"), configName _x, true];
@@ -76,6 +67,11 @@ _vehicle addEventHandler ["Killed",
 	};
 }];
 
+if ({_class isKindOf _x} count ["Air","UGV_01_base_F"] > 0) then
+{
+	[netId _vehicle, "A3W_fnc_setupAntiExplode", true] call A3W_fnc_MP;
+};
+
 // Vehicle customization
 switch (true) do
 {
@@ -95,7 +91,6 @@ switch (true) do
 	case (_class isKindOf "Plane_Fighter_03_base_F"):
 	{
 		_vehicle addMagazine "300Rnd_20mm_shells";
-		_vehicle removeWeaponTurret ["missiles_SCALPEL",[-1]];
 	};
 };
 
