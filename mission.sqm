@@ -83,7 +83,7 @@ class Mission
 		"A3_Characters_F_OPFOR",
 		"A3_Characters_F_INDEP",
 		"A3_Characters_F_Civil",
-		"A3_Structures_F_Mil_Cargo",
+		"A3_Structures_F_Mil_BagBunker",
 		"A3_Soft_F_EPC_Truck_03",
 		"A3_Soft_F_Gamma_HEMTT",
 		"a3_map_altis"
@@ -91,11 +91,11 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="WI A3Wasteland Altis v1.0";
-		overviewText="WI Wasteland Conquest Altis by WARIRON.COM Core developed by A3Wasteland.com";
+		briefingName="WarIron.Com A3Wasteland Altis v1.1 ";
+		overviewText="WarIron.Com Wasteland Conquest Altis by WarIron.Com Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		timeOfChanges=14400;
-		startWeather=0.099999994;
+		startWeather=0.089999996;
 		startWind=0.29999998;
 		startWaves=0.0099999998;
 		forecastWeather=0.39999998;
@@ -105,7 +105,6 @@ class Mission
 		wavesForced=1;
 		year=2035;
 		month=6;
-		hour=5;
 		minute=0;
 		startFogDecay=0.0029333001;
 		forecastFogDecay=0.0039332998;
@@ -2097,7 +2096,8 @@ class Mission
 			azimut=-90.979599;
 			id=161;
 			side="EMPTY";
-			vehicle="Land_Cargo_Tower_V1_No3_F";
+			vehicle="Land_BagBunker_Tower_F";
+			lock="LOCKED";
 			skill=0.60000002;
 			text="Tower_4_C";
 		};
@@ -4587,14 +4587,14 @@ class Mission
 		};
 		class Item264
 		{
-			position[]={2452.1392,-104.96677,13685.129};
+			position[]={2503.6597,0.010955989,13652.534};
 			name="GoldMission_3";
 			type="Empty";
 			colorName="ColorYellow";
 		};
 		class Item265
 		{
-			position[]={19479.551,-0.0093686897,22759.234};
+			position[]={25463.998,-0.084224254,26276.115};
 			name="GoldMission_4";
 			type="Empty";
 			colorName="ColorYellow";
