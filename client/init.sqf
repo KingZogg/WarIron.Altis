@@ -28,6 +28,7 @@ doCancelAction = false;
 //Initialization Variables
 playerCompiledScripts = false;
 playerSetupComplete = false;
+BeaconScanInProgress = false;
 
 waitUntil {!isNull player};
 waitUntil {time > 0.1};
