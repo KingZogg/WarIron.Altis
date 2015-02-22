@@ -563,8 +563,7 @@ genObjectsArray = compileFinal str
 	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
 	//["Scaffolding", "Land_Scaffolding_F", 250, "object"]
-	["Land Pier", "Land_Pier_F", 250000, "object"],
-	["Fuel Station", "Land_FuelStation_Feed_F", 10000, "object"]
+	["Land Pier", "Land_Pier_F", 5000, "object"]
 ];
 
 allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
