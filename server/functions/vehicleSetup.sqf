@@ -14,7 +14,6 @@ _class = typeOf _vehicle;
 
 _vehicle setVariable [call vChecksum, true];
 if (["A3W_vehicleThermals"] call isConfigOn) then
-//if (vehicleThermalsOn) then
 
 {
 	_vehicle disableTIEquipment false;
@@ -35,12 +34,6 @@ clearItemCargoGlobal _vehicle;
 if !(_class isKindOf "AllVehicles") exitWith {}; // if not actual vehicle, finish here
 
 clearBackpackCargoGlobal _vehicle;
-
-// Disable thermal on all manned vehicles
-//if (getNumber (configFile >> "CfgVehicles" >> _class >> "isUav") < 1) then
-//{
-//	_vehicle disableTIEquipment true;
-//};
 
 _vehicle setUnloadInCombat [true, false]; // Prevent AI gunners from getting out of vehicle while in combat if it's in working condition
 
