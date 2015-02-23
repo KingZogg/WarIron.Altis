@@ -68,7 +68,8 @@ _object setPosATL _pos;
 
 
 
-//Secalano
+//Selakano
+/*
 _pos = [20818.402344,6796.648438,0.264572];
 _object = createVehicle ["Land_Atm_02_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 213;
@@ -78,7 +79,7 @@ _pos = [20816.5,6798.110352,8.12192];
 _object = createVehicle ["Flag_Suatmm_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 0;
 _object setPosATL _pos;
-
+*/
 _pos = [20790.0234375,6802.788086,7.46657];
 _object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 0;
