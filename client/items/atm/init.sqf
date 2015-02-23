@@ -25,8 +25,7 @@ mf_items_atm_nearest =
 	_objs = lineIntersectsObjs [_eyePos, _eyePos vectorAdd ((eyeDirection player) vectorMultiply 5), objNull, objNull, true, 2];
 	if (count _objs == 0) exitWith { objNull };
 	_target = _objs select 0;
-	if ((str _target) find ": atm_" == -1 && {{_target isKindOf _x} count ["Land_Atm_01_F","Land_Atm_02_F"] == 0}) exitWith { objNull };
-	if (!(_target getVariable ["A3W_atmEditorPlaced", false]) && ["A3W_atmEditorPlacedOnly"] call isConfigOn) exitWith { objNull };
+	
 	_target
 } call mf_compile;
 

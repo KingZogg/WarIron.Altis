@@ -16,7 +16,7 @@
 	["Town_8", 300, "Pyrgos"],
 	["Town_9", 150, "Selakano"],
 	["Town_10", 200, "Vikos"],
-	// ["Town_11", 250, "Zaros"],
+	["Town_11", 250, "Zaros"],
 	["Town_12", 250, "Neochori"],
 	["Town_13", 250, "Aggelochori"],
 	["Town_14", 200, "Panochori"],
