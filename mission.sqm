@@ -4587,14 +4587,14 @@ class Mission
 		};
 		class Item264
 		{
-			position[]={2503.6597,0.010955989,13652.534};
+			position[]={2452.1392,-104.96677,13685.129};
 			name="GoldMission_3";
 			type="Empty";
 			colorName="ColorYellow";
 		};
 		class Item265
 		{
-			position[]={25463.998,-0.084224254,26276.115};
+			position[]={19479.551,-0.0093686897,22759.234};
 			name="GoldMission_4";
 			type="Empty";
 			colorName="ColorYellow";
