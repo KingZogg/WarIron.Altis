@@ -53,6 +53,7 @@ _serverCompileHandle = [] spawn compile preprocessFileLineNumbers "server\functi
 [] execVM "server\functions\broadcaster.sqf";
 [] execVM "server\functions\relations.sqf";
 [] execVM (externalConfigFolder + "\init.sqf");
+[] execVM "\server\missions\bld\initBld.sqf";
 
 waitUntil {scriptDone _serverCompileHandle};
 
