@@ -18,40 +18,38 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 //Civilian Vehicle List - Random Spawns
 civilianVehicles =
 [
-	//"C_Quadbike_01_F",
+	"C_Hatchback_01_F",
+	"C_Hatchback_01_sport_F",
+	"C_SUV_01_F",
 	"C_Hatchback_01_F",
 	"C_Hatchback_01_sport_F",
 	"C_SUV_01_F",
 	"C_Offroad_01_F",
 	"I_G_Offroad_01_F",
-	"C_Van_01_box_F",
-	"C_Van_01_transport_F"
+	"O_G_Van_01_transport_F"
 ];
 
 //Light Military Vehicle List - Random Spawns
 lightMilitaryVehicles =
 [
-	"B_Quadbike_01_F",
 	"O_Quadbike_01_F",
-//	"I_Quadbike_01_F",
-//	"I_G_Quadbike_01_F",
-//	"O_Truck_02_covered_F",
 	"I_Truck_02_covered_F",
-//	"O_Truck_02_transport_F",
-//	"I_Truck_02_transport_F",
+	"I_Truck_02_transport_F",
 	"I_G_Offroad_01_armed_F"
 ];
 
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles =
 [
+	"I_G_Offroad_01_armed_F"
+	
 //	"I_Truck_02_Fuel_F",
 //	"O_Truck_02_Fuel_F",
 //	"I_Truck_02_medical_F",
 //	"O_Truck_02_medical_F",
-	"B_MRAP_01_F",
-	"O_MRAP_02_F",
-	"I_MRAP_03_F"
+//	"B_MRAP_01_F",
+//	"O_MRAP_02_F",
+//	"I_MRAP_03_F"
 ];
 
 //Water Vehicles - Random Spawns
@@ -64,9 +62,9 @@ waterVehicles =
 //	"O_SDV_01_F",
 //	"I_SDV_01_F",
 //	"B_Boat_Transport_01_F",
-//	"O_Boat_Transport_01_F",
-//	"I_Boat_Transport_01_F",
-//	"I_G_Boat_Transport_01_F",
+	"O_Boat_Transport_01_F",
+	"I_Boat_Transport_01_F",
+	"I_G_Boat_Transport_01_F",
 	"B_Boat_Armed_01_minigun_F",
 	"O_Boat_Armed_01_hmg_F",
 	"I_Boat_Armed_01_minigun_F",
@@ -78,7 +76,7 @@ waterVehicles =
 //Essential List - Random Spawns.
 essentialsList =
 [
-	"B_supplyCrate_F",
+//	"B_supplyCrate_F",
 	"Land_Sacks_goods_F",
 	"Land_BarrelWater_F"
 ];
@@ -134,18 +132,19 @@ objectList =
 staticWeaponsList =
 [
 	"B_Mortar_01_F",
-	"O_Mortar_01_F",
-	"I_Mortar_01_F",
-	"I_G_Mortar_01_F"
+	"B_GMG_01_high_F",
+	"B_HMG_01_high_F",
+	"B_static_AA_F",
+	"B_static_AT_F"
 ];
 
 //Object List - Random Helis.
 staticHeliList =
 [
 	"C_Heli_Light_01_civil_F",
-	"B_Heli_Light_01_F",
-	"O_Heli_Light_02_unarmed_F",
-	"I_Heli_light_03_unarmed_F"
+	"B_Heli_Light_01_F"
+	//"O_Heli_Light_02_unarmed_F",
+	//"I_Heli_light_03_unarmed_F"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
 ];
 
@@ -183,7 +182,14 @@ vehicleWeapons =
 	"arifle_MXM_F",
 	"srifle_EBR_F",
 	"LMG_Mk200_F",
-	"LMG_Zafir_F"
+	"LMG_Zafir_F",
+	"srifle_DMR_01_F", 	// Rahim DMR Marksman Rifle
+	"srifle_EBR_F", 	    // Mk18 ABR Assault Rifle 7.62mm
+	"ModuleExplosive_SatchelCharge_F",
+	"ModuleExplosive_IEDUrbanBig_F"
+//	"srifle_LRR_SOS_F",   	// M320 LRR Sniper
+//	"srifle_GM6_SOS_F"	// GM6 Lynx Sniper
+
 ];
 
 vehicleAddition =
@@ -202,12 +208,16 @@ vehicleAddition =
 	"optic_aco_smg",
 	"optic_Holosight",
 	"optic_Holosight_smg",
+	"optic_DMS",
 	"acc_flashlight",
 	"acc_pointer_IR",
-	"Medikit",
-	"Medikit",
+	"Rangefinder",
+//	"Medikit",
 	"FirstAidKit",
-	"ToolKit"
+//	"ToolKit",
+//	"B_Carryall_oucamo",
+//	"B_Carryall_mcamo",
+	
 ];
 
 vehicleAddition2 =
