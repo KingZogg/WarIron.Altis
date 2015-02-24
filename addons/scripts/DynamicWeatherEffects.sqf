@@ -15,8 +15,8 @@ private ["_minimumFog", "_maximumFog", "_minimumOvercast", "_maximumOvercast", "
 private ["_minimumFogDecay", "_maximumFogDecay", "_minimumFogBase", "_maximumFogBase"];
 
 if (isNil "_this") then { _this = []; };
-if (count _this > 0) then { _initialFog = _this select 0; } else { _initialFog = -1; };
-if (count _this > 1) then { _initialOvercast = _this select 1; } else { _initialOvercast = -1; };
+if (count _this > 0) then { _initialFog = _this select 0; } else { _initialFog = 0; };
+if (count _this > 1) then { _initialOvercast = _this select 1; } else { _initialOvercast = 0; };
 if (count _this > 2) then { _initialRain = _this select 2; } else { _initialRain = -1; };
 if (count _this > 3) then { _initialWind = _this select 3; } else { _initialWind = [-1, -1]; };
 if (count _this > 4) then { _debug = _this select 4; } else { _debug = false; };
@@ -60,7 +60,7 @@ _minimumOvercast = 0;
 
 // Overcast intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumOvercast
 // (0 = no overcast, 1 = maximum overcast). (Suggested value: 1).
-_maximumOvercast = 1;
+_maximumOvercast = 0.3;
 
 // When raining, rain intensity never falls below this value. Must be between 0 and 1 and less than or equal to _maximumRain
 // (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0);

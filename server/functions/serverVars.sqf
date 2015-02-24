@@ -20,7 +20,7 @@ civilianVehicles =
 [
 	"C_Hatchback_01_F",
 	"C_Hatchback_01_sport_F",
-	"C_SUV_01_F",
+	"C_Hatchback_01_sport_green_F",
 	"C_Hatchback_01_F",
 	"C_Hatchback_01_sport_F",
 	"C_SUV_01_F",
@@ -35,6 +35,8 @@ lightMilitaryVehicles =
 	"O_Quadbike_01_F",
 	"I_Truck_02_covered_F",
 	"I_Truck_02_transport_F",
+	"O_Truck_03_transport_F",
+	"B_Truck_01_mover_F",
 	"I_G_Offroad_01_armed_F"
 ];
 
@@ -77,8 +79,8 @@ waterVehicles =
 essentialsList =
 [
 //	"B_supplyCrate_F",
-	"Land_Sacks_goods_F",
-	"Land_BarrelWater_F"
+//	"Land_Sacks_goods_F",
+//	"Land_BarrelWater_F"
 ];
 
 //Object List - Random Spawns.
@@ -86,8 +88,8 @@ objectList =
 [
 	"B_supplyCrate_F",
 	"B_supplyCrate_F",
-	"CamoNet_INDP_open_F",
-	"CamoNet_INDP_open_F",
+	"CamoNet_INDP_big_Curator_F",
+	"CamoNet_INDP_big_Curator_F",
 	"Land_BagBunker_Large_F",
 	"Land_BagBunker_Large_F",
 	"Land_BagBunker_Small_F",
@@ -142,7 +144,10 @@ staticWeaponsList =
 staticHeliList =
 [
 	"C_Heli_Light_01_civil_F",
-	"B_Heli_Light_01_F"
+	"B_Heli_Light_01_F",
+	"C_Heli_light_01_sunset_F",
+	"C_Heli_light_01_wasp_F"
+	
 	//"O_Heli_Light_02_unarmed_F",
 	//"I_Heli_light_03_unarmed_F"
 	// don't put cargo helicopters here, it doesn't make sense to find them in towns; they spawn in the CivHeli mission
@@ -184,9 +189,8 @@ vehicleWeapons =
 	"LMG_Mk200_F",
 	"LMG_Zafir_F",
 	"srifle_DMR_01_F", 	// Rahim DMR Marksman Rifle
-	"srifle_EBR_F", 	    // Mk18 ABR Assault Rifle 7.62mm
-	"ModuleExplosive_SatchelCharge_F",
-	"ModuleExplosive_IEDUrbanBig_F"
+	"srifle_EBR_F"	    // Mk18 ABR Assault Rifle 7.62mm
+	
 //	"srifle_LRR_SOS_F",   	// M320 LRR Sniper
 //	"srifle_GM6_SOS_F"	// GM6 Lynx Sniper
 
@@ -212,14 +216,20 @@ vehicleAddition =
 	"acc_flashlight",
 	"acc_pointer_IR",
 	"Rangefinder",
+    "SatchelCharge_Remote_Mag",
+	"DemoCharge_Remote_Mag",
+	"SatchelCharge_Remote_Mag",
+	"DemoCharge_Remote_Mag",
+	"B_Carryall_oucamo",
+	"B_Carryall_mcamo",
+	"B_Carryall_oucamo",
+	"B_Carryall_mcamo"
 //	"Medikit",
-	"FirstAidKit",
+//	"FirstAidKit",	
 //	"ToolKit",
-//	"B_Carryall_oucamo",
-//	"B_Carryall_mcamo",
-	
 ];
 
+//only added to vehicles at night via randomWeapon.sqf
 vehicleAddition2 =
 [
 	"Chemlight_blue",

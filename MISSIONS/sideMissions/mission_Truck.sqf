@@ -13,7 +13,7 @@ private ["_nbUnits", "_vehicleClass", "_vehicle"];
 
 _setupVars =
 {
-	_missionType = "Supply Truck";
+	_missionType = "Ammo Supply";
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
 };
@@ -24,19 +24,25 @@ _setupObjects =
 
 	_vehicleClass =
 	[
-		"B_Truck_01_covered_F",
-		"B_Truck_01_fuel_F",
-		"B_Truck_01_medical_F",
-		"B_Truck_01_Repair_F",
+		"B_Slingload_01_Ammo_F",
+
+		//"B_Slingload_01_Repair_F",
+		//"B_Slingload_01_Fuel_F"
+		
+//		"B_Truck_01_covered_F",
+//		"B_Truck_01_fuel_F",
+//		"B_Truck_01_medical_F",
+//		"B_Truck_01_Repair_F",
 		"O_Truck_03_covered_F",
-		"O_Truck_03_fuel_F",
-		"O_Truck_03_medical_F",
-		"O_Truck_03_repair_F",
-		"I_Truck_02_covered_F",
-		"I_Truck_02_fuel_F",
-		"I_Truck_02_medical_F",
-		"I_Truck_02_box_F"
-	] call BIS_fnc_selectRandom;
+//		"O_Truck_03_fuel_F",
+//		"O_Truck_03_medical_F",
+//		"O_Truck_03_repair_F",
+//		"I_Truck_02_covered_F",
+//		"I_Truck_02_fuel_F",
+//		"I_Truck_02_medical_F",
+//		"I_Truck_02_box_F"
+
+		] call BIS_fnc_selectRandom;
 
 	// Class, Position, Fuel, Ammo, Damage, Special
 	_vehicle = [_vehicleClass, _missionPos] call createMissionVehicle;
@@ -48,7 +54,7 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
 
-	_missionHintText = format ["A <t color='%2'>%1</t> has been immobilized, go get it for your team.", _vehicleName, sideMissionColor];
+	_missionHintText = format ["A <t color='%2'>%1</t> has been located, go get it for your team.", _vehicleName, sideMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -67,7 +73,7 @@ _successExec =
 	_vehicle lock 1;
 	_vehicle setVariable ["R3F_LOG_disabled", false, true];
 
-	_successHintMessage = "The truck has been captured, well done.";
+	_successHintMessage = "The ammo has been captured, well done.";
 };
 
 _this call sideMissionProcessor;

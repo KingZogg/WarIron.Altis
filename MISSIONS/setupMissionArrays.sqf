@@ -14,9 +14,9 @@ MainMissions =
 	["mission_Convoy", 1],
 	["mission_HostileHeliFormation", 0.5],
 	["mission_APC", 1],
-	["mission_MBT", 1],
+	["mission_MBT", 2],
 	["mission_LightArmVeh", 1],
-	["mission_ArmedHeli", 1],
+	["mission_ArmedHeli", 1.5],
 	["mission_CivHeli", 1]
 ];
 
@@ -24,13 +24,13 @@ SideMissions =
 [
 	["mission_HostileHelicopter", 0.5],
 	["mission_MiniConvoy", 1],
-	["mission_SunkenSupplies", 1],
-	["mission_TownInvasion", 2],
+	["mission_SunkenSupplies", 0.5],
+	["mission_TownInvasion", 3],
 	//["mission_AirWreck", 1.5],
 	//["mission_WepCache", 1.5],
 	["mission_Outpost", 2],
-	["mission_HostileInfantry", 3],
-	["mission_Truck", 1]
+	//["mission_HostileInfantry", 3],
+	["mission_Truck", 1.5]
 ];
 
 

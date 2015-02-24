@@ -13,10 +13,10 @@ R3F_LOG_CFG_remorqueurs =
 	"MRAP_03_base_F",
 	"Truck_01_base_F",
 	"Truck_02_base_F",
-	"Truck_03_base_F",
-	"Wheeled_APC_F",
-	"Tank_F",
-	"Boat_Armed_01_base_F"
+	"Truck_03_base_F"
+	//"Wheeled_APC_F",
+	//"Tank_F",
+	//"Boat_Armed_01_base_F"
 ];
 
 /**
@@ -32,11 +32,11 @@ R3F_LOG_CFG_objets_remorquables =
 	"MRAP_02_base_F",
 	"MRAP_03_base_F",
 	"UGV_01_base_F",
-	"SDV_01_base_F",
-	"Boat_Civil_01_base_F",
-	"Boat_Armed_01_base_F",
-	"Helicopter_Base_F",
-	"Plane"
+	"SDV_01_base_F"
+//	"Boat_Civil_01_base_F",
+//	"Boat_Armed_01_base_F",
+//	"Helicopter_Base_F",
+//	"Plane"
 ];
 
 /****** LIFT WITH VEHICLE  ******/
@@ -46,7 +46,15 @@ R3F_LOG_CFG_objets_remorquables =
  */
 R3F_LOG_CFG_heliporteurs =
 [
-	"Helicopter_Base_F"
+/* none .. using sling loading.
+	"I_Heli_Transport_02_F",
+	"B_Heli_Transport_03_F",
+	"O_Heli_Transport_04_F",
+	"B_Heli_Transport_03_unarmed_F",
+	"O_Heli_Transport_04_bench_F",
+	"O_Heli_Transport_04_box_F",
+	"O_Heli_Transport_04_covered_F"
+*/
 ];
 
 /**
@@ -61,6 +69,7 @@ R3F_LOG_CFG_objets_heliportables =
 	"MRAP_01_base_F",
 	"MRAP_02_base_F",
 	"MRAP_03_base_F",
+	"Truck_01_base_F",
 	"UGV_01_base_F",
 	"SDV_01_base_F",
 	"Boat_Civil_01_base_F",

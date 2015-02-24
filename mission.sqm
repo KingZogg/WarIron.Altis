@@ -80,8 +80,8 @@ class Mission
 	{
 		"A3_Characters_F_BLUFOR",
 		"a3_characters_f",
+		"A3_Characters_F_Gamma",
 		"A3_Characters_F_OPFOR",
-		"A3_Characters_F_INDEP",
 		"A3_Characters_F_Civil",
 		"A3_Structures_F_Mil_BagBunker",
 		"A3_Soft_F_EPC_Truck_03",
@@ -127,6 +127,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -136,6 +137,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -145,6 +147,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -154,6 +157,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -172,6 +176,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -181,6 +186,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -190,6 +196,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -199,6 +206,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -217,6 +225,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -226,6 +235,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -235,6 +245,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -244,6 +255,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -262,6 +274,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -271,6 +284,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -280,6 +294,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -289,6 +304,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -307,6 +323,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -316,6 +333,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -325,6 +343,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -334,6 +353,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -352,6 +372,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -361,6 +382,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -370,6 +392,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -379,6 +402,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -397,6 +421,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -406,6 +431,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -415,6 +441,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -424,6 +451,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -442,6 +470,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -451,6 +480,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -460,6 +490,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -469,6 +500,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -487,6 +519,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -496,6 +529,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -505,6 +539,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -514,6 +549,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -532,6 +568,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -541,6 +578,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -550,6 +588,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -559,6 +598,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -577,6 +617,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -586,6 +627,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -595,6 +637,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -604,6 +647,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -622,6 +666,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -631,6 +676,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -640,6 +686,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -649,6 +696,7 @@ class Mission
 					vehicle="B_Soldier_lite_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -667,6 +715,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -676,6 +725,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -685,6 +735,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -694,6 +745,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -712,15 +764,17 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
 					position[]={14496.726,10.982468,5863.8848};
 					id=53;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -730,6 +784,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -739,6 +794,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -757,6 +813,8 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
+					
 				};
 				class Item1
 				{
@@ -766,6 +824,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -775,6 +834,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -784,6 +844,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -802,15 +863,17 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
 					position[]={14496.726,10.917307,5861.4409};
 					id=61;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -820,6 +883,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -829,6 +893,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -847,6 +912,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -856,6 +922,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -865,6 +932,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -874,6 +942,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -892,15 +961,17 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
 					position[]={14496.726,10.853184,5859.0366};
 					id=69;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -910,6 +981,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -919,6 +991,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -937,6 +1010,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -946,6 +1020,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -955,6 +1030,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -964,6 +1040,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -982,15 +1059,17 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
 					position[]={14496.726,10.768897,5856.5952};
 					id=77;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1000,6 +1079,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1009,6 +1089,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1027,6 +1108,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1036,6 +1118,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1045,6 +1128,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1054,6 +1138,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1072,15 +1157,17 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
 					position[]={14496.726,10.573755,5854.1147};
 					id=85;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1090,6 +1177,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1099,6 +1187,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1117,6 +1206,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1126,6 +1216,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1135,6 +1226,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1144,6 +1236,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1162,15 +1255,17 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
 					position[]={14496.724,10.378562,5851.6304};
 					id=93;
 					side="EAST";
-					vehicle="O_diver_F";
+					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1180,6 +1275,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1189,6 +1285,7 @@ class Mission
 					vehicle="O_G_Soldier_TL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1207,6 +1304,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1216,6 +1314,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1225,6 +1324,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1234,6 +1334,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1252,6 +1353,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1261,6 +1363,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1270,6 +1373,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1279,6 +1383,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1297,6 +1402,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1306,6 +1412,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1315,6 +1422,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1324,6 +1432,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1342,6 +1451,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1351,6 +1461,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1360,6 +1471,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1369,6 +1481,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1387,6 +1500,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1396,6 +1510,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1405,6 +1520,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1414,6 +1530,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1432,6 +1549,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1441,6 +1559,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1450,6 +1569,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1459,6 +1579,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1477,6 +1598,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1486,6 +1608,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1495,6 +1618,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1504,6 +1628,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1522,6 +1647,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1531,6 +1657,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1540,6 +1667,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1549,6 +1677,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1567,6 +1696,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1576,6 +1706,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1585,6 +1716,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1594,6 +1726,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1612,6 +1745,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1621,6 +1755,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1630,6 +1765,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1639,6 +1775,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1657,6 +1794,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1666,6 +1804,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1675,6 +1814,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1684,6 +1824,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
@@ -1702,6 +1843,7 @@ class Mission
 					player="PLAY CDG";
 					leader=1;
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item1
 				{
@@ -1711,6 +1853,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item2
 				{
@@ -1720,6 +1863,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 				class Item3
 				{
@@ -1729,6 +1873,7 @@ class Mission
 					vehicle="I_G_Soldier_SL_F";
 					player="PLAY CDG";
 					skill=0.60000002;
+					description="Soldier";
 				};
 			};
 		};
