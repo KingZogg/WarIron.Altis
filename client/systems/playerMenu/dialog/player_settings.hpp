@@ -162,24 +162,24 @@ class playerSettings {
 
 		class btnDistanceNear : w_RscButton {
 			idc = -1;
-			text = "Near";
-			onButtonClick = "setViewDistance 1100;";
+			text = "2000m";
+			onButtonClick = "setViewDistance 2000;";
 			x = 0.02; y = 0.43;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
 
 		class btnDistanceMedium : w_RscButton {
 			idc = -1;
-			text = "Medium";
-			onButtonClick = "setViewDistance 2200;";
+			text = "3000m";
+			onButtonClick = "setViewDistance 3000;";
 			x = 0.02; y = 0.5;
 			w = 0.125; h = 0.033 * safezoneH;
 		};
 
 		class btnDistanceFar : w_RscButton {
 			idc = -1;
-			text = "Far";
-			onButtonClick = "setViewDistance 3300;";
+			text = "5000m";
+			onButtonClick = "setViewDistance 5000;";
 			x = 0.02; y = 0.57;
 			w = 0.125; h = 0.033 * safezoneH;
 		};

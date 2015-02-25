@@ -98,7 +98,7 @@ switch (true) do
 	case (_class isKindOf "Plane_Fighter_03_base_F"):
 	{
 		_vehicle addMagazine "300Rnd_20mm_shells";
-		_vehicle removeWeaponTurret ["missiles_SCALPEL",[-1]];
+		//_vehicle removeWeaponTurret ["missiles_SCALPEL",[-1]];
 	};
 };
 

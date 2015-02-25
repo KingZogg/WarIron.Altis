@@ -602,7 +602,7 @@ landArray = compileFinal str
 	//["HEMTT Fuel", "B_Truck_01_fuel_F", 9000, "vehicle"],
 	//["HEMTT Medical", "B_Truck_01_medical_F", 10000, "vehicle"],
 	["HEMTT Repair", "B_Truck_01_Repair_F", 50000, "vehicle"],
-	["HEMTT Ammo", "B_Truck_01_ammo_F", 500000, "vehicle"],
+	//["HEMTT Ammo", "B_Truck_01_ammo_F", 500000, "vehicle"],
 
 	// ["Service Truck", "O_Truck_03_device_F", 5000, "vehicle"],
 	["Tempest Transport", "O_Truck_03_transport_F", 6000, "vehicle"],
@@ -610,7 +610,7 @@ landArray = compileFinal str
 	//["Tempest Fuel", "O_Truck_03_fuel_F", 9000, "vehicle"],
 	//["Tempest Medical", "O_Truck_03_medical_F", 10000, "vehicle"],
 	["Tempest Repair", "O_Truck_03_repair_F", 50000, "vehicle"],
-	["Tempest Ammo", "O_Truck_03_ammo_F", 500000, "vehicle"],
+	//["Tempest Ammo", "O_Truck_03_ammo_F", 500000, "vehicle"],
 
 	["Zamak Transport", "I_Truck_02_transport_F", 4000, "vehicle"],
 	["Zamak Covered", "I_Truck_02_covered_F", 5000, "vehicle"],
@@ -651,10 +651,10 @@ tanksArray = compileFinal str
 	["BTR-K Kamysh", "O_APC_Tracked_02_cannon_F", 40000, "vehicle"],
 	["IFV-6a Cheetah AA", "B_APC_Tracked_01_AA_F", 40000, "vehicle"],
 	["ZSU-39 Tigris AA", "O_APC_Tracked_02_AA_F", 40000, "vehicle"],
-	["M2A1 Slammer", "B_MBT_01_cannon_F", 50000, "vehicle"],
-	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 50000, "vehicle"], // Commander gun variant
-	["T-100 Varsuk", "O_MBT_02_cannon_F", 50000, "vehicle"],
-	["MBT-52 Kuma", "I_MBT_03_cannon_F", 50000, "vehicle"],
+	["M2A1 Slammer", "B_MBT_01_cannon_F", 70000, "vehicle"],
+	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 80000, "vehicle"], // Commander gun variant
+	["T-100 Varsuk", "O_MBT_02_cannon_F", 80000, "vehicle"],
+	["MBT-52 Kuma", "I_MBT_03_cannon_F", 80000, "vehicle"],
 	["Artillery 2S9 Sochor", "O_MBT_02_arty_F", 100000, "vehicle"],
 	["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 125000, "vehicle"]
 
@@ -681,7 +681,7 @@ helicoptersArray = compileFinal str
 
 	["Mi-290 Taru (Medical) [DLC]", "O_Heli_Transport_04_medevac_F",30000, "vehicle"],
 //	["Mi-290 Taru (Repair) [DLC]", "O_Heli_Transport_04_repair_F", 15000, "vehicle"],
-//	["Mi-290 Taru (Ammo) [DLC]", "O_Heli_Transport_04_ammo_F", 25000, "vehicle"],
+	["Mi-290 Taru (Ammo) [DLC]", "O_Heli_Transport_04_ammo_F", 500000, "vehicle"],
 
 	["UH-80 Ghost Hawk (Black)", "B_Heli_Transport_01_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns
 	["UH-80 Ghost Hawk (Green)", "B_Heli_Transport_01_camo_F", 25000, "vehicle"], // UH-60 Stealth with 2 side miniguns (green camo)

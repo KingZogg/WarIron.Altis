@@ -36,15 +36,13 @@ lightMilitaryVehicles =
 	"I_Truck_02_covered_F",
 	"I_Truck_02_transport_F",
 	"O_Truck_03_transport_F",
-	"B_Truck_01_mover_F",
 	"I_G_Offroad_01_armed_F"
 ];
 
 //Medium Military Vehicle List - Random Spawns
 mediumMilitaryVehicles =
 [
-	"I_G_Offroad_01_armed_F"
-	
+	"B_Truck_01_mover_F"
 //	"I_Truck_02_Fuel_F",
 //	"O_Truck_02_Fuel_F",
 //	"I_Truck_02_medical_F",

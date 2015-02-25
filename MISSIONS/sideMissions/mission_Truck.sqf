@@ -25,15 +25,14 @@ _setupObjects =
 	_vehicleClass =
 	[
 		"B_Slingload_01_Ammo_F",
-
-		//"B_Slingload_01_Repair_F",
-		//"B_Slingload_01_Fuel_F"
+		"O_Truck_03_covered_F"
 		
+//		"B_Slingload_01_Repair_F",
+//		"B_Slingload_01_Fuel_F"
 //		"B_Truck_01_covered_F",
 //		"B_Truck_01_fuel_F",
 //		"B_Truck_01_medical_F",
 //		"B_Truck_01_Repair_F",
-		"O_Truck_03_covered_F",
 //		"O_Truck_03_fuel_F",
 //		"O_Truck_03_medical_F",
 //		"O_Truck_03_repair_F",
@@ -42,7 +41,7 @@ _setupObjects =
 //		"I_Truck_02_medical_F",
 //		"I_Truck_02_box_F"
 
-		] call BIS_fnc_selectRandom;
+	] call BIS_fnc_selectRandom;
 
 	// Class, Position, Fuel, Ammo, Damage, Special
 	_vehicle = [_vehicleClass, _missionPos] call createMissionVehicle;

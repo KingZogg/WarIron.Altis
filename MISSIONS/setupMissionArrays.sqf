@@ -15,15 +15,16 @@ MainMissions =
 	["mission_HostileHeliFormation", 0.5],
 	["mission_APC", 1],
 	["mission_MBT", 2],
-	["mission_LightArmVeh", 1],
-	["mission_ArmedHeli", 1.5],
-	["mission_CivHeli", 1]
+	["mission_VehicleCapture", 3],
+	//["mission_LightArmVeh", 1],
+	["mission_ArmedHeli", 1.5]
+	//["mission_CivHeli", 1]
 ];
 
 SideMissions =
 [
-	["mission_HostileHelicopter", 0.5],
-	["mission_MiniConvoy", 1],
+	//["mission_HostileHelicopter", 0.5],
+	["mission_MiniConvoy", 1.5],
 	["mission_SunkenSupplies", 0.5],
 	["mission_TownInvasion", 3],
 	//["mission_AirWreck", 1.5],
@@ -36,21 +37,21 @@ SideMissions =
 
 MoneyMissions =
 [
-	["mission_MoneyShipment", 0.5],
-	["mission_SunkenTreasure", 0.5]
+	["mission_MoneyShipment", 1],
+	["mission_SunkenTreasure", 0]
 ];
 
 
 GoldMissions =
 [
-	["mission_HeliGold", 3],
-	["mission_HeliGold", 3]
+	["mission_gold", 1],
+	["mission_gold", 1]
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
 SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]]]] call removeDisabledMissions;
-GoldMissions = [GoldMissions, [["A3W_underWaterMissions", ["mission_HeliGold"]]]] call removeDisabledMissions;
+GoldMissions = [GoldMissions, [["A3W_underWaterMissions", ["mission_gold"]]]] call removeDisabledMissions;
 
 { _x set [2, false] } forEach MainMissions;
 { _x set [2, false] } forEach SideMissions;

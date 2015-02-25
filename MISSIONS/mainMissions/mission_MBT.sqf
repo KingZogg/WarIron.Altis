@@ -15,8 +15,7 @@ _setupVars =
 {
 	_vehicleClass =
 	[
-		"B_MBT_01_cannon_F",
-		"O_MBT_02_cannon_F",
+		"I_MBT_03_cannon_F",
 		"I_MBT_03_cannon_F"
 	] call BIS_fnc_selectRandom;
 
