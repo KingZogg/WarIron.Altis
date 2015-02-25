@@ -216,17 +216,13 @@ vehicleAddition =
 	"acc_flashlight",
 	"acc_pointer_IR",
 	"Rangefinder",
-    "SatchelCharge_Remote_Mag",
-	"DemoCharge_Remote_Mag",
+	"Binocular",
+    "Medikit",
+	"ToolKit",
 	"SatchelCharge_Remote_Mag",
 	"DemoCharge_Remote_Mag",
 	"B_Carryall_oucamo",
-	"B_Carryall_mcamo",
-	"B_Carryall_oucamo",
 	"B_Carryall_mcamo"
-//	"Medikit",
-//	"FirstAidKit",	
-//	"ToolKit",
 ];
 
 //only added to vehicles at night via randomWeapon.sqf
