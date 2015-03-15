@@ -37,7 +37,7 @@ _xradius = 450;
 			_markername2 setMarkerSize [1,1];
 			_markername2 setMarkerText "Gold Sub (MINES)";
 			
-		
+sleep 1;		
 
 // Return
 //[_marker, _marker2]			

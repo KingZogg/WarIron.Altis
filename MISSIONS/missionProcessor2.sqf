@@ -6,8 +6,8 @@
 
 if (!isServer) exitwith {};
 
-#define MISSION_LOCATION_COOLDOWN (10*60)
-#define MISSION_TIMER_EXTENSION (15*60)
+#define GOLD_MISSION_LOCATION_COOLDOWN (10*60)
+#define GOLD_MISSION_TIMER_EXTENSION (15*60)
 
 private ["_controllerSuffix", "_missionTimeout", "_availableLocations", "_missionLocation", "_leader", "_marker", "_failed", "_complete", "_startTime", "_oldAiCount", "_leaderTemp", "_newAiCount", "_lastPos", "_floorHeight"];
 
@@ -19,15 +19,15 @@ _aiGroup = grpNull;
 
 if (!isNil "_setupVars") then { call _setupVars };
 
-diag_log format ["WASTELAND SERVER - %1 Mission%2 started: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+diag_log format ["WASTELAND SERVER - %1 Mission%2 started: %3", GOLD_MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
-_missionTimeout = MISSION_PROC_TIMEOUT;
+_missionTimeout = GOLD_MISSION_PROC_TIMEOUT;
 
 if (!isNil "_locationsArray") then
 {
 	while {true} do
 	{
-		_availableLocations = [_locationsArray, { !(_x select 1) && diag_tickTime - ([_x, 2, -1e11] call BIS_fnc_param) >= MISSION_LOCATION_COOLDOWN}] call BIS_fnc_conditionalSelect;
+		_availableLocations = [_locationsArray, { !(_x select 1) && diag_tickTime - ([_x, 2, -1e11] call BIS_fnc_param) >= GOLD_MISSION_LOCATION_COOLDOWN}] call BIS_fnc_conditionalSelect;
 
 		if (count _availableLocations > 0) exitWith {};
 		uiSleep 60;
@@ -47,15 +47,15 @@ _aiGroup setVariable ["A3W_missionMarkerName", _marker, true];
 if (isNil "_missionPicture") then { _missionPicture = "" };
 
 [
-	format ["%1 Objective", MISSION_PROC_TYPE_NAME],
+	format ["%1 Objective", GOLD_MISSION_PROC_TYPE_NAME],
 	_missionType,
 	_missionPicture,
 	_missionHintText,
-	MISSION_PROC_COLOR_DEFINE
+	GOLD_MISSION_PROC_COLOR_DEFINE
 ]
 call missionHint;
 
-diag_log format ["WASTELAND SERVER - %1 Mission%2 waiting to be finished: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+diag_log format ["WASTELAND SERVER - %1 Mission%2 waiting to be finished: %3", GOLD_MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
 _failed = false;
 _complete = false;
@@ -87,7 +87,7 @@ waitUntil
 	if (_newAiCount < _oldAiCount) then
 	{
 		// some units were killed, mission expiry will be reset to 15 mins if it's currently lower than that
-		_startTime = _startTime min (diag_tickTime - MISSION_TIMER_EXTENSION);
+		_startTime = _startTime min (diag_tickTime - GOLD_MISSION_TIMER_EXTENSION);
 	};
 
 	_oldAiCount = _newAiCount;
@@ -140,7 +140,7 @@ if (_failed) then
 	]
 	call missionHint;
 
-	diag_log format ["WASTELAND SERVER - %1 Mission%2 failed: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["WASTELAND SERVER - %1 Mission%2 failed: %3", GOLD_MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 }
 else
 {
@@ -196,11 +196,13 @@ else
 	]
 	call missionHint;
 
-	diag_log format ["WASTELAND SERVER - %1 Mission%2 complete: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+	diag_log format ["WASTELAND SERVER - %1 Mission%2 complete: %3", GOLD_MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 };
 
 deleteGroup _aiGroup;
+sleep 0.5;
 deleteMarker _marker;
+sleep 0.5;
 deleteMarker marker2;
 
 if (!isNil "_locationsArray") then

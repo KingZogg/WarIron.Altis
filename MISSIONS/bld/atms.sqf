@@ -86,6 +86,28 @@ _object setDir 0;
 _object setPosATL _pos;
 
 
+//Oreokastro
+_pos = [4574.722656,21401.587891,6.58469];
+_object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+
+//Charkia
+_pos = [18099.345703,15260.864258,8.09505];
+_object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+
+//Vikos
+_pos = [11527.955078,9441.9375,7.46946];
+_object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+
+
+
+
+
 
 
 

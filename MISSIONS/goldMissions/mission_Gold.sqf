@@ -2,7 +2,7 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Version: 1.0
-//	@file Name: mission_HeliGold.sqf
+//	@file Name: mission_Gold.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy ,KingZog [git]
 //	@file Created: 27/12/2014 08:00
 //	@file Args:
@@ -60,13 +60,13 @@ for "_count" from 1 to 100 do {
     
 	if (surfaceIsWater _minePos) then { 
 	
-	_mine = createMine [ "UnderwaterMine", _minePos,[], 0 ];  
+	_mine = createmine [ "UnderwaterMine", _minePos,[], 0 ];  
 	
 								   };
 }; 
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
-	_missionHintText = format ["A Sub has run into a minefield. It is damaged and has run out of fuel. It is carrying<t color='%1'> Gold Bullion!</t> Divers are on guard and are waiting for fuel and repairs.<br/>Kill the divers and find the sub.", goldMissionColor];
+	_missionHintText = format ["A Sub has run into a minefield.<br/>It is damaged and has run out of fuel.<br/>It is carrying,<br/><t color='%1'>Up to $1M in Gold Bullion!<t color='%1'></t><br/>Divers are on guard and are waiting for fuel and repairs.", goldMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
