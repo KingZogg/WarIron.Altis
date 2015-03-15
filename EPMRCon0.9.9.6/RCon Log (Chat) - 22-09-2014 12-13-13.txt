@@ -1,4 +1,0 @@
-103.13.101.239:2302 | 12:22:52 PM | RCon admin #1: (Global) job:2 six times
-103.13.101.239:2302 | 12:23:07 PM | RCon admin #1: (Global) job:1 once
-103.13.101.239:2302 | 12:23:17 PM | RCon admin #1: (Global) job:2 six times
-103.13.101.239:2302 | 12:23:42 PM | RCon admin #1: (Global) job:2 six times

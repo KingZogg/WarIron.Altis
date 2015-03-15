@@ -1,2 +1,0 @@
-103.13.101.239:2302 | 2:09:30 PM | RCon admin #2 (103.13.101.239:55970) logged in
-103.13.101.239:2302 | 2:09:34 PM | RCon admin #1: (Global) job:2 six times
