@@ -1,8 +1,0 @@
-1 = Log to .log file only
-2 = Log to console/RCON only (this is why you use 2 "" for Gotcha)
-3 = Log to both
-4 = Silent kick
-5 = Kick and log to .log file
-6 = Kick and log to console
-7 = Kick and log to both
-8 = GUID ban

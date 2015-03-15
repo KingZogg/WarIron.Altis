@@ -1,9 +1,4 @@
 // A3Wasteland - publicVariableVal.txt BattlEye filters by AgentRev
 
-5 "createMine"
-5 "createUnit"
-5 "createVehicle"
-5 "BIS_fnc_3Dcredits"
-5 "BIS_fnc_AAN"
-5 "vChecksum"
-5 "vehicleChecksum"
+5 "^\{" // block all raw code broadcasts; tiny chance of false positives, but most entries will be from scriptkiddies
+1 "\"BIS_fnc_spawn\"" // remote execution method filtered by A3W antihack, but logs are always useful; some false positives, do not ban indiscriminately
