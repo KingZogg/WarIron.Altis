@@ -7,9 +7,20 @@ if (!hasInterface) exitWith {};
 
 waitUntil {!isNull player};
 
-player createDiarySubject ["infos", "Infos and Help"];
+player createDiarySubject ["wariron", "WarIron HELP"];
+player createDiarySubject ["infos", "Info and Help"];
 player createDiarySubject ["changelog", "Changelog"];
 player createDiarySubject ["credits", "Credits"];
+
+player createDiaryRecord ["changelog",
+[
+"v1.1a",
+"
+<br/>WarIron.Com Additions
+<br/>[Added] Extra Gun store
+<br/>[Added] Gold Mission and Gold Buyer
+"
+]];
 
 player createDiaryRecord ["changelog",
 [
@@ -332,8 +343,6 @@ player createDiaryRecord ["infos",
 <br/>
 <br/>* If you spawn in an area with no vehicles or supplies in the immediate area, DO NOT just click respawn from the pause menu, chances are if you search an area of a few hundred meters, you will find something.
 <br/>
-<br/>* Always be on the lookout for nightvision. they are located in the ammo crates, and there are pairs scattered throughout vehicles. You can also purchase them from the gunstores. Nighttime without them SUCKS, and if you have them, you can conduct stealth raids on enemy bases under the cover of complete darkness.
-<br/>
 <br/>* When you set up a base, never leave your supplies unguarded, one guard will suffice, but it is recommended you have at least 2, maybe 3 guards at base at all times.
 <br/>
 <br/>* There are very aggressive AI characters that spawn with most missions and will protect the mission objectives with deadly force, be aware of them.
@@ -352,21 +361,136 @@ player createDiaryRecord ["infos",
 <br/>A. See the above description
 <br/>
 <br/>Q. Where can I get a gun?
-<br/>A. Weapons are found in one of three places, first in ammo crates that come as rewards from missions, inside and outside buildings, and second, in the gear section of the vehicles, which also randomly spawn around the map. The last place to find a gun would be at the gunshops located throughout the map. You can also find them on dead players whose bodies have not yet been looted.
+<br/>A. Weapons are found in one of two places, first in ammo crates that come as rewards from missions, and second, in the gear section of the vehicles, which also randomly spawn around the map. The last place to find a gun would be at the gunshops located throughout the map. You can also find them on dead players and AI whose bodies have not yet been looted.
 <br/>
 <br/>Q. What are the blue circles on the map?
 <br/>A. The circles represent town limits. If friendly soldiers are in a town, you can spawn there from the re-spawn menu; however if there is an enemy presence, you will not be able to spawn there.
 <br/>
-<br/>Q. Why is it so dark, I cant see.
-<br/>A. The server has a day/night cycle just like in the real world, and as such, night time is a factor in your survival. It is recommended that you find sources of light or use your Nightvision Goggles as the darkness sets in.
-<br/>
 <br/>Q. Is it ok for me to shoot my team mates?
 <br/>A. If you are member of BLUFOR or OPFOR teams, then you are NOT allowed to shoot or steal items and vehicles from other players. If you play as Independent, you are free to engage anyone as well as team up with anyone you want.
 <br/>
-<br/>Q. Whats with the canisters, baskets and big bags?
-<br/>A. This game has a food and water system that you must stay on top of if you hope to survive. You can collect food and water from food sacks and wells, or baskets and plastic canisters dropped by dead players. Food and water will also randomly spawn around the map.
-<br/>
 <br/>Q. I saw someone breaking a rule, what do I do?
-<br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offense is serious.
+<br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offence is serious.
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"Day/Night Cycle",
+"
+<br/>Time goes a 1.5 times faster during the day.
+<br/>8 times faster at night. 
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"Water, Food and Loot",
+"
+<br/>Water and food is only available for purchase at General Stores
+<br/>
+<br/>Only vehicles have guns and other loot. Buildings have none.
+<br/>
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"WarIron Mission Timeouts ",
+"
+<br/>Mission Timeouts.
+<br/>
+<br/>Main Missions timeout after 3 Hours.
+<br/>
+<br/>Side Misisons timeout after 3 Hours
+<br/>
+<br/>Money Missions timeout after 1 Hours
+<br/>
+<br/>Gold Missons timeout after 6 Hours
+<br/>
+<br/>Missions are set to HARD
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"ATM's",
+"
+<br/>The Maximum Money you can have in your account is
+<br/>$3 Million
+<br/>
+<br/>Money can only be transferred between members of the same team.
+<br/>
+<br/>Transfer Fee Tax is %5.
+<br/>
+<br/>All ATM's have a flag on the building as have General Stores
+<br/>
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"Territory Settings",
+"
+<br/>Territories pay $15000 for each territory held.
+<br/>
+<br/>You and/or your team will be paid every 1/2 Hour.
+<br/>
+<br/>You have to be within 2km's of the territory to get paid.
+<br/>
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"Equipment Saving and Timeouts ",
+"
+<br/>Vehicles captured from missions can be saved by players.
+<br/>
+<br/>Unused parked vehicles will be deleted from the server after
+<br/>5 days.
+<br/>
+<br/>Player saved vehicles will be deleted every
+<br/>7 days. Based on when the player saved it.
+<br/>
+<br/>Base Parts, Static Weapons and Crates will be deleted every
+<br/>7 days.
+<br/>
+<br/>Player loadouts and carried money are never deleted.
+<br/>Unless they die of course :)
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"Heli Lifting",
+"
+<br/>Heli's can only lift using sling loading. 
+<br/>
+<br/>This is much more realistic and harder !
+<br/>
+<br/>The R3F system is disabled for Heli lifting.
+<br/>
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"WarIron Gold Mission",
+"
+<br/>The Gold Mission is a sub that has been damaged and is in a minefield. 
+<br/>
+<br/>It can be repaired and refuelled. 
+<br/>
+<br/>The Sub and the divers guarding it, could be anywhere in the red mine field area marked on the map. 
+<br/>
+<br/>Once all the divers are killed, the gold is in tin boxes that are found around the sub. They can be very hard to see.
+<br/>Use your mouse wheel to pick one up when you are over one.
+<br/>
+<br/>A player can only carry 2 tins of gold at any one time.
+<br/>
+<br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
+<br/>
+<br/>You can't load the gold into land vehicles.
 "
 ]];
