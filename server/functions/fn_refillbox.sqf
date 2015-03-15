@@ -33,8 +33,8 @@ switch (_boxType) do
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["wep", ["launch_RPG32_F", "launch_NLAW_F", "launch_Titan_short_F"], RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(5,8)],
-			["wep", "launch_Titan_F", RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(5,8)],
+			["wep", ["launch_RPG32_F", "launch_NLAW_F", "launch_Titan_short_F"], RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(2,4)],
+			["wep", "launch_Titan_F", RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(2,4)],
 			["mag", ["ClaymoreDirectionalMine_Remote_Mag", "SLAMDirectionalMine_Wire_Mag", "ATMine_Range_Mag", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"], RANDOM_BETWEEN(3,8)]
 		];
 	};

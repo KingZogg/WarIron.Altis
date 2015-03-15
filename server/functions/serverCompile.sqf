@@ -37,6 +37,18 @@ setLocationObjects = [_path, "setLocationObjects.sqf"] call mf_compile;
 setLocationState = [_path, "setLocationState.sqf"] call mf_compile;
 setMissionState = [_path, "setMissionState.sqf"] call mf_compile;
 
+// Non Vanilla missions
+createsniperGroup = [_path, "createUnits\sniperGroup.sqf"] call mf_compile; 
+createsmugglerGroup = [_path, "createUnits\smugglerGroup.sqf"] call mf_compile;
+createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
+createWaitCondition = [_path, "createWaitCondition.sqf"] call mf_compile;
+createGroup1= [_path, "createUnits\Group1.sqf"] call mf_compile;
+createGroup2= [_path, "createUnits\Group2.sqf"] call mf_compile;
+createGroup3= [_path, "createUnits\Group3.sqf"] call mf_compile;
+createGroup4= [_path, "createUnits\Group4.sqf"] call mf_compile;
+createGroup5= [_path, "createUnits\Group5.sqf"] call mf_compile;
+
+
 //Function Compiles
 _path = "server\functions";
 A3W_fnc_checkHackedVehicles = [_path, "checkHackedVehicles.sqf"] call mf_compile;
@@ -80,6 +92,14 @@ weaponDisassembledServer = [_path, "weaponDisassembledServer.sqf"] call mf_compi
 
 //Player Management
 server_playerDied = [_path, "serverPlayerDied.sqf"] call mf_compile;
+server_BountyDied = [_path, "serverBountyDied.sqf"] call mf_compile;
+
+//Bounty System
+_path = "server\systems\bounties";
+onBountySystemPlayerDied = [_path, "onBountySystemPlayerDied.sqf"] call mf_compile;
+startPlayerBounty = [_path, "startPlayerBounty.sqf"] call mf_compile;
+startSystemBounty = [_path, "startSystemBounty.sqf"] call mf_compile;
+startSystemBountyByName = [_path, "startSystemBountyByName.sqf"] call mf_compile;
 
 //Spawning Compiles
 _path = "server\spawning";
@@ -88,6 +108,7 @@ boatCreation = [_path, "boatCreation.sqf"] call mf_compile;
 objectCreation = [_path, "objectCreation.sqf"] call mf_compile;
 planeCreation = [_path, "planeCreation.sqf"] call mf_compile;
 randomWeapons = [_path, "randomWeapon.sqf"] call mf_compile;
+
 // staticGunCreation = [_path, "staticGunCreation.sqf"] call mf_compile;
 staticHeliCreation = [_path, "staticHeliCreation.sqf"] call mf_compile;
 vehicleCreation = [_path, "vehicleCreation.sqf"] call mf_compile;
