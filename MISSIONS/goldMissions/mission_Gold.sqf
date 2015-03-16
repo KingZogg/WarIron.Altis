@@ -66,7 +66,7 @@ for "_count" from 1 to 100 do {
 }; 
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
-	_missionHintText = format ["A Sub has run into a minefield.<br/>It is damaged and has run out of fuel.<br/>It is carrying,<br/><t color='%1'>Up to $1M in Gold Bullion!<t color='%1'></t><br/>Divers are on guard and are waiting for fuel and repairs.", goldMissionColor];
+	_missionHintText = format ["A Sub has run into a minefield.<br/>It is damaged and has run out of fuel.<br/>It is carrying,<br/><t color='%1'>Up to $1M in Gold Bullion!</t><br/>Divers are on guard and are waiting for fuel and repairs.", goldMissionColor];
 };
 
 _waitUntilMarkerPos = nil;

@@ -93,16 +93,26 @@ _object setDir 0;
 _object setPosATL _pos;
 
 //Charkia
-_pos = [18099.345703,15260.864258,8.09505];
+_pos = [18094.0898438,15244.682617,7.36176];
 _object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 0;
 _object setPosATL _pos;
+
+
 
 //Vikos
 _pos = [11527.955078,9441.9375,7.46946];
 _object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 0;
 _object setPosATL _pos;
+
+
+//Kore Territory C Tower
+_pos = [6924.546387,15911.490234,0];
+_object = createVehicle ["Land_Cargo_Tower_V1_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+
 
 
 

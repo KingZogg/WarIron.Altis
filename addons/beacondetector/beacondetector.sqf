@@ -9,7 +9,7 @@ if (BeaconScanInProgress) exitWith
 	["You are already performing another beacon scan.", 5] call mf_notify_client;
 };
 
-_beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 100];
+_beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 75];
 
 if ((count _beaconsnear) > 0 ) then 
 	{
@@ -20,9 +20,9 @@ if ((count _beaconsnear) > 0 ) then
 	
 	_distance = 0; //init distance
 	
-	while {_distance < 100} do
+	while {_distance < 75} do
 		{	
-		_beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 100];
+		_beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 75];
 		
 		if (Beaconscanstop) exitwith 
 			{
@@ -34,7 +34,7 @@ if ((count _beaconsnear) > 0 ) then
 		if (count _beaconsnear == 0) exitwith 
 			{
 			playsound "beep9";
-			["No spawn beacon in detector range (Detector range is 100 Meters).", 5] call mf_notify_client;
+			["No spawn beacon in detector range (Detector range is 75 Meters).", 5] call mf_notify_client;
 			BeaconScanInProgress = false;
 			};
 		

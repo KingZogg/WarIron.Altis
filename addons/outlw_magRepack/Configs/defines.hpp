@@ -145,7 +145,7 @@ class outlw_MR_RscPicture
 	style = 48;
 	colorBackground[] = {0,0,0,0};
 	colorText[] = {1,1,1,1};
-	font = "PuristaMedium";
+	font = "TahomaB";
 	sizeEx = 0;
 	lineSpacing = 0;
 	text = "";

@@ -45,9 +45,9 @@ outlw_MR_ctrl = outlw_MR_keyList select 1;
 outlw_MR_alt = outlw_MR_keyList select 2;
 outlw_MR_keybinding = outlw_MR_keyList select 3;
 
-[] execVM "addons\outlw_magRepack\Scripts\MagRepack_Main.sqf";
-[] execVM "addons\outlw_magRepack\Scripts\MagRepack_Keybindings.sqf";
-[] execVM "addons\outlw_magRepack\Scripts\MagRepack_Misc.sqf";
+[] execVM "outlw_magRepack\Scripts\MagRepack_Main.sqf";
+[] execVM "outlw_magRepack\Scripts\MagRepack_Keybindings.sqf";
+[] execVM "outlw_magRepack\Scripts\MagRepack_Misc.sqf";
 
 waitUntil {!(isNil "outlw_MR_getIDCs")};
 
@@ -57,11 +57,8 @@ waitUntil {!(isNull (findDisplay 46))};
 
 (findDisplay 46) displayAddEventHandler ["KeyDown", "_this call outlw_MR_keyDown;"];
 
-systemChat "Ear Plugs are in Inventory";
-systemChat "Keybinding END Key";
 systemChat "Mag Repack Initialized";
 systemChat ("Keybinding: " + (call outlw_MR_keyListToString));
-
 
 
 
