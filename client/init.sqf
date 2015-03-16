@@ -25,10 +25,12 @@ groupManagmentActive = false;
 pvar_PlayerTeamKiller = objNull;
 doCancelAction = false;
 
+//AJ Beacondetector
+BeaconScanInProgress = false;
+
 //Initialization Variables
 playerCompiledScripts = false;
 playerSetupComplete = false;
-BeaconScanInProgress = false;
 
 waitUntil {!isNull player};
 waitUntil {time > 0.1};
@@ -72,7 +74,7 @@ if (["A3W_playerSaving"] call isConfigOn) then
 {
 	call compile preprocessFileLineNumbers "persistence\client\players\setupPlayerDB.sqf";
 	call fn_requestPlayerData;
-	9999 cutText ["Receiving Player Info (please be patient)", "BLACK", 0.01];
+	9999 cutText ["Received Player Info", "BLACK", 0.01];
 
 	waitUntil {!isNil "playerData_loaded"};
 
@@ -121,34 +123,22 @@ call compile preprocessFileLineNumbers "client\functions\setupClientPVars.sqf";
 A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 [] execVM "client\functions\initSurvival.sqf";
 
- _A3W_NoGlobalVoice = (["A3W_NoGlobalVoice", 0] call getPublicVar);
- _A3W_NoSideVoice = (["A3W_NoSideVoice", 0] call getPublicVar);
- _A3W_NoCommandVoice = (["A3W_NoCommandVoice", 0] call getPublicVar);
-
-
-
-if (_A3W_NoGlobalVoice> 0) then
-{
-	[_A3W_NoGlobalVoice, _A3W_NoSideVoice, _A3W_NoCommandVoice] spawn _novoice;
-};
-
 [] spawn
 {
 	[] execVM "client\functions\createGunStoreMarkers.sqf";
 	[] execVM "client\functions\createGeneralStoreMarkers.sqf";
 	[] execVM "client\functions\createVehicleStoreMarkers.sqf";
-	[] execVM "addons\water_edge\functions.sqf";
-	[] execVM "outlw_magRepack\MagRepack_init_sv.sqf";
 };
 
 [] spawn playerSpawn;
+[] spawn playerCustomUniform;
 
 A3W_scriptThreads pushBack execVM "addons\fpsFix\vehicleManager.sqf";
 A3W_scriptThreads pushBack execVM "addons\Lootspawner\LSclientScan.sqf";
 [] execVM "client\functions\drawPlayerIcons.sqf";
 [] execVM "addons\far_revive\FAR_revive_init.sqf";
 [] execVM "addons\camera\functions.sqf";
-if (["A3W_teamPlayersMap"] call isConfigOn) then
+
 call compile preprocessFileLineNumbers "client\functions\generateAtmArray.sqf";
 [] execVM "client\functions\drawPlayerMarkers.sqf";
 
