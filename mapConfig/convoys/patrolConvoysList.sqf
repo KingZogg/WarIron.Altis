@@ -6,7 +6,7 @@
 
 [
 	"PatrolConvoy_1",
-	"PatrolConvoy_2",
+	"PatrolConvoy_2"
 ]
 
 /*

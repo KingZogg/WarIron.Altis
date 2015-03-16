@@ -22,7 +22,7 @@ _createRandomVehicle =
 
 	switch (true) do
 	{
-		case (_num < 15): { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom };
+		case (_num < 5): { _vehicleType = mediumMilitaryVehicles call BIS_fnc_selectRandom };
 		case (_num < 50): { _vehicleType = lightMilitaryVehicles call BIS_fnc_selectRandom };
 		default           { _vehicleType = civilianVehicles call BIS_fnc_selectRandom };
 	};

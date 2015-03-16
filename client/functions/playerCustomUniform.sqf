@@ -22,7 +22,7 @@ if (!(_customUniformEnabled) || _uniformNumber < 1) exitWith {};
 
 switch (_side) do
 {
-/*
+
 	case BLUFOR:
 	{
 		[] spawn
@@ -31,11 +31,13 @@ switch (_side) do
 			{
 				_uniformNumber = player getVariable ["uniform", 0];
 				waitUntil {uniform player == "U_B_CombatUniform_mcam"};
-				player setObjectTextureGlobal [0,format["client\images\uniformTextures\%1_B.jpg", _uniformNumber]];
+				player setObjectTextureGlobal [0,format["client\images\uniformTextures\%1_I.jpg", _uniformNumber]];
 				sleep 1;
 				waitUntil {uniform player != "U_B_CombatUniform_mcam"};
 			};
 		};
+		
+		
 	};
 	
 	case OPFOR:
@@ -46,13 +48,15 @@ switch (_side) do
 			{
 				_uniformNumber = player getVariable ["uniform", 0];
 				waitUntil {uniform player == "U_O_CombatUniform_ocamo"};
-				player setObjectTextureGlobal [0,format["client\images\uniformTextures\%1_O.jpg", _uniformNumber]];
+				player setObjectTextureGlobal [0,format["client\images\uniformTextures\%1_I.jpg", _uniformNumber]];
 				sleep 1;
 				waitUntil {uniform player != "U_O_CombatUniform_ocamo"};
 			};
+			
+			
 		};	
 	};
-*/
+
 	case INDEPENDENT:
 	{
 		[] spawn
@@ -66,6 +70,7 @@ switch (_side) do
 				waitUntil {uniform player != "U_I_CombatUniform"};
 			};
 		};
+			
 	};
 
 };
