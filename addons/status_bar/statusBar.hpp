@@ -26,7 +26,7 @@ class osefStatusBar {
 			style = 1;
 			text="Loading statusBar...";
 			class Attributes {
-				align="left";
+				align="center";
 				color = "#ABB7C2";
 			};
 		};

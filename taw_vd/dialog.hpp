@@ -319,7 +319,7 @@ class TAW_VD
 			y = 0.655;
 		};
 		
-		class VDTerrSet : TAWVD_RscText
+/*		class VDTerrSet : TAWVD_RscText
 		{
 			idc = -1;
 			text = "Grass Settings";
@@ -337,7 +337,7 @@ class TAW_VD
 			text = "Object Settings";
 			y = 0.55;
 		};
-
+*/
 	};
 	
 	class controls 
@@ -449,7 +449,7 @@ class TAW_VD
 			y = 0.656;
 		};
 		
-		class VD_terr_none : TAWVD_activeText
+	/*	class VD_terr_none : TAWVD_activeText
 		{
 			idc = -1;
 			text = "None";
@@ -492,7 +492,7 @@ class TAW_VD
 			x = 0.67; y = 0.50;
 			w = 0.275; h = 0.04;
 		};
-
+*/
 		class ButtonClose : TAWVD_RscButtonMenu {
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};

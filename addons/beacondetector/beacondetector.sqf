@@ -72,5 +72,5 @@ if ((count _beaconsnear) > 0 ) then
 else
 {
 playsound "beep9";
-["No spawn beacon in detector range (Detector range is 100 Meters).", 5] call mf_notify_client;
+["No spawn beacon in detector range (Detector range is 75 Meters).", 5] call mf_notify_client;
 };

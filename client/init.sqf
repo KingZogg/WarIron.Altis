@@ -125,7 +125,7 @@ A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
  _A3W_NoSideVoice = (["A3W_NoSideVoice", 0] call getPublicVar);
  _A3W_NoCommandVoice = (["A3W_NoCommandVoice", 0] call getPublicVar);
 
-_novoice = "addons\voicepunisher\novoice.sqf" call mf_compile;
+
 
 if (_A3W_NoGlobalVoice> 0) then
 {
@@ -137,6 +137,8 @@ if (_A3W_NoGlobalVoice> 0) then
 	[] execVM "client\functions\createGunStoreMarkers.sqf";
 	[] execVM "client\functions\createGeneralStoreMarkers.sqf";
 	[] execVM "client\functions\createVehicleStoreMarkers.sqf";
+	[] execVM "addons\water_edge\functions.sqf";
+	[] execVM "outlw_magRepack\MagRepack_init_sv.sqf";
 };
 
 [] spawn playerSpawn;

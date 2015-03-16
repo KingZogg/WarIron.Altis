@@ -42,7 +42,7 @@ systemChat format["[WarIron.Com] Loading info...", _rscLayer];
 	};
 		
 		//((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["FPS: %1 | PLAYERS: %2 | GRIDREF: %3 | RESTART IN: %4:%5", round diag_fps, count playableUnits, mapGridPosition player, _hours, _minutes, _counter,"%"];
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com Server #1 | Restart In: %1:%2", round diag_fps, _hours, _minutes, _counter,"%"];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1"];
 	}; 
 };
 
