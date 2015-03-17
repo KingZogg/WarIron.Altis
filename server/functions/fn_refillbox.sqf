@@ -33,8 +33,8 @@ switch (_boxType) do
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["wep", ["launch_RPG32_F", "launch_NLAW_F", "launch_Titan_short_F"], RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(2,4)],
-			["wep", "launch_Titan_F", RANDOM_BETWEEN(3,5), RANDOM_BETWEEN(2,4)],
+			["wep", ["launch_RPG32_F", "launch_NLAW_F", "launch_Titan_short_F"], RANDOM_BETWEEN(2,3), RANDOM_BETWEEN(1,2)],
+			["wep", "launch_Titan_F", RANDOM_BETWEEN(2,3), RANDOM_BETWEEN(1,2)],
 			["mag", ["ClaymoreDirectionalMine_Remote_Mag", "SLAMDirectionalMine_Wire_Mag", "ATMine_Range_Mag", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"], RANDOM_BETWEEN(3,8)]
 		];
 	};
@@ -67,7 +67,7 @@ switch (_boxType) do
 			["itm", ["optic_DMS", "optic_tws", "optic_Nightstalker"], RANDOM_BETWEEN(2,3)]
 		];
 	};
-	case "mission_TOP_Sniper":
+	case "mission_WI_Sniper":
 	{
 		_boxItems =
 		[
@@ -79,7 +79,7 @@ switch (_boxType) do
 			["itm", ["optic_DMS","optic_Nightstalker","optic_tws"], RANDOM_BETWEEN(1,5)]
 		];
 	};
-	case "mission_TOP_Gear1":
+	case "mission_WI_Gear1":
 	{
 		_boxItems =
 		[

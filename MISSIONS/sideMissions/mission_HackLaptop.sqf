@@ -5,7 +5,7 @@
 //	@file Author: JoSchaap, AgentRev, LouD
 
 if (!isServer) exitwith {};
-#include "extraMissionDefines.sqf";
+#include "sideMissionDefines.sqf";
 
 private ["_positions", "_bunker", "_laptop", "_obj", "_randomGroup", "_vehicleName"];
 
@@ -71,7 +71,7 @@ _successExec =
 	publicVariable "RemoveLaptopHandler";
 	{ deleteVehicle _x } forEach [_bunker, _laptop];
 
-	_successHintMessage = format ["The laptop is hacked and the smugglers are dead. The weapons and money are yours!"];
+	_successHintMessage = format ["The laptop is hacked and the enemy are dead. The weapons and money are yours!"];
 };
 
-_this call extraMissionProcessor;
+_this call sideMissionProcessor;
