@@ -100,7 +100,7 @@ _successExec =
 	
 	_goldAmmount = 0;
 	_goldMinAmmount = 1;
-	_goldMaxAmmount = 8;
+	_goldMaxAmmount = 39;
 	_goldAmmount = _goldminAmmount + ceil(random _goldMaxAmmount);
 	
 	for "_i" from 1 to _goldAmmount do{
@@ -109,7 +109,7 @@ _successExec =
 		_gold setPosATL (getPosATL _vehicle vectorAdd [(ceil(random (16) - 8)),(ceil(random (16) - 8)),1]);
 		};
 
-	_goldAmmount = _goldAmmount * 100000;	
+	_goldAmmount = _goldAmmount * 25000;	
 		
 		//_successHintMessage = "The divers have all been killed. Collect the Gold!";
 		_successHintMessage = format ["The Divers Are Dead. There is <t color='%2'>      $%1 </t>on the bottom." ,_goldAmmount, goldMissionColor];

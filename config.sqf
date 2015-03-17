@@ -15,7 +15,7 @@ cityList = compileFinal preprocessFileLineNumbers "mapConfig\towns.sqf";
 
 config_items_jerrycans_max = compileFinal "1";
 config_items_syphon_hose_max = compileFinal "1";
-config_items_gold_bullion_max = compileFinal "2";
+config_items_gold_bullion_max = compileFinal "4";
 
 config_refuel_amount_default = compileFinal "0.25";
 config_refuel_amounts = compileFinal str

@@ -121,6 +121,16 @@ if (_uid call isAdmin) then
 				{
 					hint format["Server FPS: %1",serverFPS];
 				};
+				
+				case 7: //Copy getPosASL to RPT
+				{
+					_myPos = getPosATL player;
+					_textPos = format ["Current getPosATL %1", _myPos];
+					hint _textPos;
+					diag_log format ["PLAYER POS %1, %2", player, _textPos];
+				};
+				
+				
 				case 7: //Test Function
 				{
 					_group = createGroup civilian;
