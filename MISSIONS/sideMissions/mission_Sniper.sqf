@@ -7,7 +7,7 @@
 
 if (!isServer) exitwith {};
 
-#include "extraMissionDefines.sqf"
+#include "sideMissionDefines.sqf"
 
 private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1"];
 
@@ -72,7 +72,7 @@ _setupObjects =
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
 
-	_missionHintText = format ["A Sniper Nest has been spotted guarding gold and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", extraMissionColor];
+	_missionHintText = format ["A Sniper Nest has been spotted guarding gold and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
@@ -104,7 +104,7 @@ _successExec =
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 
 	
-	_successHintMessage = format ["The snipers are dead.<br/>There is<br/><t color='%2'> $%1 </t><br/>in gold to collect." ,_goldAmmount, extraMissionColor];
+	_successHintMessage = format ["The snipers are dead.<br/>There is<br/><t color='%2'> $%1 </t><br/>in gold to collect." ,_goldAmmount, sideMissionColor];
 };
 
-_this call extraMissionProcessor;
+_this call sideMissionProcessor;

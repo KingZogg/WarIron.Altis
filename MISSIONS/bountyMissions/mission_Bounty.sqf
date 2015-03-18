@@ -41,7 +41,7 @@ for "_x" from 0 to (_count - 1) do {
 };
 
 
-if (_alivePlayerCount < 10) exitWith {};
+if (_alivePlayerCount < A3W_bountyMissionPlayers) exitWith {};
 
 // Keep looping over players until we find an alive one
 _finished = 0;

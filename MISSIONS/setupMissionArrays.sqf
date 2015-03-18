@@ -9,20 +9,21 @@ if (!isServer) exitWith {};
 MainMissions =
 [
 	// Mission filename, weight
-	["mission_ArmedDiversquad", 1],
+	
 	["mission_Coastal_Convoy", 1],
 	["mission_Convoy", 1],
-	["mission_HostileHeliFormation", 0.5],
-	["mission_APC", 1],
-	["mission_MBT", 2],
-	["mission_VehicleCapture", 3],
+	["mission_HostileHeliFormation", 2],
+	["mission_APC", 3],
+	["mission_MBT", 5],
+	["mission_VehicleCapture", 7],
 	//["mission_LightArmVeh", 1],
-	["mission_ArmedHeli", 1.5]
+	["mission_ArmedHeli", 7]
 	//["mission_CivHeli", 1]
 ];
 
 SideMissions =
 [
+	["mission_ArmedDiversquad", 1],
 	//["mission_HostileHelicopter", 0.5],
 	//["mission_MiniConvoy", 1.5],
 	//["mission_SunkenSupplies", 0.5],
@@ -63,7 +64,7 @@ BountyMissions =
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
-SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_extraMissions", ["mission_HackLaptop", "mission_HostileJet", "mission_Smugglers", "mission_Sniper"]]] call removeDisabledMissions;
+SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_extraMissions", ["mission_HackLaptop", "mission_HostileJet", "mission_Smugglers", "mission_Sniper"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]]]] call removeDisabledMissions;
 GoldMissions = [GoldMissions, [["A3W_goldMissions", ["mission_Gold"]]]] call removeDisabledMissions;
 BountyMissions = [BountyMissions, [["A3W_BountyMissions", ["mission_Bounty"]]]] call removeDisabledMissions;
@@ -73,7 +74,6 @@ PatrolMissions = [PatrolMissions, [["A3W_PatrolMissions", ["mission_airportPatro
 { _x set [2, false] } forEach SideMissions;
 { _x set [2, false] } forEach MoneyMissions;
 { _x set [2, false] } forEach GoldMissions;
-{ _x set [2, false] } forEach ExtraMissions;
 { _x set [2, false] } forEach PatrolMissions;
 { _x set [2, false] } forEach BountyMissions;
 

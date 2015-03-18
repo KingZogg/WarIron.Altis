@@ -5,7 +5,7 @@
 //	@file Author: JoSchaap, AgentRev, LouD
 
 if (!isServer) exitwith {};
-#include "extraMissionDefines.sqf";
+#include "sideMissionDefines.sqf";
 
 private ["_planeChoices", "_convoyVeh", "_veh1", "_createVehicle", "_vehicles", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_boxes1", "_currBox1", "_boxes2", "_currBox2", "_box1", "_box2"];
 
@@ -86,7 +86,7 @@ _setupObjects =
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh1 >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _veh1 >> "displayName");
-	_missionHintText = format ["An armed <t color='%2'>%1</t> is patrolling the island. Shoot it down and kill the pilot to recover the money and weapons!", _vehicleName, extraMissionColor];
+	_missionHintText = format ["An armed <t color='%2'>%1</t> is patrolling the island. Shoot it down and kill the pilot to recover the money and weapons!", _vehicleName, sideMissionColor];
 
 	_numWaypoints = count waypoints _aiGroup;
 };
@@ -128,4 +128,4 @@ _successExec =
 	_successHintMessage = "The sky is clear again, the enemy patrol was taken out! Ammo crates and some money have fallen near the pilot.";
 };
 
-_this call extraMissionProcessor;
+_this call sideMissionProcessor;

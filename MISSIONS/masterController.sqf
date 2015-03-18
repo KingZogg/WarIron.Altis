@@ -9,7 +9,6 @@ _ctrlTypes =
 	"mainMission",
 	"moneyMission",
 	"sideMission",
-	"extraMission",
 	"patrolMission",
 	"bountyMission",
 	"goldMission"

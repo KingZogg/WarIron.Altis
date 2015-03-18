@@ -252,12 +252,12 @@ va_information_action = {
   }
   forEach(
     [["   ID:         ", ([_tag,17] call str_truncate)],
-     ["   Direction:  ", str(round(getdir _vehicle)) + toString [176]],
-     ["   Grid:       ", mapGridPosition _vehicle],
-     ["   Altitude:   ", str(round(getposASL _vehicle select 2)) + " meter(s) ASL"],
+    // ["   Direction:  ", str(round(getdir _vehicle)) + toString [176]],
+    // ["   Grid:       ", mapGridPosition _vehicle],
+    // ["   Altitude:   ", str(round(getposASL _vehicle select 2)) + " meter(s) ASL"],
      ["   Driver:     ", ([_driver,17] call str_truncate)],
-     ["   Seats:     ", str((_vehicle emptyPositions "cargo")+(_vehicle emptyPositions "driver")) + " seat(s)"],
-     ["   Size:       ", str(round((sizeOf _class)*10)/10) + " meter(s)"],
+    // ["   Seats:     ", str((_vehicle emptyPositions "cargo")+(_vehicle emptyPositions "driver")) + " seat(s)"],
+    // ["   Size:       ", str(round((sizeOf _class)*10)/10) + " meter(s)"],
      ["   Owner:     ",  ([_owner,17] call str_truncate)]
 
       

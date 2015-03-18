@@ -78,3 +78,4 @@ if (isServer) then
 [] execVM "addons\credits\welcome.sqf";
 [] execVM "addons\vactions\functions.sqf";				// Micovery vehicle actions
 [] execVM "addons\laptop\init.sqf";
+[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";

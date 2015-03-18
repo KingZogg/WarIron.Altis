@@ -43,7 +43,7 @@ _setupObjects =
 	_aiGroup setBehaviour "COMBAT";	
 	
 	_vehicleName = "Laptop";
-	_missionHintText = format ["A <t color='%2'>%1</t> with enemy bank accounts has been spotted, go hack it.", _vehicleName, extraMissionColor];
+	_missionHintText = format ["A <t color='%2'>%1</t> with enemy bank accounts has been spotted, go hack it.", _vehicleName, sideMissionColor];
 };
 
 _waitUntilMarkerPos = nil;
