@@ -370,7 +370,7 @@ player createDiaryRecord ["infos",
 <br/>A. If you are member of BLUFOR or OPFOR teams, then you are NOT allowed to shoot or steal items and vehicles from other players. If you play as Independent, you are free to engage anyone as well as team up with anyone you want.
 <br/>
 <br/>Q. I saw someone breaking a rule, what do I do?
-<br/>A. Simply go into global chat and get the attention of one of the admins or visit our forums, and make a report if the offence is serious.
+<br/>A. There is no global chat but Admins can read it all. Use !admin to get attention.
 "
 ]];
 
@@ -417,7 +417,7 @@ player createDiaryRecord ["wariron",
 "ATM's",
 "
 <br/>The Maximum Money you can have in your account is
-<br/>$3 Million
+<br/>$5 Million
 <br/>
 <br/>Money can only be transferred between members of the same team.
 <br/>
@@ -432,7 +432,7 @@ player createDiaryRecord ["wariron",
 [
 "Territory Settings",
 "
-<br/>Territories pay $15000 for each territory held.
+<br/>Territories pay $5000 for each territory held.
 <br/>
 <br/>You and/or your team will be paid every 1/2 Hour.
 <br/>
@@ -458,6 +458,8 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>Player loadouts and carried money are never deleted.
 <br/>Unless they die of course :)
+<br/>
+<br/>Spawn beacons are saved after a restart.
 "
 ]];
 
@@ -476,6 +478,26 @@ player createDiaryRecord ["wariron",
 
 player createDiaryRecord ["wariron",
 [
+"Missions and Timeouts",
+"
+<br/>There are 2 gold missions.
+<br/>Gold sub which you will need diving gear for.
+<br/>The sub could be carrying upto $1 Million in gold (Random).
+<br/>Snipers Nest side mission which does not have as much gold. It is also a random amount.
+<br/>
+<br/>Timeouts. 
+<br/>The Gold Sub Mission time out is 3 hours. 
+<br/>Main Missions are 2 hours. 
+<br/>Money Missions are 1.5 hours
+<br/>Side Missions are 1 hour.
+<br/>All other Missions vary.
+<br/>
+"
+]];
+
+
+player createDiaryRecord ["wariron",
+[
 "WarIron Gold Mission",
 "
 <br/>The Gold Mission is a sub that has been damaged and is in a minefield. 
@@ -487,10 +509,66 @@ player createDiaryRecord ["wariron",
 <br/>Once all the divers are killed, the gold is in tin boxes that are found around the sub. They can be very hard to see.
 <br/>Use your mouse wheel to pick one up when you are over one.
 <br/>
-<br/>A player can only carry 2 tins of gold at any one time.
+<br/>A player can only carry 4 tins of gold at any one time.
 <br/>
 <br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
 <br/>
 <br/>You can't load the gold into land vehicles.
+<br/>
+<br/>Gold can only be sold to a Gold buyer at the gold buyer shop.
+<br/>
+"
+]];
+
+player createDiaryRecord ["wariron",
+[
+"General Info and Additions ",
+"
+<br/>The server is has only this A3Wasteland mission running on it for full optimisation.
+<br/>
+<br/>The game play is designed to be brutal and very hard.
+<br/>Hard work does have it's rewards.
+<br/>
+<br/>The database is external.
+<br/>The headless client is running.
+<br/>
+<br/>Lot's of missions running at the same time are not much fun so there is only one type of mission running at a time.
+<br/>
+<br/>Everyone starts off equally. There are no sniper medic or engineer slots.
+<br/>If you want to play as a diver etc please go and buy the gear.
+<br/>
+<br/>Thermal Vehicle weapons are enabled.
+<br/>
+<br/>Beacon detectors don't need a toolkit to work but the range is limited.
+<br/>
+<br/>TeamKill Autokick is in place. 
+<br/>The Tk's are not reset after a restart so anyone who keeps doing it will be autobanned.
+<br/>
+<br/>Repack your magazines with CTRL-R (can be changed when you open it). 
+<br/>
+<br/>Use the earplugs to hear when you are in a vehicle and on teamspeak. Use the END key (Can't be changed). 
+<br/>
+<br/>View distance settings can be finely adjusted depending on which mode you are in. 
+<br/>ie: Walking, Driving or Flying.
+<br/>
+<br/>We hate fog and it will never be in the game. Rain is also off (it might come back).
+<br/>
+<br/>A player can only carry 4 tins of gold at any one time.
+<br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
+<br/>You can't load the gold into any other vehicle.
+<br/>
+<br/>Vehicles are locked and untowable or liftable after a restart. Only the owner can unlock them.
+<br/>
+<br/>You can break into vehicles using a Toolkit. It has a random chance of failing.
+<br/>
+<br/>Vehicle actions are pretty self explanatory see in game for what you can do.
+<br/>Lock, UnLock, Unflip, or Pull a driver from a vehicle.
+<br/>
+<br/>Baseparts take a LONG time to unlock if you are not the owner.
+<br/>
+<br/>This is a new server so any suggestions on improvements are welcome.
+<br/>
+<br/>New secret spiced up missions are in development and are coming very soon.
+
 "
 ]];

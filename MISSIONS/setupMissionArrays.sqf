@@ -27,13 +27,13 @@ SideMissions =
 	//["mission_HostileHelicopter", 0.5],
 	//["mission_MiniConvoy", 1.5],
 	//["mission_SunkenSupplies", 0.5],
-	["mission_TownInvasion", 3],
+	["mission_TownInvasion", 2],
 	//["mission_AirWreck", 1.5],
 	//["mission_WepCache", 1.5],
 	["mission_Outpost", 2],
 	//["mission_HostileInfantry", 3],
 	["mission_Truck", 1.5],
-	["mission_Sniper", 2],
+	["mission_Sniper", 3],
 	["mission_Smugglers", 1],
 	["mission_HostileJet", 0.5]
 	//["mission_HackLaptop", 1]
