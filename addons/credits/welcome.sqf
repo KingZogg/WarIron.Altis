@@ -5,16 +5,16 @@ _onScreenTime = 7;
  
 _role1 = "HELLO"; //In Red
 _role1names = ["Got Clean Undies on ?"]; //In Grey
-_role2 = "YOU STILL READING THIS ?";
-_role2names = ["I am lining you up now !"];
-_role3 = "SHIFT F4 NOW IF YOU'RE A LAZY SOD:";
-_role3names = ["It will save you much pain.","You need to work here."];
+//_role2 = "YOU STILL READING THIS ?";
+//_role2names = ["I am lining you up now !"];
+//_role3 = "SHIFT F4 NOW IF YOU'RE A LAZY SOD:";
+//_role3names = ["It will save you much pain.","You need to work here."];
 _role4 = "READ THE BRIEFING LUKE !:";
 _role4names = ["This is where the big boys","get the big toys","Puleeze read the briefing"];
 _role5 = "THE LIST OF NO'S";
 _role5names = ["No Glitching","No Hacking","No Base Griefing","No Excessive Swearing","No Talking In Radio Chat","No Racism","No, you can't be a dick"];
-_role6 = "STILL HERE ? GOOD.";
-_role6names = ["Bugger off and kill someone.","Take all his toys","Make him cry."]; 
+//_role6 = "STILL HERE ? GOOD.";
+//_role6names = ["Bugger off and kill someone.","Take all his toys","Make him cry."]; 
 {
 sleep 2;
 _memberFunction = _x select 0;
@@ -35,11 +35,11 @@ sleep (_onScreenTime);
 } forEach [
 //The list below should have exactly the same amount of roles as the list above
 [_role1, _role1names],
-[_role2, _role2names],
-[_role3, _role3names],
+//[_role2, _role2names],
+//[_role3, _role3names],
 [_role4, _role4names],
-[_role5, _role5names],
-[_role6, _role6names]
+[_role5, _role5names]
+//[_role6, _role6names]
 ];
 
 };

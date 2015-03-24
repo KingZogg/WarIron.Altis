@@ -14,19 +14,18 @@ class osefStatusBar {
 	class controls {
 		class statusBarText {
 			idc = 1000;
-			x = safezoneX + safezoneW - 2.50;
+			x = safezoneX + safezoneW - 0.19;
 			y = safezoneY + safezoneH - 0.04;
 			w = 2.00;
 			h = 0.04;
 			shadow = 2;
 			colorBackground[] = { 1, 0.3, 0, 0.0 };
-			font = "PuristaSemibold";
+			font = "PuristaMedium";
 			size = 0.04;
 			type = 13;
 			style = 1;
 			text="Loading statusBar...";
 			class Attributes {
-				align="center";
 				color = "#ABB7C2";
 			};
 		};

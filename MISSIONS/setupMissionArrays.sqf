@@ -34,8 +34,8 @@ SideMissions =
 	//["mission_HostileInfantry", 3],
 	["mission_Truck", 1.5],
 	["mission_Sniper", 3],
-	["mission_Smugglers", 1],
-	["mission_HostileJet", 0.5]
+	["mission_Smugglers", 1]
+	//["mission_HostileJet", 0.5]
 	//["mission_HackLaptop", 1]
 ];
 

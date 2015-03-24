@@ -9,7 +9,7 @@ disableSerialization;
 */
 _rscLayer = "osefStatusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["osefStatusBar","PLAIN"];
-systemChat format["[WarIron.Com] Loading info...", _rscLayer];
+systemChat format["[WarIron.Com] Read the briefing for things like how to use the extra addons. Earplugs, Vehicle Actions etc", _rscLayer];
 
 [] spawn {
 	sleep 5;

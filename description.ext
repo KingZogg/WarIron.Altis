@@ -25,7 +25,7 @@ class Header
 author="A3Wasteland.com edit by WARIRON.COM";
 onLoadName = "WarIron A3Wasteland"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
 onLoadMission = "Website: coming Teamspeak: ts3.wariron.com CORE MISSION: a3wasteland.com";
-overviewText = "Website: coming Teamspeak: ts3.wariron.com";
+overviewText = "Website: soon Teamspeak: ts3.wariron.com";
 overviewTextLocked = "Website: coming Teamspeak: ts3.wariron.com";
 overviewPicture = "mapConfig\Loading.jpg";
 loadScreen = "mapConfig\Loading.jpg";
