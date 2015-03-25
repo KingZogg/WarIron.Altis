@@ -113,6 +113,7 @@ switch (_donatorLevel) do
 		_player addMagazine "9Rnd_45ACP_Mag";
 		_player addItem "FirstAidKit";
 		_player selectWeapon "hgun_ACPC2_F";
+		
 	};
 	
 };
@@ -134,10 +135,27 @@ switch (true) do
 		_player addWeapon "Rangefinder";
 	};
 };
-
 //Fix Vests for Diver After Perk
 _vest = [_player, "vest"] call getDefaultClothing;
 if (_vest != "") then { _player addVest _vest };
+
+/* //add in red blue and green smoke grens
+switch (_side) do
+{
+	case BLUFOR:
+	{
+	SmokeShellBlue	
+	};
+	case OPFOR:
+	{
+	SmokeShellRed
+	};
+	default
+	{
+	SmokeShellGreen
+	};
+};
+*/
 
 
 if (_player == player) then

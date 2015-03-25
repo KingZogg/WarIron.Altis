@@ -95,7 +95,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="A3Wasteland Altis v1.1  Gold Mission with minefield, Gold Buyer, All Vehicles, Full Save, Custom ATM, Full Thermals";
+		briefingName="A3Wasteland Altis v1.1  Gold Mission with minefield, Gold Buyer, All Vehicles, Full Save, Custom ATM, Full Thermals, ViewDistance Addon";
 		overviewText="WarIron.Com Wasteland Conquest Altis by WarIron.Com Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		timeOfChanges=15180;

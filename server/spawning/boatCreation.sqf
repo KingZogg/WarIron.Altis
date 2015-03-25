@@ -51,15 +51,18 @@ if (_boatType isKindOf "Boat_Armed_01_base_F") then
 		if (_boatType == "I_Boat_Armed_01_minigun_F") then
 		{
 			_boat addMagazineTurret ["1000Rnd_65x39_Belt_Tracer_Yellow", [1]];
+			_boat addMagazineTurret ["32Rnd_40mm_G_belt", [1]];
 		}
 		else
 		{
 			_boat addMagazineTurret ["1000Rnd_65x39_Belt_Tracer_Red", [1]];
+			_boat addMagazineTurret ["32Rnd_40mm_G_belt", [1]];
 		};
 	}
 	else
 	{
 		_boat addMagazineTurret ["200Rnd_127x99_mag_Tracer_Green", [1]];
+	    _boat addMagazineTurret ["32Rnd_40mm_G_belt", [1]];
 	};
 
 	for "_i" from 0 to ((floor random 3) - 1) do
@@ -67,6 +70,6 @@ if (_boatType isKindOf "Boat_Armed_01_base_F") then
 		_boat addMagazineTurret ["SmokeLauncherMag_boat", [-1]];
 	};
 
-	_boat setHitPointDamage ["HitTurret", 1]; // disable front GMG
+	//_boat setHitPointDamage ["HitTurret", 1]; // disable front GMG
 	reload _boat;
 };

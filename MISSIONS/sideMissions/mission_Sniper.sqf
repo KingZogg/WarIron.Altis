@@ -72,8 +72,10 @@ _setupObjects =
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
 
-	_missionHintText = format ["A Sniper Nest has been spotted guarding gold and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
+	_missionHintText = format ["A Sniper Nest has been spotted guarding <t color='ffd700'>gold</t> and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
 };
+
+<t color='ffd700'>
 
 _waitUntilMarkerPos = nil;
 _waitUntilExec = nil;

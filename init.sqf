@@ -69,13 +69,20 @@ if (isServer) then
 	[] execVM "server\init.sqf";
 };
 
-//init 3rd Party Scripts
-[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
-[] execVM "addons\proving_ground\init.sqf";
-[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
-[] execVM "addons\JumpMF\init.sqf";
-[] execVM "addons\status_bar\statusBar.sqf";
-[] execVM "addons\credits\welcome.sqf";
-[] execVM "addons\vactions\functions.sqf";				// Micovery vehicle actions
-[] execVM "addons\laptop\init.sqf";
-[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
+//init 3rd Party Scripts (not supposed to run on HC)
+if (hasInterface || isServer) then
+{
+	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
+	[] execVM "addons\proving_ground\init.sqf";
+	[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+	[] execVM "addons\JumpMF\init.sqf";
+	[] execVM "addons\status_bar\statusBar.sqf";
+	[] execVM "addons\credits\welcome.sqf";
+	[] execVM "addons\vactions\functions.sqf";				// Micovery vehicle actions
+	[] execVM "addons\laptop\init.sqf";
+	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
+};
+
+CHVD_allowNoGrass = false; // Set 'false' if you want to disable "None" option for terrain (default: true)
+CHVD_maxView = 12000; // Set maximum view distance (default: 12000)
+CHVD_maxObj = 12000; // Set maximum object view distance (default: 12000)

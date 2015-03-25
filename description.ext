@@ -58,10 +58,9 @@ loadScreen = "mapConfig\Loading.jpg";
 #include "client\systems\playerMenu\dialog\teamkill_dialog.hpp"
 #include "addons\proving_ground\PG_config.hpp"
 #include "client\systems\hud\dialog\downloadData.hpp"
-#include "taw_vd\dialog.hpp"
 #include "addons\beacondetector\sound\cfgsounds.hpp"
 #include "addons\outlw_magRepack\MagRepack_config.hpp"
-
+#include "CHVD\dialog.hpp"
 
 class RscTitles
 {
@@ -79,8 +78,7 @@ class CfgFunctions
 	{
 		#include "server\CfgFunctions.hpp"
 	};
-	
-	#include "taw_vd\CfgFunctions.hpp"
+	#include "CHVD\CfgFunctions.hpp"
 };
 
 class CfgNotifications
