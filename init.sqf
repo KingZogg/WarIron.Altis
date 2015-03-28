@@ -81,6 +81,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\vactions\functions.sqf";				// Micovery vehicle actions
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
+	//[] execVM "addons\asl\auxslingloading.sqf";
 };
 
 CHVD_allowNoGrass = false; // Set 'false' if you want to disable "None" option for terrain (default: true)

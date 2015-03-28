@@ -3,11 +3,19 @@
 //	@file Author: wiking.at
 //	Allows tracking of spawn beacons
 
+
+
+
+
+
 // Check if script is already active
 if (BeaconScanInProgress) exitWith
 {
 	["You are already performing another beacon scan.", 5] call mf_notify_client;
 };
+
+
+if (("MineDetector" in (items player + assignedItems player))) then {
 
 _beaconsnear = nearestObjects [player, ["Land_Tentdome_F"], 75];
 
@@ -73,4 +81,10 @@ else
 {
 playsound "beep9";
 ["No spawn beacon in detector range (Detector range is 75 Meters).", 5] call mf_notify_client;
+};
+
+}
+else
+{
+["You will need a MineDetector to track spawn beacons", 5] call mf_notify_client;
 };

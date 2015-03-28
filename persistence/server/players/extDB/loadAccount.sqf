@@ -20,7 +20,7 @@ _donatorEnabled = ["A3W_donatorEnabled"] call isConfigOn;
 _tkAutoKickEnabled = ["A3W_tkAutoKickEnabled"] call isConfigOn;
 _tkKickAmount = ["A3W_tkKickAmount", 0] call getPublicVar;
 _customUniformEnabled = ["A3W_customUniformEnabled"] call isConfigOn;
-
+_fMSM = ["A3W_fMSM",0] call getPublicVar;
 
 if (_donatorEnabled) then
 {
@@ -42,6 +42,7 @@ if (_customUniformEnabled) then
 	};
 };
 
+
 if (_moneySaving) then
 {
 	_result = ["getPlayerBankMoney:" + _UID, 2] call extDB_Database_async;
@@ -49,7 +50,12 @@ if (_moneySaving) then
 	if (count _result > 0) then
 	{
 		_bank = _result select 0;
+	}
+	else
+	{
+	_bank = _fMSM;
 	};
+
 };
 
 if (_tkAutoKickEnabled) then
@@ -79,6 +85,7 @@ if (_tkAutoKickEnabled) then
 		}
 	};
 };
+
 
 _result = ([format ["checkPlayerSave:%1:%2", _UID, call A3W_extDB_MapID], 2] call extDB_Database_async) select 0;
 

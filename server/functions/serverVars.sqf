@@ -19,7 +19,7 @@ currentStaticHelis = []; // Storage for the heli marker numbers so that we don't
 civilianVehicles =
 [
 	"C_Quadbike_01_F",
-	"C_Quadbike_01_F",
+	"O_Quadbike_01_F",
 	"C_Hatchback_01_F",
 	"C_Hatchback_01_sport_F",
 	"C_Hatchback_01_sport_green_F",
@@ -28,17 +28,18 @@ civilianVehicles =
 	"C_SUV_01_F",
 	"C_Offroad_01_F",
 	"I_G_Offroad_01_F",
+	"B_G_Offroad_01_F",
+	"O_G_Offroad_01_F",
 	"O_G_Van_01_transport_F"
 ];
 
 //Light Military Vehicle List - Random Spawns
 lightMilitaryVehicles =
 [
-	"O_Quadbike_01_F",
 	"I_Truck_02_covered_F",
-	"I_Truck_02_transport_F",
 	"O_Truck_03_transport_F",
-	"I_G_Offroad_01_armed_F"
+	"I_G_Offroad_01_armed_F",
+	"B_G_Offroad_01_armed_F"
 ];
 
 //Medium Military Vehicle List - Random Spawns
@@ -219,8 +220,16 @@ vehicleAddition =
 	"Binocular",
     "Medikit",
 	"ToolKit",
+	"MineDetector",
 	"SatchelCharge_Remote_Mag",
 	"DemoCharge_Remote_Mag",
+	"1Rnd_HE_Grenade_shell",
+	"HandGrenade",
+	"ClaymoreDirectionalMine_Remote_Mag",
+	"ATMine_Range_Mag",
+	"SmokeShellGreen",
+	"SmokeShellBlue",
+	"SmokeShellRed",
 	"B_Carryall_oucamo",
 	"B_Carryall_mcamo"
 ];
