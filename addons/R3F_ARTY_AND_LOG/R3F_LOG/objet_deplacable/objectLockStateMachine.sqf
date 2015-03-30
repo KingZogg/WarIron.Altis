@@ -34,6 +34,8 @@ switch (_lockState) do
 			_object = _this select 1;
 			_failed = true;
 
+			_minDist = ["A3W_lockObjectDistance", 100] call getPublicVar;
+			
 			switch (true) do
 			{
 				case (!alive player): { _text = "" };
@@ -41,7 +43,8 @@ switch (_lockState) do
 				case (vehicle player != player): { _text = "Action failed! You can't do this in a vehicle" };
 				case (!isNull (_object getVariable ["R3F_LOG_est_transporte_par", objNull])): { _text = "Action failed! Somebody moved the object" };
 				case (_object getVariable ["objectLocked", false]): { _text = "Somebody else locked it before you" };
-				case (count (nearestObjects [player, ["Land_Cashdesk_F"], 350]) > 0): { _text = "You are not allowed to lock objects within 350m of shops"};
+				case (count (nearestObjects [player, ["Land_Cashdesk_F"], _minDist]) > 0): { _text = "You are not allowed to lock objects this close to shops"};
+				
 				default
 				{
 					_failed = false;

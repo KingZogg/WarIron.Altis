@@ -188,9 +188,9 @@ vehicleWeapons =
 	"arifle_MXM_F",
 	"srifle_EBR_F",
 	"LMG_Mk200_F",
-	"LMG_Zafir_F",
-	"srifle_DMR_01_F", 	// Rahim DMR Marksman Rifle
-	"srifle_EBR_F"	    // Mk18 ABR Assault Rifle 7.62mm
+	"LMG_Zafir_F"
+//	"srifle_DMR_01_F", 	// Rahim DMR Marksman Rifle
+//	"srifle_EBR_F"	    // Mk18 ABR Assault Rifle 7.62mm
 	
 //	"srifle_LRR_SOS_F",   	// M320 LRR Sniper
 //	"srifle_GM6_SOS_F"	// GM6 Lynx Sniper

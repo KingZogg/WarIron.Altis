@@ -10,6 +10,8 @@ if (mutexScriptInProgress) exitWith
 	["You are already performing another action.", 5] call mf_notify_client;
 };
 
+if (("ToolKit" in (items player + assignedItems player))) then {
+
 private ["_vehicle", "_vehClass", "_checks", "_firstCheck", "_time", "_success", "_break"];
 _vehicle = cursorTarget;
 _vehClass = typeOf _vehicle;
@@ -63,19 +65,19 @@ switch (true) do
 {
 	case (_vehClass isKindOf "Plane_Base_F"): // Planes (UAV_02 is not in Plane_Base_F)
 	{
-		_time = 60;
+		_time = 160;
 	};
 	case (_vehClass isKindOf "Tank"): // Tanks & IFVs
 	{
-		_time = 60;
+		_time = 160;
 	};
 	case (_vehClass isKindOf "Helicopter_Base_F" && !(_vehClass isKindOf "UAV_01_base_F")): // Helicopters (except UAV_01)
 	{
-		_time = 55;
+		_time = 120;
 	};
 	case (_vehClass isKindOf "Wheeled_APC_F"): // Wheeled APCs
 	{
-		_time = 50;
+		_time = 60;
 	};
 	case (_vehClass isKindOf "Truck_F" && !(_vehClass isKindOf "Van_01_base_F")): // Trucks (except Vans)
 	{
@@ -119,4 +121,10 @@ if (_success) then
 	_vehicle setVariable ["ownerUID", getPlayerUID player, true];
 	_vehicle engineOn true;
 	["You have broke in and hot-wired successfully", 5] call mf_notify_client;
+};
+
+}
+else
+{
+["You need a ToolKit to break into vehicles", 5] call mf_notify_client;
 };

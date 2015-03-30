@@ -75,7 +75,7 @@ _setupObjects =
 	_missionHintText = format ["A Sniper Nest has been spotted guarding gold and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
 };
 
-<t color='ffd700'>
+
 
 _waitUntilMarkerPos = nil;
 _waitUntilExec = nil;

@@ -61,14 +61,14 @@ rifleArray = compileFinal str
 	// Markman Rifles
 	["MXM Marksman Rifle 6.5mm", "arifle_MXM_F", 500],
 	["MXM Marksman Rifle 6.5mm (Black)", "arifle_MXM_Black_F", 550],
-	["Rahim DMR Marksman Rifle 7.62 mm", "srifle_DMR_01_F", 1000],
-	["Mk18 ABR Assault Rifle 7.62mm", "srifle_EBR_F", 1500],
+	["Rahim DMR Marksman Rifle 7.62 mm", "srifle_DMR_01_F", 5000],
+	["Mk18 ABR Assault Rifle 7.62mm", "srifle_EBR_F", 5500],
 
 	// Sniper Rifles
-	["M320 LRR Sniper", "srifle_LRR_SOS_F", 2500],
-	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_SOS_F", 3000],
-	["GM6 Lynx Sniper", "srifle_GM6_SOS_F", 2500],
-	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_SOS_F", 3000]
+	["M320 LRR Sniper", "srifle_LRR_SOS_F", 8000],
+	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_SOS_F", 8500],
+	["GM6 Lynx Sniper", "srifle_GM6_SOS_F", 10000],
+	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_SOS_F", 10500]
 ];
 
 lmgArray = compileFinal str
