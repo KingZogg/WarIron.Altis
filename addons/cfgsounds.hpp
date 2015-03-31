@@ -1,4 +1,3 @@
-
 class CfgSounds
 {
 	sounds[] = 
@@ -49,6 +48,12 @@ class CfgSounds
 			{
                                 sound[] = {"addons\beacondetector\sound\beep.wav", db-10, 0.1};
                                 titles[] = {};
+			};
+			
+		class radZoneS
+			{
+								sound[] = {\client\sounds\radiation.ogg, db - 3, 1.0};
+								titles[] = {0, ""};
 			};
 		
 

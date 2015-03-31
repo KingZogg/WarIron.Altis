@@ -9,6 +9,9 @@
 
 private ["_player", "_corpse"];
 
+terminate radZone;
+terminate radZoneWarning;
+
 playerSetupComplete = false;
 
 9999 cutText ["", "BLACK", 0.01];

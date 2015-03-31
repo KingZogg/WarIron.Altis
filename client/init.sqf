@@ -109,6 +109,9 @@ if (count (["config_territory_markers", []] call getPublicVar) > 0) then
 	[] execVM "territory\client\setupCaptureTriggers.sqf";
 };
 
+[] execVM "client\functions\setTriggers.sqf";
+
+
 //Setup player menu scroll action.
 //[] execVM "client\clientEvents\onMouseWheel.sqf";
 

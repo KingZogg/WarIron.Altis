@@ -53,7 +53,8 @@ _serverCompileHandle = [] spawn compile preprocessFileLineNumbers "server\functi
 [] execVM "server\functions\broadcaster.sqf";
 [] execVM "server\functions\relations.sqf";
 [] execVM (externalConfigFolder + "\init.sqf");
-[] execVM "\server\missions\bld\initBld.sqf";
+[] execVM "\server\scripts\init.sqf";
+
 
 waitUntil {scriptDone _serverCompileHandle};
 
@@ -86,15 +87,6 @@ else
 }
 forEach
 [
-	//WI-Additions
-	"A3W_NoGlobalVoice",
-	"A3W_NoSideVoice",
-	"A3W_NoCommandVoice",
-	"A3W_NoGlobalVoiceBan",
-	"A3W_NoSideVoiceBan",
-	"A3W_NoCommandVoiceBan",
-	//End WI-Additions
-	
 	"A3W_startingMoney",
 	"A3W_showGunStoreStatus",
 	"A3W_gunStoreIntruderWarning",
@@ -131,7 +123,7 @@ forEach
 	"A3W_tkKickAmount",
 	"A3W_donatorEnabled",
 	"A3W_customUniformEnabled"
-];
+	];
 
 ["A3W_join", "onPlayerConnected", { [_id, _uid, _name] spawn fn_onPlayerConnected }] call BIS_fnc_addStackedEventHandler;
 
@@ -292,8 +284,8 @@ call compile preprocessFileLineNumbers "\server\missions\setupMissionArrays.sqf"
 call compile preprocessFileLineNumbers "server\functions\createTownMarkers.sqf";
 
 _createTriggers = [] spawn compile preprocessFileLineNumbers "territory\server\createCaptureTriggers.sqf"; // scriptDone stays stuck on false when using execVM on Linux
-
 [_setupPlayerDB, _createTriggers] spawn
+
 {
 	waitUntil {sleep 0.1; {scriptDone _x} count _this == count _this};
 	A3W_serverSetupComplete = compileFinal "true";
