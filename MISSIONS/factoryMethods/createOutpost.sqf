@@ -22,7 +22,7 @@ _fileName = _this select 0;
 _pos = _this select 1;
 _dir = _this select 2;
 
-_objList = call compile preprocessFileLineNumbers format ["server\missions\outposts\%1.sqf", _fileName];
+_objList = call compile preprocessFileLineNumbers format ["\server\missions\outposts\%1.sqf", _fileName];
 _objs = [];
 
 {

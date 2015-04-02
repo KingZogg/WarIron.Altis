@@ -67,7 +67,7 @@ while {true} do
 	// these should be defined in the mission script
 	private ["_setupVars", "_setupObjects", "_waitUntilMarkerPos", "_waitUntilExec", "_waitUntilCondition", "_waitUntilSuccessCondition", "_ignoreAiDeaths", "_failedExec", "_successExec"];
 
-	[_controllerSuffix] call compile preprocessFileLineNumbers format ["server\missions\%1\%2.sqf", MISSION_CTRL_FOLDER, _nextMission];
+	[_controllerSuffix] call compile preprocessFileLineNumbers format ["\server\missions\%1\%2.sqf", MISSION_CTRL_FOLDER, _nextMission];
 
 	[MISSION_CTRL_PVAR_LIST, _nextMission, false] call setMissionState;
 

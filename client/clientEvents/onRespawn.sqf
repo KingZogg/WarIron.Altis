@@ -9,8 +9,6 @@
 
 private ["_player", "_corpse"];
 
-terminate radZone;
-terminate radZoneWarning;
 
 playerSetupComplete = false;
 

@@ -32,7 +32,7 @@ if((!hasInterface && !isServer) || isServer) then
 
 	_veh = ["JoSchaap01","JoSchaap02","JoSchaap03"] call BIS_fnc_selectRandom;
 
-	_base = [_veh, 0, _randomPos] execVM "server\functions\createOutpost.sqf";
+	_base = [_veh, 0, _randomPos] execVM "\server\missions\functions\createOutpost.sqf";
 
 	_vehicleName = "outpost";
 	_hint = parseText format ["<t align='center' color='%3' shadow='2' size='1.75'>Main Objective</t><br/><t align='center' color='%3'>------------------------------</t><br/><t align='center' color='%4' size='1.25'>%1</t><br/><t align='center' color='%4'>An <t color='%3'>%2</t> with special weapons has been spotted near the marker, go capture it.</t>", _missionType, _vehicleName, mainMissionColor, subTextColor];

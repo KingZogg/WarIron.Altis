@@ -18,7 +18,7 @@ _setupVars =
 _setupObjects =
 {
 	private ["_starts", "_startDirs", "_waypoints"];
-	call compile preprocessFileLineNumbers format ["mapConfig\convoys\%1.sqf", _missionLocation];
+	call compile preprocessFileLineNumbers format ["\server\scripts\convoys\%1.sqf", _missionLocation];
 	
 	// Pick the vehicles for the patrol. Only one set at the moment. Will add more later.
 	_convoyVeh = 

@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: populateGoldBuyer.sqf
-//	@file Author: [404] Deadbeat, [KoS] His_Shadow, AgentRev, KingZog [git]
+//	@file Author: [404] Deadbeat, [KoS] His_Shadow, AgentRev
 //	@file Created: 20/11/2012 05:13
 //	@file Args:
 

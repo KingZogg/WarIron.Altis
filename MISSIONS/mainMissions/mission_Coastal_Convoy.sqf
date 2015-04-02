@@ -21,7 +21,7 @@ _setupVars =
 _setupObjects =
 {
 	private ["_starts", "_startDirs", "_waypoints"];
-	call compile preprocessFileLineNumbers format ["mapConfig\convoys\%1.sqf", _missionLocation];
+	call compile preprocessFileLineNumbers format ["\server\scripts\convoys\%1.sqf", _missionLocation];
 
 	_vehChoices =
 	[

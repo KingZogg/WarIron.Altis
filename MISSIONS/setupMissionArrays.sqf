@@ -15,7 +15,7 @@ MainMissions =
 	["mission_HostileHeliFormation", 1],
 	["mission_APC", 3],
 	["mission_MBT", 5],
-	["mission_VehicleCapture", 7],
+	//["mission_VehicleCapture", 7],
 	//["mission_LightArmVeh", 1],
 	["mission_ArmedHeli", 7]
 	//["mission_CivHeli", 1]
@@ -33,8 +33,8 @@ SideMissions =
 	["mission_Outpost", 2],
 	//["mission_HostileInfantry", 3],
 	["mission_Truck", 1.5],
-	["mission_Sniper", 4],
-	["mission_Smugglers", 1]
+	["mission_Sniper", 4]
+	//["mission_Smugglers", 1]
 	//["mission_HostileJet", 0.5]
 ];
 
@@ -104,15 +104,15 @@ GoldMissionMarkers = [];
 LandConvoyPaths = [];
 {
 	LandConvoyPaths pushBack [_x, false];
-} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\landConvoysList.sqf");
+} forEach (call compile preprocessFileLineNumbers "\server\scripts\convoys\landConvoysList.sqf");
 
 CoastalConvoyPaths = [];
 {
 	CoastalConvoyPaths pushBack [_x, false];
-} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\coastalConvoysList.sqf");
+} forEach (call compile preprocessFileLineNumbers "\server\scripts\convoys\coastalConvoysList.sqf");
 
 PatrolConvoyPaths = [];
 {
 	PatrolConvoyPaths pushBack [_x, false];
-} forEach (call compile preprocessFileLineNumbers "mapConfig\convoys\patrolConvoysList.sqf");
+} forEach (call compile preprocessFileLineNumbers "\server\scripts\convoys\patrolConvoysList.sqf");
 

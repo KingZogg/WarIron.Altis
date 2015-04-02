@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: mission_Gold.sqf
-//	@file Author: [404] Deadbeat, [404] Costlyy ,KingZog [git]
+//	@file Author: [404] Deadbeat, [404] Costlyy
 //	@file Created: 27/12/2014 08:00
 //	@file Args:
 

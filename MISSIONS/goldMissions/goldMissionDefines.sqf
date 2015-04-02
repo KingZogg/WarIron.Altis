@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: goldMissionDefines.sqf
-//	@file Author: His_Shadow, KingZog [git]
+//	@file Author: His_Shadow
 //	@file Created: 07/09/2013 15:19
 
 #define goldMissionColor "#ffd700"

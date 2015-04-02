@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //@file Version: 1.0
 //@file Name: pack.sqf
-//@file Author: MercyfulFate, KingZog [git]
+//@file Author: MercyfulFate
 //@file Created: 23/7/2013 16:00
 //@file Description: Take the nearest gold box
 //@file Argument: [player, player, _action, []] the standard "called by an action" values

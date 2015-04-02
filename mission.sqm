@@ -95,7 +95,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="A3Wasteland Altis v1.1x  50k New Player Start |Gold Missions|Lock/Pick Vehicles|Custom Missions|View Distance Addon|Lot's of customisation|We eat our own code";
+		briefingName="A3Wasteland Altis - Light(Smaller) v1.1x  25k 4 Fresh Meat |Gold Missions|Lock/Pick Vehicles|Custom Missions|View Distance Addon|Lot's of customisation|We eat our own code";
 		overviewText="WarIron.Com Wasteland Conquest Altis by WarIron.Com Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		timeOfChanges=15180;
@@ -1907,8 +1907,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={7177.9243,4.3662696,11110.646};
-					azimut=240;
+					position[]={7183.6646,4.492588,11110.636};
+					azimut=-22.320875;
 					id=145;
 					side="LOGIC";
 					vehicle="C_man_1_1_F";
@@ -2011,8 +2011,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9724.0273,4.0919762,22279.686};
-					azimut=45;
+					position[]={9717.7383,3.9920089,22277.465};
+					azimut=63.860313;
 					id=150;
 					side="LOGIC";
 					vehicle="C_man_1_1_F";
@@ -2437,7 +2437,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=205;
+		items=206;
 		class Item0
 		{
 			position[]={8916.2295,61.599457,11875.225};
@@ -3050,7 +3050,7 @@ class Mission
 		};
 		class Item71
 		{
-			position[]={14253.941,4.9646177,13012.583};
+			position[]={9212.8438,27.271154,13852.002};
 			name="Mission_18";
 			type="Empty";
 			colorName="ColorOrange";
@@ -3141,7 +3141,7 @@ class Mission
 		};
 		class Item84
 		{
-			position[]={3729.4861,18.875647,12979.233};
+			position[]={3869.1123,63.607788,12017.281};
 			name="heliSpawn_21";
 			type="Empty";
 			colorName="ColorGreen";
@@ -3253,14 +3253,14 @@ class Mission
 		};
 		class Item100
 		{
-			position[]={9729.1201,2.9205198,22295.65};
+			position[]={9706.2383,2.5941894,22308.141};
 			name="VehStore2_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
 		class Item101
 		{
-			position[]={9670.4648,2.7830737,22295.08};
+			position[]={9667.6309,2.9869604,22288.17};
 			name="VehStore2_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -4036,7 +4036,7 @@ class Mission
 		};
 		class Item195
 		{
-			position[]={3910.9282,61.436028,12011.179};
+			position[]={3985.1758,22.407408,11591.062};
 			name="Town_38";
 			type="Empty";
 			colorName="ColorRed";
@@ -4050,8 +4050,8 @@ class Mission
 		};
 		class Item197
 		{
-			position[]={9737.2568,0.37077147,22325.865};
-			name="VehStore2_seaSpawn_1";
+			position[]={9743.1348,0.004298992,22348.424};
+			name="VehStore2_seaSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
@@ -4085,24 +4085,34 @@ class Mission
 		};
 		class Item202
 		{
-			position[]={8869.4795,76.657242,23477.762};
+			position[]={8691.8877,81.142441,23424.023};
 			name="Mission_22";
 			type="Empty";
 			colorName="ColorOrange";
 		};
 		class Item203
 		{
-			position[]={13839.953,-0.17281418,12792.255};
-			name="planeSpawn_6_1";
-			type="Empty";
-			colorName="ColorGUER";
-			angle=120;
-		};
-		class Item204
-		{
 			position[]={12825.122,44.548824,19661.799};
 			name="Town_42";
 			type="Empty";
+			colorName="ColorRed";
+		};
+		class Item204
+		{
+			position[]={11029.256,16.086271,10926.911};
+			name="LiveFireArea";
+			markerType="RECTANGLE";
+			type="Empty";
+			colorName="ColorRed";
+			a=400;
+			b=30;
+		};
+		class Item205
+		{
+			position[]={10119.467,31.787544,8414.7803};
+			name="LFA";
+			text="LIVE FIRE AREA";
+			type="KIA";
 			colorName="ColorRed";
 		};
 	};

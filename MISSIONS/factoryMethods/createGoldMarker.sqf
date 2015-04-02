@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //	@file Version: 1.0
 //	@file Name: creategoldMarker.sqf
-//	@file Author: [404] Deadbeat, [404] Costlyy, [GoT] JoSchaap, King Zog [git]
+//	@file Author: [404] Deadbeat, [404] Costlyy, [GoT] JoSchaap
 //	@file Args:
 
 private ["_text", "_pos", "_marker","_marker2","_markername","_markername2"];

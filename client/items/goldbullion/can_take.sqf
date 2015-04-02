@@ -3,7 +3,7 @@
 // ******************************************************************************************
 //@file Version: 1.0
 //@file Name: can_take.sqf 
-//@file Author: MercyfulFate, KingZog [git]
+//@file Author: MercyfulFate
 //@file Created: 23/7/2013 16:00
 //@file Description: Check if you can take the gold
 //@file Argument: [_gold] the (object that is a) gold box to see if you can take it.

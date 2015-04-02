@@ -33,7 +33,7 @@ if (count _ctrlTypes < _ctrlQuantity) then
 	missionNamespace setVariable [format ["%1Processor", _x], (format ["\server\missions\%1Processor.sqf", _x]) call mf_compile];
 
 	// Start controller
-	[] execVM format ["server\missions\%1Controller.sqf", _x];
+	[] execVM format ["\server\missions\%1Controller.sqf", _x];
 	uiSleep 5;
 } forEach _ctrlTypes;
 
