@@ -75,7 +75,6 @@ _setupObjects =
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
 	
 	
-	
 	// spawn some rebels/enemies :)
 	_aiGroup = createGroup CIVILIAN;
 	[_aiGroup, _missionPos] call createsniperGroup;
@@ -112,7 +111,7 @@ _successExec =
 		//_gold setPosATL (getPosATL _vehicle vectorAdd [(ceil(random (16) - 8)),(ceil(random (16) - 8)),1]);
 		};
 		
-	_goldAmmount = _goldAmmount * 25000;
+	_goldAmmount = _goldAmmount * 10000;
 	
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 

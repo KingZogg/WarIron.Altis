@@ -2376,8 +2376,8 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={15055.262,17.91,17150.836};
-			azimut=119.18722;
+			position[]={15076.774,17.91,17226.779};
+			azimut=134.0549;
 			special="NONE";
 			id=179;
 			side="EMPTY";
@@ -3354,11 +3354,11 @@ class Mission
 		};
 		class Item114
 		{
-			position[]={15078.744,17.91,17238.578};
+			position[]={15058.402,17.91,17157.471};
 			name="planeSpawn_3";
 			type="Empty";
 			colorName="ColorGUER";
-			angle=134;
+			angle=121.94138;
 		};
 		class Item115
 		{
@@ -3935,7 +3935,7 @@ class Mission
 		};
 		class Item182
 		{
-			position[]={15059.906,17.91,17156.416};
+			position[]={15076.357,17.91,17227.455};
 			name="Service_Truck_3";
 			text="Service_Truck_3";
 			type="Empty";

@@ -70,6 +70,39 @@ _man6 addMagazine "20Rnd_762x51_Mag";
 _man6 addMagazine "20Rnd_762x51_Mag";
 _man6 addItem "Rangefinder";
 
+_man7 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
+removeAllAssignedItems _man7;
+_man7 addUniform "U_B_CTRG_1";
+_man7 addVest "V_HarnessOSpec_brn";
+_man7 addBackpack "B_FieldPack_ocamo";
+_man7 addMagazine "10Rnd_762x51_Mag";
+_man7 addWeapon "srifle_DMR_01_F";
+_man7 addPrimaryWeaponItem "optic_Holosight";
+_man7 addMagazine "10Rnd_762x51_Mag";
+_man7 addMagazine "10Rnd_762x51_Mag";
+_man7 addMagazine "Titan_AA";
+_man7 addWeapon "launch_I_Titan_F";
+_man7 addMagazine "Titan_AA";
+_man7 addHeadgear "H_Booniehat_mcamo";
+_man7 addGoggles "G_Balaclava_blk";
+
+_man8 = _group createUnit ["C_man_polo_3_F", [_pos select 0, (_pos select 1) + 30, 0], [], 1, "Form"];
+removeAllAssignedItems _man8;
+_man8 addUniform "U_B_CTRG_1";
+_man8 addVest "V_HarnessOSpec_brn";
+_man8 addBackpack "B_FieldPack_ocamo";
+_man8 addMagazine "10Rnd_762x51_Mag";
+_man8 addWeapon "srifle_DMR_01_F";
+_man8 addPrimaryWeaponItem "optic_Holosight";
+_man8 addMagazine "10Rnd_762x51_Mag";
+_man8 addMagazine "10Rnd_762x51_Mag";
+_man8 addMagazine "NLAW_F";
+_man8 addWeapon "launch_NLAW_F";
+_man8 addMagazine "NLAW_F";
+_man8 addHeadgear "H_Booniehat_mcamo";
+_man8 addGoggles "G_Balaclava_blk";
+
+
 sleep 0.1; // Without this delay, headgear doesn't get removed properly
 
 _leader = leader _group;

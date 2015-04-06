@@ -30,10 +30,10 @@ mf_items__gold_bullion_nearest = {
 	_gold;
 } call mf_compile;
 
-[MF_ITEMS_GOLD_BULLION, "Gold Bullion Box", _can_take, _ground_type, _icon, MF_ITEMS_GOLD_BULLION_MAX] call mf_inventory_create;
+[MF_ITEMS_GOLD_BULLION, "Gold Bars", _can_take, _ground_type, _icon, MF_ITEMS_GOLD_BULLION_MAX] call mf_inventory_create;
 
 private ["_label", "_condition", "_action"];
-_label = format["<img image='%1' /> Take Gold Bullion Box", _icon];
+_label = format["<img image='%1' /> Take Gold Bars", _icon];
 _condition = "'' == [] call mf_items_gold_bullion_can_take;";
 _action = [_label, _take, [], 1, true, false, "", _condition];
 ["take-bullion", _action] call mf_player_actions_set;

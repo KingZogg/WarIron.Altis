@@ -9,23 +9,18 @@
 if (!isServer) exitwith {};
 #include "moneyMissionDefines.sqf";
 
-private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash"];
+private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_goldAmount"];
 
 _setupVars =
 {
 	_locationsArray = LandConvoyPaths;
 
-	// Money Shipments settings
-	// Difficulties : Min = 1, Max = infinite
-	// Convoys per difficulty : Min = 1, Max = infinite
-	// Vehicles per convoy : Min = 1, Max = infinite
-	// Choices per vehicle : Min = 1, Max = infinite
 	_MoneyShipment =
 	[
 		// Easy
 		[
-			"Small Money Shipment", // Marker text
-			25000, // Money
+			"Small Money/Gold Shipment", // Marker text
+			10000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
@@ -43,8 +38,8 @@ _setupVars =
 		],
 		// Medium
 		[
-			"Medium Money Shipment", // Marker text
-			50000, // Money
+			"Medium Money/Gold Shipment", // Marker text
+			15000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
@@ -65,8 +60,8 @@ _setupVars =
 		],
 		// Hard
 		[
-			"Large Money Shipment", // Marker text
-			75000, // Money
+			"Large Money/Gold Shipment", // Marker text
+			35000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F"], // Veh 1
@@ -87,8 +82,8 @@ _setupVars =
 		],
 		// Extreme
 		[
-			"Heavy Money Shipment", // Marker text
-			100000, // Money
+			"Heavy Money/Gold Shipment", // Marker text
+			45000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 1
@@ -116,12 +111,39 @@ _setupVars =
 	_missionType = _MoneyShipment select 0;
 	_moneyAmount = _MoneyShipment select 1;
 	_convoys = _MoneyShipment select 2;
+	
 	_vehChoices = _convoys call BIS_fnc_selectRandom;
-
+		
 	_moneyText = format ["$%1", [_moneyAmount] call fn_numbersText];
 
 	_vehClasses = [];
 	{ _vehClasses pushBack (_x call BIS_fnc_selectRandom) } forEach _vehChoices;
+
+	
+		switch (_missionType) do
+	{
+    case "Small Money/Gold Shipment":
+		{
+			_goldAmount = ceil(random 2);
+		};
+	
+	case "Medium Money/Gold Shipment":
+		{
+			_goldAmount = ceil(random 3);
+		};	
+	
+	case "Large Money/Gold Shipment":
+		{
+			_goldAmount = ceil(random 7);
+		};
+	
+	case "Heavy Money/Gold Shipment":
+		{
+			_goldAmount = ceil(random 10);
+		};
+	};
+	
+	
 };
 
 _setupObjects =
@@ -207,9 +229,10 @@ _setupObjects =
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh2 >> "picture");
 	_vehicleName = getText (configFile >> "cfgVehicles" >> _veh2 >> "displayName");
 
-	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!", moneyMissionColor, _moneyText, _vehicleName];
+	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t><br/> and an unknown amount of GOLD <br/> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!", moneyMissionColor, _moneyText, _vehicleName];
 
 	_numWaypoints = count waypoints _aiGroup;
+	
 };
 
 _waitUntilMarkerPos = {getPosATL _leader};
@@ -232,8 +255,16 @@ _successExec =
 		_cash setVariable ["cmoney", _moneyAmount / 10, true];
 		_cash setVariable ["owner", "world", true];
 	};
+	
+	for "_i" from 1 to _goldAmount do
+	{
+		_gold = createVehicle ["Land_TinContainer_F", _lastPos, [], 5, "None"];
+		_gold setPos ([_lastPos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
+	};
+		
+	_goldAmount = _goldAmount * 15000;
 
-	_successHintMessage = "The convoy has been stopped, the money and vehicles are now yours to take.";
+	_successHintMessage = format ["The convoy has been stopped<br/>The money,gold and vehicles are now yours to take.<br/>There is<br/><t color='%2'> $%1 </t><br/>in gold to collect." ,_goldAmount, sideMissionColor];
 };
 
 _this call moneyMissionProcessor;

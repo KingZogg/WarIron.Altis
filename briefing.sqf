@@ -378,8 +378,8 @@ player createDiaryRecord ["wariron",
 [
 "Day/Night Cycle",
 "
-<br/>Time goes a 1.5 times faster during the day.
-<br/>8 times faster at night. 
+<br/>Time goes a 2 times faster during the day.
+<br/>12 times faster at night. 
 "
 ]];
 
@@ -400,15 +400,15 @@ player createDiaryRecord ["wariron",
 "
 <br/>Mission Timeouts.
 <br/>
-<br/>Main Missions timeout after 3 Hours.
+<br/>Main Missions timeout after 1.5 Hours.
 <br/>
-<br/>Side Misisons timeout after 3 Hours
+<br/>Side Misisons timeout after 1.5 Hours
 <br/>
-<br/>Money Missions timeout after 1 Hours
+<br/>Money Missions timeout after 45 Mins
 <br/>
-<br/>Gold Missons timeout after 6 Hours
+<br/>Gold Missons timeout after 2 Hours
 <br/>
-<br/>Missions are set to HARD
+<br/>Missions are set to EASY
 "
 ]];
 
@@ -419,7 +419,7 @@ player createDiaryRecord ["wariron",
 <br/>The Maximum Money you can have in your account is
 <br/>$5 Million
 <br/>
-<br/>Money can only be transferred between members of the same team.
+<br/>Money can only be transferred between members of the same team/group.
 <br/>
 <br/>Transfer Fee Tax is %5.
 <br/>
@@ -432,9 +432,9 @@ player createDiaryRecord ["wariron",
 [
 "Territory Settings",
 "
-<br/>Territories pay $5000 for each territory held.
+<br/>Territories pay $8000/$7000 for each territory captured.
 <br/>
-<br/>You and/or your team will be paid every 1/2 Hour.
+<br/>You and/or your team/group will be paid $5000 for every territory held every 1/2 Hour.
 <br/>
 <br/>You have to be within 2km's of the territory to get paid.
 <br/>
@@ -445,16 +445,14 @@ player createDiaryRecord ["wariron",
 [
 "Equipment Saving and Timeouts ",
 "
-<br/>Vehicles captured from missions can be saved by players.
-<br/>
 <br/>Unused parked vehicles will be deleted from the server after
 <br/>5 days.
 <br/>
 <br/>Player saved vehicles will be deleted every
-<br/>7 days. Based on when the player saved it.
+<br/>14 days. Based on when the player saved it.
 <br/>
 <br/>Base Parts, Static Weapons and Crates will be deleted every
-<br/>7 days.
+<br/>14 days unless relocked, which will extend the timer for another 14 days.
 <br/>
 <br/>Player loadouts and carried money are never deleted.
 <br/>Unless they die of course :)
@@ -480,10 +478,13 @@ player createDiaryRecord ["wariron",
 [
 "Missions and Timeouts",
 "
-<br/>There are 2 gold missions.
+<br/>There are gold missions.
 <br/>Gold sub which you will need diving gear for.
 <br/>The sub could be carrying upto $1 Million in gold (Random).
+<br/>
 <br/>Snipers Nest side mission which does not have as much gold. It is also a random amount.
+<br/>
+<br/>Money Missions carry money and a random amount of gold.
 <br/>
 <br/>Timeouts. 
 <br/>The Gold Sub Mission time out is 3 hours. 
@@ -509,9 +510,9 @@ player createDiaryRecord ["wariron",
 <br/>Once all the divers are killed, the gold is in tin boxes that are found around the sub. They can be very hard to see.
 <br/>Use your mouse wheel to pick one up when you are over one.
 <br/>
-<br/>A player can only carry 4 tins of gold at any one time.
+<br/>A player can only carry 6 tins of gold at any one time.
 <br/>
-<br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
+<br/>You can load some of the gold tins into the sub and move it, if you have refuelled and repaired it.
 <br/>
 <br/>You can't load the gold into land vehicles.
 <br/>
@@ -524,7 +525,10 @@ player createDiaryRecord ["wariron",
 [
 "General Info and Additions ",
 "
-<br/>The server is has only this A3Wasteland mission running on it for full optimisation.
+<br/>The server is has only this mission running on it for full optimisation.
+<br/>
+<br/>Teamspeak is ts3.wariron.com. If you need an admin wait in the waiting for admin channel. 
+<br/>Feel free to poke admins.
 <br/>
 <br/>The game play is designed to be brutal and very hard.
 <br/>Hard work does have it's rewards.
@@ -539,7 +543,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>Thermal Vehicle weapons are enabled.
 <br/>
-<br/>Beacon detectors don't need a toolkit to work but the range is limited.
+<br/>The beacon detector needs a mine detector to work and the range is limited.
 <br/>
 <br/>TeamKill Autokick is in place. 
 <br/>The Tk's are not reset after a restart so anyone who keeps doing it will be autobanned.
@@ -553,7 +557,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>We hate fog and it will never be in the game. Rain is also off (it might come back).
 <br/>
-<br/>A player can only carry 4 tins of gold at any one time.
+<br/>A player can only carry 6 tins of gold at any one time.
 <br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
 <br/>You can't load the gold into any other vehicle.
 <br/>
@@ -568,7 +572,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>This is a new server so any suggestions on improvements are welcome.
 <br/>
-<br/>New secret spiced up missions are in development and are coming very soon.
+<br/>New secret spiced up missions are always in development.
 
 "
 ]];
