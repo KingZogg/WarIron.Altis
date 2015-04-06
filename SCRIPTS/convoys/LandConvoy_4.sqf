@@ -6,30 +6,36 @@
 //	@file Author: [GoT] JoSchaap, [404] Del1te, AgentRev
 //	@file Created: 13/02/2014 22:52
 
+
+
+//Oreokastro,
+
 // starting positions for this route
 _starts =
 [
-[4666.28,22313.4],
-[4660.65,22302],
-[4655.34,22281.2],
-[4661.5,22259.5],
-[4665.22,22234.9]
+[3457.54,20886.5],
+[3477.02,20877.7],
+[3498.75,20868.2],
+[3521.04,20858],
+[3540.4,20849]
 ];
+
+
+
 
 // starting directions in which the vehicles are spawned on this route
 _startDirs =
 [
-	200,
-	200,
-	200,
-	200,
-	200
+	115,
+	115,
+	115,
+	115,
+	115
 ];
 
 // the route
 _waypoints =
 [
-[4567.1,21855],
 [4649.47,20648.1],
 [6937.25,18885.4],
 [7431.4,17144.3],

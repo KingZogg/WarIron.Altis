@@ -6,8 +6,9 @@
 
 [
 	"PatrolConvoy_1",
-	"PatrolConvoy_2",
-	"PatrolConvoy_3",
-	"PatrolConvoy_4",
-	"PatrolConvoy_5"
+	"PatrolConvoy_1"
+	//"PatrolConvoy_2",
+	//"PatrolConvoy_3",
+	//"PatrolConvoy_4",
+	//"PatrolConvoy_5"
 ]
