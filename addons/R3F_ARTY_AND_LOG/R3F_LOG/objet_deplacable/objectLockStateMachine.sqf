@@ -10,13 +10,15 @@ if(R3F_LOG_mutex_local_verrou) exitWith {
 	player globalChat STR_R3F_LOG_mutex_action_en_cours;
 };
 
-private["_locking", "_object", "_lockState", "_lockDuration", "_stringEscapePercent", "_iteration", "_unlockDuration", "_totalDuration", "_checks", "_success"];
+private["_locking", "_object", "_lockState", "_lockDuration", "_stringEscapePercent", "_iteration", "_unlockDuration", "_totalDuration", "_checks", "_success", "_NotOwnerUnlockDuration"];
 
 _object = _this select 0;
 _lockState = _this select 3;
 
 _totalDuration = 0;
 _stringEscapePercent = "%";
+
+_NotOwnerUnlockDuration = ["AW3_NotOwnerUnlockDuration", 120] call getPublicVar;
 
 switch (_lockState) do
 {
@@ -108,7 +110,7 @@ switch (_lockState) do
 	case 1: // UNLOCK
 	{
 		R3F_LOG_mutex_local_verrou = true;
-		_totalDuration = if (_object getVariable ["ownerUID", ""] == getPlayerUID player) then { 10 } else { AW3UnlockDuration }; // Allow owner to unlock quickly
+		_totalDuration = if (_object getVariable ["ownerUID", ""] == getPlayerUID player) then { 10 } else { _NotOwnerUnlockDuration }; // Allow owner to unlock quickly
 		//_unlockDuration = _totalDuration;
 		//_iteration = 0;
 

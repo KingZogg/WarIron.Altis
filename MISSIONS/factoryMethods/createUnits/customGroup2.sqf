@@ -2,7 +2,7 @@
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
 //	@file Name: customGroup2.sqf
-//	@file Author: AgentRev, JoSchaap
+//	@file Author: AgentRev, JoSchaap  Only Used In TownInvasion
 
 if (!isServer) exitWith {};
 
@@ -36,7 +36,7 @@ for "_i" from 1 to _nbUnits do
 	removeAllAssignedItems _unit;
 	removeVest _unit;
 	removeBackpack _unit;
-	_unit addVest "V_HarnessOSpec_gry";
+	_unit addVest "V_Rangemaster_belt";
 	_unit addMagazine "30Rnd_556x45_Stanag";
 	_unit addMagazine "30Rnd_556x45_Stanag";
 	_unit addMagazine "30Rnd_556x45_Stanag";
@@ -56,10 +56,9 @@ for "_i" from 1 to _nbUnits do
 		{
 			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addWeapon "arifle_TRG20_F";
-			_unit addMagazine "Titan_AT";
-			_unit addWeapon "launch_Titan_short_F";
-			_unit addMagazine "Titan_AT";
-			_unit addMagazine "Titan_AT";
+			_unit addMagazine "Titan_AA";
+			_unit addWeapon "launch_B_Titan_F";
+			_unit addMagazine "Titan_AA";
 		};
 		// Rifleman
 		default

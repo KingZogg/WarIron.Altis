@@ -122,7 +122,8 @@ forEach
 	"A3W_tkAutoKickEnabled",
 	"A3W_tkKickAmount",
 	"A3W_donatorEnabled",
-	"A3W_customUniformEnabled"
+	"A3W_customUniformEnabled",
+	"AW3_NotOwnerUnlockDuration"
 	];
 
 ["A3W_join", "onPlayerConnected", { [_id, _uid, _name] spawn fn_onPlayerConnected }] call BIS_fnc_addStackedEventHandler;
@@ -140,7 +141,7 @@ _purchasedVehicleSavingOn = ["A3W_purchasedVehicleSaving"] call isConfigOn;
 _missionVehicleSavingOn = ["A3W_missionVehicleSaving"] call isConfigOn;
 
 _objectSavingOn = (_baseSavingOn || _boxSavingOn || _staticWeaponSavingOn || _warchestSavingOn || _warchestMoneySavingOn || _beaconSavingOn);
-_vehicleSavingOn = (_purchasedVehicleSavingOn || _purchasedVehicleSavingOn);
+_vehicleSavingOn = (_purchasedVehicleSavingOn || _purchasedVehicleSavingOn || _missionVehicleSavingOn);
 
 _setupPlayerDB = scriptNull;
 

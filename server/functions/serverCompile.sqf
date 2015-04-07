@@ -42,11 +42,6 @@ createsniperGroup = [_path, "createUnits\sniperGroup.sqf"] call mf_compile;
 createsmugglerGroup = [_path, "createUnits\smugglerGroup.sqf"] call mf_compile;
 createRandomPilot = [_path, "createUnits\createRandomPilot.sqf"] call mf_compile;
 createWaitCondition = [_path, "createWaitCondition.sqf"] call mf_compile;
-createGroup1= [_path, "createUnits\Group1.sqf"] call mf_compile;
-createGroup2= [_path, "createUnits\Group2.sqf"] call mf_compile;
-createGroup3= [_path, "createUnits\Group3.sqf"] call mf_compile;
-createGroup4= [_path, "createUnits\Group4.sqf"] call mf_compile;
-createGroup5= [_path, "createUnits\Group5.sqf"] call mf_compile;
 
 
 //Function Compiles

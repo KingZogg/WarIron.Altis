@@ -17,7 +17,7 @@ _vehicle = cursorTarget;
 _vehClass = typeOf _vehicle;
 _break = floor (random 100);
 
-if (_break < 35) then
+if (_break < 70) then
 {
 	hint "Your ToolKit broke";	
 	player removeItem "ToolKit";

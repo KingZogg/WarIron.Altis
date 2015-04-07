@@ -1,6 +1,6 @@
-//	@file Name: createRandomSoldier.sqf
+//	@file Name: createRandomPilot.sqf
 /*
- * Creates a random civilian soldier.
+ * Creates a random civilian soldier. USED IN HOSTILE JET MISSION
  *
  * Arguments: [ position, group, init, skill, rank]: Array
  *    position: Position - Location unit is created at.
