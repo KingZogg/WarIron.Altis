@@ -99,8 +99,8 @@ _successExec =
 	sleep 5;
 	
 	_goldAmmount = 0;
-	_goldMinAmmount = 1;
-	_goldMaxAmmount = 99;
+	_goldMinAmmount = 10;
+	_goldMaxAmmount = 89;
 	_goldAmmount = _goldminAmmount + ceil(random _goldMaxAmmount);
 	
 	for "_i" from 1 to _goldAmmount do{

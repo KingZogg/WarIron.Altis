@@ -6,7 +6,7 @@
 
 
 #define SELL_TRUCK_DISTANCE 20
-#define SELLTRUCK_PRICE_RELATIONSHIP 2
+#define SELLTRUCK_PRICE_RELATIONSHIP 3
 
 
 // Check if mutex lock is active.
@@ -79,17 +79,17 @@ if (!isNil "_price") then
 	sleep 5;
 	["Chopping up vehicle.", 5] call mf_notify_client;
 	_vehicle animate ["HideBackpacks", 1];
-	sleep 1;
+	sleep 2;
 	_vehicle animate ["HideBumper1", 1];
-	sleep 1;
+	sleep 2;
 	_vehicle animate ["HideBumper2", 1];
-	sleep 1;
+	sleep 2;
 	_vehicle animate ["HideDoor1", 1];
-	sleep 1;		
+	sleep 2;		
 	_vehicle animate ["HideDoor2", 1];
-	sleep 1;
+	sleep 2;
 	_vehicle animate ["HideDoor3", 1];
-	sleep 1;
+	sleep 2;
 	deleteVehicle _vehicle;
 
 	_text = format ["%1 has been chopped.", _vehName];
