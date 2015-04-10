@@ -49,7 +49,7 @@ Kavala, Distance=275.883, PosASL=[3731.98,12976.2,38.3643]
 
 
 */
-
+(nearestbuilding _missionPos) setVariable ['bis_disabled_Door_1',1,true];
 
 	
 	_buildingRadius = 35;
@@ -65,11 +65,13 @@ Kavala, Distance=275.883, PosASL=[3731.98,12976.2,38.3643]
 
 _setupObjects =
 {
-	_box1 = createVehicle ["Box_East_WpsSpecial_F", _missionPos, [], 5, "None"];
+	_box1 = createVehicle ["Box_NATO_Wps_F", _missionPos, [], 5, "None"];
 	_box1 setDir random 360;
-	
-	_box2 = createVehicle ["Box_IND_WpsSpecial_F", _missionPos, [], 5, "None"];
+	[_box1, "mission_Main_A3snipers"] call fn_refillbox;
+
+	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	_box2 setDir random 360;
+	[_box2, "mission_USLaunchers"] call fn_refillbox;
 		
 	
 	{ _x setVariable ["R3F_LOG_disabled", true, true] } forEach [_box1, _box2];
@@ -114,7 +116,7 @@ _successExec =
 	_goldAmmount = _goldAmmount * 10000;
 	
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
-
+	(nearestbuilding _missionPos) setVariable ['bis_disabled_Door_1',0,true];
 	
 	_successHintMessage = format ["The snipers are dead.<br/>There is<br/><t color='%2'> $%1 </t><br/>in gold to collect." ,_goldAmmount, sideMissionColor];
 };

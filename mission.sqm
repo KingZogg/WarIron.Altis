@@ -2032,8 +2032,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={14482.604,18.864084,16330.667};
-					azimut=155;
+					position[]={14642.85,17.91,16807.033};
+					azimut=-4.5901575;
 					id=151;
 					side="LOGIC";
 					vehicle="C_man_1_1_F";
@@ -2376,8 +2376,8 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={15076.774,17.91,17226.779};
-			azimut=134.0549;
+			position[]={14635.652,17.91,16660.960};
+			azimut=134.796;
 			special="NONE";
 			id=179;
 			side="EMPTY";
@@ -3267,25 +3267,27 @@ class Mission
 		};
 		class Item102
 		{
-			position[]={14501.121,18.800117,16310.477};
+			position[]={14660.869,17.91,16736.367};
 			name="VehStore4_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
+			angle=141.64819;
 		};
 		class Item103
 		{
-			position[]={14515.698,18.365541,16297.085};
+			position[]={14691.655,17.91,16765.576};
 			name="VehStore4_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
+			angle=130.58374;
 		};
 		class Item104
 		{
-			position[]={14556.957,17.871447,16253.292};
+			position[]={14629.274,17.91,16705.939};
 			name="VehStore4_planeSpawn";
 			type="Empty";
 			colorName="ColorBlack";
-			angle=43;
+			angle=135.67625;
 		};
 		class Item105
 		{
@@ -3354,11 +3356,11 @@ class Mission
 		};
 		class Item114
 		{
-			position[]={15058.402,17.91,17157.471};
+			position[]={15078.923,17.91,17238.625};
 			name="planeSpawn_3";
 			type="Empty";
 			colorName="ColorGUER";
-			angle=121.94138;
+			angle=134;
 		};
 		class Item115
 		{
@@ -3935,7 +3937,7 @@ class Mission
 		};
 		class Item182
 		{
-			position[]={15076.357,17.91,17227.455};
+			position[]={14628.737,17.91,16655.252};
 			name="Service_Truck_3";
 			text="Service_Truck_3";
 			type="Empty";

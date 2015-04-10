@@ -1,13 +1,35 @@
 //Main Airport
+/*
 _pos = [14605.230469,16772.962891,0.0191288];
 _object = createVehicle ["Land_Atm_02_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 225.001;
 _object setPosATL _pos;
+*/
 
+/*
 _pos = [14609.18457,16767.867188,3.7];
 _object = createVehicle ["Flag_Suatmm_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 340;
 _object setPosATL _pos;
+*/
+
+
+_pos = [14483.516602,16305.52832,0.100412];
+_object = createVehicle ["Land_Atm_02_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 272;
+_object setPosATL _pos;
+
+_pos = [14483.587891,16301.554688,0.0176563];
+_object = createVehicle ["Flag_Suatmm_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+
+_pos = [14642.375,16801.724609,3.7];
+_object = createVehicle ["Flag_ARMEX_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
+
+
 
 
 

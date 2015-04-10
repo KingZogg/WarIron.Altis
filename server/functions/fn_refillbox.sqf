@@ -28,58 +28,51 @@ if (_boxType == "mission_USSpecial2") then { _boxType = "mission_USSpecial" };
 
 switch (_boxType) do
 {
-	case "mission_USLaunchers":
+	case "mission_USLaunchers":  //missions Coastal_Convoy, Convoy, HostileHeliFormation, Outposts, Airport Patrol, AirWreck, HostileHelicopter, MiniConvoy, SunkenSupplies ,TownInvasion, WepCache, sniperNest
 	{
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			["wep", ["launch_RPG32_F", "launch_NLAW_F"], RANDOM_BETWEEN(2,3), RANDOM_BETWEEN(1,2)],
-			["wep", ["launch_Titan_short_F"], RANDOM_BETWEEN(1,2), RANDOM_BETWEEN(1,2)],
+			//["wep", ["launch_Titan_short_F"], RANDOM_BETWEEN(1,2), RANDOM_BETWEEN(1,2)],
 			["wep", "launch_Titan_F", RANDOM_BETWEEN(2,3), RANDOM_BETWEEN(1,2)],
 			["mag", ["ClaymoreDirectionalMine_Remote_Mag", "SLAMDirectionalMine_Wire_Mag", "ATMine_Range_Mag", "DemoCharge_Remote_Mag", "SatchelCharge_Remote_Mag"], RANDOM_BETWEEN(3,8)]
 		];
 	};
-	case "mission_USSpecial":
+	case "mission_USSpecial": //as above including ArmedDiverSquad, SunkenTreasure,
 	{
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
 			//["itm", "NVGoggles", 5],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,5)],
-			["itm", ["optic_MRCO", "optic_Arco", "optic_Hamr", "optic_SOS", "optic_tws", "optic_Nightstalker"], RANDOM_BETWEEN(2,4)],
-			["itm", ["muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "muzzle_snds_acp"], RANDOM_BETWEEN(1,3)],
+			["itm", ["optic_MRCO", "optic_Arco", "optic_Hamr", "optic_SOS", "optic_tws", "optic_Nightstalker","optic_KHS_hex","optic_AMS_khk"], RANDOM_BETWEEN(2,4)],
+			["itm", ["muzzle_snds_M", "muzzle_snds_H", "muzzle_snds_H_MG", "muzzle_snds_B", "muzzle_snds_acp","muzzle_snds_93mmg","muzzle_snds_338_sand"], RANDOM_BETWEEN(1,3)],
+			["itm", ["bipod_02_F_hex", "bipod_03_F_oli"], RANDOM_BETWEEN(1,3)],
 			["wep", ["hgun_Pistol_heavy_01_F", "hgun_Pistol_heavy_01_MRD_F", "hgun_Pistol_heavy_02_F", "hgun_Pistol_heavy_02_Yorris_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(3,5)],
-			["wep", ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_DMS_F"], RANDOM_BETWEEN(2,3), RANDOM_BETWEEN(4,6)],
+			["wep", ["arifle_MXM_F", "srifle_EBR_F", "srifle_DMR_01_DMS_F","srifle_DMR_04_F","srifle_DMR_05_hex_F","srifle_DMR_02_sniper_F","srifle_DMR_03_multicam_F","srifle_DMR_06_camo_F"], RANDOM_BETWEEN(3,4), RANDOM_BETWEEN(4,6)],
 			["wep", ["LMG_Mk200_F", "LMG_Zafir_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(2,4)],
 			["mag", "30Rnd_556x45_Stanag", RANDOM_BETWEEN(4,8)],
 			["mag", "30Rnd_65x39_caseless_mag", RANDOM_BETWEEN(4,8)],
 			["mag", "30Rnd_65x39_caseless_green", RANDOM_BETWEEN(4,8)],
+			["mag", "30Rnd_65x39_caseless_green", RANDOM_BETWEEN(4,8)],
+			["mag", "30Rnd_65x39_caseless_green", RANDOM_BETWEEN(4,8)],
 			["mag", "9Rnd_45ACP_Mag", RANDOM_BETWEEN(1,5)]
 		];
 	};
-	case "mission_Main_A3snipers":
+	case "mission_Main_A3snipers": //costal_convoy, hostileHeliFormation, Outposts, airport Patrol, ArmedDiverSquad, sniperNest
 	{
 		_boxItems =
 		[
 			// Item type, Item class(es), # of items, # of magazines per weapon
-			["wep", ["srifle_LRR_SOS_F", "srifle_LRR_camo_SOS_F", "srifle_GM6_SOS_F", "srifle_GM6_camo_SOS_F"], RANDOM_BETWEEN(2,4), RANDOM_BETWEEN(6,8)],
+			["wep", ["srifle_LRR_SOS_F", "srifle_LRR_camo_SOS_F", "srifle_GM6_SOS_F", "srifle_GM6_camo_SOS_F", "srifle_DMR_04_Tan_F", "srifle_DMR_02_camo_F", "srifle_DMR_03_multicam_F", "srifle_DMR_06_camo_F"], RANDOM_BETWEEN(3,4), RANDOM_BETWEEN(6,8)],
 			["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(2,4), RANDOM_BETWEEN(6,8)],
 			["wep", ["Binocular", "Rangefinder"], RANDOM_BETWEEN(1,3)],
-			["itm", ["optic_DMS", "optic_tws", "optic_Nightstalker"], RANDOM_BETWEEN(2,3)]
+			["itm", ["optic_MRCO", "optic_Arco", "optic_Hamr", "optic_SOS", "optic_tws", "optic_Nightstalker","optic_KHS_hex","optic_AMS_khk"], RANDOM_BETWEEN(2,4)],
+			["itm", ["bipod_02_F_hex", "bipod_02_F_hex"], RANDOM_BETWEEN(1,3)]
 		];
 	};
-	case "mission_WI_Sniper":
-	{
-		_boxItems =
-		[
-			// Item type, Item class(es), # of items, # of magazines per weapon
-			["wep", ["srifle_LRR_SOS_F", "srifle_LRR_camo_SOS_F", "srifle_GM6_SOS_F", "srifle_GM6_camo_SOS_F"], RANDOM_BETWEEN(1,5), RANDOM_BETWEEN(4,6)],
-			["wep", ["srifle_EBR_F", "srifle_DMR_01_F"], RANDOM_BETWEEN(1,3), RANDOM_BETWEEN(4,6)],
-			
-			["wep", "Rangefinder", RANDOM_BETWEEN(1,3)],
-			["itm", ["optic_DMS","optic_Nightstalker","optic_tws"], RANDOM_BETWEEN(1,5)]
-		];
-	};
+	
 	case "mission_WI_Gear1":
 	{
 		_boxItems =
