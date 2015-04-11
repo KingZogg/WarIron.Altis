@@ -15,7 +15,7 @@
 #define OBJECT_SEARCH_ACTION_CLEAR_MAP 2
 
 // Limit to 1000m to stop this being crazy laggy
-#define OBJECT_SEARCH_RADIUS 1000
+#define OBJECT_SEARCH_RADIUS ["A3W_searchRadius", 1000] call getPublicVar
 
 disableSerialization;
 

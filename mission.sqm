@@ -2376,8 +2376,8 @@ class Mission
 		};
 		class Item24
 		{
-			position[]={14635.652,17.91,16660.960};
-			azimut=134.796;
+			position[]={14635.652,17.91,16660.961};
+			azimut=134.79601;
 			special="NONE";
 			id=179;
 			side="EMPTY";
@@ -3267,7 +3267,7 @@ class Mission
 		};
 		class Item102
 		{
-			position[]={14660.869,17.91,16736.367};
+			position[]={14652.611,17.91,16776.756};
 			name="VehStore4_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -3275,7 +3275,7 @@ class Mission
 		};
 		class Item103
 		{
-			position[]={14691.655,17.91,16765.576};
+			position[]={14684.805,17.91,16752.32};
 			name="VehStore4_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -3283,7 +3283,7 @@ class Mission
 		};
 		class Item104
 		{
-			position[]={14629.274,17.91,16705.939};
+			position[]={14675.673,17.91,16745.4};
 			name="VehStore4_planeSpawn";
 			type="Empty";
 			colorName="ColorBlack";

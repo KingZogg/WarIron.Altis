@@ -16,7 +16,7 @@ while {true} do
 	currentDate = date;
 	publicVariable "currentDate";
 
-	if (daytime >= 20 || daytime < 5) then
+	if (daytime >= 20 || daytime < 4) then
 	{
 		if (timeMultiplier != _timeMultiNight) then
 		{

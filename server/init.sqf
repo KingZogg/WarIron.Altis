@@ -295,10 +295,11 @@ _createTriggers = [] spawn compile preprocessFileLineNumbers "territory\server\c
 
 if (!isNil "A3W_startHour" || !isNil "A3W_moonLight") then
 {
-	private ["_monthDay", "_startHour"];
+	private ["_monthDay", "_startHour", "_startMinute"];
 	_monthDay = if (["A3W_moonLight"] call isConfigOn) then { 9 } else { 24 };
 	_startHour = ["A3W_startHour", date select 2] call getPublicVar;
-	setDate [2035, 6, _monthDay, _startHour, 0];
+	_startMinute = ["A3W_startMinute", date select 3] call getPublicVar;
+	setDate [2035, 6, _monthDay, _startHour, _startMinute];
 };
 
 if ((isNil "A3W_buildingLoot" && {["A3W_buildingLootWeapons"] call isConfigOn || {["A3W_buildingLootSupplies"] call isConfigOn}}) || {["A3W_buildingLoot"] call isConfigOn}) then
