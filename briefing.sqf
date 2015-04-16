@@ -24,6 +24,23 @@ player createDiaryRecord ["changelog",
 
 player createDiaryRecord ["changelog",
 [
+"v1.1b",
+"
+<br/>[Added] Marksmen DLC content
+<br/>[Added] Prevent usage of commander camera
+<br/>[Added] Emergency eject hotkey (Ctrl + " + actionKeysNames "GetOut" + ")
+<br/>[Added] Restricted UAV connection to owner's group
+<br/>[Changed] Improved purchased vehicle setup time
+<br/>[Changed] Admins can now use global voice chat
+<br/>[Changed] Updated antihack
+<br/>[Fixed] Corpses not being ejected from vehicles
+<br/>[Fixed] Thermal imaging not working for UAVs
+<br/>[Fixed] Various minor bugfixes and optimizations
+"
+]];
+
+player createDiaryRecord ["changelog",
+[
 "v1.1",
 "
 <br/>[Added] ATMs
@@ -369,25 +386,8 @@ player createDiaryRecord ["infos",
 <br/>Q. Is it ok for me to shoot my team mates?
 <br/>A. If you are member of BLUFOR or OPFOR teams, then you are NOT allowed to shoot or steal items and vehicles from other players. If you play as Independent, you are free to engage anyone as well as team up with anyone you want.
 <br/>
-<br/>Q. I saw someone breaking a rule, what do I do?
-<br/>A. There is no global chat but Admins can read it all. Use !admin to get attention.
-"
-]];
-
-player createDiaryRecord ["wariron",
-[
-"Day/Night Cycle",
-"
-<br/>Time goes faster during the day.
-<br/>A lot faster at night. 
-"
-]];
-
-player createDiaryRecord ["wariron",
-[
-"Water, Food and Loot",
-"
-<br/>Water and food is only available for purchase at General Stores
+<br/>Q. Whats with the canisters, baskets and big bags?
+<br/>A. This game has a food and water system that you must stay on top of if you hope to survive. You can collect food and water from food sacks and wells, or baskets and plastic canisters dropped by dead players. Food and water will also randomly spawn around the map.
 <br/>
 <br/>Only vehicles have guns and other loot. Buildings have none.
 <br/>

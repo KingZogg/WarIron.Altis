@@ -151,9 +151,13 @@ if (_key != "" && isPlayer _player && {_isGenStore || _isGunStore || _isVehStore
 				};
 			};
 
-			if (_player getVariable [_timeoutKey, true]) then // Timeout
+			if (isPlayer _player && !(_player getVariable [_timeoutKey, true])) then
 			{
-				deleteVehicle _object;
+				_player setVariable [_key, _objectID, true];
+			}
+			else // Timeout
+			{
+				if (!isNil "_object") then { deleteVehicle _object };
 				breakOut "spawnStoreObject";
 			};
 
