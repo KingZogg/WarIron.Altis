@@ -128,8 +128,7 @@ while {true} do
 				{
 					// Check if the vehicle is displaced, deserted, or looted
 					if (_desertedTimer > 0 &&
-					   {(getPosWorld _veh) vectorDistance _startPos >= _minDistance || _veh getVariable ["itemTakenFromVehicle", false]} &&
-					   {{alive _x} count crew _veh == 0}) then
+					   {(getPosWorld _veh) vectorDistance _startPos >= _minDistance &&  {{alive _x} count crew _veh == 0}) then
 					{
 						// Is the vehicle not yet marked as deserted?
 						if (_desertedTimeout == 0) then

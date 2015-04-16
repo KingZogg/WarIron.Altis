@@ -36,13 +36,13 @@ _setupObjects =
 	_boxes1 = ["Box_IND_Wps_F","Box_NATO_Wps_F","Box_IND_WpsLaunch_F"];
 	_currBox1 = _boxes1 call BIS_fnc_selectRandom;
 	_box1 = createVehicle [_currBox1,[(_missionPos select 0), (_missionPos select 1),0],[], 0, "NONE"];
-	_box1 allowDamage false;
+	_box1 allowDamage true;
 	_box1 setVariable ["R3F_LOG_disabled", true, true];
 	
 	_boxes2 = ["Box_IND_Wps_F","Box_NATO_Wps_F","Box_IND_WpsLaunch_F"];
 	_currBox2 = _boxes2 call BIS_fnc_selectRandom;
 	_box2 = createVehicle [_currBox2,[(_missionPos select 0) - 5, (_missionPos select 1) - 8,0],[], 0, "NONE"];
-	_box2 allowDamage false;
+	_box2 allowDamage true;
 	_box2 setVariable ["R3F_LOG_disabled", true, true];
 	
 	_aiGroup = createGroup CIVILIAN;

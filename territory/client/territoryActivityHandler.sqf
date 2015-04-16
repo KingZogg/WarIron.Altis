@@ -28,7 +28,7 @@ if (typeName _this == "ARRAY" && {count _this >= 1}) then {
 			//markername starts with Flag_ but not with current random territory grp
 			if ([_flagGroup, _marker] call fn_startsWith) then
 			{
-				if ((player distance (getmarkerpos _x))< 2000) then
+				if ((player distance (getmarkerpos _x))< 8000) then
 				{
 				_inrange_payout = true;
 				};			
@@ -42,7 +42,7 @@ if (typeName _this == "ARRAY" && {count _this >= 1}) then {
 		}
 		else 
 		{ 
-		titleText ["You are more than 2km away from the capture territories so you received no money.", "plain down", 0.5];
+		titleText ["You are more than 8km away from the capture territories so you received no money.", "plain down", 0.5];
 		};
 			
 	};

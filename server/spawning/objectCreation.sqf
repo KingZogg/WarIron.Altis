@@ -47,7 +47,7 @@ switch (true) do
 		_obj addItemCargoGlobal ["Medikit", 4];
 		_obj addItemCargoGlobal ["ToolKit", 2];
 
-		_obj allowDamage false;
+		_obj allowDamage true;
 	};
 	default
 	{

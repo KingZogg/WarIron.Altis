@@ -29,7 +29,7 @@ _createCrate =
 	_class = _classes call BIS_fnc_selectRandom;
 	_playerPos = getPos player;
 	_sbox = createVehicle [_class,[(_playerPos select 0), (_playerPos select 1),0],[], 0, "NONE"];
-	_sbox allowDamage false;
+	_sbox allowDamage true;
 	clearMagazineCargoGlobal _sbox;
 	clearWeaponCargoGlobal _sbox;
 	clearItemCargoGlobal _sbox;

@@ -22,12 +22,14 @@ if ([_uid, 3] call isAdmin) then {
 					"Vehicle Management",
 					"Spectator Cam",
 					"Player Markers",
-					"Teleport",
-	                "Money",
-	                "Debug Menu",
 					"Object Search",
-	                "Toggle God-mode",
-					"Toggle Invisible"
+					"Teleport",
+	                "Teleport player to me",
+					"Teleport me to player",
+					"Toggle God-mode",
+					"Delete Object at Cursor",
+					"Money",
+	                "Debug Menu"      					
 	];
 
 	{

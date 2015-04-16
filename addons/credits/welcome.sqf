@@ -12,7 +12,7 @@ _role1names = ["Got Clean Undies on ?"]; //In Grey
 _role4 = "READ THE BRIEFING LUKE !:";
 _role4names = ["This is where the big boys","get the big toys","Puleeze read the briefing"];
 _role5 = "THE LIST OF NO'S";
-_role5names = ["No Glitching","No Hacking","No Base Griefing","No Excessive Swearing","No Talking In Radio Chat","No Racism","No, you can't be a dick"];
+_role5names = ["No Glitching","No Hacking","No Excessive Swearing","No Talking In Radio Chat","No Racism","No, you can't be a dick"];
 //_role6 = "STILL HERE ? GOOD.";
 //_role6names = ["Bugger off and kill someone.","Take all his toys","Make him cry."]; 
 {

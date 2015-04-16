@@ -47,7 +47,13 @@ if (_uid call isAdmin) then
 					execVM "client\systems\adminPanel\playerTags.sqf";
 					if (!isNil "notifyAdminMenu") then { ["PlayerTag","used"] call notifyAdminMenu };
 			    };
-			    case 4: //Teleport
+			     case 4: //Object search menu
+			    {
+	            	closeDialog 0;
+	                execVM "client\systems\adminPanel\loadObjectSearch.sqf";
+			    };
+					
+				case 5: //Teleport
 			    {
 	                closeDialog 0;
 					["A3W_teleport", "onMapSingleClick",
@@ -59,29 +65,39 @@ if (_uid call isAdmin) then
 					}] call BIS_fnc_addStackedEventHandler;
 					hint "Click on map to teleport";
 			    };
-	            case 5: //Money
+	           case 6: //Teleport player to me
+				{
+					closeDialog 0;
+					execVM "client\systems\adminPanel\tptome.sqf";
+				};
+				case 7: //Teleport me to player
+				{
+					closeDialog 0;
+					execVM "client\systems\adminPanel\tpmeto.sqf";
+				};
+			   
+			   
+			   case 8: // toggle God mode
+			    {
+			    	execVM "client\systems\adminPanel\toggleGodMode.sqf";
+			    };
+				
+				case 9: // Delete object at cursor
+			    {
+			    	execVM "client\systems\adminPanel\deleteObject.sqf";
+			    };
+				
+				case 10: //Money
 			    {
 					_money = 50000;
 					player setVariable ["cmoney", (player getVariable ["cmoney",0]) + _money, true];
 					if (!isNil "notifyAdminMenu") then { ["money", _money] call notifyAdminMenu };
 			    };
-	            case 6: //Debug Menu
+				
+				case 11: //Debug Menu
 			    {
 	            	closeDialog 0;
 	                execVM "client\systems\adminPanel\loadDebugMenu.sqf";
-			    };
-				case 7: //Object search menu
-			    {
-	            	closeDialog 0;
-	                execVM "client\systems\adminPanel\loadObjectSearch.sqf";
-			    };
-			    case 8: // toggle God mode
-			    {
-			    	execVM "client\systems\adminPanel\toggleGodMode.sqf";
-			    };
-				 case 9: // toggle Invisible
-			    {
-			    	execVM "client\systems\adminPanel\toggleInvisible.sqf";
 			    };
 			};
 		};

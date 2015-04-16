@@ -378,8 +378,8 @@ player createDiaryRecord ["wariron",
 [
 "Day/Night Cycle",
 "
-<br/>Time goes a 2 times faster during the day.
-<br/>12 times faster at night. 
+<br/>Time goes faster during the day.
+<br/>A lot faster at night. 
 "
 ]];
 
@@ -408,7 +408,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>Gold Missons timeout after 2 Hours
 <br/>
-<br/>Missions are set to EASY
+<br/>Missions are set to HARD
 "
 ]];
 
@@ -419,11 +419,11 @@ player createDiaryRecord ["wariron",
 <br/>The Maximum Money you can have in your account is
 <br/>$5 Million
 <br/>
-<br/>Money can only be transferred between members of the same team/group.
+<br/>Money can be transferred between any players.
 <br/>
 <br/>Transfer Fee Tax is %5.
 <br/>
-<br/>All ATM's have a flag on the building as have General Stores
+<br/>All ATM's have a flag on the building as have the General Stores
 <br/>
 "
 ]];
@@ -436,7 +436,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>You and/or your team/group will be paid $5000 for every territory held every 1/2 Hour.
 <br/>
-<br/>You have to be within 2km's of the territory to get paid.
+<br/>You have to be within 8km's of the territory to get paid.
 <br/>
 "
 ]];
@@ -487,7 +487,7 @@ player createDiaryRecord ["wariron",
 <br/>Money Missions carry money and a random amount of gold.
 <br/>
 <br/>Timeouts. 
-<br/>The Gold Sub Mission time out is 3 hours. 
+<br/>The Gold Sub Mission time out is 2 hours. 
 <br/>Main Missions are 2 hours. 
 <br/>Money Missions are 1.5 hours
 <br/>Side Missions are 1 hour.
@@ -501,22 +501,30 @@ player createDiaryRecord ["wariron",
 [
 "WarIron Gold Mission",
 "
-<br/>The Gold Mission is a sub that has been damaged and is in a minefield. 
-<br/>
+<br/>The Gold Sub Mission is a sub that has been damaged and is in a minefield. 
+<br/>The Sub Mission times out after 2 Hours. Gold and the sub will stay if the divers are killed.
 <br/>It can be repaired and refuelled. 
 <br/>
 <br/>The Sub and the divers guarding it, could be anywhere in the red mine field area marked on the map. 
+<br/>The divers are usually at the surface. They dive if attacked.
 <br/>
-<br/>Once all the divers are killed, the gold is in tin boxes that are found around the sub. They can be very hard to see.
+<br/>The sub and the divers are NOT at the same place ... (usually).
+<br/>
+<br/>Once all the divers are killed, the gold is in tin boxes that are found under and around the sub. (The boxes can be very hard to see.)
 <br/>Use your mouse wheel to pick one up when you are over one.
 <br/>
-<br/>A player can only carry 6 tins of gold at any one time.
+<br/>A player can only carry 10 tins of gold at any one time.
 <br/>
 <br/>You can load some of the gold tins into the sub and move it, if you have refuelled and repaired it.
 <br/>
 <br/>You can't load the gold into land vehicles.
 <br/>
 <br/>Gold can only be sold to a Gold buyer at the gold buyer shop.
+<br/>
+<br/>Summary.
+<br/>Step 1. Find the divers at the surface. (usually)
+<br/>Step 2. Find the sub at the bottom and take the gold that spawns under it once the divers are dead.
+<br/>Step 3. (Optional) Fix and refuel the sub. It can hold 10 Boxes of gold.
 <br/>
 "
 ]];
@@ -557,7 +565,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>We hate fog and it will never be in the game. Rain is also off (it might come back).
 <br/>
-<br/>A player can only carry 6 tins of gold at any one time.
+<br/>A player can only carry 10 tins of gold at any one time.
 <br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
 <br/>You can't load the gold into any other vehicle.
 <br/>

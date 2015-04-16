@@ -35,7 +35,7 @@ _xradius = 450;
 			_markername2 setMarkerType "KIA";
 			_markername2 setMarkerColor "ColorYellow";
 			_markername2 setMarkerSize [1,1];
-			_markername2 setMarkerText "Gold Sub (MINES)";
+			_markername2 setMarkerText "Gold Sub Down";
 			
 sleep 1;		
 

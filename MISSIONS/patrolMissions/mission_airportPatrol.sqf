@@ -172,15 +172,15 @@ _successExec =
 
 	_box1 = "Box_East_Wps_F" createVehicle getMarkerPos _marker;
     [_box1,"mission_USLaunchers"] call fn_refillbox;
-	_box1 allowDamage false;
+	_box1 allowDamage true;
 	
 	_box2 = "Box_NATO_Wps_F" createVehicle getMarkerPos _marker;
     [_box2,"mission_USSpecial2"] call fn_refillbox;
-	_box2 allowDamage false;
+	_box2 allowDamage true;
 	
 	_box3 = "Box_NATO_Support_F" createVehicle getMarkerPos _marker;
     [_box3,"mission_Main_A3snipers"] call fn_refillbox;
-	_box3 allowDamage false;
+	_box3 allowDamage true;
 
 	_successHintMessage = "The patrol has been stopped, the money, crates and vehicles are yours to take.";
 };
