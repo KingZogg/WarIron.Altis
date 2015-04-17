@@ -114,7 +114,7 @@ forEach
 	"A3W_atmEditorPlacedOnly",
 	"A3W_atmMapIcons",
 	"A3W_atmRemoveIfDisabled",
-	"A3W_uavControl"
+	"A3W_uavControl",
 	"A3W_extDB_PlayerSave_ServerID",
 	"A3W_extension",
 	"A3W_vehicleThermals",

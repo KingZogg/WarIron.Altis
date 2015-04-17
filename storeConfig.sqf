@@ -65,27 +65,27 @@ rifleArray = compileFinal str
 	["Mk18 ABR Assault Rifle 7.62mm", "srifle_EBR_F", 5500],
 
 	// Sniper Rifles
-	["M320 LRR Sniper", "srifle_LRR_SOS_F", 8000],
-	["M320 LRR Sniper (Camo)", "srifle_LRR_camo_SOS_F", 8500],
-	["GM6 Lynx Sniper", "srifle_GM6_SOS_F", 10000],
-	["GM6 Lynx Sniper (Camo)", "srifle_GM6_camo_SOS_F", 10500],
+	["M320 LRR Sniper .408", "srifle_LRR_SOS_F", 8000],
+	["M320 LRR Sniper .408 (Camo)", "srifle_LRR_camo_SOS_F", 8500],
+	["GM6 Lynx Sniper 12mm", "srifle_GM6_SOS_F", 10000],
+	["GM6 Lynx Sniper 12mm (Camo)", "srifle_GM6_camo_SOS_F", 10500],
 	
 	//DLC Rifles
-	["ASP-1 Kir 12.7 mm (Black)", "srifle_DMR_04_F", 10000],
-	["ASP-1 Kir 12.7 mm (Tan)", "srifle_DMR_04_Tan_F", 10000],
-	["Cyrus 9.3 mm (Black)", "srifle_DMR_05_blk_F", 8000],
-	["Cyrus 9.3 mm (Hex)", "srifle_DMR_05_hex_F", 8000],
-	["Cyrus 9.3 mm (Tan)", "srifle_DMR_05_tan_f", 8000],
-	["MAR-10 .338 (Black)", "srifle_DMR_02_F", 8000],
-	["MAR-10 .338 (Camo)", "srifle_DMR_02_camo_F", 8000],
-	["MAR-10 .338 (Sand)", "srifle_DMR_02_sniper_F", 8000],
-	["Mk-1 EMR 7.62 mm (Black)", "srifle_DMR_03_F", 5000],
-	["Mk-1 EMR 7.62 mm (Camo)", "srifle_DMR_03_multicam_F", 5000],
-	["Mk-1 EMR 7.62 mm (Khaki)", "srifle_DMR_03_khaki_F", 5000],
-	["Mk-1 EMR 7.62 mm (Sand)", "srifle_DMR_03_tan_F", 5000],
-	["Mk-1 EMR 7.62 mm (Woodland)", "srifle_DMR_03_woodland_F", 5000],
-	["Mk14 7.62 mm (Camo)", "srifle_DMR_06_camo_F", 5000],
-	["Mk14 7.62 mm (Olive)", "srifle_DMR_06_olive_F", 5000]
+	["ASP-1 Kir 12.7 mm (Black) [DLC]", "srifle_DMR_04_F", 10000],
+	["ASP-1 Kir 12.7 mm (Tan) [DLC]", "srifle_DMR_04_Tan_F", 10000],
+	["Cyrus 9.3 mm (Black) [DLC]", "srifle_DMR_05_blk_F", 8000],
+	["Cyrus 9.3 mm (Hex) [DLC]", "srifle_DMR_05_hex_F", 8000],
+	["Cyrus 9.3 mm (Tan) [DLC]", "srifle_DMR_05_tan_f", 8000],
+	["MAR-10 .338 (Black) [DLC]", "srifle_DMR_02_F", 8000],
+	["MAR-10 .338 (Camo) [DLC]", "srifle_DMR_02_camo_F", 8000],
+	["MAR-10 .338 (Sand) [DLC]", "srifle_DMR_02_sniper_F", 8000],
+	["Mk-1 EMR 7.62 mm (Black) [DLC]", "srifle_DMR_03_F", 5000],
+	["Mk-1 EMR 7.62 mm (Camo) [DLC]", "srifle_DMR_03_multicam_F", 5000],
+	["Mk-1 EMR 7.62 mm (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 5000],
+	["Mk-1 EMR 7.62 mm (Sand) [DLC]", "srifle_DMR_03_tan_F", 5000],
+	["Mk-1 EMR 7.62 mm (Woodland) [DLC]", "srifle_DMR_03_woodland_F", 5000],
+	["Mk14 7.62 mm (Camo) [DLC]", "srifle_DMR_06_camo_F", 5000],
+	["Mk14 7.62 mm (Olive) [DLC]", "srifle_DMR_06_olive_F", 5000]
 	
 ];
 
@@ -200,17 +200,16 @@ ammoArray = compileFinal str
 	//["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x51_Box_Tracer", 125],
 	["7.62mm 150Rnd Box", "150Rnd_762x54_Box", 150],
 	["7.62mm 150Rnd Tracer (Green) Box", "150Rnd_762x54_Box_Tracer", 125],
-	[".338 LM 10Rnd Mag", "10Rnd_338_Mag", 50],
-	[".338 NM 130Rnd Belt", "130Rnd_338_Mag", 150],
-	["9.3mm 10Rnd Mag", "10Rnd_93x64_DMR_05_Mag", 50],
-	["9.3mm 150Rnd Belt", "150Rnd_93x64_Mag", 150],
 	[".408 7Rnd Cheetah Mag", "7Rnd_408_Mag", 50],
 	["12.7mm 5Rnd Mag", "5Rnd_127x108_Mag", 50],
 	["12.7mm 5Rnd Armor-Piercing Mag", "5Rnd_127x108_APDS_Mag", 60],
 	//DLC Ammo
 	["12.7mm 10Rnd Subsonic Mag", "10Rnd_127x54_Mag", 75],
-	["9.3mm 10Rnd Mag", "10Rnd_93x64_DMR_05_Mag", 50],
 	[".338 LM 10Rnd Mag", "10Rnd_338_Mag", 50],
+	[".338 NM 130Rnd Belt", "130Rnd_338_Mag", 150],
+	["9.3mm 10Rnd Mag", "10Rnd_93x64_DMR_05_Mag", 50],
+	["9.3mm 150Rnd Belt", "150Rnd_93x64_Mag", 150],
+	
 	
 	["RPG-42 Anti-Tank Rocket", "RPG32_F", 250],              // Direct damage: high      | Splash damage: low    | Guidance: none
 	["RPG-42 High-Explosive Rocket", "RPG32_HE_F", 250],      // Direct damage: medium    | Splash damage: medium | Guidance: none
@@ -418,9 +417,9 @@ headArray = compileFinal str
 
 uniformArray = compileFinal str
 [
-	["Ghillie Suit (NATO)", "U_B_GhillieSuit", 300, "uni"],
-	["Ghillie Suit (CSAT)", "U_O_GhillieSuit", 300, "uni"],
-	["Ghillie Suit (AAF)", "U_I_GhillieSuit", 300, "uni"],
+	["Ghillie Suit (NATO)", "U_B_GhillieSuit", 1500, "uni"],
+	["Ghillie Suit (CSAT)", "U_O_GhillieSuit", 1500, "uni"],
+	["Ghillie Suit (AAF)", "U_I_GhillieSuit", 1500, "uni"],
 	["Full Ghillie (Arid) (NATO)", "U_B_FullGhillie_ard", 2000, "uni"],
 	["Full Ghillie (Arid) (CSAT)", "U_O_FullGhillie_ard", 2000, "uni"],
 	["Full Ghillie (Arid) (AAF)", "U_I_FullGhillie_ard", 2000, "uni"],
@@ -704,12 +703,6 @@ landArray = compileFinal str
 	//["Zamak Repair", "I_Truck_02_box_F", 10000, "vehicle"],
 	// ["Zamak Ammo", "I_Truck_02_ammo_F", 25000, "vehicle"],
 
-	["UGV Stomper (NATO)", "B_UGV_01_F", 2500, "vehicle"],
-	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Stomper (AAF)", "I_UGV_01_F", 2500, "vehicle"],
-	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
-	["UGV Saif (CSAT)", "O_UGV_01_F", 2500, "vehicle"],
-	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
 ];
 
 armoredArray = compileFinal str
@@ -726,12 +719,12 @@ armoredArray = compileFinal str
 	["MSE-3 Marid", "O_APC_Wheeled_02_rcws_F", 22500, "vehicle"],
 	["AMV-7 Marshall", "B_APC_Wheeled_01_cannon_F", 27500, "vehicle"],
 	["AFV-4 Gorgon", "I_APC_Wheeled_03_cannon_F", 30000, "vehicle"],
-	["UGV Stomper (NATO)", "B_UGV_01_F", 25000, "vehicle"],
-	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 45000, "vehicle"],
-	["UGV Stomper (AAF)", "I_UGV_01_F", 25000, "vehicle"],
-	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 45000, "vehicle"],
-	["UGV Saif (CSAT)", "O_UGV_01_F", 25000, "vehicle"],
-	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 45000, "vehicle"]
+	["UGV Stomper (NATO)", "B_UGV_01_F", 5000, "vehicle"],
+	["UGV Stomper RCWS (NATO)", "B_UGV_01_rcws_F", 15000, "vehicle"],
+	["UGV Stomper (AAF)", "I_UGV_01_F", 5000, "vehicle"],
+	["UGV Stomper RCWS (AAF)", "I_UGV_01_rcws_F", 15000, "vehicle"],
+	["UGV Saif (CSAT)", "O_UGV_01_F", 5000, "vehicle"],
+	["UGV Saif RCWS (CSAT)", "O_UGV_01_rcws_F", 15000, "vehicle"]
 ];
 
 tanksArray = compileFinal str
