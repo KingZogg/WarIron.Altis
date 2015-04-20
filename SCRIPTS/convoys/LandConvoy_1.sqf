@@ -5,7 +5,7 @@
 //	@file Name: ConvoyMission_1.sqf
 //	@file Author: [GoT] JoSchaap, [404] Del1te, AgentRev
 //	@file Created: 13/02/2014 22:52
-
+// no fire zone route
 // starting positions for this route
 _starts =
 [

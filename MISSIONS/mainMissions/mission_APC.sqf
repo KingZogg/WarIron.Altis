@@ -15,14 +15,14 @@ _setupVars =
 {
 	_vehicleClass =
 	[
-		"B_APC_Wheeled_01_cannon_F",
-		"O_APC_Wheeled_02_rcws_F",
-		"I_APC_Wheeled_03_cannon_F",
-		"B_APC_Tracked_01_rcws_F",
-		"O_APC_Tracked_02_cannon_F",
-		"I_APC_tracked_03_cannon_F",
-		"B_APC_Tracked_01_AA_F",
-		"O_APC_Tracked_02_AA_F"
+		//"B_APC_Wheeled_01_cannon_F",  //Marshall
+		//"O_APC_Wheeled_02_rcws_F",   //Marid
+		"I_APC_Wheeled_03_cannon_F", //Gorgon
+		//"B_APC_Tracked_01_rcws_F",   //Panther
+		"O_APC_Tracked_02_cannon_F", //Kaymsh
+		//"I_APC_tracked_03_cannon_F", //Mora
+		"B_APC_Tracked_01_AA_F",    //Cheetah
+		"O_APC_Tracked_02_AA_F"     //Tigris
 	] call BIS_fnc_selectRandom;
 
 	_missionType = switch (true) do

@@ -100,12 +100,15 @@ _successExec =
 	
 	sleep 5;
 	
-	_goldAmount = 0;
-	_goldMinAmount = 20;
-	_goldMaxAmount = 18;
+	
+	//_goldAmount = 0;
+	//_goldMinAmount = 20;
+	//_goldMaxAmount = 18;
+	//_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
+
+	_goldMinAmount = (500000 /_goldPrice);
+	_goldMaxAmount = ((1000000 /_goldPrice) - (_goldMinAmount - 1));
 	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
-
-
 
 	
 	for "_i" from 1 to _goldAmount do{

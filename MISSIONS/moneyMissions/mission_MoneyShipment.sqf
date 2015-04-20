@@ -64,7 +64,7 @@ _setupVars =
 		// Hard
 		[
 			"Large Money/Gold Shipment", // Marker text
-			80000, // Money
+			60000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F"], // Veh 1
@@ -86,7 +86,7 @@ _setupVars =
 		// Extreme
 		[
 			"Heavy Money/Gold Shipment", // Marker text
-			100000, // Money
+			80000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 1
@@ -132,7 +132,7 @@ _setupVars =
     case "Small Money/Gold Shipment":
 		{
 			//20k Money +
-			_goldMinAmount = 1;
+			_goldMinAmount = 0;
 			_goldMaxAmount = 1;
 			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};
@@ -151,15 +151,15 @@ _setupVars =
 		{
 			//80k Money +
 			_goldMinAmount = 2;
-			_goldMaxAmount = 4;
+			_goldMaxAmount = 2;
 			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};
 	
 	case "Heavy Money/Gold Shipment":
 		{
 			//100k Money +
-			_goldMinAmount = 3;
-			_goldMaxAmount = 6;
+			_goldMinAmount = 2;
+			_goldMaxAmount = 4;
 			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};
 	};
