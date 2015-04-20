@@ -10,6 +10,8 @@
 // This tracks which store owner the client is interacting with
 currentOwnerName = "";
 
+_goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
+
 // Gunstore Weapon List - Gun Store Base List
 // Text name, classname, buy cost
 
@@ -76,9 +78,9 @@ rifleArray = compileFinal str
 	["Cyrus 9.3 mm (Black) [DLC]", "srifle_DMR_05_blk_F", 8000],
 	["Cyrus 9.3 mm (Hex) [DLC]", "srifle_DMR_05_hex_F", 8000],
 	["Cyrus 9.3 mm (Tan) [DLC]", "srifle_DMR_05_tan_f", 8000],
-	["MAR-10 .338 (Black) [DLC]", "srifle_DMR_02_F", 8000],
-	["MAR-10 .338 (Camo) [DLC]", "srifle_DMR_02_camo_F", 8000],
-	["MAR-10 .338 (Sand) [DLC]", "srifle_DMR_02_sniper_F", 8000],
+	["MAR-10 .338 (Black) [DLC]", "srifle_DMR_02_F", 11000],
+	["MAR-10 .338 (Camo) [DLC]", "srifle_DMR_02_camo_F", 11000],
+	["MAR-10 .338 (Sand) [DLC]", "srifle_DMR_02_sniper_F", 11000],
 	["Mk-1 EMR 7.62 mm (Black) [DLC]", "srifle_DMR_03_F", 5000],
 	["Mk-1 EMR 7.62 mm (Camo) [DLC]", "srifle_DMR_03_multicam_F", 5000],
 	["Mk-1 EMR 7.62 mm (Khaki) [DLC]", "srifle_DMR_03_khaki_F", 5000],
@@ -106,12 +108,12 @@ launcherArray = compileFinal str
 [
 	["RPG-42 Alamut", "launch_RPG32_F", 1400],
 	["PCML", "launch_NLAW_F", 1600],
-	["Titan MPRL Compact (Tan)", "launch_Titan_short_F", 25000],
-	["Titan MPRL Compact (Brown)", "launch_O_Titan_short_F", 25000],
-	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 25000],
-	["Titan MPRL AA (Desert)", "launch_Titan_F", 3500],
-	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 3500],
-	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 3500]
+	["Titan MPRL Compact (Tan)", "launch_Titan_short_F", 15000],
+	["Titan MPRL Compact (Brown)", "launch_O_Titan_short_F", 15000],
+	["Titan MPRL Compact (Olive)", "launch_I_Titan_short_F", 15000],
+	["Titan MPRL AA (Desert)", "launch_Titan_F", 2000],
+	["Titan MPRL AA (Hex)", "launch_O_Titan_F", 2000],
+	["Titan MPRL AA (Digi)", "launch_I_Titan_F", 2000]
 ];
 
 allGunStoreFirearms = compileFinal str (call pistolArray + call smgArray + call rifleArray + call lmgArray + call launcherArray);
@@ -143,9 +145,9 @@ staticGunsArray = compileFinal str
 	["Mk32 GMG 20mm High tripod (NATO)", "B_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod (CSAT)", "O_GMG_01_high_F", 6000],
 	["Mk32 GMG 20mm High tripod (AAF)", "I_GMG_01_high_F", 6000],
-	["Mk6 Mortar (NATO)", "B_Mortar_01_F", 50000],
-	["Mk6 Mortar (CSAT)", "O_Mortar_01_F", 50000],
-	["Mk6 Mortar (AAF)", "I_Mortar_01_F", 50000]
+	["Mk6 Mortar (NATO)", "B_Mortar_01_F", 12000],
+	["Mk6 Mortar (CSAT)", "O_Mortar_01_F", 12000],
+	["Mk6 Mortar (AAF)", "I_Mortar_01_F", 12000]
 ];
 
 throwputArray = compileFinal str
@@ -494,9 +496,9 @@ uniformArray = compileFinal str
 	["Racing Suit (Bluking)", "U_C_Driver_2", 25, "uni"],
 	["Racing Suit (Redstone)", "U_C_Driver_3", 25, "uni"],
 	["Racing Suit (Vrana)", "U_C_Driver_4", 25, "uni"],*/
-	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 5000, "uni"],
-	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 5000, "uni"],
-	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 5000, "uni"]
+	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 2000, "uni"],
+	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 2000, "uni"],
+	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 2000, "uni"]
 ];
 
 vestArray = compileFinal str
@@ -990,7 +992,7 @@ customPlayerItems = compileFinal str
 
 customGoldPlayerItems = compileFinal str
 [
-	["Gold Bars", "goldbullion", "" ,"client\icons\gold.paa", 10000, 10000]
+	["Gold Bars", "goldbullion", "" ,"client\icons\gold.paa", _goldPrice, _goldPrice]
 	
 ];
 

@@ -10,7 +10,9 @@
 if (!isServer) exitwith {};
 #include "goldMissionDefines.sqf";
 
-private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle", "_randomPos", "_depth", "_xpos", "_ypos", "_zpos", "_xdpos", "_ydpos", "_zdpos", "_minePos", "_mine", "_goldMinAmmount", "_goldMaxAmmount", "_goldAmmount", "_diverDepth", "_diverMin", "_diverMax" ];
+private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle", "_randomPos", "_depth", "_xpos", "_ypos", "_zpos", "_xdpos", "_ydpos", "_zdpos", "_minePos", "_mine", "_goldMinAmount", "_goldMaxAmount", "_goldAmount", "_goldPrice", "_diverDepth", "_diverMin", "_diverMax" ];
+
+_goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 
 _setupVars =
 {
@@ -29,8 +31,8 @@ _diverDepthMin = 10;
 _diverDepthMax = 30;
 _diverDepth = _diverDepthMin + ceil(random _diverDepthMax);
 
-_xdpos = ceil(random (700) - 350);
-_ydpos = ceil(random (700) - 350);
+_xdpos = ceil(random (700) - 300);
+_ydpos = ceil(random (700) - 300);
 _zdpos = _diverDepth;
 
 
@@ -98,21 +100,26 @@ _successExec =
 	
 	sleep 5;
 	
-	_goldAmmount = 0;
-	_goldMinAmmount = 10;
-	_goldMaxAmmount = 89;
-	_goldAmmount = _goldminAmmount + ceil(random _goldMaxAmmount);
+	_goldAmount = 0;
+	_goldMinAmount = 20;
+	_goldMaxAmount = 18;
+	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
+
+
+
 	
-	for "_i" from 1 to _goldAmmount do{
+	for "_i" from 1 to _goldAmount do{
 		
 		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
 		_gold setPosATL (getPosATL _vehicle vectorAdd [(ceil(random (16) - 8)),(ceil(random (16) - 8)),1]);
 		};
 
-	_goldAmmount = _goldAmmount * 10000;	
+	_goldAmount = _goldAmount * _goldPrice;	
+	
+	diag_log format ["#################### GOLD Amount = %1, Mission Type %2", _goldAmount, _missionType];
 		
 		//_successHintMessage = "The divers have all been killed. Collect the Gold!";
-		_successHintMessage = format ["The Divers Are Dead. There is <t color='%2'>      $%1 </t>on the bottom." ,_goldAmmount, goldMissionColor];
+		_successHintMessage = format ["The Divers Are Dead. There is <t color='%2'>      $%1 </t>on the bottom.<br/> Now find the Sub! And the GOLD" ,_goldAmount, goldMissionColor];
 
 	
 };

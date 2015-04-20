@@ -102,7 +102,7 @@ R3F_LOG_CFG_transporteurs =
 	["Rubber_duck_base_F", 10],
 	["Boat_Civil_01_base_F", 10],
 	["Boat_Armed_01_base_F", 20],
-	["O_SDV_01_F", 10000 ],
+	["O_SDV_01_F", 3000 ],
 	["Heli_Light_01_base_F", 10],
 	["Heli_Light_02_base_F", 20],
 	["I_Heli_light_03_base_F", 20],
@@ -172,7 +172,7 @@ R3F_LOG_CFG_objets_transportables =
 	["Land_ToiletBox_F", 2],
 	["Land_BarrelWater_F", 2],
 	["Land_Pier_F", 150],  
-	["Land_TinContainer_F", 1000],
+	["Land_TinContainer_F", 150],
 	["Land_Pod_Heli_Transport_04_ammo_F", 150]
 	
 ];

@@ -9,7 +9,9 @@ if (!isServer) exitwith {};
 
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1"];
+private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1", "_goldAmount", "_goldPrice", "_goldMinAmount", "_goldMaxAmount"];
+
+_goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 
 _setupVars =
 {
@@ -82,8 +84,9 @@ _setupObjects =
 
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
-
-	_missionHintText = format ["A Sniper Nest has been spotted guarding gold and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
+	
+	//private ["_title", "_subTitle", "_picture", "_text", "_titleColor"];
+	_missionHintText = format ["A Sniper Nest has been spotted guarding GOLD and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
 };
 
 
@@ -101,23 +104,23 @@ _failedExec =
 _successExec =
 {
 	// Mission completed
-	_goldAmmount = 0;
-	_goldMinAmmount = 1;
-	_goldMaxAmmount = 2;
-	_goldAmmount = _goldminAmmount + ceil(random _goldMaxAmmount);
+	_goldAmount = 0;
+	_goldMinAmount = 1;
+	_goldMaxAmount = 2;
+	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 	
-	for "_i" from 1 to _goldAmmount do{
+	for "_i" from 1 to _goldAmount do{
 		
 		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
 		//_gold setPosATL (getPosATL _vehicle vectorAdd [(ceil(random (16) - 8)),(ceil(random (16) - 8)),1]);
 		};
 		
-	_goldAmmount = _goldAmmount * 10000;
+	_goldAmount = _goldAmount * _goldPrice;
 	
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
 	(nearestbuilding _missionPos) setVariable ['bis_disabled_Door_1',0,true];
 	
-	_successHintMessage = format ["The snipers are dead.<br/>There is<br/><t color='%2'> $%1 </t><br/>in gold to collect." ,_goldAmmount, sideMissionColor];
+	_successHintMessage = format ["The snipers are dead.<br/>There is<br/><t color='%3'> $%1 </t><br/>in gold to collect." ,_goldAmount, sideMissionColor, goldTextColor];
 };
 
 _this call sideMissionProcessor;

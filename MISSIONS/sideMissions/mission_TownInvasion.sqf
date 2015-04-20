@@ -11,6 +11,9 @@ if (!isServer) exitwith {};
 
 private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1"];
 
+_goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
+
+
 _setupVars =
 {
 	_missionType = "Town Invasion";
@@ -41,7 +44,7 @@ _setupObjects =
 
 	_box2 = createVehicle ["Box_East_Wps_F", _missionPos, [], 5, "None"];
 	_box2 setDir random 360;
-	[_box2, "mission_USLaunchers"] call fn_refillbox;
+	[_box2, "mission_WI_Gear1"] call fn_refillbox;
 
 	// create some atmosphere around the crates 8)
 	_tent1 = createVehicle ["Land_cargo_addon02_V2_F", _missionPos, [], 3, "None"];
@@ -78,9 +81,24 @@ _failedExec =
 _successExec =
 {
 	// Mission completed
+	_goldAmount = 0;
+	_goldMinAmount = 1;
+	_goldMaxAmount = 2;
+	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
+	
+	for "_i" from 1 to _goldAmount do{
+		
+		_gold = createVehicle ["Land_TinContainer_F", _missionPos, [], 0, "None"];
+		//_gold setPosATL (getPosATL _vehicle vectorAdd [(ceil(random (16) - 8)),(ceil(random (16) - 8)),1]);
+		};
+		
+	_goldAmount = _goldAmount * _goldPrice;
+	
 	{ _x setVariable ["R3F_LOG_disabled", false, true] } forEach [_box1, _box2];
-
-	_successHintMessage = format ["Nice work!<br/><br/><t color='%1'>%2</t><br/>is a safe place again!<br/>Their belongings are now yours to take!", sideMissionColor, _townName];
+		
+	//_successHintMessage = format ["The snipers are dead.<br/>There is<br/><t color='%3'> $%1 </t><br/>in gold to collect." ,_goldAmount, sideMissionColor, goldTextColor];
+	
+	_successHintMessage = format ["Nice work!<br/><br/><t color='%1'>%2</t><br/>is a safe place again!<br/>Their belongings are now yours to take!<br/>There is<br/><t color='%4'> $%3 </t><br/>in gold to collect.", sideMissionColor, _townName, _goldAmount, goldTextColor];
 	{ deleteVehicle _x } forEach [_tent1, _chair1, _chair2, _cFire1];
 };
 

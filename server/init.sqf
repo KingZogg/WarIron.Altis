@@ -127,6 +127,8 @@ forEach
 	"A3W_donatorEnabled",
 	"A3W_customUniformEnabled",
 	"AW3_NotOwnerUnlockDuration",
+	"A3W_goldPrice",
+	"A3W_lockObjectDistance",
 	"A3W_searchRadius"
 	];
 

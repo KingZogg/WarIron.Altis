@@ -23,7 +23,7 @@ _take = [_path, "take.sqf"] call mf_compile;
 mf_items_gold_bullion_can_take = [_path, "can_take.sqf"] call mf_compile;
 mf_items__gold_bullion_nearest = {
 	_gold = objNull;
-	_golds = nearestObjects [player, [MF_ITEMS_GOLD_BULLION_TYPE], 3];
+	_golds = nearestObjects [player, [MF_ITEMS_GOLD_BULLION_TYPE], 5];
 	if (count _golds > 0) then {
 		_gold = _golds select 0;
 	};

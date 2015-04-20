@@ -10,6 +10,7 @@
 #define failMissionColor "#FF1717"
 #define successMissionColor "#17FF41"
 #define subTextColor "#FFFFFF"
+#define goldTextColor "#ffd700"
 
 #define AI_GROUP_SMALL 4
 #define AI_GROUP_MEDIUM 7

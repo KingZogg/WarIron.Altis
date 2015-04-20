@@ -62,6 +62,7 @@ mediumMilitaryVehicles =
 //	"O_Truck_02_medical_F",
 	"B_MRAP_01_F",
 	"O_MRAP_02_F",
+	"B_MRAP_01_hmg_F",
 	"I_MRAP_03_F"
 ];
 
@@ -223,6 +224,15 @@ vehicleAddition =
 	"optic_Holosight",
 	"optic_Holosight_smg",
 	"optic_DMS",
+	"optic_Arco",
+	"optic_SOS",
+	"optic_Hamr",
+	"optic_Aco",
+	"optic_ACO_grn",
+	"optic_aco_smg",
+	"optic_Holosight",
+	"optic_Holosight_smg",
+	"optic_DMS",
 	"acc_flashlight",
 	"acc_pointer_IR",
 	"Rangefinder",
@@ -238,9 +248,7 @@ vehicleAddition =
 	"ATMine_Range_Mag",
 	"SmokeShellGreen",
 	"SmokeShellBlue",
-	"SmokeShellRed",
-	"B_Carryall_oucamo",
-	"B_Carryall_mcamo"
+	"SmokeShellRed"
 ];
 
 //only added to vehicles at night via randomWeapon.sqf

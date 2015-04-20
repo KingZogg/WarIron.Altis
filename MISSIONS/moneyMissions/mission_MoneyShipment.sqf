@@ -9,7 +9,10 @@
 if (!isServer) exitwith {};
 #include "moneyMissionDefines.sqf";
 
-private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_goldAmount"];
+private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_goldAmount", "_goldMinAmount", "_goldMaxAmount"];
+
+_goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
+
 
 _setupVars =
 {
@@ -20,7 +23,7 @@ _setupVars =
 		// Easy
 		[
 			"Small Money/Gold Shipment", // Marker text
-			10000, // Money
+			20000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
@@ -39,7 +42,7 @@ _setupVars =
 		// Medium
 		[
 			"Medium Money/Gold Shipment", // Marker text
-			15000, // Money
+			40000, // Money
 			[
 				[ // NATO convoy
 					["B_MRAP_01_hmg_F", "B_MRAP_01_gmg_F"], // Veh 1
@@ -61,7 +64,7 @@ _setupVars =
 		// Hard
 		[
 			"Large Money/Gold Shipment", // Marker text
-			35000, // Money
+			80000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F"], // Veh 1
@@ -83,7 +86,7 @@ _setupVars =
 		// Extreme
 		[
 			"Heavy Money/Gold Shipment", // Marker text
-			45000, // Money
+			100000, // Money
 			[
 				[ // NATO convoy
 					["B_APC_Wheeled_01_cannon_F", "B_APC_Tracked_01_rcws_F", "B_APC_Tracked_01_AA_F", "B_MBT_01_cannon_F", "B_MBT_01_TUSK_F"], // Veh 1
@@ -120,30 +123,49 @@ _setupVars =
 	{ _vehClasses pushBack (_x call BIS_fnc_selectRandom) } forEach _vehChoices;
 
 	
+	
+	
+	_goldAmount = 0;
+	
 		switch (_missionType) do
 	{
     case "Small Money/Gold Shipment":
 		{
-			_goldAmount = ceil(random 2);
+			//20k Money +
+			_goldMinAmount = 1;
+			_goldMaxAmount = 1;
+			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};
 	
 	case "Medium Money/Gold Shipment":
 		{
-			_goldAmount = ceil(random 3);
+			
+			//40k Money +
+			
+			_goldMinAmount = 1;
+			_goldMaxAmount = 2;
+			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};	
 	
 	case "Large Money/Gold Shipment":
 		{
-			_goldAmount = ceil(random 7);
+			//80k Money +
+			_goldMinAmount = 2;
+			_goldMaxAmount = 4;
+			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};
 	
 	case "Heavy Money/Gold Shipment":
 		{
-			_goldAmount = ceil(random 10);
+			//100k Money +
+			_goldMinAmount = 3;
+			_goldMaxAmount = 6;
+			_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 		};
 	};
+
 	
-	
+
 };
 
 _setupObjects =
@@ -261,10 +283,15 @@ _successExec =
 		_gold = createVehicle ["Land_TinContainer_F", _lastPos, [], 5, "None"];
 		_gold setPos ([_lastPos, [[2 + random 3,0,0], random 360] call BIS_fnc_rotateVector2D] call BIS_fnc_vectorAdd);
 	};
-		
-	_goldAmount = _goldAmount * 15000;
 
-	_successHintMessage = format ["The convoy has been stopped<br/>The money,gold and vehicles are now yours to take.<br/>There is<br/><t color='%2'> $%1 </t><br/>in gold to collect." ,_goldAmount, sideMissionColor];
+
+	
+	_goldAmount = _goldAmount * _goldPrice;
+	
+	
+	diag_log format ["#################### GOLD Amount = %1, Mission Type %2", _goldAmount, _missionType];
+
+	_successHintMessage = format ["The convoy has been stopped<br/>The money, GOLD and vehicles are now yours to take.<br/>There is<br/><t color='%3'> $%1 </t><br/>in GOLD to collect." ,_goldAmount, moneyMissionColor,  goldTextColor];
 };
 
 _this call moneyMissionProcessor;
