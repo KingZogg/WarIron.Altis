@@ -20,7 +20,7 @@ private ["_soldierTypes", "_uniformTypes", "_vestTypes", "_weaponTypes","_launch
 _soldierTypes = ["C_man_polo_1_F", "C_man_polo_2_F", "C_man_polo_3_F", "C_man_polo_4_F", "C_man_polo_5_F", "C_man_polo_6_F"];
 _uniformTypes = ["U_B_CombatUniform_mcam_vest", "U_B_CombatUniform_mcam_tshirt" ,"U_B_CombatUniform_mcam"];
 _vestTypes = ["V_Rangemaster_belt","V_Rangemaster_belt"];
-_weaponTypes = ["arifle_TRG20_F","arifle_TRG21_GL_F","arifle_TRG20_Holo_F"];
+_weaponTypes = ["arifle_TRG20_F","arifle_Mk20_ACO_pointer_F","arifle_TRG20_Holo_F","LMG_Mk200_MRCO_F", "arifle_Katiba_C_ACO_pointer_F", "arifle_MX_ACO_pointer_snds_F"];
 _launcherTypes = ["launch_RPG32_F","launch_NLAW_F","launch_B_Titan_F"];
 
 _group = _this select 0;

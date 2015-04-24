@@ -10,7 +10,10 @@
 if (!isServer) exitwith {};
 #include "goldMissionDefines.sqf";
 
-private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle", "_randomPos", "_depth", "_xpos", "_ypos", "_zpos", "_xdpos", "_ydpos", "_zdpos", "_minePos", "_mine", "_goldMinAmount", "_goldMaxAmount", "_goldAmount", "_goldPrice", "_diverDepth", "_diverMin", "_diverMax" ];
+private ["_goldObjects", "_gold", "_goldPos", "_vehicleClass", "_vehicle", "_randomPos", "_depth", "_xpos", "_ypos", "_zpos", "_xdpos", "_ydpos", "_zdpos", "_minePos", "_mine", "_goldMinAmount", "_goldMaxAmount", "_goldAmount", "_goldPrice", "_diverDepth", "_diverMin", "_diverMax", "_missionHintTime" ];
+
+
+
 
 _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 
@@ -66,9 +69,11 @@ for "_count" from 1 to 100 do {
 	
 								   };
 }; 
+	_missionHintTime = ["A3W_goldMissionTimeout", 120] call getPublicVar;
+	_missionHintTime = _missionHintTime / 60;
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
-	_missionHintText = format ["A Sub has run into a minefield.<br/>It is damaged and has run out of fuel.<br/>It is carrying,<br/><t color='%1'>Up to $1M in Gold Bullion!</t><br/>Divers are on guard and are waiting for fuel and repairs.", goldMissionColor];
+	_missionHintText = format ["A Sub has run into a minefield.<br/>It is damaged and has run out of fuel.<br/>It is carrying,<br/><t color='%1'>Up to $1M in Gold Bullion!</t><br/>Divers are on guard and are waiting for fuel and repairs.<br/>You have %2 Minutes<br/>To complete this mission", goldMissionColor, _missionHintTime];
 };
 
 _waitUntilMarkerPos = nil;
@@ -101,11 +106,6 @@ _successExec =
 	sleep 5;
 	
 	
-	//_goldAmount = 0;
-	//_goldMinAmount = 20;
-	//_goldMaxAmount = 18;
-	//_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
-
 	_goldMinAmount = (500000 /_goldPrice);
 	_goldMaxAmount = ((1000000 /_goldPrice) - (_goldMinAmount - 1));
 	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
@@ -121,8 +121,7 @@ _successExec =
 	
 	diag_log format ["#################### GOLD Amount = %1, Mission Type %2", _goldAmount, _missionType];
 		
-		//_successHintMessage = "The divers have all been killed. Collect the Gold!";
-		_successHintMessage = format ["The Divers Are Dead. There is <t color='%2'>      $%1 </t>on the bottom.<br/> Now find the Sub! And the GOLD" ,_goldAmount, goldMissionColor];
+	_successHintMessage = format ["The Divers Are Dead. There is <t color='%2'>      $%1 </t>on the bottom.<br/> Now find the Sub! And the GOLD" ,_goldAmount, goldMissionColor];
 
 	
 };

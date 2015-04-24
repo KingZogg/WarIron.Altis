@@ -8,10 +8,11 @@
 if (!isServer) exitwith {};
 
 #include "sideMissionDefines.sqf"
-
-private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1", "_goldAmount", "_goldPrice", "_goldMinAmount", "_goldMaxAmount"];
-
 _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
+
+private ["_nbUnits", "_box1", "_box2", "_townName", "_missionPos", "_buildingRadius", "_putOnRoof", "_fillEvenly", "_tent1", "_chair1", "_chair2", "_cFire1", "_goldAmount", "_goldPrice", "_goldMinAmount", "_goldMaxAmount","_missionHintTime"];
+
+
 
 _setupVars =
 {
@@ -85,8 +86,11 @@ _setupObjects =
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
 	
+	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
+	_missionHintTime = _missionHintTime /60;
+	
 	//private ["_title", "_subTitle", "_picture", "_text", "_titleColor"];
-	_missionHintText = format ["A Sniper Nest has been spotted guarding GOLD and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!", sideMissionColor];
+	_missionHintText = format ["A Sniper Nest has been spotted guarding GOLD and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!<br/>You have %2 Minutes<br/>To complete this mission", sideMissionColor, _missionHintTime];
 };
 
 

@@ -199,11 +199,6 @@ vehicleWeapons =
 	"arifle_MXM_F",
 	"LMG_Mk200_F",
 	"LMG_Zafir_F"
-//	"srifle_DMR_01_F", 	// Rahim DMR Marksman Rifle
-//	"srifle_EBR_F"	    // Mk18 ABR Assault Rifle 7.62mm
-	
-//	"srifle_LRR_SOS_F",   	// M320 LRR Sniper
-//	"srifle_GM6_SOS_F"	// GM6 Lynx Sniper
 
 ];
 
@@ -223,18 +218,6 @@ vehicleAddition =
 	"optic_aco_smg",
 	"optic_Holosight",
 	"optic_Holosight_smg",
-	"optic_DMS",
-	"optic_Arco",
-	"optic_SOS",
-	"optic_Hamr",
-	"optic_Aco",
-	"optic_ACO_grn",
-	"optic_aco_smg",
-	"optic_Holosight",
-	"optic_Holosight_smg",
-	"optic_DMS",
-	"acc_flashlight",
-	"acc_pointer_IR",
 	"Rangefinder",
 	"Binocular",
     "Medikit",
@@ -246,8 +229,6 @@ vehicleAddition =
 	"HandGrenade",
 	"ClaymoreDirectionalMine_Remote_Mag",
 	"ATMine_Range_Mag",
-	"SmokeShellGreen",
-	"SmokeShellBlue",
 	"SmokeShellRed"
 ];
 

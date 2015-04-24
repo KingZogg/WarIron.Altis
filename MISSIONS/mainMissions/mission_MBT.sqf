@@ -18,7 +18,13 @@ _setupVars =
 		"B_MBT_01_cannon_F",
 		"O_MBT_02_cannon_F",
 		"B_MBT_01_arty_F",
-		"I_MBT_03_cannon_F"
+		"B_MBT_01_cannon_F",
+		"O_MBT_02_cannon_F",
+		"B_MBT_01_arty_F",
+		"B_MBT_01_cannon_F",
+		"O_MBT_02_cannon_F",
+		"B_MBT_01_arty_F",
+		"I_MBT_03_cannon_F" //10% chance of scorcher
 	] call BIS_fnc_selectRandom;
 
 	_missionType = "Main Battle Tank";

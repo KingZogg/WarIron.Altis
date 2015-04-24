@@ -19,5 +19,6 @@
 #define AI_GROUP_SMALL 4
 #define AI_GROUP_MEDIUM 7
 #define AI_GROUP_LARGE 10
+#define AI_GROUP_HUGE 20
 
 #define missionDifficultyHard (["A3W_missionsDifficulty", 0] call getPublicVar >= 1)

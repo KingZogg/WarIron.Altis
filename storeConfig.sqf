@@ -741,8 +741,8 @@ tanksArray = compileFinal str
 	["M2A4 Slammer HMG", "B_MBT_01_TUSK_F", 55000, "vehicle"], // Commander gun variant
 	["T-100 Varsuk", "O_MBT_02_cannon_F", 60000, "vehicle"],
 	["MBT-52 Kuma", "I_MBT_03_cannon_F", 70000, "vehicle"],
-	["Artillery 2S9 Sochor", "O_MBT_02_arty_F", 90000, "vehicle"],
-	["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 125000, "vehicle"]
+	["M5 Sandstorm MLRS", "B_MBT_01_mlrs_F", 125000, "vehicle"],
+	["Artillery 2S9 Sochor", "O_MBT_02_arty_F",200000, "vehicle"]
 
 ];
 

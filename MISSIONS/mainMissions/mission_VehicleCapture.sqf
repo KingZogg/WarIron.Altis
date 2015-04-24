@@ -9,7 +9,9 @@
 if (!isServer) exitwith {};
 #include "mainMissionDefines.sqf";
 
-private ["_vehicle", "_vehicleName", "_vehDeterminer"];
+private ["_vehicle", "_vehicleName", "_vehDeterminer", "_missionHintTime"];
+
+
 
 //generate a random number between -400 and +400 for vehicle position.
 _xpos = 8;
@@ -181,8 +183,11 @@ _setupObjects =
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
 
 	_vehDeterminer = if ("AEIMO" find (_vehicleName select [0,1]) != -1) then { "An" } else { "A" };
-
-	_missionHintText = format ["%1 <t color='%3'>%2</t> has been immobilized, go get it for your team!", _vehDeterminer, _vehicleName, mainMissionColor];
+    
+	_missionHintTime = ["A3W_mainMissionTimeout", 120] call getPublicVar;
+	_missionHintTime = _missionHintTime /60;
+	
+	_missionHintText = format ["%1 <t color='%3'>%2</t> has been immobilized, go get it for your team!<br/>You have %4 Minutes<br/>To complete this mission", _vehDeterminer, _vehicleName, mainMissionColor, _missionHintTime];
 	diag_log format ["MISSION VEHICLE = %1 ", _vehicleName ];
 };
 
@@ -195,19 +200,7 @@ _failedExec =
 	// Mission failed
 	deleteVehicle _vehicle;
     	
-	//sleep 20;
-   
-	//Mission Failed. Firstly obliterate the site.
-    //_bomb = "Bo_GBU12_LGB" createVehicle [(_missionPos select 0),(_missionPos select 1), 50]; 
-    //sleep 1;
-    //_bomb = "Bo_GBU12_LGB" createVehicle [(_missionPos select 0) + 5,(_missionPos select 1) - 5, 50];
-    //sleep 1;
-    //_bomb = "Bo_GBU12_LGB" createVehicle [(_missionPos select 0),(_missionPos select 1) + 10, 50];
-    
-    //sleep 7;
-    
-    //_baseToDelete = nearestObjects [_missionPos, ["All"], 22];
-    //{ deleteVehicle _x; } forEach _baseToDelete;
+	
     
    };
 
@@ -217,19 +210,6 @@ _successExec =
 	_vehicle lock 1;
 	_vehicle setVariable ["R3F_LOG_disabled", false, true];
 		
-//	sleep 30;
-    
-	//Cleanup base objects.
-//    _bomb = "Bo_GBU12_LGB" createVehicle [(_missionPos select 0),(_missionPos select 1), 50]; 
-//    sleep 1;
-//    _bomb = "Bo_GBU12_LGB" createVehicle [(_missionPos select 0) + 5,(_missionPos select 1) - 5, 50];
-//    sleep 1;
-//    _bomb = "Bo_GBU12_LGB" createVehicle [(_missionPos select 0),(_missionPos select 1) + 10, 50];
-    
-//    sleep 7;
-    
-//    _baseToDelete = nearestObjects [_missionPos, ["All"], 22];
-//    { deleteVehicle _x; } forEach _baseToDelete;
 
 _successHintMessage = format ["The %1 has been captured, well done.", _vehicleName];
 	

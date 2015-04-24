@@ -15,8 +15,8 @@ private ["_minimumFog", "_maximumFog", "_minimumOvercast", "_maximumOvercast", "
 private ["_minimumFogDecay", "_maximumFogDecay", "_minimumFogBase", "_maximumFogBase"];
 
 if (isNil "_this") then { _this = []; };
-if (count _this > 0) then { _initialFog = _this select 0; } else { _initialFog = 0; };
-if (count _this > 1) then { _initialOvercast = _this select 1; } else { _initialOvercast = 0; };
+if (count _this > 0) then { _initialFog = _this select 0; } else { _initialFog = -1; };
+if (count _this > 1) then { _initialOvercast = _this select 1; } else { _initialOvercast = -1; };
 if (count _this > 2) then { _initialRain = _this select 2; } else { _initialRain = -1; };
 if (count _this > 3) then { _initialWind = _this select 3; } else { _initialWind = [-1, -1]; };
 if (count _this > 4) then { _debug = _this select 4; } else { _debug = false; };
@@ -26,11 +26,11 @@ if (count _this > 4) then { _debug = _this select 4; } else { _debug = false; };
 
 // Minimum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to 1 and less than or equal to
 // _maxWeatherChangeTimeMin. When weather changes, it is fog OR overcast that changes, not both at the same time. (Suggested value: 10).
-_minWeatherChangeTimeMin = 30;
+_minWeatherChangeTimeMin = 20;
 
 // Maximum time in minutes for the weather (fog and overcast) to change. Must be greater than or equal to _minWeatherChangeTimeMin.
 // (Suggested value: 20).
-_maxWeatherChangeTimeMin = 120; 
+_maxWeatherChangeTimeMin = 40;
 
 // Minimum time in minutes that weather (fog and overcast) stays constant between weather changes. Must be less than or equal to 0 and
 // greater than or equal to _minWeatherChangeTimeMin. (Suggested value: 5).
@@ -68,7 +68,7 @@ _minimumRain = 0.01;
 
 // When raining, rain intensity never exceeds this value. Must be between 0 and 1 and greater than or equal to _minimumRain
 // (0 = no rain, 1 = maximum rain intensity). (Suggested value: 0.8);
-_maximumRain = 0;
+_maximumRain = 0.5;
 
 // Wind vector strength never falls below this value. Must be greater or equal to 0 and less than or equal to _maximumWind.
 // (Suggested value: 0);
@@ -89,11 +89,11 @@ _windChangeProbability = 25;
 // Probability in percent (0-100) for rain to start at every rain interval. Set this to 0 if you don't want rain at all. Set this to 100
 // if you want it to rain constantly when overcast is greater than 0.75. In short: if you think that it generally rains to often then
 // lower this value and vice versa. (Suggested value: 50).
-_rainIntervalRainProbability = 15;
+_rainIntervalRainProbability = 50;
 
 // Minimum time in minutes for rain intervals. Must be greater or equal to 0 and less than or equal to _maxRainIntervalTimeMin.
 // (Suggested value: 0).
-_minRainIntervalTimeMin = 45;
+_minRainIntervalTimeMin = 1;
 
 // Maximum time in minutes for rain intervals. Must be greater than or equal to _minRainIntervalTimeMin. (Suggested value:
 // (_maxWeatherChangeTimeMin + _maxTimeBetweenWeatherChangesMin) / 2).
@@ -102,7 +102,7 @@ _maxRainIntervalTimeMin = (_maxWeatherChangeTimeMin + _maxTimeBetweenWeatherChan
 // If set to true, then the rain is forced to stop after one rain interval during which it has rained (use this for example if you only want
 // small occational cloudbursts ). If set to false, then the rain may stop, but it may also just change intensity for an
 // immedeate new rain interval. (Suggested value: false).
-_forceRainToStopAfterOneRainInterval = true;
+_forceRainToStopAfterOneRainInterval = false;
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////

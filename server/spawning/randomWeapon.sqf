@@ -14,16 +14,19 @@ private ["_car", "_additionArray", "_nightTime", "_weapon", "_mag", "_additionOn
 //Grabs car object from array in execVM
 _car = _this select 0;
 _additionArray = vehicleAddition;
-_nightTime = (date select 3 >= 18 || date select 3 < 5); // spawn night items between 18:00 and 05:00 (sunlight is completely gone by 20:00)
+_nightTime = (date select 3 >= 19 || date select 3 < 3); // spawn night items between 18:00 and 05:00 (sunlight is completely gone by 20:00)
+
 
 // If night is falling, add flashlight, IR pointers, and NV goggles to loot possibilities
-if (_nightTime) then
-{
-	{ _additionArray pushBack _x} forEach ["acc_flashlight", "acc_pointer_IR"];
-	if (random 1 < 0.15) then { _car addItemCargoGlobal ["NVGoggles", 1]};
-};
+//if (_nightTime) then
+//{
+//	{ _additionArray pushBack _x} forEach ["acc_flashlight", "acc_pointer_IR"];
+//	if (random 1 < 0.15) then { _car addItemCargoGlobal ["NVGoggles", 1]};
+//};
 
-if (random 1 < 0.45) then { _car addWeaponCargoGlobal ["Binocular", 1]};
+if (random 1 < 0.30) then { _car addWeaponCargoGlobal ["Binocular", 1]};
+//if (random 1 < 0.10) then { _car addWeaponCargoGlobal ["Laserbatteries", 1]};
+//if (random 1 < 0.10) then { _car addWeaponCargoGlobal ["Laserdesignator", 1]};
 
 //Get Random Gun From randomWeapons Array.
 _weapon = vehicleWeapons call BIS_fnc_selectRandom;

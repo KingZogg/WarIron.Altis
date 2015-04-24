@@ -9,9 +9,14 @@
 if (!isServer) exitwith {};
 #include "moneyMissionDefines.sqf";
 
-private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_goldAmount", "_goldMinAmount", "_goldMaxAmount"];
+private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyText", "_vehClasses", "_createVehicle", "_vehicles", "_veh2", "_leader", "_speedMode", "_waypoint", "_vehicleName", "_numWaypoints", "_cash", "_goldAmount", "_goldMinAmount", "_goldMaxAmount", "_missionHintTime"];
 
 _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
+
+
+
+
+
 
 
 _setupVars =
@@ -164,9 +169,17 @@ _setupVars =
 		};
 	};
 
-	
+
+
+
 
 };
+
+
+
+
+
+
 
 _setupObjects =
 {
@@ -250,8 +263,12 @@ _setupObjects =
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _veh2 >> "picture");
 	_vehicleName = getText (configFile >> "cfgVehicles" >> _veh2 >> "displayName");
-
-	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t><br/> and an unknown amount of GOLD <br/> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!", moneyMissionColor, _moneyText, _vehicleName];
+    
+	_missionHintTime = ["A3W_mainMissionTimeout", 120] call getPublicVar;
+	_missionHintTime = _missionHintTime /60;
+	diag_log format ["#################### Mission Type = %1, Mission Timeout = %2", _missionType, _missionHintTime];	
+	
+	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t><br/> and an unknown amount of GOLD <br/> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!<br/>You have %4 Minutes<br/>To complete this mission", moneyMissionColor, _moneyText, _vehicleName, _missionHintTime];
 
 	_numWaypoints = count waypoints _aiGroup;
 	

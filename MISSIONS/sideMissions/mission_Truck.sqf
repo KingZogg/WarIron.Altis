@@ -9,7 +9,8 @@
 if (!isServer) exitwith {};
 #include "sideMissionDefines.sqf"
 
-private ["_nbUnits", "_vehicleClass", "_vehicle"];
+private ["_nbUnits", "_vehicleClass", "_vehicle", "_missionHintTime"];
+
 
 _setupVars =
 {
@@ -52,8 +53,11 @@ _setupObjects =
 
 	_missionPicture = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "picture");
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _vehicleClass >> "displayName");
-
-	_missionHintText = format ["A <t color='%2'>%1</t> has been located, go get it for your team.", _vehicleName, sideMissionColor];
+  
+	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
+	_missionHintTime = _missionHintTime /60;
+  
+	_missionHintText = format ["A <t color='%2'>%1</t> has been located, go get it for your team.<br/>You have %3 Minutes<br/>To complete this mission", _vehicleName, sideMissionColor, _missionHintTime];
 };
 
 _waitUntilMarkerPos = nil;

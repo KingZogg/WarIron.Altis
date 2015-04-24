@@ -17,7 +17,7 @@ _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 _setupVars =
 {
 	_missionType = "Town Invasion";
-	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
+	_nbUnits = AI_GROUP_HUGE;
 
 	// settings for this mission
 	_locArray = ((call cityList) call BIS_fnc_selectRandom);
@@ -64,8 +64,12 @@ _setupObjects =
 
 	// move them into buildings
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
-
-	_missionHintText = format ["Hostiles have taken over <br/><t size='1.25' color='%1'>%2</t><br/><br/>There seem to be <t color='%1'>%3 enemies</t> hiding inside or on top of buildings. Get rid of them all, and take their supplies!<br/>Watch out for those windows!", sideMissionColor, _townName, _nbUnits];
+	
+	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
+	_missionHintTime / 60;
+	diag_log format ["#################### Mission Type = %1, Mission Timeout = %2", _missionType, _missionHintTime];
+	
+	_missionHintText = format ["Hostiles have taken over <br/><t size='1.25' color='%1'>%2</t><br/><br/>There seem to be <t color='%1'>%3 enemies</t> hiding inside or on top of buildings. Get rid of them all, take their supplies and GOLD!<br/>Watch out for those windows!<br/>You have %4 Minutes<br/>To complete this mission", sideMissionColor, _townName, _nbUnits, _missionHintTime];
 };
 
 _waitUntilMarkerPos = nil;
