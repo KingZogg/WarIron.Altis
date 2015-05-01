@@ -6,16 +6,13 @@
 =======================================================================================================================
 */
 
-_filesizeamountrandomizer = [5000,5500,5100];
-_filesize = _filesizeamountrandomizer call BIS_fnc_SelectRandom;
-
-T8_varFileSize = _filesize;  								// Filesize ... smaller files will take shorter time to download!
+T8_varFileSize = 60000;  								// Filesize ... smaller files will take shorter time to download!
 
 T8_varTLine01 = "Download cancelled!";				// download aborted
 T8_varTLine02 = "Download already in progress by someone else!";			// download already in progress by someone else
 T8_varTLine03 = "Download started!";					// download started
-T8_varTLine04 = "Download finished! The money is added to your inventory!";				// download finished
-T8_varTLine05 = "<t color='#009933'>Hack Player Bank Accounts</t>";				// line for the addaction
+T8_varTLine04 = "Download finished! $25,000 added to your inventory!";				// download finished
+T8_varTLine05 = "##  Hack Player Bank Accounts  ##";				// line for the addaction
 
 T8_varDiagAbort = false;
 T8_varDownSucce = false;
@@ -68,6 +65,7 @@ T8_fnc_ActionLaptop =
 	_id = _this select 2;
 	
 	
+	
 	_cIU = _laptop getVariable [ "InUse", false ];
 	if ( _cIU ) exitWith { player sideChat T8_varTLine02; };
 	
@@ -110,27 +108,85 @@ T8_fnc_ActionLaptop =
 				
 				_laptop setVariable [ "Done", true, true ];
 				
-				packet = [player, getPlayerUID player]; 
-				publicVariable "packet";
-				systemChat format["Player Client %1",packet];
+	
+
+	
+	
+	// Give Reward to the hacker
+		_totalMoney = 0;
+		_playerSide = side player;
+		switch (_playerSide) do {
+		
+	case BLUFOR: 
+	{	
+		{    
+			if (isPlayer _x) then {
+			if  (side _x == BLUFOR) then {}
+			else {
+			_bmoney = _x getVariable ["bmoney",0];
+			if ( _bmoney > 0 ) then { //might as well check for zero's
+			_fivePercent = round(0.05*_bmoney);
+			_x setVariable [ "bmoney", (_bmoney - _fivePercent), true ];
+			_totalMoney = _totalMoney + _fivePercent;
+		}
+			}
+				}
+		} forEach playableUnits;
+	}; 
+	
+	case OPFOR: 
+	{	
+		{    
+			if (isPlayer _x) then {
+			if  (side _x == OPFOR) then {}
+			else {
+			_bmoney = _x getVariable ["bmoney",0];
+			if ( _bmoney > 0 ) then { //might as well check for zero's
+			_fivePercent = round(0.05*_bmoney);
+			_x setVariable [ "bmoney", (_bmoney - _fivePercent), true ];
+			_totalMoney = _totalMoney + _fivePercent;
+		}
+			}
+				}	
+		} forEach playableUnits;
+	}; 		
+	default
+	{
+		{    
+			if (isPlayer _x) then {
+			_bmoney = _x getVariable ["bmoney",0];
+			if ( _bmoney > 0 ) then { //might as well check for zero's
+			_fivePercent = round(0.05*_bmoney);
+			_x setVariable [ "bmoney", (_bmoney - _fivePercent), true ];
+			_totalMoney = _totalMoney + _fivePercent;
+		}
+			}
+		} forEach playableUnits;
+	
+		   }; 
+							};
 			
-						
+			if (_totalMoney > 25000) then {
+			player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + _totalMoney, true];
+			systemChat format["You have hacked players bank accounts to the value of $%1",_totalMoney];	
+			}
+		else 	{
+			player setVariable ["cmoney", (player getVariable ["cmoney", 0]) + 25000, true];
+			systemChat format["You have hacked players bank accounts to the value of $25,000"];				
+				};
 			};
 					
 			ctrlSetText [ 8002, format [ "%1 kb/s", _dlRate ] ];		
 			ctrlSetText [ 8004, format [ "%1 kb", _newFile ] ];				
 			
 			sleep 1;
-
 		};
-		
 		
 		T8_varDiagAbort = false;
 		
 		closeDialog 0;
 
 		_laptop setVariable [ "InUse", false, true];	
-	
 	};
 };
 

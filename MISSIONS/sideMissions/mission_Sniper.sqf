@@ -1,7 +1,7 @@
 // ******************************************************************************************
 // * This project is licensed under the GNU Affero GPL v3. Copyright © 2014 A3Wasteland.com *
 // ******************************************************************************************
-//	@file Name: mission_TownInvasion.sqf
+//	@file Name: mission_Sniper.sqf
 //	@file Author: [404] Deadbeat, [404] Costlyy, JoSchaap, AgentRev, Zenophon
 //  @file Information: JoSchaap's Lite version of 'Infantry Occupy House' Original was made by: Zenophon
 
@@ -21,6 +21,7 @@ _setupVars =
 	_positions = [[14227.5,21210.5,17],[8408,18243,15],[3899,12294,13],[13808.2,18967.5,17],[16590.5,19041.4,17],[14295.9,13031.1,17],[8319.8,10057.1,17]];
 
 	_missionPos = _positions call BIS_fnc_SelectRandom;	
+
 /*	
 Frini				
 [[14210.398438,21221.898438,0];
@@ -90,7 +91,7 @@ _setupObjects =
 	_missionHintTime = _missionHintTime /60;
 	
 	//private ["_title", "_subTitle", "_picture", "_text", "_titleColor"];
-	_missionHintText = format ["A Sniper Nest has been spotted guarding GOLD and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!<br/>You have %2 Minutes<br/>To complete this mission", sideMissionColor, _missionHintTime];
+	_missionHintText = format ["A Sniper Nest has been spotted guarding GOLD and weapons. Head to the marked area and Take them out! Be careful they are fully armed and dangerous!<br/>You have %2 Minutes<br/>To clear them out", sideMissionColor, _missionHintTime];
 };
 
 

@@ -17,6 +17,7 @@ _setupVars =
 	_missionType = "Enemy Outpost";
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = AI_GROUP_MEDIUM;
+	
 };
 
 _setupObjects =
@@ -32,7 +33,7 @@ _setupObjects =
 	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
 	_missionHintTime = _missionHintTime /60;
 	
-	_missionHintText = format ["An armed <t color='%1'>outpost</t> containing weapon crates has been spotted near the marker, go capture it!<br/>You have %2 Minutes<br/>To complete this mission", sideMissionColor, _missionHintTime]
+	_missionHintText = format ["An armed <t color='%1'>outpost</t> containing weapon crates has been spotted near the marker, go capture it!<br/>You have %2 Minutes<br/>To capture it.", sideMissionColor, _missionHintTime]
 };
 
 _waitUntilMarkerPos = nil;

@@ -21,6 +21,7 @@ createCustomGroup2 = [_path, "createUnits\customGroup2.sqf"] call mf_compile;
 createLargeDivers = [_path, "createUnits\largeDivers.sqf"] call mf_compile;
 createMissionLocation = [_path, "createMissionLocation.sqf"] call mf_compile;
 createMissionMarker = [_path, "createMissionMarker.sqf"] call mf_compile;
+createMissionMarkerFill = [_path, "createMissionMarkerFill.sqf"] call mf_compile;
 creategoldMarker = [_path, "createGoldMarker.sqf"] call mf_compile;
 createMissionVehicle = [_path, "createMissionVehicle.sqf"] call mf_compile;
 createMissionVehicle2 = [_path, "createMissionVehicle2.sqf"] call mf_compile;

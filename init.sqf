@@ -73,7 +73,7 @@ if (hasInterface || isServer) then
 {
 	[] execVM "addons\R3F_ARTY_AND_LOG\init.sqf";
 	[] execVM "addons\proving_ground\init.sqf";
-	[] execVM "addons\scripts\DynamicWeatherEffects.sqf";
+	[0,-1,0] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 	[] execVM "addons\JumpMF\init.sqf";
 	[] execVM "addons\status_bar\statusBar.sqf";
 	[] execVM "addons\credits\welcome.sqf";

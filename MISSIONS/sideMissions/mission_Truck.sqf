@@ -17,6 +17,7 @@ _setupVars =
 	_missionType = "Ammo Supply";
 	_locationsArray = MissionSpawnMarkers;
 	_nbUnits = if (missionDifficultyHard) then { AI_GROUP_LARGE } else { AI_GROUP_MEDIUM };
+	
 };
 
 _setupObjects =
@@ -57,7 +58,7 @@ _setupObjects =
 	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
 	_missionHintTime = _missionHintTime /60;
   
-	_missionHintText = format ["A <t color='%2'>%1</t> has been located, go get it for your team.<br/>You have %3 Minutes<br/>To complete this mission", _vehicleName, sideMissionColor, _missionHintTime];
+	_missionHintText = format ["A <t color='%2'>%1</t> has been located, go get it for your team.<br/>You have %3 Minutes<br/>To grab it.", _vehicleName, sideMissionColor, _missionHintTime];
 };
 
 _waitUntilMarkerPos = nil;

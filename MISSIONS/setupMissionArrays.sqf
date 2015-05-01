@@ -45,6 +45,10 @@ MoneyMissions =
 	//["mission_Hackers", 0.25]
 ];
 
+ExtraMissions =
+[
+	["mission_Hackers", 1]
+];
 
 
 GoldMissions =
@@ -64,8 +68,9 @@ BountyMissions =
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
-SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_extraMissions", ["mission_HostileJet", "mission_Smugglers", "mission_Sniper"]]]] call removeDisabledMissions;
+SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_sideMissions", ["mission_HostileJet", "mission_Smugglers", "mission_Sniper"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]],["A3W_MoneyMissions", ["mission_Hackers"],["mission_MoneyShipment"]]]] call removeDisabledMissions;
+ExtraMissions = [ExtraMissions, [["A3W_extraMissions", ["mission_Hackers"]]]] call removeDisabledMissions;
 GoldMissions = [GoldMissions, [["A3W_goldMissions", ["mission_Gold"]]]] call removeDisabledMissions;
 BountyMissions = [BountyMissions, [["A3W_BountyMissions", ["mission_Bounty"]]]] call removeDisabledMissions;
 PatrolMissions = [PatrolMissions, [["A3W_PatrolMissions", ["mission_airportPatrol"]]]] call removeDisabledMissions;

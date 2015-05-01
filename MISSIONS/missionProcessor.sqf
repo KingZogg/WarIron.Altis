@@ -9,17 +9,20 @@ if (!isServer) exitwith {};
 #define MISSION_LOCATION_COOLDOWN (10*60)
 #define MISSION_TIMER_EXTENSION (15*60)
 
-private ["_controllerSuffix", "_missionTimeout", "_availableLocations", "_missionLocation", "_leader", "_marker", "_failed", "_complete", "_startTime", "_oldAiCount", "_leaderTemp", "_newAiCount", "_lastPos", "_floorHeight"];
+private ["_controllerSuffix", "_missionTimeout", "_availableLocations", "_missionLocation", "_leader", "_marker", "_failed", "_complete", "_startTime", "_oldAiCount", "_leaderTemp", "_newAiCount", "_lastPos", "_floorHeight", "_markerFill"];
 
 // Variables that can be defined in the mission script :
-private ["_missionType", "_locationsArray", "_aiGroup", "_missionPos", "_missionPicture", "_missionHintText", "_successHintMessage", "_failedHintMessage"];
+private ["_missionType", "_locationsArray", "_aiGroup", "_missionPos", "_missionPicture", "_missionHintText", "_successHintMessage", "_failedHintMessage", "_buildingRadius"];
 
+_markerFill = [];
 _controllerSuffix = [_this, 0, "", [""]] call BIS_fnc_param;
 _aiGroup = grpNull;
 
 if (!isNil "_setupVars") then { call _setupVars };
 
-diag_log format ["WASTELAND SERVER - %1 Mission%2 started: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
+
+
+diag_log format ["WASTELAND SERVER ################################- %1 Mission%2 started: %3", MISSION_PROC_TYPE_NAME, _controllerSuffix, _missionType];
 
 _missionTimeout = MISSION_PROC_TIMEOUT;
 
@@ -41,7 +44,27 @@ if (!isNil "_locationsArray") then
 if (!isNil "_setupObjects") then { call _setupObjects };
 
 _leader = leader _aiGroup;
-_marker = [_missionType, _missionPos] call createMissionMarker;
+
+//diag_log format ["#################### Mission Processor _setupVars = _missionType = %1, _missionPos = %2,", _missionType, _missionPos];
+
+		switch (_missionType) do
+	{
+    case "Find the Laptop":
+		{
+		_marker = [_missionType, _missionPos] call createMissionMarker;
+        _markerFill = [_missionType, _missionPos, _buildingRadius] call createMissionMarkerFill;
+		};
+	
+	default 
+		{
+		_marker = [_missionType, _missionPos] call createMissionMarker;
+		};	
+	
+	};
+
+
+//diag_log format ["#################### CreateMissionMarker Search Value in MissionProcessor = %1", _search];
+
 _aiGroup setVariable ["A3W_missionMarkerName", _marker, true];
 
 if (isNil "_missionPicture") then { _missionPicture = "" };
@@ -199,7 +222,26 @@ else
 };
 
 deleteGroup _aiGroup;
-deleteMarker _marker;
+
+	switch (_missionType) do
+	{
+    case "Find the Laptop":
+		{
+		deleteMarker _marker;
+        deleteMarker _markerFill;
+		};
+	
+	default 
+		{
+		deleteMarker _marker;
+		};	
+	
+	};
+
+
+
+
+//if (!isNil "_markerFill") then { deleteMarker _markerFill;};
 
 if (!isNil "_locationsArray") then
 {

@@ -187,7 +187,7 @@ _setupObjects =
 	_missionHintTime = ["A3W_mainMissionTimeout", 120] call getPublicVar;
 	_missionHintTime = _missionHintTime /60;
 	
-	_missionHintText = format ["%1 <t color='%3'>%2</t> has been immobilized, go get it for your team!<br/>You have %4 Minutes<br/>To complete this mission", _vehDeterminer, _vehicleName, mainMissionColor, _missionHintTime];
+	_missionHintText = format ["%1 <t color='%3'>%2</t> has been immobilized, go get it for your team!<br/>You have %4 Minutes<br/>To capture it.", _vehDeterminer, _vehicleName, mainMissionColor, _missionHintTime];
 	diag_log format ["MISSION VEHICLE = %1 ", _vehicleName ];
 };
 

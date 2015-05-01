@@ -33,6 +33,7 @@ _setupVars =
 	if (random 1 < 0.75) then { _putOnRoof = true } else { _putOnRoof = false };
 	// 25% chance on AI trying to fit into a single building instead of spreading out
 	if (random 1 < 0.75) then { _fillEvenly = true } else { _fillEvenly = false };
+		
 };
 
 _setupObjects =
@@ -66,10 +67,10 @@ _setupObjects =
 	[_aiGroup, _missionPos, _buildingRadius, _fillEvenly, _putOnRoof] call moveIntoBuildings;
 	
 	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
-	_missionHintTime / 60;
+	_missionHintTime = _missionHintTime /60;
 	diag_log format ["#################### Mission Type = %1, Mission Timeout = %2", _missionType, _missionHintTime];
 	
-	_missionHintText = format ["Hostiles have taken over <br/><t size='1.25' color='%1'>%2</t><br/><br/>There seem to be <t color='%1'>%3 enemies</t> hiding inside or on top of buildings. Get rid of them all, take their supplies and GOLD!<br/>Watch out for those windows!<br/>You have %4 Minutes<br/>To complete this mission", sideMissionColor, _townName, _nbUnits, _missionHintTime];
+	_missionHintText = format ["Hostiles have taken over <br/><t size='1.25' color='%1'>%2</t><br/>There seem to be <t color='%1'>%3 enemies</t> hiding inside or on top of buildings. Get rid of them all, take their supplies and GOLD!<br/>Watch out for those windows!<br/>You have %4 Minutes<br/>To To clear them out", sideMissionColor, _townName, _nbUnits, _missionHintTime];
 };
 
 _waitUntilMarkerPos = nil;

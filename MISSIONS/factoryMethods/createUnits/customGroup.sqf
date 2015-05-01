@@ -44,10 +44,11 @@ for "_i" from 1 to _nbUnits do
 
 	switch (true) do
 	{
-		// Grenadier every 3 units
+		// Grenadier and RPG every 3 units
 		case (_i % 3 == 0):
 		{
 			_unit addUniform "U_B_CombatUniform_mcam_vest";
+			_unit addBackpack "B_Kitbag_mcamo";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
 			_unit addWeapon "arifle_TRG21_GL_F";
 			_unit addMagazine "1Rnd_HE_Grenade_shell";
@@ -56,7 +57,7 @@ for "_i" from 1 to _nbUnits do
 			_unit addWeapon "launch_RPG32_F";
 			_unit addMagazine "RPG32_HE_F";
 		};
-		// RPG every 7 units, starting from second one
+		// AA every 7 units, starting from second one
 		case ((_i + 5) % 7 == 0):
 		{
 			_unit addUniform "U_B_CombatUniform_mcam_tshirt";

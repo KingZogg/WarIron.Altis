@@ -14,14 +14,12 @@ private ["_MoneyShipment", "_moneyAmount", "_convoys", "_vehChoices", "_moneyTex
 _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 
 
-
-
-
-
-
 _setupVars =
 {
 	_locationsArray = LandConvoyPaths;
+	
+		_search = false;
+        _buildingRadius = 0;
 
 	_MoneyShipment =
 	[
@@ -268,7 +266,7 @@ _setupObjects =
 	_missionHintTime = _missionHintTime /60;
 	diag_log format ["#################### Mission Type = %1, Mission Timeout = %2", _missionType, _missionHintTime];	
 	
-	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t><br/> and an unknown amount of GOLD <br/> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!<br/>You have %4 Minutes<br/>To complete this mission", moneyMissionColor, _moneyText, _vehicleName, _missionHintTime];
+	_missionHintText = format ["A convoy transporting <t color='%1'>%2</t><br/> and an unknown amount of GOLD <br/> escorted by a <t color='%1'>%3</t> is en route to an unknown location.<br/>Stop them!<br/>You have %4 Minutes<br/>To ambush and rob them.", moneyMissionColor, _moneyText, _vehicleName, _missionHintTime];
 
 	_numWaypoints = count waypoints _aiGroup;
 	

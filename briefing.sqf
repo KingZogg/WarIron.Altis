@@ -521,11 +521,15 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>Gold can only be sold to a Gold buyer at the gold buyer shop.
 <br/>
+<br/>The mission area is cleaned of all subs and gold when a new mission spawns in the same location.
+<br/>Subs hold gold after a restart but any on the ground/or sea floor will disappear.
+<br/>If you park your sub in the mission area there is a chance it will be deleted if a new gold sub mission spawns in that location.
+<br/>
 <br/>Summary.
 <br/>Step 1. Find the divers at the surface. (usually)
 <br/>Step 2. Find the sub at the bottom and take the gold that spawns under it once the divers are dead.
 <br/>Step 3. (Optional) Fix and refuel the sub. It can hold 10 Boxes of gold.
-<br/>
+<br/>Step 4. Get the sub OUT of the mission area.
 "
 ]];
 
