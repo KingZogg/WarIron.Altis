@@ -19,7 +19,7 @@ _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 
 _setupVars =
 {
-	_missionType = "Sub Down with Gold Bars";
+	_missionType = "Sub Down with Gold";
 	_locationsArray = GoldMissionMarkers;
 };
 

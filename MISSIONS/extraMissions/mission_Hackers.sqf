@@ -78,7 +78,7 @@ _selectedBuildingPos = ceil(random _result); //select a random position
 	_checkPos = getPosASL _table;
 	_checkPos = _checkPos select 0;
 	
-diag_log format ["#################### _checkPos in _checkPos = %1", _checkPos];
+//diag_log format ["#################### _checkPos in _checkPos = %1", _checkPos];
 
 if (_checkPos <= 1000) then {
 					{ deleteVehicle _x } forEach [_laptop, _table];

@@ -43,8 +43,8 @@
 	//["Town_35", 150, "Alikampos"],
 	//["Town_36", 125, "Katalaki"],
 	["Town_37", 200, "Therisa"],
-	["Town_38", 300, "Neri"],
-	["Town_39", 250, "Agios Konstantinos"]
+	["Town_38", 300, "Neri"]
+	//["Town_39", 250, "Agios Konstantinos"]
 	//["Town_40", 125, "Anthanos"],
 	//["Town_41", 100, "Edessa"],
 	//["Town_42", 100, "Lfestonia"]
