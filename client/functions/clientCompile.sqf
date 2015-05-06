@@ -99,6 +99,7 @@ getSellPriceList = "client\systems\selling\getSellPriceList.sqf" call mf_compile
 populateGeneralStore = "client\systems\generalStore\populateGenStore.sqf" call mf_compile;
 populateGunStore = "client\systems\gunStore\populateGunStore.sqf" call mf_compile;
 populateVehicleStore = "client\systems\vehicleStore\populateVehicleStore.sqf" call mf_compile;
+populateGoldBuyer = "client\systems\goldbuyer\populateGoldBuyer.sqf" call mf_compile;
 requestStoreObject = "client\functions\requestStoreObject.sqf" call mf_compile;
 vehicleInfo = "client\systems\vehicleStore\vehicleInfo.sqf" call mf_compile;
 weaponInfo = "client\systems\gunStore\weaponInfo.sqf" call mf_compile;

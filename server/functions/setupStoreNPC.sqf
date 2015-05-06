@@ -49,7 +49,7 @@ if (hasInterface) then
 		};
 		case (["GoldBuyer", _npcName] call _startsWith):
 		{
-			_npc addAction ["<img image='client\icons\store.paa'/> Sell Gold", "client\systems\goldbuyer\loadGoldBuyer.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
+			_npc addAction ["<img image='client\icons\store.paa'/> Open Gold Trader", "client\systems\goldbuyer\loadGoldBuyer.sqf", [], 1, true, true, "", STORE_ACTION_CONDITION];
 		};
 		
 	};

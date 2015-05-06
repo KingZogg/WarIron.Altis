@@ -204,6 +204,7 @@ vehicleWeapons =
 
 vehicleAddition =
 [
+
 	"muzzle_snds_L", // 9mm
 	"muzzle_snds_M", // 5.56mm
 	"muzzle_snds_H", // 6.5mm
@@ -229,6 +230,7 @@ vehicleAddition =
 	"HandGrenade",
 	"ClaymoreDirectionalMine_Remote_Mag",
 	"ATMine_Range_Mag",
+	"B_Kitbag_mcamo",
 	"SmokeShellRed"
 ];
 

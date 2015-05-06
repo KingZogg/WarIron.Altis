@@ -79,7 +79,7 @@ _selectedBuildingPos = ceil(random _result); //select a random position
 	_checkPos = _checkPos select 0;
 	
 //diag_log format ["#################### _checkPos in _checkPos = %1", _checkPos];
-
+// this is a safety check to make sure we have a valid position. When it fails it puts it in the bottom left corner of the map.
 if (_checkPos <= 1000) then {
 					{ deleteVehicle _x } forEach [_laptop, _table];
 						breakto "main"
@@ -95,7 +95,7 @@ if (_checkPos <= 1000) then {
 	_missionHintTime = ["A3W_extraMissionTimeout", 120] call getPublicVar;
 	_missionHintTime = _missionHintTime /60;
 	
-	_missionHintText = format ["Hackers have lost a <t color='%2'>laptop</t> in the highlighted search area.<br/>it is very valuable!.<br/ Nobody knows exactly what is on it.<br/>Retrieve it before someone else does.<br/>You have %3 Minutes<br/>To find it", _vehicleName, extraMissionColor, _missionHintTime];
+	_missionHintText = format ["Hackers have lost a <t color='%2'>laptop</t> in the highlighted search area.<br/>it is very valuable!.<br/ Nobody knows exactly what is on it.<br/>It is IN a building.<br/>Retrieve it before someone else does.<br/>You have %3 Minutes<br/>To find it", _vehicleName, extraMissionColor, _missionHintTime];
 };
 
 _waitUntilMarkerPos = nil;
@@ -125,7 +125,7 @@ _successExec =
 	publicVariable "RemoveLaptopHandler";
 	{ deleteVehicle _x } forEach [_laptop,_table ];
 
-	_successHintMessage = format ["The laptop is hacked. Well done!"];
+	_successHintMessage = format ["Everyone's bank account<br/> has been robbed!"];
 };
 
 _this call extraMissionProcessor;

@@ -19,6 +19,8 @@
  *      max {integer | function} - the maximum qty of this item a player can
  *          carry, either a number or a function returning a number.
  *          see "is_full.sqf" for details.
+ 
+ [MF_ITEMS_SUPPLY_RADIO, "Tactical Radio", _can_take, _ground_type, _icon, MF_ITEMS_SUPPLY_RADIO_MAX] call mf_inventory_create;
  */
 
 #include "define.sqf"

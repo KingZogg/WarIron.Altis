@@ -3748,7 +3748,7 @@ class Mission
 		{
 			position[]={7866.3774,274.4776,14626.496};
 			name="GOLD_BUYER_1";
-			text="GOLD BUYER";
+			text="Gold Trader";
 			type="hd_dot";
 			colorName="ColorYellow";
 		};

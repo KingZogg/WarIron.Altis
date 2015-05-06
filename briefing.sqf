@@ -18,7 +18,7 @@ player createDiaryRecord ["changelog",
 "
 <br/>WarIron.Com Additions
 <br/>[Added] Extra Gun store
-<br/>[Added] Gold Mission and Gold Buyer
+<br/>[Added] Gold Mission and Gold Trader
 "
 ]];
 
@@ -519,7 +519,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>You can't load the gold into land vehicles.
 <br/>
-<br/>Gold can only be sold to a Gold buyer at the gold buyer shop.
+<br/>Gold can only be sold to a Gold Trader at the Gold Trader shop.
 <br/>
 <br/>The mission area is cleaned of all subs and gold when a new mission spawns in the same location.
 <br/>Subs hold gold after a restart but any on the ground/or sea floor will disappear.

@@ -16,6 +16,7 @@
 [_this, "warchest"] call mf_init;
 [_this, "goldbullion"] call mf_init;
 [_this, "cratemoney"] call mf_init;
+[_this, "supplyradio"] call mf_init;
 
 if (["A3W_atmEnabled"] call isConfigOn) then
 {

@@ -18,15 +18,21 @@ _setupVars =
 {
 	_missionType = "Sniper Nest";
 
-	_positions = [[14227.5,21210.5,17],[8408,18243,15],[3899,12294,13],[13808.2,18967.5,17],[16590.5,19041.4,17],[14295.9,13031.1,17],[8319.8,10057.1,17]];
+	_positions = [
+					[14227.5,21210.5,17] , //Frini
+					[8408,18243,15],		//Syrta
+					[3899,12294,13],		//Neri
+					[13808.2,18967.5,17],	//Athira
+					[16590.5,19041.4,17],	//Zeloran
+					[14295.9,13031.1,17],	//Sagonisi
+					[8319.8,10057.1,17]	//Edessa
+				];
 
 	_missionPos = _positions call BIS_fnc_SelectRandom;	
 
 /*	
 Frini				
 [[14210.398438,21221.898438,0];
-
-City/Town=Frini, Distance=579.557, PosASL=[14227.5,21210.5,89.9193], HouseID=1295080, Model=cargo_tower_v3_f.p3d TotalPos=18, BuildingPos=
 
 Rebel	
 [12299.271484,8875.455078,0];
@@ -111,7 +117,7 @@ _successExec =
 	// Mission completed
 	_goldAmount = 0;
 	_goldMinAmount = 1;
-	_goldMaxAmount = 2;
+	_goldMaxAmount = 1;
 	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 	
 	for "_i" from 1 to _goldAmount do{

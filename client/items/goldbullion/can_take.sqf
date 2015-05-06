@@ -16,7 +16,7 @@ private ["_gold", "_error"];
 _gold = objNull;
 
 if (count _this == 0) then {
-	_gold = [] call mf_items__gold_bullion_nearest;
+	_gold = [] call mf_items_gold_bullion_nearest;
 } else {
 	_gold = _this select 0;
 };

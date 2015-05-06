@@ -984,6 +984,8 @@ customPlayerItems = compileFinal str
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
 	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 1500, 750],
 	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
+	["Gold", "goldbullion", "Special price for you, only 100% Markup on Gold !" ,"client\icons\gold.paa", 50000, 25000],
+	["Tactical Radio", "supplyradio", "Call in Air Dropped Supplies with this", "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa", 10000, 1000],
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100]
 	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
 	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]
@@ -992,7 +994,8 @@ customPlayerItems = compileFinal str
 
 customGoldPlayerItems = compileFinal str
 [
-	["Gold Bars", "goldbullion", "" ,"client\icons\gold.paa", _goldPrice, _goldPrice]
+	["Gold", "goldbullion", "Special price for you, only 100% Markup on Gold !" ,"client\icons\gold.paa", 50000, 25000],
+	["Tactical Radio", "supplyradio", "Call in Air Dropped Supplies with this", "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa", 10000, 1000]
 	
 ];
 

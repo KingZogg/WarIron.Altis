@@ -32,23 +32,23 @@ switch(_switch) do
 {
 	case 0:
 	{
-		_itemsArray = call headArray;
+		_itemsArray = call customGoldPlayerItems;
 	};
 	case 1:
 	{
-		_itemsArray = call uniformArray;
+		_itemsArray = call customGoldPlayerItems;
 	};
 	case 2:
 	{
-		_itemsArray = call vestArray;
+		_itemsArray = call customGoldPlayerItems;
 	};
 	case 3:
 	{
-		_itemsArray = call backpackArray;
+		_itemsArray = call customGoldPlayerItems;
 	};
 	case 4:
 	{
-		_itemsArray = call genItemArray;
+		_itemsArray = call customGoldPlayerItems;
 	};
 	case 5:
 	{

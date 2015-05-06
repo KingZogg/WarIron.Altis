@@ -17,7 +17,7 @@
 #define ERR_CANCELLED "Taking Gold Cancelled"
 
 private ["_error", "_hasFailed", "_success", "_gold", "_text", "_failed", "_progress"];
-_gold = [] call mf_items__gold_bullion_nearest;
+_gold = [] call mf_items_gold_bullion_nearest;
 _error = [_gold] call mf_items_gold_bullion_can_take;
 if (_error != "") exitWith {[_error, 5] call mf_notify_client};
 
