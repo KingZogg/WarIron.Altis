@@ -94,6 +94,7 @@ loadVehicleStore = "client\systems\vehicleStore\loadVehicleStore.sqf" call mf_co
 gearProperties = "client\functions\gearProperties.sqf" call mf_compile;
 getCapacity = "client\functions\getCapacity.sqf" call mf_compile;
 getItemInfo = "client\functions\getItemInfo.sqf" call mf_compile;
+getItemInfo2 = "client\functions\getItemInfo2.sqf" call mf_compile;
 getInventory = "client\systems\generalStore\getInventory.sqf" call mf_compile;
 getSellPriceList = "client\systems\selling\getSellPriceList.sqf" call mf_compile;
 populateGeneralStore = "client\systems\generalStore\populateGenStore.sqf" call mf_compile;

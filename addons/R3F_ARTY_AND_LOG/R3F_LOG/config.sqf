@@ -157,7 +157,7 @@ R3F_LOG_CFG_objets_transportables =
 	["Land_HBarrier_5_F", 5],
 	["Land_LampHarbour_F", 2],
 	["Land_LampShabby_F", 2],
-	["Land_MetalBarrel_F", 2],
+	["MetalBarrel_burning_F", 2],
 	["Land_Mil_ConcreteWall_F", 5],
 	["Land_Mil_WallBig_4m_F", 5],
 	["Land_Obstacle_Ramp_F", 5],
@@ -173,6 +173,10 @@ R3F_LOG_CFG_objets_transportables =
 	["Land_BarrelWater_F", 2],
 	["Land_Pier_F", 150],  
 	["Land_TinContainer_F", 150],
+	["Land_Cargo40_military_green_F", 5],
+	["Land_Kiosk_gyros_F", 20],
+	["Land_TentHangar_V1_F", 30],
+	["Land_Dome_Small_F", 30],
 	["Land_Pod_Heli_Transport_04_ammo_F", 150]
 	
 ];
@@ -230,9 +234,16 @@ R3F_LOG_CFG_objets_deplacables =
 	"Land_Scaffolding_F",
 	"Land_Shoot_House_Wall_F",
 	"Land_Stone_8m_F",
-	// "Land_ToiletBox_F",
+	"Land_ToiletBox_F",
 	"Land_BarrelWater_F",
 	"Land_Pier_F",  
 	"Land_TinContainer_F",
+	"Land_Cargo40_military_green_F",
+	"Land_TentHangar_V1_F",
+	"Land_Dome_Small_F",
+	"Land_Kiosk_gyros_F",
+	"MetalBarrel_burning_F",
+	"Static_Designator_01_base_F",
+	"Static_Designator_02_base_F",
 	"Land_Pod_Heli_Transport_04_ammo_F"
 ];

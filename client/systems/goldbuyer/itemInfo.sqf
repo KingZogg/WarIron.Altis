@@ -32,7 +32,7 @@ _itemData = _itemlist lbData _itemIndex;
 
 _itemlisttext ctrlSetText "";
 
-_itemConfigInfo = [_itemText, _itemData] call getItemInfo;
+_itemConfigInfo = [_itemText, _itemData] call getItemInfo2;
 
 _price = _itemConfigInfo select 1;
 _description = _itemConfigInfo select 2;

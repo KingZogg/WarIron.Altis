@@ -613,8 +613,8 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 genObjectsArray = compileFinal str
 [
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
-	//["Metal Barrel", "Land_MetalBarrel_F", 25, "object"],
-	//["Toilet Box", "Land_ToiletBox_F", 25, "object"],
+	["Metal Barrel Burning", "MetalBarrel_burning_F", 25, "object"],
+	["Toilet Box", "Land_ToiletBox_F", 25, "object"],
 	["Lamp Post (Harbour)", "Land_LampHarbour_F", 100, "object"],
 	["Lamp Post (Shabby)", "Land_LampShabby_F", 100, "object"],
 	["Boom Gate", "Land_BarGate_F", 150, "object"],
@@ -631,6 +631,7 @@ genObjectsArray = compileFinal str
 	["HBarrier Wall (4 blocks)", "Land_HBarrierWall4_F", 400, "object"],
 	["HBarrier Wall (6 blocks)", "Land_HBarrierWall6_F", 500, "object"],
 	["HBarrier Watchtower", "Land_HBarrierTower_F", 600, "object"],
+	["Cargo Container", "Land_Cargo40_military_green_F", 250, "object"],
 	["Concrete Wall", "Land_CncWall1_F", 400, "object"],
 	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 400, "object"],
 	["Concrete Wall (Long)", "Land_CncWall4_F", 600, "object"],
@@ -647,12 +648,15 @@ genObjectsArray = compileFinal str
 	["Bag Bunker (Large)", "Land_BagBunker_Large_F", 500, "object"],
 	["Bag Bunker Tower", "Land_BagBunker_Tower_F", 1000, "object"],
 	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 800, "object"],
-	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 10000, "object"],
+	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 1500, "object"],
+	["Tent Hanger", "Land_TentHangar_V1_F", 1500, "object"],
+	["Kebab Shop", "Land_Kiosk_gyros_F", 1500, "object"],
 	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
 	["Scaffolding", "Land_Scaffolding_F", 250, "object"],
-	["Land Pier", "Land_Pier_F", 15000, "object"]
+	["Land Pier", "Land_Pier_F", 8000, "object"]
 ];
+
 
 allGenStoreVanillaItems = compileFinal str (call genItemArray + call genObjectsArray + call allStoreGear);
 
@@ -984,8 +988,6 @@ customPlayerItems = compileFinal str
 	["Jerry Can (Empty)", "jerrycanempty", localize "STR_WL_ShopDescriptions_fuelEmpty", "client\icons\jerrycan.paa", 50, 25],
 	["Spawn Beacon", "spawnbeacon", localize "STR_WL_ShopDescriptions_spawnBeacon", "client\icons\spawnbeacon.paa", 1500, 750],
 	["Camo Net", "camonet", localize "STR_WL_ShopDescriptions_Camo", "client\icons\camonet.paa", 200, 100],
-	["Gold", "goldbullion", "Special price for you, only 100% Markup on Gold !" ,"client\icons\gold.paa", 50000, 25000],
-	["Tactical Radio", "supplyradio", "Call in Air Dropped Supplies with this", "\a3\Ui_f\data\GUI\Cfg\CommunicationMenu\supplydrop_ca.paa", 10000, 1000],
 	["Syphon Hose", "syphonhose", localize "STR_WL_ShopDescriptions_SyphonHose", "client\icons\syphonhose.paa", 200, 100]
 	//["Energy Drink", "energydrink", localize "STR_WL_ShopDescriptions_Energy_Drink", "client\icons\energydrink.paa", 100, 50],
 	//["Warchest", "warchest", localize "STR_WL_ShopDescriptions_Warchest", "client\icons\warchest.paa", 1000, 500]

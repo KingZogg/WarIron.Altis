@@ -79,7 +79,7 @@ if (hasInterface || isServer) then
 	[] execVM "addons\JumpMF\init.sqf";
 	[] execVM "addons\status_bar\statusBar.sqf";
 	[] execVM "addons\credits\welcome.sqf";
-	[] execVM "addons\vactions\functions.sqf";				// Micovery vehicle actions
+	[] execVM "addons\vactions\functions.sqf";				
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
 	[] execVM "addons\APOC\init.sqf";
