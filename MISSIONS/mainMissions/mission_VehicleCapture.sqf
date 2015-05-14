@@ -14,8 +14,8 @@ private ["_vehicle", "_vehicleName", "_vehDeterminer", "_missionHintTime"];
 
 
 //generate a random number between -400 and +400 for vehicle position.
-_xpos = 8;
-_ypos = 8;
+_xpos = 10;
+_ypos = 10;
 _zpos = 0;
 
 // setupVars must be defined in the top mission file

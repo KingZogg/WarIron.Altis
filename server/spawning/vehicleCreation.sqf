@@ -75,19 +75,17 @@ if (!isNil "_respawnSettings") then
 //Set Vehicle Attributes
 _vehicle setFuel (0.2 + random 0.1);
 
-// Reset armed Offroad to 1 mag
-if (_vehicleType isKindOf "Offroad_01_armed_base_F") then
-{
-	_vehicle removeMagazinesTurret ["100Rnd_127x99_mag_Tracer_Yellow", [0]];
-	_vehicle addMagazineTurret ["100Rnd_127x99_mag_Tracer_Yellow", [0]];
-	reload _vehicle;
-};
 
 if (_vehicleType isKindOf "Helicopter_Base_F") then
 {
 	_vehicle addweapon "CMFlareLauncher";
 	_vehicle addmagazine "168Rnd_CMFlare_Chaff_Magazine";
 	reload _vehicle;
+};
+
+if (_vehicleType isKindOf "Plane_Base_F") then
+{
+	_vehicle setFuel 1;
 };
 
 if (_type > 1) then { _vehicle setVehicleAmmo (random 1.0) };

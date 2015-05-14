@@ -83,6 +83,8 @@ if (hasInterface || isServer) then
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";
 	[] execVM "addons\APOC\init.sqf";
+	[] execVM "addons\earplug\earplugInit.sqf";
+	
 };
 
 CHVD_allowNoGrass = false; // Set 'false' if you want to disable "None" option for terrain (default: true)

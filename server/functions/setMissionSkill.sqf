@@ -15,7 +15,7 @@ _unit = _this;
 if (["A3W_missionsDifficulty"] call isConfigOn) then
 {
 	_skill = 0.33;
-	_accuracy = 0.75;
+	_accuracy = 0.7;
 }
 else
 {

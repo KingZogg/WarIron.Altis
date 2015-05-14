@@ -95,7 +95,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="A3Wasteland Altis/Lite (Smaller Playzone) 25k Start Unique Missions.";
+		briefingName="A3Wasteland Live Stats on WarIron.Com SMALLER PLAYZONE";
 		overviewText="WarIron.Com Wasteland Conquest Altis by WarIron.Com Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		timeOfChanges=15180;
@@ -2437,7 +2437,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=202;
+		items=211;
 		class Item0
 		{
 			position[]={8916.2295,61.599457,11875.225};
@@ -3015,7 +3015,7 @@ class Mission
 		};
 		class Item66
 		{
-			position[]={5475.4126,27.299999,14996.419};
+			position[]={4546.0913,263.09894,15419.286};
 			name="heliSpawn_22";
 			type="Empty";
 			colorName="ColorGreen";
@@ -3941,7 +3941,7 @@ class Mission
 		};
 		class Item182
 		{
-			position[]={10301.949,129.45544,17961.563};
+			position[]={10312.337,129.1376,17947.893};
 			name="Mission_3";
 			type="Empty";
 			colorName="ColorOrange";
@@ -3976,7 +3976,7 @@ class Mission
 		};
 		class Item187
 		{
-			position[]={10532.442,65.632484,21502.316};
+			position[]={10524.43,65.391785,21495.926};
 			name="Mission_9";
 			type="Empty";
 			colorName="ColorOrange";
@@ -4076,6 +4076,69 @@ class Mission
 		{
 			position[]={9282.4424,4.4303298,22935.057};
 			name="Mission_22";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item202
+		{
+			position[]={9202.2803,109.79,11449.776};
+			name="Mission_23";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item203
+		{
+			position[]={10945.283,39.350883,11334.185};
+			name="Mission_24";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item204
+		{
+			position[]={9520.7773,127.74442,15144.159};
+			name="Mission_25";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item205
+		{
+			position[]={11850.156,56.596561,17561.881};
+			name="Mission_26";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item206
+		{
+			position[]={13611.186,17.573217,17902.221};
+			name="Mission_27";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item207
+		{
+			position[]={15720.387,48.291916,18411.461};
+			name="Mission_28";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item208
+		{
+			position[]={13436.302,3.5722046,14601.834};
+			name="Mission_29";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item209
+		{
+			position[]={13188.592,19.987734,13475.905};
+			name="Mission_30";
+			type="Empty";
+			colorName="ColorOrange";
+		};
+		class Item210
+		{
+			position[]={5476.4971,27.299999,14996.278};
+			name="Mission_31";
 			type="Empty";
 			colorName="ColorOrange";
 		};

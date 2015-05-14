@@ -229,7 +229,7 @@ lootItem_list =
 			"ItemGPS",
 			"Medikit",
 			"muzzle_snds_acp",                  // .45 ACP
-			"muzzle_snds_B",                    // 7.62mm
+			//"muzzle_snds_B",                    // 7.62mm
 			"muzzle_snds_H",                    // 6.5mm
 			"muzzle_snds_H_MG",                 // 6.5mm LMG
 			"muzzle_snds_L",                    // 9mm

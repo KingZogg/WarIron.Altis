@@ -20,6 +20,8 @@ civilianVehicles =
 [
 	"C_Quadbike_01_F",
 	"O_Quadbike_01_F",
+	"C_Quadbike_01_F",
+	"O_Quadbike_01_F",
 	"C_Hatchback_01_F",
 	"C_Hatchback_01_sport_F",
 	"C_Hatchback_01_sport_green_F",
@@ -168,9 +170,11 @@ staticHeliList =
 //Object List - Random Planes.
 staticPlaneList =
 [
-	"B_Plane_CAS_01_F",
-	"O_Plane_CAS_02_F",
-	"I_Plane_Fighter_03_CAS_F"
+	//"B_Plane_CAS_01_F",
+	//"O_Plane_CAS_02_F",
+	"I_Plane_Fighter_03_CAS_F",
+	"I_Plane_Fighter_03_CAS_F",
+	"I_Plane_Fighter_03_AA_F"
 ];
 
 //Random Weapon List - Change this to what you want to spawn in cars.
