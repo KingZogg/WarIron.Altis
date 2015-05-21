@@ -8,7 +8,7 @@ if (_inUAV) then {
 				setViewDistance CHVD_car;
 			};
 			if (_updateType == 2 || _updateType == 0 || _updateType == 3) then {
-				setObjectViewDistance [CHVD_carObj,100];
+				setObjectViewDistance CHVD_carObj;
 			};
 		};
 		case (getConnectedUAV player isKindOf "Man"): {
@@ -16,7 +16,7 @@ if (_inUAV) then {
 				setViewDistance CHVD_foot;
 			};
 			if (_updateType == 2 || _updateType == 0 || _updateType == 3) then {
-				setObjectViewDistance [CHVD_footObj,100];
+				setObjectViewDistance CHVD_footObj;
 			};
 		};
 		default {
@@ -24,7 +24,7 @@ if (_inUAV) then {
 				setViewDistance CHVD_air;
 			};
 			if (_updateType == 2 || _updateType == 0 || _updateType == 3) then {
-				setObjectViewDistance [CHVD_airObj,100];
+				setObjectViewDistance CHVD_airObj;
 			};
 		};
 	};
@@ -35,7 +35,7 @@ if (_inUAV) then {
 				setViewDistance CHVD_car;
 			};
 			if (_updateType == 2 || _updateType == 0 || _updateType == 3) then {
-				setObjectViewDistance [CHVD_carObj,100];
+				setObjectViewDistance CHVD_carObj;
 			};
 		};
 		case (vehicle player isKindOf "Air"): {
@@ -43,7 +43,7 @@ if (_inUAV) then {
 				setViewDistance CHVD_air;
 			};
 			if (_updateType == 2 || _updateType == 0 || _updateType == 3) then {
-				setObjectViewDistance [CHVD_airObj,100];
+				setObjectViewDistance CHVD_airObj;
 			};
 		};
 		default {
@@ -51,7 +51,7 @@ if (_inUAV) then {
 				setViewDistance CHVD_foot;
 			};
 			if (_updateType == 2 || _updateType == 0 || _updateType == 3) then {
-				setObjectViewDistance [CHVD_footObj,100];
+				setObjectViewDistance CHVD_footObj;
 			};
 		};
 	};

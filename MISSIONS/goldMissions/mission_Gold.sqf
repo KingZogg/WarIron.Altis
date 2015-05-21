@@ -107,7 +107,7 @@ _successExec =
 	
 	
 	_goldMinAmount = (500000 /_goldPrice);
-	_goldMaxAmount = ((1000000 /_goldPrice) - (_goldMinAmount - 1));
+	_goldMaxAmount = ((975000 /_goldPrice));
 	_goldAmount = _goldMinAmount + ceil(random _goldMaxAmount);
 
 	
