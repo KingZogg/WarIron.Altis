@@ -106,13 +106,15 @@ switch (_donatorLevel) do
 	default 
 	{
 		_player addBackpack "B_AssaultPack_rgr";
-		_player addMagazine "9Rnd_45ACP_Mag";
-		_player addWeapon "hgun_ACPC2_F";
-		_player addMagazine "9Rnd_45ACP_Mag";
-		_player addMagazine "9Rnd_45ACP_Mag";
-		_player addMagazine "9Rnd_45ACP_Mag";
+		_player addMagazine "11Rnd_45ACP_Mag";
+		_player addWeapon "hgun_Pistol_heavy_01_F";
+		_player addHandgunItem "optic_MRD";
+		_player addHandgunItem "muzzle_snds_acp";
+		_player addMagazine "11Rnd_45ACP_Mag";
+		_player addMagazine "11Rnd_45ACP_Mag";
+		_player addMagazine "11Rnd_45ACP_Mag";
 		_player addItem "FirstAidKit";
-		_player selectWeapon "hgun_ACPC2_F";
+		_player selectWeapon "hgun_Pistol_heavy_01_F";
 		
 	};
 	

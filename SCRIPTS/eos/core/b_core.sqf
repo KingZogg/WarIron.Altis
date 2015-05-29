@@ -30,12 +30,12 @@ _Placement=(_mkrX + 500);
 
 	if ismultiplayer then {
 			if (_heightLimit) then 
-			{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count playableunits > 0";
+			{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 300} count playableunits > 0";
 							}else 
 							{_actCond="{vehicle _x in thisList && isplayer _x} count playableunits > 0";
 		};}else{
 			if (_heightLimit) then 
-						{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count allUnits > 0";
+						{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 300} count allUnits > 0";
 								}else
 									{_actCond="{vehicle _x in thisList && isplayer _x} count allUnits > 0";};};
 							

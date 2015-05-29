@@ -8,7 +8,7 @@
 	// Marker Name, Diameter, City Name
 	["Town_1", 400, "Kavala"],
 	["Town_2", 300, "Agios Dionysios"],
-	["Town_3", 150, "Abdera"],
+	//["Town_3", 150, "Abdera"],
 	["Town_4", 250, "Athira"],
 	["Town_5", 200, "Telos"],
 	//["Town_6", 200, "Sofia"],
@@ -47,5 +47,6 @@
 	["Town_39", 250, "Agios Konstantinos"],
 	["Town_40", 125, "Anthanos"],
 	["Town_41", 100, "Edessa"],
-	["Town_42", 100, "Lfestonia"]
+	["Town_42", 100, "Lfestonia"],
+	["Town_43", 100, "Topolia"]
 ]

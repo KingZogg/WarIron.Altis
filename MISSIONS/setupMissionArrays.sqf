@@ -31,7 +31,8 @@ SideMissions =
 	["mission_Outpost", 1],
 	//["mission_HostileInfantry", 3],
 	["mission_Truck", 1],
-	["mission_Sniper", 2.5]
+	["mission_Sabotage", 3],
+	["mission_Sniper", 2]
 	//["mission_Smugglers", 1]
 	//["mission_HostileJet", 0.5]
 ];
@@ -47,7 +48,8 @@ MoneyMissions =
 
 ExtraMissions =
 [
-	["mission_Hackers", 1]
+	["mission_Hackers", 2],
+	["mission_geoCache", 1]
 ];
 
 
@@ -68,9 +70,9 @@ BountyMissions =
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
-SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_sideMissions", ["mission_HostileJet", "mission_Smugglers", "mission_Sniper"]]]] call removeDisabledMissions;
+SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_sideMissions", ["mission_HostileJet", "mission_Smugglers", "mission_Sabotage", "mission_Sniper"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]],["A3W_MoneyMissions", ["mission_Hackers"],["mission_MoneyShipment"]]]] call removeDisabledMissions;
-ExtraMissions = [ExtraMissions, [["A3W_extraMissions", ["mission_Hackers"]]]] call removeDisabledMissions;
+ExtraMissions = [ExtraMissions, [["A3W_extraMissions", ["mission_Hackers"], ["mission_geoCache"]]]] call removeDisabledMissions;
 GoldMissions = [GoldMissions, [["A3W_goldMissions", ["mission_Gold"]]]] call removeDisabledMissions;
 BountyMissions = [BountyMissions, [["A3W_BountyMissions", ["mission_Bounty"]]]] call removeDisabledMissions;
 PatrolMissions = [PatrolMissions, [["A3W_PatrolMissions", ["mission_airportPatrol"]]]] call removeDisabledMissions;
@@ -85,6 +87,8 @@ PatrolMissions = [PatrolMissions, [["A3W_PatrolMissions", ["mission_airportPatro
 MissionSpawnMarkers = [];
 SunkenMissionMarkers = [];
 GoldMissionMarkers = [];
+SabotageMissionMarkers = [];
+
 
 {
 	switch (true) do
@@ -100,6 +104,10 @@ GoldMissionMarkers = [];
 		case (["GoldMission_", _x] call fn_startsWith):
 		{
 			GoldMissionMarkers pushBack [_x, false];
+		};
+		case (["SabotageMission_", _x] call fn_startsWith):
+		{
+			SabotageMissionMarkers pushBack [_x, false];
 		};
 	};
 } forEach allMapMarkers;

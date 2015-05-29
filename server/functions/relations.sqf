@@ -18,11 +18,12 @@ BLUFOR setFriend [INDEPENDENT, 0];
 OPFOR setFriend [BLUFOR, 0];
 OPFOR setFriend [OPFOR, 1];
 OPFOR setFriend [INDEPENDENT, 0];
+OPFOR setFriend [CIVILIAN, 1];
 
 INDEPENDENT setFriend [BLUFOR, 0];
 INDEPENDENT setFriend [OPFOR, 0];
 INDEPENDENT setFriend [INDEPENDENT, 1];
 
 CIVILIAN setFriend [BLUFOR, 0];
-CIVILIAN setFriend [OPFOR, 0];
+CIVILIAN setFriend [OPFOR, 1];
 CIVILIAN setFriend [INDEPENDENT, 0];

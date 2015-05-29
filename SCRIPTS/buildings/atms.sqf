@@ -52,15 +52,15 @@ _object setPosATL _pos;
 
 
 //Kavala
-//_pos = [3654.0268555,12822.479492,0.187351];
-//_object = createVehicle ["Land_Atm_02_F", _pos, [], 0, "CAN_COLLIDE"];
-//_object setDir 343;
-//_object setPosATL _pos;
+_pos = [3654.0268555,12822.479492,0.187351];
+_object = createVehicle ["Land_Atm_02_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 343;
+_object setPosATL _pos;
 
-//_pos = [3660.200195,12809.59082,18.8929];
-//_object = createVehicle ["Flag_Suatmm_F", _pos, [], 0, "CAN_COLLIDE"];
-//_object setDir 0;
-//_object setPosATL _pos;
+_pos = [3660.200195,12809.59082,18.8929];
+_object = createVehicle ["Flag_Suatmm_F", _pos, [], 0, "CAN_COLLIDE"];
+_object setDir 0;
+_object setPosATL _pos;
 
 
 
@@ -107,7 +107,7 @@ _object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 0;
 _object setPosATL _pos;
 
-
+/*
 //Oreokastro
 _pos = [4570.996094,21381.458984,6.4303];
 _object = createVehicle ["Flag_Suatmm_F", _pos, [], 0, "CAN_COLLIDE"];
@@ -141,7 +141,7 @@ _pos = [11527.955078,9441.9375,7.46946];
 _object = createVehicle ["Flag_Blueking_F", _pos, [], 0, "CAN_COLLIDE"];
 _object setDir 0;
 _object setPosATL _pos;
-
+*/
 
 //Kore Territory C Tower
 _pos = [6924.546387,15911.490234,0];

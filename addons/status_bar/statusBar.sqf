@@ -9,7 +9,7 @@ disableSerialization;
 */
 _rscLayer = "osefStatusBar" call BIS_fnc_rscLayer;
 _rscLayer cutRsc["osefStatusBar","PLAIN"];
-systemChat format["[WarIron.Com] Read the briefing. Most common questions have answers there. teamspeak address is ts3.wariron.com", _rscLayer];
+systemChat format["[WarIron.Com] The briefing has FAQ's. teamspeak address is ts3.wariron.com", _rscLayer];
 
 [] spawn {
 	sleep 5;
@@ -26,6 +26,7 @@ systemChat format["[WarIron.Com] Read the briefing. Most common questions have a
 		
 		_decimalPlaces = 2;
         
+		_dir = round (getDir (vehicle player));
 		
 		switch(_minutes) do
 	{
@@ -42,7 +43,8 @@ systemChat format["[WarIron.Com] Read the briefing. Most common questions have a
 	};
 		
 		//((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["FPS: %1 | PLAYERS: %2 | GRIDREF: %3 | RESTART IN: %4:%5", round diag_fps, count playableUnits, mapGridPosition player, _hours, _minutes, _counter,"%"];
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1"];
+		//((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1"];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1 DIR %1",_dir];
 	}; 
 };
 

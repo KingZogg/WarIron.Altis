@@ -180,13 +180,9 @@ staticPlaneList =
 //Random Weapon List - Change this to what you want to spawn in cars.
 vehicleWeapons =
 [
-//	"hgun_P07_F",
-//	"hgun_Rook40_F",
-//	"hgun_ACPC2_F",
-//	"arifle_SDAR_F",
-	"SMG_01_F",	// Vermin .45 ACP
-	"SMG_02_F",	// Sting 9mm
-	"hgun_PDW2000_F",
+	"SMG_01_Holo_pointer_snds_F",
+	"SMG_02_ACO_F",
+	"hgun_PDW2000_Holo_snds_F",
 	"arifle_TRG20_F",
 	"arifle_TRG21_F",
 	"arifle_TRG21_GL_F",
@@ -199,30 +195,35 @@ vehicleWeapons =
 	"arifle_MXC_F",
 	"arifle_MX_F",
 	"arifle_MX_GL_F",
+	"arifle_MX_GL_Holo_pointer_snds_F",
 	"arifle_MX_SW_F",
 	"arifle_MXM_F",
 	"LMG_Mk200_F",
 	"LMG_Zafir_F"
-
 ];
 
-vehicleAddition =
+vehicleAddition1 =
 [
 
-	"muzzle_snds_L", // 9mm
 	"muzzle_snds_M", // 5.56mm
 	"muzzle_snds_H", // 6.5mm
-	"muzzle_snds_H_MG", // 6.5mm LMG
-	"muzzle_snds_B", // 7.62mm
-	"muzzle_snds_acp", // .45 ACP
-	"optic_Arco",
+	"muzzle_snds_M", // 5.56mm
+	"muzzle_snds_H", // 6.5mm
 	"optic_SOS",
 	"optic_Hamr",
 	"optic_Aco",
 	"optic_ACO_grn",
-	"optic_aco_smg",
 	"optic_Holosight",
-	"optic_Holosight_smg",
+	"optic_KHS_tan",
+	"optic_AMS",
+	"optic_MRCO",
+	"bipod_02_F_tan"
+	
+];
+
+vehicleAddition2 =
+[
+
 	"Rangefinder",
 	"Binocular",
     "Medikit",
@@ -234,12 +235,13 @@ vehicleAddition =
 	"HandGrenade",
 	"ClaymoreDirectionalMine_Remote_Mag",
 	"ATMine_Range_Mag",
-	"B_Kitbag_mcamo",
-	"SmokeShellRed"
+	"SmokeShellRed",
+	"H_HelmetB_camo",
+	"V_HarnessO_brn"
 ];
 
 //only added to vehicles at night via randomWeapon.sqf
-vehicleAddition2 =
+vehicleAddition3 =
 [
 	"Chemlight_blue",
 	"Chemlight_green",

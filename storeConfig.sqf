@@ -21,7 +21,7 @@ pistolArray = compileFinal str
 	["P07 Pistol 9x21mm", "hgun_P07_F", 50],
 	["Rook-40 Pistol 9x21mm", "hgun_Rook40_F", 50],
 	["ACP-C2 Pistol .45ACP", "hgun_ACPC2_F", 75],
-	["Zubr Revolver .45 (Yorris)", "hgun_Pistol_heavy_02_Yorris_F", 300],
+	["Zubr Revolver .45 (Yorris)", "hgun_Pistol_heavy_02_Yorris_F", 75],
 	["4-Five Pistol .45 ", "hgun_Pistol_heavy_01_F", 100]
 ];
 
@@ -422,18 +422,18 @@ headArray = compileFinal str
 
 uniformArray = compileFinal str
 [
-	["Ghillie Suit (NATO)", "U_B_GhillieSuit", 1500, "uni"],
-	["Ghillie Suit (CSAT)", "U_O_GhillieSuit", 1500, "uni"],
-	["Ghillie Suit (AAF)", "U_I_GhillieSuit", 1500, "uni"],
-	["Full Ghillie (Arid) (NATO)", "U_B_FullGhillie_ard", 2000, "uni"],
-	["Full Ghillie (Arid) (CSAT)", "U_O_FullGhillie_ard", 2000, "uni"],
-	["Full Ghillie (Arid) (AAF)", "U_I_FullGhillie_ard", 2000, "uni"],
-	["Full Ghillie (Lush) (NATO)", "U_B_FullGhillie_lsh", 2000, "uni"],
-	["Full Ghillie (Lush) (CSAT)", "U_O_FullGhillie_lsh", 2000, "uni"],
-	["Full Ghillie (Lush) (AAF)", "U_I_FullGhillie_lsh", 2000, "uni"],
-	["Full Ghillie (Semi-Arid) (NATO)", "U_B_FullGhillie_sard", 2000, "uni"],
-	["Full Ghillie (Semi-Arid) (CSAT)", "U_O_FullGhillie_sard", 2000, "uni"],
-	["Full Ghillie (Semi-Arid) (AAF)", "U_I_FullGhillie_sard", 2000, "uni"],
+	["Ghillie Suit (NATO)", "U_B_GhillieSuit", 2500, "uni"],
+	["Ghillie Suit (CSAT)", "U_O_GhillieSuit", 2500, "uni"],
+	["Ghillie Suit (AAF)", "U_I_GhillieSuit", 2500, "uni"],
+	["Full Ghillie (Arid) (NATO)", "U_B_FullGhillie_ard", 3500, "uni"],
+	["Full Ghillie (Arid) (CSAT)", "U_O_FullGhillie_ard", 3500, "uni"],
+	["Full Ghillie (Arid) (AAF)", "U_I_FullGhillie_ard", 3500, "uni"],
+	["Full Ghillie (Lush) (NATO)", "U_B_FullGhillie_lsh", 3500, "uni"],
+	["Full Ghillie (Lush) (CSAT)", "U_O_FullGhillie_lsh", 3500, "uni"],
+	["Full Ghillie (Lush) (AAF)", "U_I_FullGhillie_lsh", 3500, "uni"],
+	["Full Ghillie (Semi-Arid) (NATO)", "U_B_FullGhillie_sard", 3500, "uni"],
+	["Full Ghillie (Semi-Arid) (CSAT)", "U_O_FullGhillie_sard", 3500, "uni"],
+	["Full Ghillie (Semi-Arid) (AAF)", "U_I_FullGhillie_sard", 3500, "uni"],
 	["Wetsuit (NATO)", "U_B_Wetsuit", 200, "uni"],
 	["Wetsuit (CSAT)", "U_O_Wetsuit", 200, "uni"],
 	["Wetsuit (AAF)", "U_I_Wetsuit", 200, "uni"],
@@ -499,9 +499,9 @@ uniformArray = compileFinal str
 	["Racing Suit (Bluking)", "U_C_Driver_2", 25, "uni"],
 	["Racing Suit (Redstone)", "U_C_Driver_3", 25, "uni"],
 	["Racing Suit (Vrana)", "U_C_Driver_4", 25, "uni"],*/
-	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 2000, "uni"],
-	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 2000, "uni"],
-	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 2000, "uni"]
+	["Tron Light Suit (Blue)", "U_B_Protagonist_VR", 6000, "uni"],
+	["Tron Light Suit (Red)", "U_O_Protagonist_VR", 6000, "uni"],
+	["Tron Light Suit (Green)", "U_I_Protagonist_VR", 6000, "uni"]
 ];
 
 vestArray = compileFinal str
@@ -577,10 +577,10 @@ backpackArray = compileFinal str
 	["Bergen (MTP)", "B_Bergen_mcamo", 350, "backpack"],
 	["Bergen (Sage)", "B_Bergen_sgg", 350, "backpack"],
 
-	["Carryall (Khaki)", "B_Carryall_khk", 500, "backpack"],
-	["Carryall (MTP)", "B_Carryall_mcamo", 500, "backpack"],
-	["Carryall (Olive)", "B_Carryall_oli", 500, "backpack"],
-	["Carryall (Urban)", "B_Carryall_oucamo", 500, "backpack"]
+	["Carryall (Khaki)", "B_Carryall_khk", 700, "backpack"],
+	["Carryall (MTP)", "B_Carryall_mcamo", 700, "backpack"],
+	["Carryall (Olive)", "B_Carryall_oli", 700, "backpack"],
+	["Carryall (Urban)", "B_Carryall_oucamo", 700, "backpack"]
 ];
 
 genItemArray = compileFinal str
@@ -588,11 +588,11 @@ genItemArray = compileFinal str
 	["UAV Terminal (NATO)", "B_UavTerminal", 150, "gps"],
 	["UAV Terminal (CSAT)", "O_UavTerminal", 150, "gps"],
 	["UAV Terminal (AAF)", "I_UavTerminal", 150, "gps"],
-	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 500, "backpack"],
-	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 500, "backpack"],
-	["Remote Designator Bag (NATO) [DLC]", "B_Static_Designator_01_weapon_F", 1000, "backpack"],
-	["Remote Designator Bag (CSAT) [DLC]", "O_Static_Designator_02_weapon_F", 1000, "backpack"],
+	["Quadrotor UAV (NATO)", "B_UAV_01_backpack_F", 1500, "backpack"],
+	["Quadrotor UAV (CSAT)", "O_UAV_01_backpack_F", 1500, "backpack"],
+	["Quadrotor UAV (AAF)", "I_UAV_01_backpack_F", 1500, "backpack"],
+	["Remote Designator Bag (NATO) [DLC]", "B_Static_Designator_01_weapon_F", 2000, "backpack"],
+	["Remote Designator Bag (CSAT) [DLC]", "O_Static_Designator_02_weapon_F", 2000, "backpack"],
 	["GPS", "ItemGPS", 100, "gps"],
 	["First Aid Kit", "FirstAidKit", 25, "item"],
 	["Medikit", "Medikit", 150, "item"],
@@ -601,8 +601,8 @@ genItemArray = compileFinal str
 	["NV Goggles", "NVGoggles", 100, "nvg"],
 	["Diving Goggles", "G_Diving", 100, "gogg"],
 	["Binoculars", "Binocular", 50, "binoc"],
-	["Rangefinder", "Rangefinder", 150, "binoc"],
-	["Laser Designator", "Laserdesignator", 1000, "binoc"],
+	["Rangefinder", "Rangefinder", 1500, "binoc"],
+	["Laser Designator", "Laserdesignator", 4000, "binoc"],
 	["Chemlight (Blue)", "Chemlight_blue", 25, "mag"],
 	["Chemlight (Green)", "Chemlight_green", 25, "mag"],
 	["Chemlight (Yellow)", "Chemlight_yellow", 25, "mag"],
@@ -650,9 +650,9 @@ genObjectsArray = compileFinal str
 	["Bag Bunker (Small)", "Land_BagBunker_Small_F", 250, "object"],
 	["Bag Bunker (Large)", "Land_BagBunker_Large_F", 500, "object"],
 	["Bag Bunker Tower", "Land_BagBunker_Tower_F", 1000, "object"],
-	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 800, "object"],
-	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 1500, "object"],
-	["Tent Hanger", "Land_TentHangar_V1_F", 1500, "object"],
+	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 2800, "object"],
+	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 4500, "object"],
+	["Tent Hanger", "Land_TentHangar_V1_F", 3000, "object"],
 	["Kebab Shop", "Land_Kiosk_gyros_F", 1500, "object"],
 	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
 	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
@@ -790,7 +790,7 @@ helicoptersArray = compileFinal str
 
 planesArray = compileFinal str
 [
-	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 120000, "vehicle"],
+	["A-143 Buzzard AA", "I_Plane_Fighter_03_AA_F", 100000, "vehicle"],
 	["A-143 Buzzard CAS", "I_Plane_Fighter_03_CAS_F", 120000, "vehicle"],
 	["A-164 Wipeout CAS", "B_Plane_CAS_01_F", 200000, "vehicle"],
 	["To-199 Neophron CAS", "O_Plane_CAS_02_F", 200000, "vehicle"],

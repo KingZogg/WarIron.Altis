@@ -13,7 +13,8 @@ private ["_car", "_additionArray", "_nightTime", "_weapon", "_mag", "_additionOn
 
 //Grabs car object from array in execVM
 _car = _this select 0;
-_additionArray = vehicleAddition;
+_additionArray = vehicleAddition1;
+_additionArray2 = vehicleAddition2;
 _nightTime = (date select 3 >= 19 || date select 3 < 3); // spawn night items between 18:00 and 05:00 (sunlight is completely gone by 20:00)
 
 
@@ -34,8 +35,10 @@ _mag = ((getArray (configFile >> "CfgWeapons" >> _weapon >> "magazines")) select
 
 _additionOne = _additionArray call BIS_fnc_selectRandom;
 _additionArray = _additionArray - [_additionOne];
-_additionTwo = _additionArray call BIS_fnc_selectRandom;
-//_additionArray = _additionArray - [_additionTwo];
+
+_additionTwo = _additionArray2 call BIS_fnc_selectRandom;
+_additionArray2 = _additionArray2 - [_additionTwo];
+
 _additionThree = vehicleAddition2 call BIS_fnc_selectRandom;
 
 _buildingLootOn = (["A3W_buildingLootWeapons"] call isConfigOn && (isNil "A3W_buildingLoot" || {["A3W_buildingLoot"] call isConfigOn}));
@@ -70,7 +73,7 @@ switch (["A3W_vehicleLoot", 1] call getPublicVar) do
 
 		_car addItemCargoGlobal ["FirstAidKit", 1];
 		_car addItemCargoGlobal [_additionOne, 1];
-		_car addItemCargoGlobal [_additionTwo, 1];
+		_car addItemCargoGlobal [_additionTwo, 2];
 		if (_nightTime) then { _car addMagazineCargoGlobal [_additionThree, 1] };
 	};
 	case 3:
