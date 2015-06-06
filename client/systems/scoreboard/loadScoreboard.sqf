@@ -118,7 +118,7 @@ _code =
 			_grp = group _x;
 			_side = side _grp;
 
-			if (_side in [BLUFOR,OPFOR]) then
+			if (_side in [BLUFOR]) then
 			{
 				if !(_side in _teams) then
 				{
@@ -137,7 +137,7 @@ _code =
 		_scoreOrdering = { [_x, "playerKills"] call fn_getTeamScore };
 		_teams = [_teams, [], _scoreOrdering, "DESCEND"] call BIS_fnc_sortBy;
 		_teamCount = count _teams;
-		_playerTeam = if (playerSide in [BLUFOR,OPFOR]) then { playerSide } else { group player };
+		_playerTeam = if (playerSide in [BLUFOR]) then { playerSide } else { group player };
 		_playerTeamShown = isNull player;
 
 		for "_i" from 1 to scoreGUI_TList_Length do

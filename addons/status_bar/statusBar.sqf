@@ -43,8 +43,8 @@ systemChat format["[WarIron.Com] The briefing has FAQ's. teamspeak address is ts
 	};
 		
 		//((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["FPS: %1 | PLAYERS: %2 | GRIDREF: %3 | RESTART IN: %4:%5", round diag_fps, count playableUnits, mapGridPosition player, _hours, _minutes, _counter,"%"];
-		//((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1"];
-		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1 DIR %1",_dir];
+		((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1"];
+		//((uiNamespace getVariable "osefStatusBar")displayCtrl 1000)ctrlSetText format["WarIron.Com #1 DIR %1",_dir];
 	}; 
 };
 

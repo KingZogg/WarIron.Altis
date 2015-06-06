@@ -18,11 +18,11 @@ if (["A3W_missionsDifficulty"] call isConfigOn) then
 
 {
 	_unit allowFleeing 0;
-	_unit setSkill ["aimingAccuracy", 0.25];
-	_unit setSkill ["aimingShake", 0.45];
+	_unit setSkill ["aimingAccuracy", 0.3];
+	_unit setSkill ["aimingShake", 0.6];
 	_unit setSkill ["aimingSpeed", 0.6];
-	_unit setSkill ["spotDistance", 0.4];
-	_unit setSkill ["spotTime", 0.4];
+	_unit setSkill ["spotDistance", 1];
+	_unit setSkill ["spotTime", 1];
 	_unit setSkill ["courage", 1];
 	_unit setSkill ["reloadSpeed", 1];
 	_unit setSkill ["commanding", 1];
@@ -31,16 +31,16 @@ if (["A3W_missionsDifficulty"] call isConfigOn) then
 else
 {
 	_unit allowFleeing 0;
-	_unit setSkill ["aimingAccuracy", 0.25];
-	_unit setSkill ["aimingShake", 0.45];
+	_unit setSkill ["aimingAccuracy", 0.3];
+	_unit setSkill ["aimingShake", 0.6];
 	_unit setSkill ["aimingSpeed", 0.6];
-	_unit setSkill ["spotDistance", 0.4];
-	_unit setSkill ["spotTime", 0.4];
+	_unit setSkill ["spotDistance", 1];
+	_unit setSkill ["spotTime", 1];
 	_unit setSkill ["courage", 1];
 	_unit setSkill ["reloadSpeed", 1];
 	_unit setSkill ["commanding", 1];
 	_unit setSkill ["general", 1];
-};
+}
 
 
 

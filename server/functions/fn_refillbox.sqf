@@ -111,7 +111,80 @@ case "airdrop_DLC_Rifles":
 			["itm", ["bipod_01_F_blk", "bipod_02_F_hex"], 2]
 		];
 	};
+	
+	
+	case "airdrop_Ammo":
+	{
+		_boxItems =
+		[
+			// Item type, Item class(es), # of items, # of magazines per weapon
+			["mag", ["30Rnd_556x45_Stanag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["30Rnd_556x45_Stanag_Tracer_Green"], RANDOM_BETWEEN(2,5)];
+			["mag", ["20Rnd_556x45_UW_mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["30Rnd_65x39_caseless_mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["30Rnd_65x39_caseless_mag_Tracer"], RANDOM_BETWEEN(2,5)];
+			["mag", ["20Rnd_762x51_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["7Rnd_408_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["5Rnd_127x108_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["5Rnd_127x108_APDS_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["100Rnd_65x39_caseless_mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["100Rnd_65x39_caseless_mag_Tracer"], RANDOM_BETWEEN(2,5)];
+			["mag", ["200Rnd_65x39_cased_Box"], RANDOM_BETWEEN(2,5)];
+			["mag", ["200Rnd_65x39_cased_Box_Tracer"], RANDOM_BETWEEN(2,5)];
+			["mag", ["30Rnd_9x21_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["200Rnd_65x39_Belt_Tracer_Red"], RANDOM_BETWEEN(2,5)];
+			["mag", ["100Rnd_127x99_mag_Tracer_Green"], RANDOM_BETWEEN(2,5)];
+			["mag", ["150Rnd_762x51_Box"], RANDOM_BETWEEN(2,5)];
+			["mag", ["150Rnd_762x51_Box_Tracer"], RANDOM_BETWEEN(2,5)];
+			["mag", ["10Rnd_338_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["10Rnd_127x54_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["150Rnd_93x64_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["130Rnd_338_Mag"], RANDOM_BETWEEN(2,5)];
+			["mag", ["10Rnd_93x64_DMR_05_Mag"], RANDOM_BETWEEN(2,5)];
+		
+		]
+		/*	
+			"3Rnd_HE_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"3Rnd_SmokeRed_Grenade_shell",
+			"UGL_FlareWhite_F",
+			"3Rnd_UGL_FlareWhite_F",
+			"UGL_FlareGreen_F",
+			"3Rnd_UGL_FlareGreen_F",
+			"UGL_FlareRed_F",
+			"3Rnd_UGL_FlareRed_F",
+			"UGL_FlareYellow_F",
+			"UGL_FlareCIR_F",
+			"3Rnd_UGL_FlareCIR_F",
+			
+			"B_IR_Grenade",
+			"HandGrenade",
+			"I_IR_Grenade",
+			
+			"ATMine_Range_Mag",
+			"APERSMine_Range_Mag",
+			"APERSBoundingMine_Range_Mag",
+			"SLAMDirectionalMine_Wire_Mag",
+			"APERSTripMine_Wire_Mag",
+			"ClaymoreDirectionalMine_Remote_Mag",
+			"SatchelCharge_Remote_Mag",
+			"DemoCharge_Remote_Mag",
+		
+			"8Rnd_82mm_Mo_shells",
+			"8Rnd_82mm_Mo_Flare_white",
+			"8Rnd_82mm_Mo_Smoke_white",
+			"8Rnd_82mm_Mo_guided",
+			"8Rnd_82mm_Mo_LG",
+			
+			"RPG32_F",
+			"RPG32_HE_F",
+			"NLAW_F"
+	  	
+		
+		*/	
+			
+	};
 
-};	
+	
 
 [_box, _boxItems] call processItems;

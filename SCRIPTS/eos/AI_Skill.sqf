@@ -42,9 +42,9 @@ _LigSkillSet = [
 
 // HELICOPTER SKILL
 _AIRskillSet = [
-0.25,        // aimingAccuracy
-0.45,        // aimingShake
-0.6,        // aimingSpeed
+0.8,        // aimingAccuracy
+0.8,        // aimingShake
+0.8,        // aimingSpeed
 0.4,         // spotDistance
 0.4,        // spotTime
 1,        // courage

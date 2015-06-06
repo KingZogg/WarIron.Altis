@@ -25,8 +25,8 @@ class Header
 author="A3Wasteland.com edit by WARIRON.COM";
 onLoadName = "War Iron A3Wasteland"; // it would be great if you could keep "A3" in the name, like "ABC A3Wasteland" instead of "ABC Wasteland" :)
 onLoadMission = "Website: wariron.com Teamspeak: ts3.wariron.com CORE MISSION: a3wasteland.com";
-overviewText = "Website: soon Teamspeak: ts3.wariron.com";
-overviewTextLocked = "Website: coming Teamspeak: ts3.wariron.com";
+overviewText = "Website: wariron.com Teamspeak: ts3.wariron.com";
+overviewTextLocked = "Website: wariron.com Teamspeak: ts3.wariron.com";
 overviewPicture = "mapConfig\Loading.jpg";
 loadScreen = "mapConfig\Loading.jpg";
 
@@ -61,6 +61,9 @@ loadScreen = "mapConfig\Loading.jpg";
 #include "addons\cfgsounds.hpp"
 #include "addons\outlw_magRepack\MagRepack_config.hpp"
 #include "CHVD\dialog.hpp"
+#include "addons\AF_Keypad\AF_KP_defines.hpp"
+#include "addons\AF_Keypad\AF_KP_dialogs.hpp"
+
 
 class RscTitles
 {
@@ -69,6 +72,7 @@ class RscTitles
 	#include "client\systems\playerMenu\dialog\welcome.hpp"
 	#include "client\systems\scoreboard\score_gui.hpp"
 	#include "addons\status_bar\statusBar.hpp"
+	#include "addons\UI\defines.hpp"
 };
 
 

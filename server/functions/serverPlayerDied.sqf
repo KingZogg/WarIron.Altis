@@ -40,7 +40,7 @@ if (isPlayer _killer) then
 	else
 	{
 		_scoreColumn = "aiKills";
-		_scoreValue = if (_enemyKill || _victimSide == CIVILIAN) then { 1 } else { 0 };
+		_scoreValue = if (_enemyKill || _victimSide in [CIVILIAN,OPFOR]) then { 1 } else { 0 };
 	};
 
 	[_killer, _scoreColumn, _scoreValue] call fn_addScore;

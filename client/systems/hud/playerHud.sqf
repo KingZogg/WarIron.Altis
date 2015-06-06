@@ -108,6 +108,12 @@ while {true} do
 	_hudVehicle = _ui displayCtrl hud_vehicle_idc;
 	_hudActivityIcon = _ui displayCtrl hud_activity_icon_idc;
 	_hudActivityTextbox = _ui displayCtrl hud_activity_textbox_idc;
+	
+	//_hudServerTextbox = _ui displayCtrl hud_server_idc;
+	//_serverString = format ["<t color='#A0FFFFFF'>Server: WarIron.Com/t>"];
+	//_serverString = format ["%1<br/><t color='#A0FFFFFF'>Teamspeak: ts3.wariron.com<br/>Website: wariron.com</t>",_serverString];
+	//_hudServerTextbox ctrlSetStructuredText parseText _serverString;
+	//_hudServerTextbox ctrlCommit 0;
 
 	//Calculate Health 0 - 100
 	_health = ((1 - damage player) * 100) max 0;
@@ -166,7 +172,7 @@ while {true} do
 
 	if (isStreamFriendlyUIEnabled) then
 	{
-		_tempString = format ["<t color='#A0FFFFFF'>TOP A3Wasteland %1<br/>www.toparma.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
+		_tempString = format ["<t color='#A0FFFFFF'>WI A3Wasteland %1<br/>wariron.com</t>", getText (configFile >> "CfgWorlds" >> worldName >> "description")];
 		_yOffset = 0.28;
 
 		_hudVehicle ctrlSetStructuredText parseText _tempString;

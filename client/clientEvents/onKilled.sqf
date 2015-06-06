@@ -84,7 +84,7 @@ removeAllActions _player;
 if (_player == player && (playerSide == side group _killer) && (player != _killer) && (vehicle player != vehicle _killer)) then
 {
 	// Handle teamkills
-	if (playerSide in [BLUFOR,OPFOR]) then
+	if (playerSide in [BLUFOR]) then
 	{
 		if (_killer isKindOf "CAManBase") then
 		{

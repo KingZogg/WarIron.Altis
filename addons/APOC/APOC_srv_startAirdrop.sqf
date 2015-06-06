@@ -46,7 +46,7 @@ _flare3= "F_40mm_White" createVehicle [(position _player select 0),(position _pl
 
 //_light= "placed_chemlight_yellow" createVehicle [(position _player select 0),(position _player select 1),(position _player select 2)];
 
- _heliType = ["B_Heli_Transport_03_unarmed_F", "O_Heli_Transport_04_F"] call BIS_fnc_selectRandom;
+ _heliType = ["B_Heli_Transport_03_unarmed_F", "O_Heli_Transport_04_F", "B_Heli_Transport_03_unarmed_F"] call BIS_fnc_selectRandom;
  _center = createCenter civilian;
 _grp = createGroup civilian;
 if(isNil("_grp2"))then{_grp2 = createGroup civilian;}else{_grp2 = _grp2;};
@@ -204,6 +204,7 @@ WaitUntil {((((position _object) select 2) < 1) || (isNil "_para"))};
 					_object2 = createVehicle [_selectionClass, _objectLandPos, [], 0, "None"];
 					_object2 setVariable ["water",20, true];
 					_object2
-				};		
+				};
+							
 			};
 		};

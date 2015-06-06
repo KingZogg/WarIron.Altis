@@ -120,7 +120,7 @@ sleep 0.1; // Without this delay, headgear doesn't get removed properly
 _leader = leader _group;
 
 {
-	_x call setMissionSkill;
+	_x call setMissionSkillSniper;
 	_x allowFleeing 0;
 	_x addRating 9999999;
 	_x addEventHandler ["Killed", server_playerDied];

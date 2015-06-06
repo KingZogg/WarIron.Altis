@@ -28,10 +28,9 @@ SideMissions =
 	["mission_TownInvasion", 2],
 	//["mission_AirWreck", 1.5],
 	//["mission_WepCache", 1.5],
-	["mission_Outpost", 1],
+	["mission_Outpost", 1.5],
 	//["mission_HostileInfantry", 3],
 	["mission_Truck", 1],
-	["mission_Sabotage", 3],
 	["mission_Sniper", 2]
 	//["mission_Smugglers", 1]
 	//["mission_HostileJet", 0.5]
@@ -58,6 +57,11 @@ GoldMissions =
 	["mission_Gold", 1]
 ];
 
+SabotageMissions =
+[
+	["mission_Sabotage", 1]
+];
+
 
 PatrolMissions =
 [
@@ -70,10 +74,11 @@ BountyMissions =
 ];
 
 MainMissions = [MainMissions, [["A3W_heliPatrolMissions", ["mission_Coastal_Convoy", "mission_HostileHeliFormation"]], ["A3W_underWaterMissions", ["mission_ArmedDiversquad"]]]] call removeDisabledMissions;
-SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_sideMissions", ["mission_HostileJet", "mission_Smugglers", "mission_Sabotage", "mission_Sniper"]]]] call removeDisabledMissions;
+SideMissions = [SideMissions, [["A3W_heliPatrolMissions", ["mission_HostileHelicopter"]], ["A3W_underWaterMissions", ["mission_SunkenSupplies"]],["A3W_sideMissions", ["mission_HostileJet", "mission_Smugglers", "mission_Sniper"]]]] call removeDisabledMissions;
 MoneyMissions = [MoneyMissions, [["A3W_underWaterMissions", ["mission_SunkenTreasure"]],["A3W_MoneyMissions", ["mission_Hackers"],["mission_MoneyShipment"]]]] call removeDisabledMissions;
 ExtraMissions = [ExtraMissions, [["A3W_extraMissions", ["mission_Hackers"], ["mission_geoCache"]]]] call removeDisabledMissions;
 GoldMissions = [GoldMissions, [["A3W_goldMissions", ["mission_Gold"]]]] call removeDisabledMissions;
+SabotageMissions = [SabotageMissions, [["A3W_sabotageMissions", ["mission_Sabotage"]]]] call removeDisabledMissions;
 BountyMissions = [BountyMissions, [["A3W_BountyMissions", ["mission_Bounty"]]]] call removeDisabledMissions;
 PatrolMissions = [PatrolMissions, [["A3W_PatrolMissions", ["mission_airportPatrol"]]]] call removeDisabledMissions;
 
@@ -81,6 +86,7 @@ PatrolMissions = [PatrolMissions, [["A3W_PatrolMissions", ["mission_airportPatro
 { _x set [2, false] } forEach SideMissions;
 { _x set [2, false] } forEach MoneyMissions;
 { _x set [2, false] } forEach GoldMissions;
+{ _x set [2, false] } forEach SabotageMissions;
 { _x set [2, false] } forEach PatrolMissions;
 { _x set [2, false] } forEach BountyMissions;
 

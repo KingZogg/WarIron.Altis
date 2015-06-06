@@ -6,7 +6,7 @@
 
 [
 	// Marker Name, Diameter, City Name
-	["Town_1", 400, "Kavala"],
+	//["Town_1", 400, "Kavala"],
 	["Town_2", 300, "Agios Dionysios"],
 	//["Town_3", 150, "Abdera"],
 	["Town_4", 250, "Athira"],

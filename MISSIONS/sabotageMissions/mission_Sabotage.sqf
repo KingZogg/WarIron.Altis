@@ -6,7 +6,7 @@
 
 
 if (!isServer) exitwith {};
-#include "sideMissionDefines.sqf"
+#include "sabotageMissionDefines.sqf"
 
 _goldPrice = ["A3W_goldPrice", 25000] call getPublicVar;
 
@@ -82,11 +82,11 @@ _setupObjects =
 {
 	
 	
-	_missionHintTime = ["A3W_sideMissionTimeout", 120] call getPublicVar;
+	_missionHintTime = ["A3W_sabotageMissionTimeout", 120] call getPublicVar;
 	_missionHintTime = _missionHintTime /60;
 	
 	//private ["_title", "_subTitle", "_picture", "_text", "_titleColor"];
-	_missionHintText = format ["Destroy the wind turbine nearest the marker.<br/><br/> Get in and get out.<br/>Stealth and explosives recommend.<br/>The whole area is crawling with Opfor.<br/>You have %2 Minutes<br/>To destroy it.", sideMissionColor, _missionHintTime];
+	_missionHintText = format ["Destroy the wind turbine nearest the marker.<br/><br/> Get in and get out.<br/>Stealth and explosives recommend.<br/>The whole area is crawling with Opfor.<br/>You have %2 Minutes<br/>To destroy it.", sabotageMissionColor, _missionHintTime];
 };
 
 _ignoreAiDeaths = true;
@@ -120,7 +120,7 @@ _successExec =
 	_goldAmount = _goldAmount * _goldPrice;
 	
 	
-	_successHintMessage = format ["Turbine destroyed.<br/>There is<br/><t color='%3'> $%1 </t><br/>in gold to collect." ,_goldAmount, sideMissionColor, goldTextColor];
+	_successHintMessage = format ["Turbine destroyed.<br/>There is<br/><t color='%3'> $%1 </t><br/>in gold to collect." ,_goldAmount, sabotageMissionColor, goldTextColor];
 };
 
-_this call sideMissionProcessor;
+_this call sabotageMissionProcessor;
