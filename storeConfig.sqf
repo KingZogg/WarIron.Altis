@@ -615,33 +615,46 @@ allStoreGear = compileFinal str (call headArray + call uniformArray + call vestA
 
 genObjectsArray = compileFinal str
 [
+	["Water Barrel", "Land_BarrelWater_F", 5000, "object"],
+	["Food sacks", "Land_Sacks_goods_F", 5000, "object"],
 	["Empty Ammo Crate", "Box_NATO_Ammo_F", 200, "ammocrate"],
-	["Metal Barrel Burning", "MetalBarrel_burning_F", 25, "object"],
-	["Toilet Box", "Land_ToiletBox_F", 25, "object"],
+	
+	["Statue", "Land_Maroula_F", 3000, "object"],
+	["Metal Barrel Burning", "MetalBarrel_burning_F", 500, "object"],
+	["Toilet", "Land_FieldToilet_F", 500, "object"],
+	
+	["Ladder", "Land_PierLadder_F", 800, "object"],
+	
 	["Lamp Post (Harbour)", "Land_LampHarbour_F", 100, "object"],
 	["Lamp Post (Shabby)", "Land_LampShabby_F", 100, "object"],
-	["Boom Gate", "Land_BarGate_F", 150, "object"],
+	["Light Tower (Halogen)", "Land_LampHalogen_F", 1000, "object"],
+	
+	["Stairs", "Land_GH_Stairs_F", 1000, "object"],
+	
+	["Boom Gate", "Land_BarGate_F", 300, "object"],
+	["Gate (Fence)", "Land_Net_Fence_Gate_F", 1000, "object"],
+	["Gate (Military)", "Land_Mil_WallBig_Gate_F", 500, "object"],
+	
 	["Pipes", "Land_Pipes_Large_F", 200, "object"],
+	["Scaffolding", "Land_Scaffolding_F", 5000, "object"],
 	["Concrete Frame", "Land_CncShelter_F", 200, "object"],
 	["Highway Guardrail", "Land_Crash_barrier_F", 200, "object"],
 	["Concrete Barrier", "Land_CncBarrier_F", 200, "object"],
 	["Concrete Barrier (Medium)", "Land_CncBarrierMedium_F", 350, "object"],
 	["Concrete Barrier (Long)", "Land_CncBarrierMedium4_F", 500, "object"],
-	["HBarrier (1 block)", "Land_HBarrier_1_F", 150, "object"],
-	["HBarrier (3 blocks)", "Land_HBarrier_3_F", 200, "object"],
-	["HBarrier (5 blocks)", "Land_HBarrier_5_F", 250, "object"],
-	["HBarrier Big", "Land_HBarrierBig_F", 500, "object"],
-	["HBarrier Wall (4 blocks)", "Land_HBarrierWall4_F", 400, "object"],
-	["HBarrier Wall (6 blocks)", "Land_HBarrierWall6_F", 500, "object"],
-	["HBarrier Watchtower", "Land_HBarrierTower_F", 600, "object"],
-	["Cargo Container", "Land_Cargo40_military_green_F", 250, "object"],
-	["Concrete Wall", "Land_CncWall1_F", 400, "object"],
-	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 400, "object"],
-	["Concrete Wall (Long)", "Land_CncWall4_F", 600, "object"],
-	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 600, "object"],
-	["Shoot House Wall", "Land_Shoot_House_Wall_F", 180, "object"],
-	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 400, "object"],
-	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 500, "object"],
+	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
+	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
+	
+	["HBarrier Wall (1 block)", "Land_HBarrier_1_F", 150, "object"],
+	["HBarrier Wall (3 blocks)", "Land_HBarrier_3_F", 200, "object"],
+	["HBarrier Wall (4 blocks)", "Land_HBarrierBig_F", 500, "object"],
+	["HBarrier Wall (5 blocks)", "Land_HBarrier_5_F", 250, "object"],
+	["HBarrier Wall/Ramp(4 blocks)", "Land_HBarrierWall4_F", 300, "object"],
+	["HBarrier Wall/Ramp (6 blocks)", "Land_HBarrierWall6_F", 800, "object"],
+	["H-barrier Wall (Corner)", "Land_HBarrierWall_corner_F", 800, "object"],
+	["H-barrier Corridor", "Land_HBarrierWall_corridor_F", 800, "object"],
+	["HBarrier Watchtower", "Land_HBarrierTower_F", 1000, "object"],
+	
 	["Bag Fence (Corner)", "Land_BagFence_Corner_F", 150, "object"],
 	["Bag Fence (End)", "Land_BagFence_End_F", 150, "object"],
 	["Bag Fence (Long)", "Land_BagFence_Long_F", 200, "object"],
@@ -650,14 +663,37 @@ genObjectsArray = compileFinal str
 	["Bag Bunker (Small)", "Land_BagBunker_Small_F", 250, "object"],
 	["Bag Bunker (Large)", "Land_BagBunker_Large_F", 500, "object"],
 	["Bag Bunker Tower", "Land_BagBunker_Tower_F", 1000, "object"],
-	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 2800, "object"],
-	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 4500, "object"],
-	["Tent Hanger", "Land_TentHangar_V1_F", 3000, "object"],
-	["Kebab Shop", "Land_Kiosk_gyros_F", 1500, "object"],
-	["Concrete Ramp", "Land_RampConcrete_F", 350, "object"],
-	["Concrete Ramp (High)", "Land_RampConcreteHigh_F", 500, "object"],
-	["Scaffolding", "Land_Scaffolding_F", 250, "object"],
-	["Land Pier", "Land_Pier_F", 8000, "object"]
+	//["Razorwire Barrier", "Land_Razorwire_F", 100, "object"],
+		
+	["Concrete Wall", "Land_CncWall1_F", 400, "object"],
+	["Concrete Military Wall", "Land_Mil_ConcreteWall_F", 400, "object"],
+	["Concrete Wall (Long)", "Land_CncWall4_F", 600, "object"],
+	["Military Wall (Big)", "Land_Mil_WallBig_4m_F", 600, "object"],
+	["Shoot House Wall", "Land_Shoot_House_Wall_F", 150, "object"],
+	["Canal Wall (Small)", "Land_Canal_WallSmall_10m_F", 400, "object"],
+	["Canal Stairs", "Land_Canal_Wall_Stairs_F", 500, "object"],
+	
+	["Shipping Container (150 Cap)", "Land_Cargo40_red_F", 60000, "object"],
+	["Shipping Container (170 Cap)", "Land_Cargo40_military_green_F", 80000, "object"],
+	
+	["Kebab Shop", "Land_Kiosk_gyros_F", 35000, "object"],
+	["Burger Shop", "Land_Kiosk_redburger_F", 35000, "object"],
+	
+	["Medical Cargo House", "Land_Medevac_house_V1_F", 15000, "object"],
+	["Military Cargo House", "Land_Cargo_House_V1_F", 15000, "object"],
+	["Military Cargo HQ", "Land_Cargo_HQ_V1_F", 65000, "object"], // Added on player request
+	["Military Cargo Post", "Land_Cargo_Patrol_V1_F", 20000, "object"],
+	["Military Cargo Tower", "Land_Cargo_Tower_V1_F", 100000, "object"],
+	["Military Offices", "Land_MilOffices_V1_F", 65000, "object"],
+		
+	["Tent Hanger", "Land_TentHangar_V1_F", 30000, "object"],
+	["Hanger (Steel)", "Land_Hangar_F", 150000, "object"],
+		
+	["BasketBall Court)", "Land_BC_Court_F", 60000, "object"],
+
+	["Pier (Huge)", "Land_Pier_F", 100000, "object"],
+	["Dome (Small)", "Land_Dome_Small_F", 70400, "object"]
+	
 ];
 
 

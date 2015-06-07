@@ -32,17 +32,4 @@ _plane setFuel (0.4 + random 0.2);
 
 _plane setDir _markerDir;
 
-// Remove AGM missiles for balance
-//switch (true) do
-//{
-//	case (_planeType isKindOf "Plane_CAS_01_base_F"):
-//	{
-//		_plane setMagazineTurretAmmo ["6Rnd_Missile_AGM_02_F", 0, [-1]];
-//	};
-//	case (_planeType isKindOf "Plane_CAS_02_base_F"):
-//	{
-//		_plane setMagazineTurretAmmo ["4Rnd_Missile_AGM_01_F", 0, [-1]];
-//	};
-//};
-
 _plane enableSimulationGlobal true;

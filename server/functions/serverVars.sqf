@@ -174,6 +174,8 @@ staticPlaneList =
 	//"O_Plane_CAS_02_F",
 	"I_Plane_Fighter_03_CAS_F",
 	"I_Plane_Fighter_03_CAS_F",
+	"I_Plane_Fighter_03_CAS_F",
+	"I_Plane_Fighter_03_CAS_F",
 	"I_Plane_Fighter_03_AA_F"
 ];
 

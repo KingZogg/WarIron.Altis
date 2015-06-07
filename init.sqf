@@ -78,7 +78,6 @@ if (hasInterface || isServer) then
 	[0,-1,0] execVM "addons\scripts\DynamicWeatherEffects.sqf";
 	[] execVM "addons\JumpMF\init.sqf";
 	[] execVM "addons\status_bar\statusBar.sqf";
-	[] execVM "addons\credits\welcome.sqf";
 	[] execVM "addons\vactions\functions.sqf";				
 	[] execVM "addons\laptop\init.sqf";
 	[] execVM "addons\outlw_magRepack\MagRepack_init_sv.sqf";

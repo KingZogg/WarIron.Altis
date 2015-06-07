@@ -22,10 +22,10 @@ player addEventHandler ["AnimChanged", {
 			_bountyMarker = createMarker ["bountyMarker", getPos (vehicle player)];
 			_bountyMarker setMarkerShape "ICON";
 			_bounty = player getvariable "cmoney";
-			_bountyMarker setMarkerText (format ["HACKED Money Target: %1 (%2$)", name player, _bounty]);
+			_bountyMarker setMarkerText (format ["HACKED Money Target: %1 ($%2)", name player, _bounty]);
 			_bountyMarker setMarkerColor "ColorRed";
 			_bountyMarker setMarkerType "mil_dot";
-			sleep 60;
+			sleep 10;
 			deleteMarker "bountyMarker";
 			createBountyMarker = nil;
 								};
@@ -34,7 +34,7 @@ player addEventHandler ["AnimChanged", {
 }];
 
 player addEventHandler ["AnimChanged", {
-	if (isNil "createBountyMarker" && player getvariable "cmoney" > 500000) then
+	if (isNil "createBountyMarker" && player getvariable "cmoney" > 300000) then
 	{		terminate createBountyMarker;
 	
 			_title  = "<t color='#ff0000' size='1.2' align='center'>High value target detected! </t><br />";
@@ -47,10 +47,10 @@ player addEventHandler ["AnimChanged", {
 			_bountyMarker = createMarker ["bountyMarker", getPos (vehicle player)];
 			_bountyMarker setMarkerShape "ICON";
 			_bounty = player getvariable "cmoney";
-			_bountyMarker setMarkerText (format ["High Value Target: %1 (%2$)", name player, _bounty]);
+			_bountyMarker setMarkerText (format ["High Value Target: %1 ($%2)", name player, _bounty]);
 			_bountyMarker setMarkerColor "ColorRed";
 			_bountyMarker setMarkerType "mil_dot";
-			sleep 60;
+			sleep 120;
 			deleteMarker "bountyMarker";
 			createBountyMarker = nil;
 								};

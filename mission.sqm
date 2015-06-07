@@ -1544,23 +1544,24 @@ class Mission
 	};
 	class Markers
 	{
-		items=215;
+		items=217;
 		class Item0
 		{
-			position[]={8916.2295,61.599457,11875.225};
+			position[]={8825.6973,32.487785,12037.341};
 			name="TERRITORY_5_ZAROS_A";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=80;
-			b=80;
+			a=20;
+			b=20;
+			angle=58.006824;
 		};
 		class Item1
 		{
-			position[]={9059.2373,40.166206,12221.063};
+			position[]={9038.418,49.940876,12182.677};
 			name="TERRITORY_5_ZAROS_B";
-			markerType="RECTANGLE";
+			markerType="ELLIPSE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
@@ -1569,19 +1570,19 @@ class Mission
 		};
 		class Item2
 		{
-			position[]={9429.8818,16.25934,11769.053};
+			position[]={9013.2725,25.663643,12005.909};
 			name="TERRITORY_5_ZAROS_C";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=120;
-			b=40;
-			angle=73.962997;
+			a=30;
+			b=30;
+			angle=17.423;
 		};
 		class Item3
 		{
-			position[]={8912.0693,55.620411,11882.887};
+			position[]={8823.7783,33.020844,12040.519};
 			name="FLAG_5_ZAROS_A";
 			text="A";
 			type="mil_flag";
@@ -1591,7 +1592,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={9043.4072,40.20636,12221.051};
+			position[]={9034.9502,49.905148,12184.614};
 			name="FLAG_5_ZAROS_B";
 			text="B";
 			type="mil_flag";
@@ -1601,7 +1602,7 @@ class Mission
 		};
 		class Item5
 		{
-			position[]={9428.9355,16.316601,11768.931};
+			position[]={9014.4932,25.717142,12008.355};
 			name="FLAG_5_ZAROS_C";
 			text="C";
 			type="mil_flag";
@@ -1623,20 +1624,20 @@ class Mission
 		};
 		class Item7
 		{
-			position[]={5332.6377,90.78051,11510.213};
-			name="TERRITORY_9_PANOCHORI_B";
-			markerType="ELLIPSE";
+			position[]={3771.6501,34.264324,12358.334};
+			name="TERRITORY_9_NERI_B";
+			markerType="RECTANGLE";
 			type="mil_flag";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=30;
-			b=60;
-			angle=-94.705345;
+			a=9;
+			b=20;
+			angle=-40.561798;
 		};
 		class Item8
 		{
-			position[]={5331.1157,90.856422,11512.268};
-			name="FLAG_9_PANOCHORI_B";
+			position[]={3770.4744,34.279915,12359.506};
+			name="FLAG_9_NERI_B";
 			text="B";
 			type="mil_flag";
 			colorName="ColorYellow";
@@ -1645,42 +1646,43 @@ class Mission
 		};
 		class Item9
 		{
-			position[]={5432.8472,116.09451,10679.289};
-			name="TERRITORY_9_PANOCHORI_D";
-			markerType="ELLIPSE";
+			position[]={3886.3291,62.927471,12002.25};
+			name="TERRITORY_9_NERI_D";
+			markerType="RECTANGLE";
 			type="mil_flag";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=29;
-			b=45;
-			angle=-274.61322;
+			a=11;
+			b=5;
+			angle=-319.50101;
 		};
 		class Item10
 		{
-			position[]={5435.083,116.06436,10680.727};
-			name="FLAG_9_PANOCHORI_D";
+			position[]={3885.6887,62.988758,12003.586};
+			name="FLAG_9_NERI_D";
 			text="D";
 			type="mil_flag";
 			colorName="ColorYellow";
 			a=0.5;
 			b=0.5;
+			angle=0.25022838;
 		};
 		class Item11
 		{
-			position[]={5195.2939,53.127033,11122.498};
-			name="TERRITORY_9_PANOCHORI_C";
-			markerType="ELLIPSE";
+			position[]={4321.812,50.805347,11873.785};
+			name="TERRITORY_9_NERI_C";
+			markerType="RECTANGLE";
 			type="mil_flag";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=60;
-			b=45;
-			angle=38.310101;
+			a=12;
+			b=12;
+			angle=66.284599;
 		};
 		class Item12
 		{
-			position[]={5199.311,53.059372,11129.554};
-			name="FLAG_9_PANOCHORI_C";
+			position[]={4321.8984,50.784698,11875.212};
+			name="FLAG_9_NERI_C";
 			text="C";
 			type="mil_flag";
 			colorName="ColorYellow";
@@ -1689,19 +1691,20 @@ class Mission
 		};
 		class Item13
 		{
-			position[]={4926.1074,31.023544,11128.826};
-			name="TERRITORY_9_PANOCHORI_A";
+			position[]={4220.0986,38.528809,12428.69};
+			name="TERRITORY_9_NERI_A";
 			markerType="RECTANGLE";
 			type="mil_flag";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=25;
-			b=18;
+			a=7;
+			b=7;
+			angle=-21.9422;
 		};
 		class Item14
 		{
-			position[]={4929.1973,31.159309,11128.923};
-			name="FLAG_9_PANOCHORI_A";
+			position[]={4219.5371,38.526325,12428.868};
+			name="FLAG_9_NERI_A";
 			text="A";
 			type="mil_flag";
 			colorName="ColorYellow";
@@ -1983,7 +1986,7 @@ class Mission
 		};
 		class Item49
 		{
-			position[]={5090.4146,49.096569,11243.831};
+			position[]={5099.771,48.443199,11229.128};
 			name="Town_14";
 			type="Empty";
 			colorName="ColorRed";
@@ -2209,14 +2212,14 @@ class Mission
 		};
 		class Item80
 		{
-			position[]={7170.9961,3.696064,11099.311};
+			position[]={7034.9482,8.72577,11037.151};
 			name="GenStore1_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
 		class Item81
 		{
-			position[]={9281.6826,120.48088,15875.171};
+			position[]={9395.1387,135.58801,15761.271};
 			name="GenStore4_objSpawn";
 			type="Empty";
 			colorName="ColorBlack";
@@ -3321,6 +3324,22 @@ class Mission
 			type="Empty";
 			colorName="ColorGUER";
 			angle=199.44235;
+		};
+		class Item215
+		{
+			position[]={9395.2656,135.67041,15760.731};
+			name="GS_1";
+			text="Store Spawn";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item216
+		{
+			position[]={7034.9146,8.7283831,11037.191};
+			name="GS_1_1";
+			text="Store Spawn";
+			type="mil_dot";
+			colorName="ColorBlue";
 		};
 	};
 };

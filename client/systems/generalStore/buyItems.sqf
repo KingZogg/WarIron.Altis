@@ -61,7 +61,7 @@ storePurchaseHandle = _this spawn
 	_showItemSpawnedOutsideMessage =
 	{
 		_itemText = _this select 0;
-		hint format ["""%1"" has been spawned outside, in front of the store.", _itemText];
+		hint format ["""%1"" has been spawned outside, at the store spawn point marked on the map.", _itemText];
 		playSound "FD_Finish_F";
 		_successHint = false;
 	};

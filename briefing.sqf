@@ -14,16 +14,6 @@ player createDiarySubject ["credits", "Credits"];
 
 player createDiaryRecord ["changelog",
 [
-"v1.1a",
-"
-<br/>WarIron.Com Additions
-<br/>[Added] Extra Gun store
-<br/>[Added] Gold Mission and Gold Trader
-"
-]];
-
-player createDiaryRecord ["changelog",
-[
 "v1.1b",
 "
 <br/>[Added] Marksmen DLC content
@@ -384,7 +374,7 @@ player createDiaryRecord ["infos",
 <br/>A. The circles represent town limits. If friendly soldiers are in a town, you can spawn there from the re-spawn menu; however if there is an enemy presence, you will not be able to spawn there.
 <br/>
 <br/>Q. Is it ok for me to shoot my team mates?
-<br/>A. If you are member of BLUFOR or OPFOR teams, then you are NOT allowed to shoot or steal items and vehicles from other players. If you play as Independent, you are free to engage anyone as well as team up with anyone you want.
+<br/>A. If you are member of BLUFOR, then you are NOT allowed to shoot or steal items and vehicles from other players. If you play as Independent, you are free to engage anyone as well as team up with anyone you want.
 <br/>
 <br/>Q. Whats with the canisters, baskets and big bags?
 <br/>A. This game has a food and water system that you must stay on top of if you hope to survive. You can collect food and water from food sacks and wells, or baskets and plastic canisters dropped by dead players. Food and water will also randomly spawn around the map.
@@ -396,32 +386,25 @@ player createDiaryRecord ["infos",
 
 player createDiaryRecord ["wariron",
 [
-"WarIron Mission Timeouts ",
+"General Store",
 "
-<br/>Mission Timeouts.
+<br/>Objects at the general store spawn on the marker on the map.
+<br/>Objects with doors can be locked with a keypad pin.
 <br/>
-<br/>Main Missions timeout after 1.5 Hours.
+<br/>All General Stores have a flag on the building.
 <br/>
-<br/>Side Misisons timeout after 1.5 Hours
-<br/>
-<br/>Money Missions timeout after 45 Mins
-<br/>
-<br/>Gold Missons timeout after 2 Hours
-<br/>
-<br/>Missions are set to HARD
 "
 ]];
+
 
 player createDiaryRecord ["wariron",
 [
 "ATM's",
 "
 <br/>The Maximum Money you can have in your account is
-<br/>$5 Million
+<br/>$50 Million
 <br/>
 <br/>Money can be transferred between any players.
-<br/>
-<br/>Transfer Fee Tax is %5.
 <br/>
 <br/>All ATM's have a flag on the building as have the General Stores
 <br/>
@@ -434,7 +417,7 @@ player createDiaryRecord ["wariron",
 "
 <br/>Territories pay $8000/$7000 for each territory captured.
 <br/>
-<br/>You and/or your team/group will be paid $5000 for every territory held every 1/2 Hour.
+<br/>You and/or your team/group will be paid $10000 for every territory held every 1/2 Hour.
 <br/>
 <br/>You have to be within 8km's of the territory to get paid.
 <br/>
@@ -446,13 +429,13 @@ player createDiaryRecord ["wariron",
 "Equipment Saving and Timeouts ",
 "
 <br/>Unused parked vehicles will be deleted from the server after
-<br/>5 days.
+<br/>7 days.
 <br/>
 <br/>Player saved vehicles will be deleted every
-<br/>14 days. Based on when the player saved it.
+<br/>7 days. Based on when the player saved it.
 <br/>
 <br/>Base Parts, Static Weapons and Crates will be deleted every
-<br/>14 days unless relocked, which will extend the timer for another 14 days.
+<br/>7 days unless relocked, which will extend the timer for another 7 days.
 <br/>
 <br/>Player loadouts and carried money are never deleted.
 <br/>Unless they die of course :)
@@ -476,7 +459,7 @@ player createDiaryRecord ["wariron",
 
 player createDiaryRecord ["wariron",
 [
-"Missions and Timeouts",
+"Missions",
 "
 <br/>There are gold missions.
 <br/>Gold sub which you will need diving gear for.
@@ -486,13 +469,7 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>Money Missions carry money and a random amount of gold.
 <br/>
-<br/>Timeouts. 
-<br/>The Gold Sub Mission time out is 2 hours. 
-<br/>Main Missions are 2 hours. 
-<br/>Money Missions are 1.5 hours
-<br/>Side Missions are 1 hour.
-<br/>All other Missions vary.
-<br/>
+<br/>Sabotage Missions pay gold if you blow up a wind turbine.
 "
 ]];
 
@@ -502,7 +479,7 @@ player createDiaryRecord ["wariron",
 "WarIron Gold Mission",
 "
 <br/>The Gold Sub Mission is a sub that has been damaged and is in a minefield. 
-<br/>The Sub Mission times out after 2 Hours. Gold and the sub will stay if the divers are killed.
+<br/>Gold and the sub will stay if the divers are killed.
 <br/>It can be repaired and refuelled. 
 <br/>
 <br/>The Sub and the divers guarding it, could be anywhere in the red mine field area marked on the map. 
@@ -566,8 +543,6 @@ player createDiaryRecord ["wariron",
 <br/>
 <br/>View distance settings can be finely adjusted depending on which mode you are in. 
 <br/>ie: Walking, Driving or Flying.
-<br/>
-<br/>We hate fog and it will never be in the game. Rain is also off (it might come back).
 <br/>
 <br/>A player can only carry 10 tins of gold at any one time.
 <br/>You can load the gold tins into the sub and move it, if you have refuelled and repaired it.
