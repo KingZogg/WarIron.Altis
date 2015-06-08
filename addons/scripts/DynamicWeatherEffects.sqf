@@ -177,7 +177,8 @@ drn_fnc_fogOdds =
 		}
 		else
 		{
-			(9/4) * (_fogVal - (1/3)) ^ 2
+			//(9/4) * (_fogVal - (1/3)) ^ 2
+			0
 		};
 	}
 	else
@@ -214,7 +215,7 @@ drn_fnc_DynamicWeather_SetWeatherLocal = {
 	{
 		0 setOvercast (0.1 max _currentOvercast);
 	};
-	0 setFog [_currentFog max (_currentRain / 4), 0.001, 1000];
+//	0 setFog [_currentFog max (_currentRain / 4), 0.001, 1000];
 	drn_var_DynamicWeather_Rain = _currentRain;
 	setWind [_currentWindX, _currentWindZ, true];
 
@@ -234,16 +235,19 @@ drn_fnc_DynamicWeather_SetWeatherLocal = {
 		{
 			_timeUntilCompletion setOvercast (0.1 max (_targetWeatherValue call drn_fnc_overcastOdds));
 		};
-		5 setFog [_currentRain / 4, 0.001, 1000]; // Quick hack to ensure fog goes away regularly
+//		5 setFog [_currentRain / 4, 0.001, 1000]; // Quick hack to ensure fog goes away regularly
 		_currentFog
 	};
+
+/*
 	if (_currentWeatherChange == "FOG") then {
 		if (typeName _targetWeatherValue == "ARRAY") then {
 			_targetWeatherValue = _targetWeatherValue select 0;
 		};
 		_timeUntilCompletion setFog [_targetWeatherValue max (_currentRain / 4), 0.001, 1000];;
 	};
-};
+*/
+	};
 
 if (!isDedicated) then
 {
@@ -301,7 +305,7 @@ if (isServer) then {
 		};
 	};
 
-	0 setFog [(([_initialFog, _maximumFog] call drn_fnc_fogOdds) * _maximumFog) max (rain / 4), 0.001, 1000];
+//	0 setFog [(([_initialFog, _maximumFog] call drn_fnc_fogOdds) * _maximumFog) max (rain / 4), 0.001, 1000];
 
 	if (_initialOvercast == -1) then {
 		_initialOvercast = (_minimumOvercast + random (_maximumOvercast - _minimumOvercast));
@@ -336,7 +340,7 @@ if (isServer) then {
 
 	drn_var_DynamicWeather_Rain = _initialRain;
 	0 setRain drn_var_DynamicWeather_Rain;
-	0 setFog [fog max (drn_var_DynamicWeather_Rain / 4), 0.001, 1000];
+//	0 setFog [fog max (drn_var_DynamicWeather_Rain / 4), 0.001, 1000];
 
 
 	_maxWind = _minimumWind + random (_maximumWind - _minimumWind);

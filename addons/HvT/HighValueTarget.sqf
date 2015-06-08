@@ -50,7 +50,7 @@ player addEventHandler ["AnimChanged", {
 			_bountyMarker setMarkerText (format ["High Value Target: %1 ($%2)", name player, _bounty]);
 			_bountyMarker setMarkerColor "ColorRed";
 			_bountyMarker setMarkerType "mil_dot";
-			sleep 120;
+			sleep 60;
 			deleteMarker "bountyMarker";
 			createBountyMarker = nil;
 								};

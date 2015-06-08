@@ -9,11 +9,11 @@ _text = "
 <br />
 <t align='center'><t shadow= 1 shadowColor='#000000'>Base objects, Vehicles and Crates will save for 7 days.</t><br />
 <br />
-<t align='center'><t shadow= 1 shadowColor='#000000'>Base object doors can be locked/unlocked with a keypad.</t><br />
+<t align='center'><t shadow= 1 shadowColor='#000000'>Bought base object doors can be locked/unlocked with a keypad.</t><br />
 <br />
 <t align='center'><t shadow= 1 shadowColor='#000000'>Clans can upload their own uniforms. Use the forum @ wariron.com</t><br />
 <br />
 ";
 
-hint parseText format ["<t align='center'>Welcome %2</t><br />%1",_text, name player];
+hint parseText format ["<t color='#0054FE' align='center'>Welcome %2</t><br />%1",_text, name player];
  
