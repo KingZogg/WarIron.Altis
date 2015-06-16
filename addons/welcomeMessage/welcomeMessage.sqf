@@ -1,7 +1,14 @@
-sleep 30;
+sleep 40;
 	
 _text = "
-<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#FF9966'>WarIron.Com Live Stats and Forum.</t></t>
+<br />
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#FF9966'>To</t></t>
+<br />
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#FF9966'>WarIron.Com</t></t>
+<br />
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#FF9966'>TeamSpeak ts3.wariron.com</t></t>
+<br />
+<t align='center'><t shadow= 1 shadowColor='#000000'><t size='1.2'><t color='#FF9966'>Live Stats @ WarIron.Com</t></t>
 <br />
 <t align='center'><t shadow= 1 shadowColor='#000000'>The WarIron Clan is now recruiting. Details on the forum.</t><br /> 
 <br />
@@ -15,5 +22,5 @@ _text = "
 <br />
 ";
 
-hint parseText format ["<t color='#0054FE' align='center'>Welcome %2</t><br />%1",_text, name player];
+hint parseText format ["<t color='#FF0000' align='center'>Welcome %2</t><br />%1",_text, name player];
  

@@ -24,9 +24,11 @@ if (isNil "A3W_atmArray") then
 			{
 				if !(_x in A3W_atmArray) then { A3W_atmArray pushBack _x };
 			};
+			sleep 0.1;
 		};
 	} forEach nearestObjects [_x, [], 5];
 } forEach call compile preprocessFileLineNumbers "mapConfig\atmPositions.sqf";
+sleep 0.1;
 
 // Get rid of map ATMs that are within 3m of mission ones
 {
@@ -37,6 +39,7 @@ if (isNil "A3W_atmArray") then
 			{
 				_x setDamage 1;
 			};
+			sleep 0.1;
 		} forEach nearestObjects [_x, [], 3];
 	};
 } forEach A3W_atmArray;
@@ -57,6 +60,7 @@ if !(["A3W_atmEnabled"] call isConfigOn) then
 				{
 					_x setDamage 1;
 				};
+				sleep 0.1;
 			};
 		} forEach A3W_atmArray;
 	};

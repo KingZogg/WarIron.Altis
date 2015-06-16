@@ -111,7 +111,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=34;
+		items=35;
 		class Item0
 		{
 			side="WEST";
@@ -1418,8 +1418,8 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3971.4854,4.7541585,15072.055};
-					azimut=190;
+					position[]={3047.1355,2.0483584,12611.446};
+					azimut=293.5928;
 					id=102;
 					side="LOGIC";
 					vehicle="C_man_1_1_F";
@@ -1492,6 +1492,27 @@ class Mission
 				};
 			};
 		};
+		class Item34
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={4536.833,38.777946,14033.751};
+					azimut=-125;
+					id=106;
+					side="LOGIC";
+					vehicle="C_man_1_1_F";
+					leader=1;
+					skill=0.60000002;
+					text="GenStore2";
+					init="[this] spawn A3W_fnc_setupStoreNPC";
+					description="DO NOT MODIFY IN EDITOR";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -1501,7 +1522,7 @@ class Mission
 			position[]={14635.652,17.91,16660.961};
 			azimut=134.79601;
 			special="NONE";
-			id=106;
+			id=107;
 			side="EMPTY";
 			vehicle="O_Truck_03_ammo_F";
 			leader=1;
@@ -1516,7 +1537,7 @@ class Mission
 			position[]={14794.365,17.91,16831.564};
 			azimut=-47.8661;
 			special="NONE";
-			id=107;
+			id=108;
 			side="EMPTY";
 			vehicle="B_Truck_01_box_F";
 			leader=1;
@@ -1531,7 +1552,7 @@ class Mission
 			position[]={9762.0576,231.5874,19428.332};
 			azimut=-88.603943;
 			special="NONE";
-			id=108;
+			id=109;
 			side="EMPTY";
 			vehicle="B_Truck_01_box_F";
 			leader=1;
@@ -1544,7 +1565,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=217;
+		items=221;
 		class Item0
 		{
 			position[]={8825.6973,32.487785,12037.341};
@@ -2043,7 +2064,7 @@ class Mission
 		};
 		class Item57
 		{
-			position[]={4546.0913,263.09894,15419.286};
+			position[]={5232.4448,106.72881,15160.973};
 			name="heliSpawn_22";
 			type="Empty";
 			colorName="ColorGreen";
@@ -2384,24 +2405,25 @@ class Mission
 		};
 		class Item103
 		{
-			position[]={3968.136,3.2309315,15051.626};
+			position[]={3078.2258,1.8830899,12613.171};
 			name="VehStore5_landSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
 		class Item104
 		{
-			position[]={4001.2522,6.2997766,15050.635};
+			position[]={2999.2844,0.00016376375,12619.246};
 			name="VehStore5_heliSpawn";
 			type="Empty";
 			colorName="ColorBlack";
 		};
 		class Item105
 		{
-			position[]={3922.1943,0,15060.141};
+			position[]={3017.4082,-0.039194129,12645.717};
 			name="VehStore5_seaSpawn";
 			type="Empty";
 			colorName="ColorBlack";
+			angle=-24.059679;
 		};
 		class Item106
 		{
@@ -3327,17 +3349,48 @@ class Mission
 		};
 		class Item215
 		{
-			position[]={9395.2656,135.67041,15760.731};
-			name="GS_1";
-			text="Store Spawn";
+			position[]={9395.1094,135.57294,15761.359};
+			name="GS4";
+			text="Bought Objects";
 			type="mil_dot";
 			colorName="ColorBlue";
 		};
 		class Item216
 		{
 			position[]={7034.9146,8.7283831,11037.191};
-			name="GS_1_1";
-			text="Store Spawn";
+			name="GS1";
+			text="Bought Objects";
+			type="mil_dot";
+			colorName="ColorBlue";
+		};
+		class Item217
+		{
+			position[]={3245.644,-0.46016073,14625.387};
+			name="boatSpawn_8_1";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=-178.56284;
+		};
+		class Item218
+		{
+			position[]={3276.7993,0.21708533,14626.025};
+			name="boatSpawn_9_1";
+			type="Empty";
+			colorName="ColorBlue";
+			angle=-181.01837;
+		};
+		class Item219
+		{
+			position[]={4592.4961,52.97646,13979.091};
+			name="GenStore2_objSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+		};
+		class Item220
+		{
+			position[]={4592.4629,52.9757,13979.131};
+			name="GS_2";
+			text="Bought Objects";
 			type="mil_dot";
 			colorName="ColorBlue";
 		};

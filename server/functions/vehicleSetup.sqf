@@ -100,6 +100,14 @@ switch (true) do
 		_vehicle addMagazine "300Rnd_20mm_shells";
 		//_vehicle removeWeaponTurret ["missiles_SCALPEL",[-1]];
 	};
+	
+	case (_class isKindOf "O_MBT_02_arty_F"):
+	{
+		clearMagazineCargoGlobal _vehicle;
+		_vehicle removeMagazine "6Rnd_155mm_Mo_mine";
+		_vehicle removeMagazine "96Rnd_40mm_G_belt";
+	};
+	
 };
 
 _weapons = getArray (configFile >> "CfgVehicles" >> _class >> "weapons");

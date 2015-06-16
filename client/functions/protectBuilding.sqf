@@ -1,7 +1,8 @@
-	
+	sleep 2;
 	{
    _tower = nearestbuilding _x;
 	_tower allowDamage false;
+	sleep 0.2;
 	}  
     forEach [
 			[14227.5,21210.5,17] , //Frini

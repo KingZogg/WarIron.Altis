@@ -126,7 +126,7 @@ call compile preprocessFileLineNumbers "client\functions\setupClientPVars.sqf";
 A3W_scriptThreads pushBack execVM "client\systems\hud\playerHud.sqf";
 [] execVM "client\functions\initSurvival.sqf";
 [] execVM "client\functions\protectBuilding.sqf";
-
+sleep 1;
 
 
 [] spawn
