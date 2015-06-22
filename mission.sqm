@@ -91,7 +91,7 @@ class Mission
 	randomSeed=14957468;
 	class Intel
 	{
-		briefingName="A3Wasteland Smaller Combat Zone - RECRUITING NOW ";
+		briefingName="A3Wasteland Smaller Combat Zone - WARIRON.COM RECRUITING NOW see Forum";
 		overviewText="WarIron.Com Wasteland Conquest Altis by WarIron.Com Core developed by A3Wasteland.com";
 		resistanceWest=0;
 		timeOfChanges=15180;
@@ -111,7 +111,7 @@ class Mission
 	};
 	class Groups
 	{
-		items=35;
+		items=36;
 		class Item0
 		{
 			side="WEST";
@@ -1513,6 +1513,27 @@ class Mission
 				};
 			};
 		};
+		class Item35
+		{
+			side="LOGIC";
+			class Vehicles
+			{
+				items=1;
+				class Item0
+				{
+					position[]={6113.4326,15.888244,10570.061};
+					azimut=135;
+					id=107;
+					side="LOGIC";
+					vehicle="C_man_1_1_F";
+					leader=1;
+					skill=0.60000002;
+					text="VehStore3";
+					init="[this] spawn A3W_fnc_setupStoreNPC";
+					description="DO NOT MODIFY IN EDITOR";
+				};
+			};
+		};
 	};
 	class Vehicles
 	{
@@ -1522,7 +1543,7 @@ class Mission
 			position[]={14635.652,17.91,16660.961};
 			azimut=134.79601;
 			special="NONE";
-			id=107;
+			id=108;
 			side="EMPTY";
 			vehicle="O_Truck_03_ammo_F";
 			leader=1;
@@ -1537,7 +1558,7 @@ class Mission
 			position[]={14794.365,17.91,16831.564};
 			azimut=-47.8661;
 			special="NONE";
-			id=108;
+			id=109;
 			side="EMPTY";
 			vehicle="B_Truck_01_box_F";
 			leader=1;
@@ -1552,7 +1573,7 @@ class Mission
 			position[]={9762.0576,231.5874,19428.332};
 			azimut=-88.603943;
 			special="NONE";
-			id=109;
+			id=110;
 			side="EMPTY";
 			vehicle="B_Truck_01_box_F";
 			leader=1;
@@ -1565,7 +1586,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=221;
+		items=224;
 		class Item0
 		{
 			position[]={8825.6973,32.487785,12037.341};
@@ -1580,14 +1601,15 @@ class Mission
 		};
 		class Item1
 		{
-			position[]={9038.418,49.940876,12182.677};
+			position[]={9244.3164,15.2,11962.805};
 			name="TERRITORY_5_ZAROS_B";
-			markerType="ELLIPSE";
+			markerType="RECTANGLE";
 			type="Empty";
 			colorName="ColorYellow";
 			fillName="DiagGrid";
-			a=110;
-			b=50;
+			a=42;
+			b=25;
+			angle=-163.37767;
 		};
 		class Item2
 		{
@@ -1613,7 +1635,7 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={9034.9502,49.905148,12184.614};
+			position[]={9240.9541,15.2,11963.608};
 			name="FLAG_5_ZAROS_B";
 			text="B";
 			type="mil_flag";
@@ -1986,7 +2008,7 @@ class Mission
 		};
 		class Item46
 		{
-			position[]={9247.4893,15.199592,11962.815};
+			position[]={9246.6064,15.2,11963.259};
 			name="heliSpawn_13";
 			type="Empty";
 			colorName="ColorGreen";
@@ -3393,6 +3415,30 @@ class Mission
 			text="Bought Objects";
 			type="mil_dot";
 			colorName="ColorBlue";
+		};
+		class Item221
+		{
+			position[]={6128.0737,13.670895,10577.116};
+			name="VehStore3_landSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-265.686;
+		};
+		class Item222
+		{
+			position[]={6187.2939,11.833139,10648.047};
+			name="VehStore3_heliSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=97.068604;
+		};
+		class Item223
+		{
+			position[]={6265.1509,0,10570.422};
+			name="VehStore3_seaSpawn";
+			type="Empty";
+			colorName="ColorBlack";
+			angle=-265.75601;
 		};
 	};
 };
